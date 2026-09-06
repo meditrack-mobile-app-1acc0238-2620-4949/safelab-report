@@ -75,7 +75,7 @@
   <tr>
     <td style="text-align: center; width: 40%; vertical-align: center;">
       <img
-      src="../assets/06-chapter-1/startup-profile/team-member-profiles/braden-garcia.png"
+      src="../assets/06-chapter-1/startup-profile/team-member-profiles/Garcia-Braden.jpeg"
       alt="Profile photo of Braden Garcia"
       width="70%"
       style="border-radius: 10px;">
@@ -86,13 +86,14 @@
         <b>Student code:</b> U202415618
       </p>
       <p>
-        <b>Age:</b> xx
+        <b>Age:</b> 21
       </p>
       <p>
-        <b>Degree:</b> ... engineering
+        <b>Degree:</b> Software engineering
       </p>
       <p>
-        <b>About me:</b> I ...
+        <b>About me:</b> I am a Software Engineering student with an interest in developing technological solutions. I focus on applying good programming practices and teamwork to solve real problems. In this project, I aim to contribute innovative ideas to achieve high-quality results.
+
       </p>
     </td>
   </tr>
