@@ -93,7 +93,6 @@
       </p>
       <p>
         <b>About me:</b> I am a Software Engineering student with an interest in developing technological solutions. I focus on applying good programming practices and teamwork to solve real problems. In this project, I aim to contribute innovative ideas to achieve high-quality results.
-
       </p>
     </td>
   </tr>
