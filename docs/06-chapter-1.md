@@ -112,13 +112,13 @@
         <b>Student code:</b> U202411373
       </p>
       <p>
-        <b>Age:</b> xx
+        <b>Age:</b> 
       </p>
       <p>
         <b>Degree:</b> ... engineering
       </p>
       <p>
-        <b>About me:</b> I ...
+        <b>About me:</b> 
       </p>
     </td>
   </tr>
@@ -127,7 +127,7 @@
   <tr>
     <td style="text-align: center; width: 40%; vertical-align: center;">
       <img
-      src="../assets/06-chapter-1/startup-profile/team-member-profiles/oscar-vara.png"
+      src="../assets/06-chapter-1/startup-profile/team-member-profiles/oscar-vara.jpeg"
       alt="Profile photo of Oscar Vara"
       width="70%"
       style="border-radius: 10px;">
@@ -138,12 +138,12 @@
         <b>Student code:</b> U202411622
       </p>
       <p>
-        <b>Age:</b> xx
+        <b>Age:</b>21
       <p>
-        <b>Degree:</b> ... engineering
+        <b>Degree:</b> Software engineering
       </p>
       <p>
-        <b>About me:</b> I ...
+        <b>About me:</b> I am a software engineering student focused on creating technological solutions tailored to user needs. I possess a knack for quickly acquiring new knowledge and excel at teamwork.
       </p>
     </td>
   </tr>
