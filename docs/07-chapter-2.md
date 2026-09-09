@@ -35,6 +35,10 @@ Segmento 2: Empresas Farmacéuticas
 12. ¿Hay algo más sobre trazabilidad, cumplimiento o monitoreo de la cadena de suministro que consideres importante mencionar?
 
 ### **2.2.2. Interview Recording**
+Para recopilar información cualitativa de ambos segmentos objetivo, se realizaron seis entrevistas que fueron consolidadas en en enlace mostrado a continuación, siguiendo el formato y la estructura indicados para la sección de Entrevistas.
+
+Enlace: xxxxxxxxxxxx
+
 ### **2.2.3. Interview Analysis**
 ## **2.3. Needfinding**
 ### **2.3.1. User Personas**
