@@ -190,3 +190,34 @@
 #### **1.2.2.3. Lean UX Hypothesis Statements**
 #### **1.2.2.4. Lean UX Canvas**
 ## **1.3. Target Segments**
+<p style="text-align: justify;">
+  SafeLab focuses on two target segments associated with the storage and supervision of sensitive resources that require specific environmental conditions. The first segment is composed of personnel working in hospital laboratories, while the second corresponds to pharmaceutical companies that need to monitor the storage conditions of medicines, pharmaceutical products, and other sensitive materials. Both segments operate in environments where the preservation of these resources depends on maintaining adequate storage conditions and keeping reliable records of their monitoring.
+</p>
+
+### **Segment 1: Hospital Laboratories**
+
+<p style="text-align: justify;">
+  This segment consists of personnel responsible for storing, supervising, and controlling samples, reagents, supplies, and other sensitive resources within hospital laboratories. These materials require specific environmental conditions for their proper preservation, which makes the monitoring of variables such as temperature and humidity an important activity in their daily work.
+</p>
+
+<p style="text-align: justify;">
+  Regarding demographic characteristics, the interviews conducted for SafeLab will include hospital laboratory professionals between 20 and 70 years old that work in laboratories and that have different levels of professional experience.
+</p>
+
+<p style="text-align: justify;">
+  The size of the healthcare infrastructure in Peru also supports the relevance of this segment. According to the Instituto Nacional de Estadística e Informática (INEI, 2025), Peru registered 23,217 healthcare establishments in 2024, including 637 hospitals distributed throughout the country. Although this figure does not represent the number of hospital laboratories specifically, it provides a quantitative reference for the institutional environment in which this target segment operates.
+</p>
+
+### **Segment 2: Pharmaceutical Companies**
+
+<p style="text-align: justify;">
+  This segment consists of pharmaceutical companies that need to monitor the storage conditions of medicines, pharmaceutical products, and other sensitive materials. These organizations require traceability of environmental conditions, alerts when relevant deviations occur, and records that can later be consulted for control and auditing activities.
+</p>
+
+<p style="text-align: justify;">
+  Since this segment is organizational, its demographic characteristics are represented through the personnel involved in the activities related to storage and supervision. The interviews that will be conducted for the project will include personnel in logistics-related positions between 18 and 50 years old, including  operational or supervisory roles.
+</p>
+
+<p style="text-align: justify;">
+  Statistical information from the Dirección General de Medicamentos, Insumos y Drogas (DIGEMID, 2025) also demonstrates the presence of this sector in Peru. As of June 30, 2025, there were 35,726 active private pharmaceutical establishments authorized by DIGEMID. Of this total, 5,166 were drugstores and 191 were pharmaceutical laboratories, representing 14.5% and 0.5% of the total, respectively. These categories comprise 5,357 establishments and are the ones most closely related to the pharmaceutical company profile considered by SafeLab because of their participation in activities such as storage, distribution, and production of pharmaceutical products.
+</p>
