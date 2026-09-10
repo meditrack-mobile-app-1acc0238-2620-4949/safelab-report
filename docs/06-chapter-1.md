@@ -97,31 +97,31 @@
     </td>
   </tr>
 
-  <!-- MEMBER 4 -->
-  <tr>
-    <td style="text-align: center; width: 40%; vertical-align: center;">
-      <img
-      src="../assets/06-chapter-1/startup-profile/team-member-profiles/valeria-rojas.png"
-      alt="Profile photo of Valeria Rojas"
-      width="70%"
-      style="border-radius: 10px;">
-    </td>
-    <td style="text-align: justify; width: 60%; vertical-align: top;">
-      <h3>Rojas Gomez, Valeria Alexandra</h3>
-      <p>
-        <b>Student code:</b> U202411373
-      </p>
-      <p>
-        <b>Age:</b> 
-      </p>
-      <p>
-        <b>Degree:</b> ... engineering
-      </p>
-      <p>
-        <b>About me:</b> 
-      </p>
-    </td>
-  </tr>
+ <!-- MEMBER 4 -->
+<tr>
+  <td style="text-align: center; width: 40%; vertical-align: center;">
+    <img
+    src="../assets/06-chapter-1/startup-profile/team-member-profiles/valeria-rojas.jpeg"
+    alt="Profile photo of Valeria Rojas"
+    width="70%"
+    style="border-radius: 10px;">
+  </td>
+  <td style="text-align: justify; width: 60%; vertical-align: top;">
+    <h3>Rojas Gómez, Valeria Alexandra</h3>
+    <p>
+      <b>Student code:</b> U202411373
+    </p>
+    <p>
+      <b>Age:</b> 19
+    </p>
+    <p>
+      <b>Degree:</b> Software engineering
+    </p>
+    <p>
+      <b>About me:</b> I have knowledge of frontend and backend development technologies such as Angular, Java, Spring Boot, and REST APIs, as well as experience working with SQL and NoSQL databases. Regarding my skills, I strive to stay organized, listen to others' opinions, and contribute to teamwork while meeting the deadlines agreed upon by the team.
+    </p>
+  </td>
+</tr>
 
   <!-- MEMBER 5 -->
   <tr>
