@@ -1726,8 +1726,27 @@ Enlace: xxxxxxxxxxxx
   - The findings are reviewed by the development team and used to refine US48, US49, and US50.
 </p>
 
-
 ### **2.4.2. Impact Mapping**
+<p style="text-align: justify;">
+  The SafeLab Impact Mapping connects the business goals of the digital product with the expected behavior of its User Personas, the deliverables that support those behaviors, and the User Stories that enable their implementation.
+</p>
+
+<p style="text-align: justify;">
+  The first business goal focuses on reducing the time required by the Laboratorist to consult current temperature, humidity, and equipment status information. To contribute to this goal, the Laboratorist is expected to continuously supervise environmental conditions and quickly identify interruptions or abnormal conditions in monitored equipment. These impacts are supported by real-time environmental monitoring and monitoring problem detection capabilities.
+</p>
+
+<p style="text-align: justify;">
+  The second business goal focuses on ensuring that environmental alerts generated in SafeLab are reviewed and acknowledged within an appropriate response time. To contribute to this goal, the Pharmacist is expected to quickly review generated alerts, understand detected incidents, prioritize critical alerts, and register those that have already been attended. These impacts are supported by alert consultation, tracking, prioritization, and management capabilities.
+</p>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/impact-map-safelab.png" alt="SafeLab Impact Mapping" width="95%">
+</p>
+
+<p align="center">
+  <b>Figure X. SafeLab Impact Mapping.</b><br>
+  <i>Source: Own elaboration using UXPressia.</i>
+</p>
 
 ### **2.4.3. Product Backlog**
 
