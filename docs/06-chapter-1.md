@@ -153,6 +153,37 @@
 
 ## **1.2. Solution Profile**
 ### **1.2.1. Background and Problem Statement**
+<p style="text-align: justify;">
+  Hospital laboratories and pharmaceutical companies manage samples, reagents, medicines, supplies, and other sensitive resources that require specific environmental conditions during storage. Variables such as temperature and humidity can directly affect the stability, quality, and usability of these materials when they remain outside their required ranges for extended periods. Because these resources are involved in laboratory operations, pharmaceutical storage, quality control, and distribution processes, maintaining appropriate environmental conditions is an important part of their proper management.
+</p>
+
+<p style="text-align: justify;">
+  In many cases, the supervision of these conditions still depends on periodic inspections, manual records, isolated monitoring devices, or information that is reviewed only after an incident has occurred. This creates periods in which personnel do not have continuous visibility of what is happening inside storage areas or equipment, especially outside regular working hours or when unexpected environmental variations or equipment failures occur.
+</p>
+
+<p style="text-align: justify;">
+  For hospital laboratories, inadequate monitoring can affect the preservation of samples, reagents, and laboratory supplies required for daily operations. In pharmaceutical companies, similar situations can compromise medicines, pharmaceutical products, and other sensitive materials during storage. In both cases, detecting an environmental deviation too late can lead to material losses, additional operational work, interruptions in normal activities, and difficulties when reviewing historical information for quality control or audit processes.
+</p>
+
+<p style="text-align: justify;">
+  Another relevant issue is the fragmentation of information. Environmental readings, incidents, equipment conditions, and corrective actions may be registered through different tools or documents. As a result, personnel may have difficulty determining what happened, when the incident occurred, how long an abnormal condition lasted, which resources may have been affected, and what actions were taken in response.
+</p>
+
+<p style="text-align: justify;">
+  To obtain a clearer understanding of the problem, the 5W’s and 2H’s technique was applied. The following figure summarizes the main elements identified regarding the actors involved, the nature of the problem, the environments where it occurs, the circumstances in which it becomes critical, its causes, the current monitoring process, and its potential impact.
+</p>
+
+<p align="center">
+  <img
+    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/SafeLab5WY2H.png"
+    alt="SafeLab 5W's and 2H's analysis"
+    width="85%">
+</p>
+
+<p align="center">
+  <em>Figure 1. SafeLab 5W’s and 2H’s analysis.</em>
+</p>
+
 ### **1.2.2. Lean UX Process**
 #### **1.2.2.1. Lean UX Problem Statements**
 #### **1.2.2.2. Lean UX Assumptions**
