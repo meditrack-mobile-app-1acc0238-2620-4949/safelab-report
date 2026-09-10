@@ -24,6 +24,30 @@ Identificar las barreras de entrada (tecnológicas y económicas) impuestas por 
 
 ### **2.1.2. Strategies and Tactics Against Competitors**
 
+### Offensive Strategies
+
+**Penetración mediante Hiper-especialización y Bajo Costo**
+
+Al cruzar nuestra fortaleza de contar con una arquitectura de software agnóstica (sin hardware propietario) con el inmenso mercado desatendido en ciudades de menos de 250,000 habitantes, nuestra táctica principal será ofrecer un modelo SaaS enfocado puramente en el flujo de trabajo clínico. Mientras los competidores obligan a la compra de paquetes de sensores cerrados y costosos, SafeLab permitirá a los laboratorios medianos digitalizar sus procesos usando sensores locales genéricos, democratizando el acceso a tecnología de calidad y capturando rápidamente este nicho en expansión.
+
+### Adaptive Strategies
+
+**Alianzas Estratégicas de Distribución B2B**
+
+Para contrarrestar nuestra principal debilidad (la falta de hardware propietario y el bajo reconocimiento de marca inicial), aprovecharemos la creciente necesidad de digitalización pospandemia a través de alianzas. La táctica será asociarnos con distribuidores locales de refrigeradores médicos y proveedores de sensores IoT genéricos, ofreciendo a SafeLab como un "valor agregado" o software nativo en sus ventas. Esto nos permite llegar al cliente final a través de un canal que ya goza de confianza, mitigando el costo de adquisición.
+
+### Defensive Strategies
+
+**Diferenciación mediante Usabilidad Clínica (Self-Onboarding)**
+
+Frente a la amenaza de la desconfianza del sector salud hacia nuevas tecnologías o la posible entrada de grandes empresas tecnológicas con soluciones de bajo costo, usaremos nuestra agilidad y diseño centrado en el usuario clínico como escudo. La táctica es construir un flujo de incorporación "Plug & Play" y una interfaz (dashboard/reportes PDF) tan precisamente adaptada al estrés de las auditorías locales (ej. ISO 15189), que cualquier otra plataforma genérica será percibida como torpe e inadecuada para un biólogo.
+
+### Survival Strategies
+
+**Validación Temprana y Cumplimiento Normativo Estricto**
+
+La combinación de ser una marca nueva (debilidad) en un sector altamente desconfiado y regulado (amenaza) es el mayor riesgo para el startup. Para sobrevivir a esta barrera, la táctica desde el "Día 1" será la estandarización estricta. El software se diseñará exclusivamente bajo los formatos requeridos por las entidades regulatorias de salud. Además, se implementarán programas piloto (pruebas Beta gratuitas) en laboratorios clave de ciudades secundarias para generar casos de éxito verificables y métricas reales de ROI, sustituyendo la falta de reputación inicial con evidencia empírica irrefutable.
+
 ## **2.2. Interviews**
 
 ### **2.2.1. Interview Design**
