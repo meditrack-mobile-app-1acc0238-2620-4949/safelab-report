@@ -1750,6 +1750,73 @@ Enlace: xxxxxxxxxxxx
 
 ### **2.4.3. Product Backlog**
 
+| # Order | User Story ID | Title | Story Points | Sprint |
+| ------- | ------------- | ----- | ------------ | ------ |
+| 1 | US16 | Automatic data collection | 8 | Sprint 1 |
+| 2 | US09 | View temperature values | 3 | Sprint 1 |
+| 3 | US10 | View humidity values | 3 | Sprint 1 |
+| 4 | US13 | View equipment list with real-time data | 3 | Sprint 1 |
+| 5 | US18 | Receive temperature alerts | 5 | Sprint 1 |
+| 6 | US19 | Receive humidity alerts | 5 | Sprint 1 |
+| 7 | US20 | View alerts list | 3 | Sprint 1 |
+| 8 | US15 | Identify equipment without recent data | 3 | Sprint 1 |
+| 9 | US05 | Register equipment | 5 | Sprint 1 |
+| 10 | US07 | Assign equipment to area | 3 | Sprint 1 |
+| 11 | US03 | Create storage area | 3 | Sprint 1 |
+| 12 | US01 | Register monitoring site | 3 | Sprint 1 |
+| 13 | US56 | View SafeLab Landing Page | 2 | Sprint 1 |
+| 14 | US57 | Change Landing Page language | 3 | Sprint 1 |
+| 15 | US58 | Access Terms and Conditions | 2 | Sprint 1 |
+| 16 | US61 | Provide environmental monitoring services | 5 | Sprint 1 |
+| 17 | US60 | Provide monitoring organization services | 8 | Sprint 1 |
+| 18 | US62 | Provide alert and incident services | 5 | Sprint 1 |
+| 19 | US11 | View equipment working status | 3 | Sprint 1 |
+| 20 | US12 | View equipment details | 2 | Sprint 1 |
+| 21 | US02 | View monitoring sites | 2 | Sprint 1 |
+| 22 | US04 | View storage areas | 2 | Sprint 1 |
+| 23 | US06 | View equipment list | 3 | Sprint 1 |
+| 24 | US08 | Search equipment by name | 2 | Sprint 1 |
+| 25 | US14 | Filter equipment by storage area | 2 | Sprint 1 |
+| 26 | US25 | Set alert limits per equipment | 5 | Sprint 2 |
+| 27 | US24 | Receive alerts on mobile device | 5 | Sprint 2 |
+| 28 | US21 | View alert details | 2 | Sprint 2 |
+| 29 | US22 | Acknowledge alert | 2 | Sprint 2 |
+| 30 | US23 | View alerts sorted by severity | 2 | Sprint 2 |
+| 31 | US44 | View critical alerts | 3 | Sprint 2 |
+| 32 | US46 | View equipment with active alerts | 2 | Sprint 2 |
+| 33 | US36 | View abnormal values | 3 | Sprint 2 |
+| 34 | US37 | Receive equipment warning alerts | 3 | Sprint 2 |
+| 35 | US17 | View data on mobile | 5 | Sprint 2 |
+| 36 | US65 | Support local data storage on mobile device | 5 | Sprint 2 |
+| 37 | US43 | View dashboard | 5 | Sprint 2 |
+| 38 | US45 | View summary with totals | 3 | Sprint 2 |
+| 39 | US27 | View historical data | 5 | Sprint 2 |
+| 40 | US28 | Select date range for data | 2 | Sprint 2 |
+| 41 | US30 | Generate report by equipment and date | 5 | Sprint 2 |
+| 42 | US31 | Download report file | 3 | Sprint 2 |
+| 43 | US63 | Provide historical data and report services | 5 | Sprint 2 |
+| 44 | US59 | Register user account | 5 | Sprint 2 |
+| 45 | US52 | Login with email and password | 3 | Sprint 2 |
+| 46 | US51 | Login with Google account | 3 | Sprint 2 |
+| 47 | US64 | Provide user access services | 5 | Sprint 2 |
+| 48 | US29 | Compare data between periods | 3 | Sprint 3 |
+| 49 | US32 | View incident history | 3 | Sprint 3 |
+| 50 | US33 | Export data file | 3 | Sprint 3 |
+| 51 | US34 | Compare weekly and monthly data | 3 | Sprint 3 |
+| 52 | US48 | View alert trends | 3 | Sprint 3 |
+| 53 | US49 | View temperature trends | 3 | Sprint 3 |
+| 54 | US50 | View humidity trends | 3 | Sprint 3 |
+| 55 | US35 | View equipment condition | 3 | Sprint 3 |
+| 56 | US40 | Register maintenance record | 3 | Sprint 3 |
+| 57 | US41 | View maintenance history | 3 | Sprint 3 |
+| 58 | US42 | View equipment reliability | 5 | Sprint 3 |
+| 59 | US38 | View equipment performance data | 3 | Sprint 3 |
+| 60 | US39 | View equipment usage data | 3 | Sprint 3 |
+| 61 | US26 | Share alerts with team | 3 | Sprint 3 |
+| 62 | US53 | Recover password by email | 3 | Sprint 3 |
+| 63 | US54 | Logout from system | 1 | Sprint 3 |
+| 64 | US55 | Assign user role | 3 | Sprint 3 |
+
 ## **2.5. Strategic-Level Domain-Driven Design**
 
 ### **2.5.1. Event Storming**
