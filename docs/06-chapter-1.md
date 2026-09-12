@@ -1,5 +1,7 @@
 # **Chapter I: Introduction**
+
 ## **1.1. Startup Profile**
+
 ### **1.1.1. Startup Description**
 
 <p style="text-align: justify;">
@@ -60,13 +62,13 @@
         <b>Student code:</b> U202411567
       </p>
       <p>
-        <b>Age:</b> xx
+        <b>Age:</b> 19
       </p>
       <p>
-        <b>Degree:</b> ... engineering
+        <b>Degree:</b> Software engineering
       </p>
       <p>
-        <b>About me:</b> I ...
+        <b>About me:</b> I am a proactive Software Engineering student at UPC, always looking to take initiative and get things moving. I'm especially interested in cybersecurity and enjoy exploring how systems can be secured against threats.
       </p>
     </td>
   </tr>
@@ -152,7 +154,9 @@
 <div style="page-break-after: always;"></div>
 
 ## **1.2. Solution Profile**
+
 ### **1.2.1. Background and Problem Statement**
+
 <p style="text-align: justify;">
   Hospital laboratories and pharmaceutical companies manage samples, reagents, medicines, supplies, and other sensitive resources that require specific environmental conditions during storage. Variables such as temperature and humidity can directly affect the stability, quality, and usability of these materials when they remain outside their required ranges for extended periods. Because these resources are involved in laboratory operations, pharmaceutical storage, quality control, and distribution processes, maintaining appropriate environmental conditions is an important part of their proper management.
 </p>
@@ -185,11 +189,73 @@
 </p>
 
 ### **1.2.2. Lean UX Process**
+
 #### **1.2.2.1. Lean UX Problem Statements**
+
+**Context:** Las instituciones de salud, como laboratorios clínicos y farmacias hospitalarias, dependen de la integridad de inventarios biológicos (reactivos, vacunas y muestras) que requieren control estricto de temperatura, generalmente entre 2°C y 8°C. La precisión de los diagnósticos médicos y la rentabilidad institucional están directamente ligadas a la estabilidad de estos suministros.
+
+**Problem observation:** El proceso actual de control de cadena de frío es en gran parte manual y reactivo, a menudo dependiendo de lecturas físicas o _data loggers_ locales (como USBs) que no reportan en tiempo real. Profesionales altamente especializados dedican hasta el 25% de su jornada laboral a la transcripción de datos térmicos. Este método crea "puntos ciegos" críticos durante la madrugada y los fines de semana debido a la **falta de inmediatez y portabilidad de la información**, dejándolos sin capacidad de respuesta remota ante fallas de infraestructura o cortes de energía.
+
+**Impact:** Esta deficiencia operativa y la falta de alertas móviles inmediatas representan un alto riesgo clínico por el uso potencial de insumos degradados, generando pérdidas económicas que pueden alcanzar miles de dólares por incidente. Además, la falta de trazabilidad digital inmutable expone a las instituciones a sanciones de entidades como DIGEMID o la FDA, poniendo en riesgo certificaciones de calidad como ISO 15189 (Kumru et al., 2014; OMS, 2020).
+
 #### **1.2.2.2. Lean UX Assumptions**
+
+**User Assumptions**
+
+- Creemos que nuestros usuarios son biólogos y coordinadores de laboratorio con cargas de trabajo excesivas y altos niveles de estrés.
+- Creemos que estos profesionales valoran la inmediatez y precisión de los datos sobre las tareas administrativas.
+- Creemos que el personal tiene una desconfianza profunda hacia las bitácoras manuales por su margen de error inherente.
+- Creemos que los usuarios tienen alta familiaridad con el uso de aplicaciones móviles en su día a día, lo que reducirá la fricción de adoptar una herramienta de monitoreo en sus smartphones.
+- Creemos que los laboratorios e instalaciones cuentan con redes Wi-Fi o conectividad móvil estable para soportar la telemetría continua hacia los dispositivos móviles.
+- Creemos que las auditorías externas y el cumplimiento regulatorio representan la principal fuente de preocupación laboral del personal.
+
+**User Outcome Assumptions**
+
+- Creemos que los usuarios obtendrán tranquilidad al recibir alertas críticas inmediatas en sus bolsillos, logrando visibilidad de sus equipos de refrigeración 24/7 sin importar dónde se encuentren.
+- Creemos que el éxito del sistema para el usuario depende de la eliminación total de bitácoras en papel y errores de transcripción.
+- Creemos que el personal podrá actuar preventivamente antes de que un reactivo sufra una degradación irreversible gracias a las notificaciones tempranas.
+- Creemos que los usuarios lograrán una adopción técnica inmediata sin depender de manuales complejos o del departamento de TI.
+- Creemos que la automatización liberará tiempo valioso del personal para enfocarse en tareas analíticas clínicas.
+
+**Business Assumptions**
+
+- Creemos que las pérdidas económicas por desperdicio de reactivos son significativamente mayores que el costo de suscripción de nuestro software.
+- Creemos que los laboratorios medianos optarán por un modelo B2B SaaS si el ROI es demostrable de manera tangible en los primeros 3 a 6 meses de uso.
+- Creemos que la usabilidad y la inmediatez de una solución móvil son vitales para evitar la resistencia operativa en entornos clínicos tradicionales.
+- Creemos que el creciente rigor de los organismos reguladores de salud actuará como el principal motor de ventas.
+- Creemos que la reputación de SafeLab se fortalecerá mediante la reducción comprobada de pérdidas entre los primeros clientes (_early adopters_).
+
+**Business Outcome Assumptions**
+
+- Creemos que la plataforma reducirá el desperdicio de material biológico en un 95% durante el primer año de implementación.
+- Creemos que lograremos una tasa de retención de clientes superior al 90% anual gracias al valor crítico que ofrece el sistema.
+- Creemos que los costos operativos de gestión de calidad en clínicas disminuirán un 60% al automatizar la recolección de datos.
+- Creemos que la experiencia de usuario nativa reducirá el tiempo de capacitación a menos de 2 horas por laboratorio.
+- Creemos que la acumulación de datos históricos nos permitirá ofrecer servicios de analítica predictiva a futuro.
+
+**Feature Assumptions**
+
+- Creemos que una Aplicación Móvil es la interfaz más eficiente para asegurar el acceso ubicuo y la respuesta rápida a incidentes, superando las limitaciones físicas de un software de escritorio.
+- Creemos que la integración de Notificaciones Push reducirá el tiempo de respuesta del personal ante desviaciones térmicas a menos de 1 minuto.
+- Creemos que la función de escanear códigos QR con la cámara del celular en los equipos de refrigeración acelerará la visualización del historial térmico _in situ_.
+- Creemos que un motor de alertas con umbrales configurables permitirá adaptar la aplicación a la sensibilidad de cada reactivo.
+- Creemos que un módulo móvil para la exportación y distribución de reportes PDF garantizará el cumplimiento fluido de estándares de auditoría.
+- Creemos que una base de datos inmutable es esencial para garantizar la exactitud legal de la trazabilidad.
+
 #### **1.2.2.3. Lean UX Hypothesis Statements**
+
+1. **Creemos que** reduciremos el desperdicio de material biológico en un 95% — **Si** biólogos y coordinadores de laboratorio **obtienen** la capacidad de anticiparse a fallas térmicas críticas estén donde estén, **con** un sistema de Notificaciones Push y alertas móviles en tiempo real configurables por umbrales.
+2. **Creemos que** reduciremos los costos operativos administrativos en un 60% — **Si** los coordinadores de operaciones clínicas **obtienen** la eliminación total del registro manual y la transcripción física, **con** el módulo móvil automatizado de generación y compartición de reportes normativos en PDF.
+3. **Creemos que** lograremos reducir el tiempo de capacitación y adopción a menos de 2 horas por laboratorio — **Si** el personal de salud **obtiene** una curva de aprendizaje fluida típica de las apps de consumo diario, **con** un flujo de configuración guiada (_onboarding_ nativo móvil) integrado en la aplicación.
+4. **Creemos que** lograremos una retención de clientes superior al 90% anual — **Si** los responsables de laboratorio y biólogos **obtienen** tranquilidad operativa y visibilidad absoluta de su infraestructura 24/7, **con** una Aplicación Móvil que centraliza toda la telemetría directamente en sus dispositivos personales.
+5. **Creemos que** reduciremos a cero las no conformidades (hallazgos) documentales por falta de trazabilidad térmica durante auditorías — **Si** los gerentes de calidad y entes reguladores **obtienen** acceso a registros históricos de temperatura inalterables, **con** la implementación de una base de datos persistente e inmutable accesible desde el ecosistema SafeLab.
+
 #### **1.2.2.4. Lean UX Canvas**
+
+![Lean UX Canvas v2 - SafeLab](../assets/07-chapter-2/lean-ux-canvas/lean-ux-canvas-safelab.png)
+
 ## **1.3. Target Segments**
+
 <p style="text-align: justify;">
   SafeLab focuses on two target segments associated with the storage and supervision of sensitive resources that require specific environmental conditions. The first segment is composed of personnel working in hospital laboratories, while the second corresponds to pharmaceutical companies that need to monitor the storage conditions of medicines, pharmaceutical products, and other sensitive materials. Both segments operate in environments where the preservation of these resources depends on maintaining adequate storage conditions and keeping reliable records of their monitoring.
 </p>
