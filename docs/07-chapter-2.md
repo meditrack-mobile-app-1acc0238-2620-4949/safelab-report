@@ -88,7 +88,167 @@ Para recopilar información cualitativa de ambos segmentos objetivo, se realizar
 
 Enlace: xxxxxxxxxxxx
 
+Segmento 1: Laboratorios de Hospitales
+
+Entrevista 1: Rosa Elena Campos Idme
+
+Fecha: 3 de septiembre de 2026
+
+Inicia en: 00:00
+
+Duración: 06:05
+
+Screenshot:
+![evidencia entrevista 1](../assets/07-chapter-2/entrevistas/entrevista1.jpeg)
+
+Resumen: Rosa Elena Campos Idme tiene 34 años, es casada y vive en el Cercado de Arequipa. Es bióloga y trabaja como Jefa del Laboratorio Clínico en un hospital de nivel II, donde supervisa el banco de sangre, los reactivos y los insumos sensibles. Se describe como meticulosa, responsable y tranquila bajo presión.
+
+Su proceso de monitoreo consiste en revisar manualmente tres refrigeradoras y dos congeladoras, tres veces por turno, usando un termómetro digital independiente y registrando cada lectura en una hoja de papel que luego se transcribe a Excel al final del día, lo cual toma unos diez minutos por revisión. Recuerda un incidente crítico en el que la puerta de una congeladora quedó mal cerrada durante la noche, provocando una subida de seis grados que dañó un lote de reactivos valorizado en varios miles de soles, descubierto recién a la mañana siguiente. Lo que más le frustra es que los registros en papel se pierden o se dañan y son difíciles de correlacionar históricamente, sobre todo cuando las auditorías de DIGESA/DIRESA exigen carpetas completas de registros físicos.
+
+Le gustaría contar con un sistema automatizado con alertas en tiempo real al celular y un registro de auditoría digital y exportable. Prefiere que el sistema le notifique de inmediato con una acción recomendada para muestras críticas, en lugar de actuar de forma autónoma, aunque aceptaría ajustes automáticos menores para parámetros no críticos como la humedad. Para confiar plenamente en el sistema, necesitaría evidencia de la calibración de los sensores, redundancia de energía de respaldo y cumplimiento de la normativa de salud local.
+
+Entrevista 2: Diego Armando Salazar Ttito
+
+Fecha: 2 de septiembre de 2026
+
+Inicia en: 00:00
+
+Duración: 03:24
+
+Screenshot:
+![evidencia entrevista 2](../assets/07-chapter-2/entrevistas/entrevista2.jpeg)
+
+Resumen: Diego Armando Salazar Ttito tiene 27 años, es soltero y vive en Yanahuara, Arequipa. Trabaja como técnico de laboratorio en el turno noche del mismo hospital y se describe como responsable, tranquilo y algo "búho nocturno".
+
+Su rutina consiste en revisar los equipos de cadena de frío cada cuatro horas en dos pisos distintos, registrando los resultados en una hoja con papel carbón. Al ser el único técnico de guardia en la noche, en una ocasión se le pasó una ronda programada por exceso de carga de trabajo, y una desviación de temperatura no fue detectada hasta que llegó el turno siguiente. Lo que más le frustra es la falta de personal en la noche y no contar con ningún respaldo o retroalimentación si algo sale mal mientras está solo.
+
+Su idea de sistema ideal es una aplicación móvil sencilla que le recuerde cuándo tocan las rondas y le permita registrar con un solo toque, con una escalación automática hacia un supervisor de guardia si él no responde dentro de un tiempo determinado. Confiaría en un sistema que funcione de forma confiable incluso con el wifi inestable del hospital, ofreciendo un modo offline como respaldo.
+
+Segmento 2: Empresas Farmacéuticas
+
+Entrevista 3: Valeria Ximena Roque Mamani
+
+Fecha: 3 de septiembre de 2026
+
+Inicia en: xxxxx
+
+Duración: xxxxx
+
+Screenshot:
+[Insertar captura del video aquí]
+
+Resumen: Valeria Ximena Roque Mamani tiene 31 años, es casada y vive en Los Olivos, Lima. Es ingeniera química y trabaja como Supervisora de Control de Calidad en una planta farmacéutica, supervisando las salas de frío y el almacén de vacunas y medicamentos. Se describe como detallista, disciplinada y proactiva.
+
+Su equipo depende actualmente de dataloggers semi-manuales que deben descargarse físicamente por USB y procesarse en Excel cada semana para mantener la trazabilidad exigida por DIGEMID, incluyendo lotes, fechas de vencimiento y registros de temperatura. Recuerda un incidente crítico en el que un lote de insulina tuvo que ser destruido después de que una auditoría revelara un vacío de datos causado por un corte de luz que el datalogger no registró a tiempo, generando una pérdida económica considerable y observación regulatoria. Lo que más le frustra son las horas semanales dedicadas a consolidar datos manualmente y la dificultad de unificar la información de la cadena de custodia, dividida entre papel y hojas de cálculo.
+
+Ella imagina un dashboard en la nube conectado en tiempo real a los sensores, que genere automáticamente reportes conformes al formato de DIGEMID con un registro de auditoría inalterable. A diferencia del personal de laboratorio, ella recibiría con gusto tanto notificaciones instantáneas como acciones de mitigación automáticas (como activar un generador de respaldo), siempre que cada acción automatizada quede registrada para fines de auditoría. Para confiar en el sistema, necesitaría validación de integridad de datos (alineada a los principios ALCOA+), redundancia de infraestructura y la capacidad de exportar registros para envíos regulatorios.
+
+Entrevista 4: Diego Gabriel Huamaní Ríos
+
+Fecha: 4 de septiembre de 2026
+
+Inicia en: 00:00
+
+Duración: 04:25
+
+Screenshot:
+![evidencia entrevista 4](../assets/07-chapter-2/entrevistas/entrevista4.jpeg)
+
+Resumen: Diego Gabriel Huamaní Ríos  es un ingeniero recién egresado de 24 años, soltero y residente de San Borja, que 
+trabaja como Analista Junior de Calidad. Cuenta con casi dos años de experiencia enfocado 
+en temas de almacenamiento y cadena de frío. En su tiempo libre disfruta de los 
+videojuegos, la tecnología y el ciclismo, y se describe a sí mismo con tres palabras clave: 
+curioso, tecnológico y analítico. 
+En su día a día, lidia con un proceso de monitoreo de temperatura altamente manual y 
+desactualizado. Su equipo invierte entre 10 y 12 horas semanales yendo físicamente a los 
+refrigeradores, extrayendo dataloggers por USB y trasladando los datos a un Excel para 
+generar gráficas orientadas a auditorías regulatorias. Lo que más le frustra y estresa es 
+tener que hacer trabajo repetitivo de "copiar y pegar" en la actualidad, sumado a la nula 
+visibilidad en tiempo real que los obliga a enterarse de los problemas cuando ya pasaron. 
+Las consecuencias de este sistema se evidenciaron en un incidente reciente: un sábado por 
+la noche falló la refrigeradora principal. Aunque la alarma sonora local se activó, no había 
+personal en las instalaciones para escucharla y el correo de alerta llegó con retraso, lo que 
+los obligó a poner en cuarentena un lote grande de medicamentos termosensibles. 
+Para resolver esta problemática, Diego visualiza un sistema ideal basado en la nube, 
+moderno y fácil de usar, equipado con sensores inalámbricos y una aplicación móvil nativa. 
+Considera vital recibir notificaciones al instante y poder exportar reportes de auditoría con 
+un solo clic. Sin embargo, su mayor expectativa es que la plataforma sea proactiva: prefiere 
+un sistema que active acciones de mitigación automática, como encender un equipo de 
+enfriamiento de respaldo al detectar una desviación, en lugar de limitarse a enviar una alerta 
+al celular. 
+
+Entrevista 5: Carlos Montero
+
+Fecha: 5 de septiembre de 2026
+
+Inicia en: 00:00
+
+Duración: 05:42
+
+Screenshot:
+![evidencia entrevista 5](../assets/07-chapter-2/entrevistas/entrevista5.jpeg)
+
+Resumen: Carlos Montero tiene 24 años, es soltero y vive en Surquillo, Lima. Trabaja como Asistente de Logística con alrededor de dos años de experiencia, encargándose de apoyar en la recepción de productos, control de inventario, coordinación de despachos y revisión de las condiciones del almacén. Se describe a sí mismo como minucioso y aficionado a los videojuegos.
+
+Actualmente, el monitoreo que realiza es manual; utiliza dataloggers que deben descargarse físicamente por USB, lo que le resulta frustrante por la pérdida de tiempo al tener que desplazarse para revisarlos. Además, el cierre de mes se vuelve pesado al tener que consolidar información repartida en diferentes archivos. Recuerda un incidente crítico en el que la temperatura puso en riesgo un lote y el equipo no se dio cuenta hasta que el daño ya estaba hecho.
+
+Él imagina un sistema en la nube que centralice las conexiones de todas las zonas del almacén, mostrando la temperatura y humedad en tiempo real con actualizaciones automáticas. Necesita que este sistema envíe alertas rápidas y preventivas antes de que se superen los límites establecidos. Para confiar plenamente, requiere que la plataforma genere reportes de forma sencilla y mantenga un historial inalterable y seguro, asegurando que cualquier modificación quede registrada para facilitar las auditorías y garantizar el cumplimiento normativo.
+
 ### **2.2.3. Interview Analysis**
+
+Segmento 1: Laboratorios de Hospitales
+
+Características
+Sexo: Femenino (50%), Masculino (50%)
+Edad: 27 – 34 años
+Dispositivos: Smartphone (100%), Laptop/Computadora (50%, equipo compartido del hospital)
+Sistemas Operativos: Android, Windows
+Navegadores: Chrome
+Influencia de marcas: Equipos de refrigeración (Haier Biomedical, Thermo Fisher), Comunicación (WhatsApp)
+
+Objetivos comunes
+Dejar de depender de procesos manuales y en papel para el monitoreo de muestras e insumos sensibles.
+Tener visibilidad confiable y en tiempo real sobre el estado de los equipos de refrigeración.
+Reducir el tiempo dedicado a registrar y consolidar datos.
+Poder superar auditorías regulatorias sin tener que armar registros físicos de última hora.
+
+Motivaciones comunes
+Proteger la integridad de las muestras biológicas y reactivos para que no se pierdan.
+Evitar ser responsabilizados por incidentes prevenibles causados por vacíos en la supervisión manual.
+Sentirse respaldados, especialmente durante turnos aislados con poco personal.
+
+Frustraciones comunes
+Procesos de monitoreo manuales y propensos a errores.
+Dificultad para correlacionar datos históricos almacenados en registros de papel.
+Falta de apoyo o escalamiento cuando ocurren incidentes en turnos con poco personal.
+
+Segmento 2: Empresas Farmacéuticas
+
+Características
+Sexo: Femenino (33%), Masculino (67%)
+Edad: 24 – 31 años
+Dispositivos: Smartphone (100%), Laptop/Computadora (100%: corporativa en el caso de Control de Calidad y Logística)
+Sistemas Operativos: Windows, iOS
+Navegadores: Chrome, Brave
+Influencia de marcas: Marco regulatorio (DIGEMID), proveedores de dataloggers USB, sistemas ERP
+
+Objetivos comunes
+Eliminar la dependencia de dataloggers USB y registros en papel que deben extraerse y consolidarse manualmente.
+Tener una única fuente de verdad que unifique la información hoy repartida entre distintos archivos, hojas de cálculo y ubicaciones.
+Automatizar la generación de reportes de auditoría y trazabilidad conforme a la normativa (DIGEMID).
+Contar con un sistema que avise de forma proactiva ante una desviación, antes de que el problema se agrave, y no solo después de superado el límite.
+
+Motivaciones comunes
+Evitar pérdidas económicas por lotes de producto dañados, puestos en riesgo o destruidos.
+Mantener el estatus regulatorio de la empresa y superar auditorías sin contratiempos ni carpetas armadas de último momento.
+Reducir la carga de trabajo manual y repetitiva asociada a la documentación de cumplimiento (extracción de dataloggers, consolidación en Excel, cierres de mes).
+No ser señalados individualmente por errores o incidentes que se originan en procesos manuales deficientes, no en su desempeño.
+
+Frustraciones comunes
+Procesos de monitoreo manuales (dataloggers USB, revisiones físicas) que consumen varias horas a la semana y generan trabajo repetitivo de "copiar y pegar".
+Nula o tardía visibilidad en tiempo real: los problemas (una desviación de temperatura, un lote en riesgo) se descubren recién cuando el daño ya está hecho.
+Información fragmentada entre distintos archivos, documentos y ubicaciones, lo que complica especialmente el cierre de mes y la preparación de auditorías.
+Falta de consenso sobre el nivel de autonomía deseado del sistema: mientras algunos confiarían en acciones de mitigación totalmente automáticas, otros prefieren que ciertas acciones críticas pasen primero por la revisión y aprobación de una persona.
 
 ## **2.3. Needfinding**
 
