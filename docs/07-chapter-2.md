@@ -251,14 +251,83 @@ Información fragmentada entre distintos archivos, documentos y ubicaciones, lo 
 Falta de consenso sobre el nivel de autonomía deseado del sistema: mientras algunos confiarían en acciones de mitigación totalmente automáticas, otros prefieren que ciertas acciones críticas pasen primero por la revisión y aprobación de una persona.
 
 ## **2.3. Needfinding**
+En esta sección se presentan los artefactos resultantes del análisis de la información recolectada en las entrevistas (sección 2.2.3) y en el análisis competitivo (sección 2.1.1). A partir de las características demográficas, objetivos, motivaciones y frustraciones identificadas para cada segmento objetivo, se construyeron los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps correspondientes, elaborados en la herramienta UXPressia.
 
 ### **2.3.1. User Personas**
 
+Se elaboró una ficha de User Persona por cada segmento objetivo, considerando las características demográficas y subjetivas más representativas identificadas en el análisis de entrevistas, así como el posicionamiento frente a la competencia (sección 2.1.1), que evidencia la necesidad de una solución ágil y de bajo costo para laboratorios e instituciones de salud medianas.
+
+
+**Segmento 1: Laboratorios de Hospitales**
+
+![User Persona Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/UserPersonasSegmeto1.png)
+
+Gabriela Campos Rivas representa al personal de laboratorio clínico responsable de la supervisión del banco de sangre, reactivos e insumos sensibles. Su perfil refleja la dependencia de procesos manuales de monitoreo y la necesidad de visibilidad en tiempo real para prevenir incidentes críticos.
+
+
+**Segmento 2: Empresas Farmacéuticas**
+
+![User Persona Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/UserPersonasSegmeto2.png)
+
+Diego Ramírez Paredes representa al personal de calidad y logística responsable de la trazabilidad regulatoria (DIGEMID) en el almacenamiento de medicamentos y vacunas. Su perfil refleja la carga operativa de la consolidación manual de datos y la necesidad de cumplimiento normativo automatizado.
+
+
 ### **2.3.2. User Task Matrix**
+
+El siguiente User Task Matrix concentra las tareas que realizan los dos segmentos objetivo identificados para el proyecto SafeLab —representados por sus respectivos User Personas, **Gabriela Campos Rivas** (Segmento 1: Laboratorios de Hospitales) y **Diego Ramírez Paredes** (Segmento 2: Empresas Farmacéuticas)— para cumplir sus objetivos de monitoreo y control de cadena de frío. Las tareas listadas corresponden a actividades que ambos perfiles realizan actualmente de forma manual, independientemente de la existencia de una solución de software, y fueron identificadas a partir del análisis de las entrevistas registradas en la sección 2.2.3.
+
+| Tarea | Gabriela Campos Rivas (Frecuencia) | Gabriela Campos Rivas (Importancia) | Diego Ramírez Paredes (Frecuencia) | Diego Ramírez Paredes (Importancia) |
+|---|---|---|---|---|
+| Monitorear manualmente la temperatura/humedad de refrigeradoras y congeladoras | Diaria | Alta | Diaria | Alta |
+| Registrar lecturas de monitoreo en papel y transcribirlas a Excel | Diaria | Alta | No aplica | — |
+| Descargar datos de dataloggers vía USB | No aplica | — | Semanal | Alta |
+| Consolidar información dispersa en archivos y hojas de cálculo | Mensual | Media | Semanal | Alta |
+| Realizar rondas de inspección física de los equipos de refrigeración | Diaria | Alta | Semanal | Media |
+| Preparar documentación para auditorías regulatorias (DIGESA/DIRESA/DIGEMID) | Esporádica | Alta | Esporádica | Alta |
+| Responder ante incidentes de desviación de temperatura | Esporádica | Alta | Esporádica | Alta |
+| Escalar incidentes críticos a un supervisor o equipo de guardia | Esporádica | Alta | Esporádica | Media |
+| Generar reportes de trazabilidad y cumplimiento normativo | Mensual | Media | Semanal | Alta |
+| Coordinar despachos e inventario del almacén | No aplica | — | Semanal | Media |
+
+**Análisis del cuadro**
+
+Las tareas con mayor frecuencia e importancia para ambos segmentos son el **monitoreo manual de temperatura/humedad** y la **respuesta ante incidentes de desviación**, lo que confirma que la necesidad central de ambos perfiles es la falta de visibilidad en tiempo real sobre el estado de sus equipos de refrigeración. Asimismo, **preparar documentación para auditorías regulatorias** aparece como tarea esporádica pero de alta importancia en los dos casos, reflejando que el cumplimiento normativo (DIGESA/DIRESA para el sector salud, DIGEMID para el sector farmacéutico) es un driver crítico compartido, aunque el marco regulatorio específico difiera.
+
+La principal diferencia entre ambos personas está en el método de registro: Gabriela depende de un **proceso en papel** que transcribe diariamente a Excel, mientras que Diego depende de la **extracción periódica de dataloggers USB**, una tarea que no aplica para el segmento hospitalario. Esto también se refleja en la frecuencia de consolidación de datos y generación de reportes, que es más constante (semanal) para Diego debido al volumen de información regulatoria que su rol exige, frente a una consolidación más espaciada (mensual) en el caso de Gabriela. Finalmente, la coordinación logística de despachos e inventario es una tarea exclusiva del segmento farmacéutico, sin equivalente en el entorno hospitalario.
 
 ### **2.3.3. User Journey Mapping**
 
+Se elaboraron los User Journey Maps en su versión As-Is, ilustrando el recorrido end-to-end de cada segmento objetivo desde el inicio de su proceso de monitoreo hasta el cierre de auditoría, en la situación actual, sin la existencia de la solución SafeLab. Cada Journey Map se encuentra vinculado a su respectivo User Persona en UXPressia.
+
+**Segmento 1: Laboratorios de Hospitales**
+
+![User Journey Map Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/UserJourneyMappingSegmeto1.png)
+
+El recorrido de Gabriela Campos Rivas inicia con la recepción de turno y la ronda de revisión física de refrigeradoras y congeladoras, continúa con el registro manual en papel y su posterior transcripción a Excel, y se ve interrumpido cuando ocurre una desviación de temperatura que, al no contar con monitoreo en tiempo real, puede pasar desapercibida durante horas. El journey culmina con la consolidación de registros físicos para las auditorías de DIGESA/DIRESA, un proceso que genera frustración por la fragilidad y dispersión de los registros en papel.
+
+**Segmento 2: Empresas Farmacéuticas**
+
+![User Journey Map Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/UserJourneyMappingSegmeto2.png)
+
+El recorrido de Diego Ramírez Paredes inicia con el desplazamiento físico a cada sala/almacén para extraer dataloggers vía USB, continúa con el procesamiento semanal en Excel para trazabilidad, y se ve afectado cuando una desviación no detectada a tiempo (por falta de visibilidad en tiempo real) pone en riesgo un lote de producto. El journey culmina con el cierre de mes y la preparación del reporte conforme a DIGEMID, un proceso donde un vacío de datos puede derivar en la pérdida total de un lote y una observación regulatoria.
+
+
 ### **2.3.4. Empathy Mapping**
+
+Se elaboraron los Empathy Maps para cada User Persona, colocando al centro al usuario representado y completando cada cuadrante a partir de las observaciones del equipo sobre la información recolectada en las entrevistas, respondiendo las preguntas sobre qué necesita hacer, qué dice, qué ve, qué hace, qué escucha, qué piensa y siente, así como identificando sus Pains y Gains.
+
+**Segmento 1: Laboratorios de Hospitales**
+
+![Empathy Map Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/EmpathyMappingSegmento1.png)
+
+El Empathy Map de Gabriela Campos Rivas evidencia una tensión entre la tranquilidad que siente al controlar el proceso durante su turno y la preocupación constante por lo que puede ocurrir en su ausencia. Sus principales Pains giran en torno a la fragilidad de los registros en papel y la falta de respaldo durante turnos con poco personal, mientras que sus Gains se concentran en alertas en tiempo real y un registro de auditoría digital e inalterable.
+
+
+**Segmento 2: Empresas Farmacéuticas**
+
+![Empathy Map Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/EmpathyMappingSegmento2.png)
+
+El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la carga de trabajo manual y repetitivo, así como el temor a ser señalado individualmente por errores originados en procesos deficientes que no dependen de su desempeño. Sus principales Pains están relacionados con la falta de visibilidad en tiempo real y la fragmentación de la información, mientras que sus Gains apuntan a un dashboard centralizado en la nube y reportes automáticos conformes a DIGEMID.
 
 ### **2.3.5. Big Picture Event Storming**
 
