@@ -179,7 +179,7 @@
 
 <p align="center">
   <img
-    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/safelab5wy2h.png"
+    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/safelab-5wy2h.png"
     alt="SafeLab 5W's and 2H's analysis"
     width="85%">
 </p>
