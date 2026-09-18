@@ -67,7 +67,7 @@ Para la primera entrega, el equipo distribuyó las secciones del informe de acue
 ### **Analítica general de colaboración**
 
 <div style="page-break-inside: avoid; text-align: center; margin: 18px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Gráfico de commits a lo largo del tiempo de todos los colaboradores del repositorio del informe">
+  <img src="../assets/02-insights/commits-over-time.png" width="76%" alt="Gráfico de commits a lo largo del tiempo de todos los colaboradores del repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 1.</strong> Evolución de commits realizados por los integrantes del equipo.</p>
 </div>
 
@@ -78,7 +78,7 @@ La analítica general permite observar la incorporación progresiva de aportes a
 ### **Evidencias de commits por integrante**
 
 <div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Historial de commits de Carlos Lavado, Ever Giusephi, en el repositorio del informe">
+  <img src="../assets/02-insights/commits-giusephi-carlos.png" width="76%" alt="Historial de commits de Carlos Lavado, Ever Giusephi, en el repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 2.</strong> Historial de contribuciones de Carlos Lavado, Ever Giusephi.</p>
 </div>
 
@@ -87,7 +87,7 @@ Los commits asociados a Carlos evidencian la incorporación y actualización de 
 </p>
 
 <div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Historial de commits de Espino Rossi, Victor Manuel, en el repositorio del informe">
+  <img src="../assets/02-insights/commits-victor-espino.png" width="76%" alt="Historial de commits de Espino Rossi, Victor Manuel, en el repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 3.</strong> Historial de contribuciones de Espino Rossi, Victor Manuel.</p>
 </div>
 
@@ -96,7 +96,7 @@ Los commits asociados a Victor respaldan el desarrollo y refinamiento del proces
 </p>
 
 <div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Historial de commits de García Cerpa, Braden Raid, en el repositorio del informe">
+  <img src="../assets/02-insights/commits-branden-garcia.png" width="76%" alt="Historial de commits de García Cerpa, Braden Raid, en el repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 4.</strong> Historial de contribuciones de García Cerpa, Braden Raid.</p>
 </div>
 
@@ -105,7 +105,7 @@ Los commits asociados a Braden muestran la integración de los artefactos de ent
 </p>
 
 <div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Historial de commits de Rojas Gomez, Valeria Alexandra, en el repositorio del informe">
+  <img src="../assets/02-insights/commits-valeria-rojas.png" width="76%" alt="Historial de commits de Rojas Gomez, Valeria Alexandra, en el repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 5.</strong> Historial de contribuciones de Rojas Gomez, Valeria Alexandra.</p>
 </div>
 
@@ -114,7 +114,7 @@ Los commits asociados a Valeria reflejan la incorporación de la definición del
 </p>
 
 <div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
-  <img src="../assets/02-insights" width="76%" alt="Historial de commits de Vara Velásquez, Oscar Fernando, en el repositorio del informe">
+  <img src="../assets/02-insights/commits-oscar-vara.png" width="76%" alt="Historial de commits de Vara Velásquez, Oscar Fernando, en el repositorio del informe">
   <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 6.</strong> Historial de contribuciones de Vara Velásquez, Oscar Fernando.</p>
 </div>
 
