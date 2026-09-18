@@ -84,13 +84,13 @@
       1.x.x
     </td>
     <td style="text-align: center;">
-      xx/09/2026
+      16/09/2026
     </td>
     <td style="text-align: center;">
       Vara Velásquez, Oscar Fernando
     </td>
     <td style="text-align: justify;">
-      (version log)
+      Se elaboró la sección 2.3. Needfinding del Chapter 2, incluyendo la ficha de User Persona, el User Journey Map (As-Is) y el Empathy Map para los dos segmentos objetivo (Laboratorios de Hospitales y Empresas Farmacéuticas) en UXPressia, además del User Task Matrix comparando ambos perfiles. Se redactaron las introducciones y el análisis de cada artefacto en el informe, vinculando cada uno con los hallazgos del análisis de entrevistas (2.2.3), y se integraron las capturas correspondientes al documento en Markdown 
     </td>
   </tr>
 </table>
