@@ -4,55 +4,136 @@
 
 ### **2.1.1. Competitive Analysis**
 
-**¿Por qué realizar este análisis?**
+<p style="text-align: justify;">
+  <b>¿Por qué realizar este análisis?</b>
+</p>
 
-Identificar las barreras de entrada (tecnológicas y económicas) impuestas por los líderes globales de monitoreo IoT, con el fin de validar que existe un nicho desatendido en instituciones de salud medianas y pequeñas. Este análisis permitirá posicionar a SafeLab como una alternativa ágil, clínicamente específica y económicamente accesible.
+<p style="text-align: justify;">
+  Identificar las barreras de entrada, tanto tecnológicas como económicas, impuestas por los líderes globales de monitoreo IoT, con el fin de validar la existencia de un nicho desatendido en instituciones de salud medianas y pequeñas. Este análisis permitirá posicionar a SafeLab como una alternativa ágil, clínicamente específica y económicamente accesible.
+</p>
 
-| Atributo                     | SafeLab                                                                                                                                | SmartSense                                                                                                                  | SenseAnywhere                                                                                              | Monnit                                                                                                        |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Descripción general**      | Startup B2B SaaS enfocada en erradicar el desperdicio biológico mediante automatización ágil y accesible.                              | Plataforma IoT corporativa de alto nivel para trazabilidad y cumplimiento normativo en redes hospitalarias y farmacéuticas. | Sistema europeo de monitoreo en la nube enfocado en hardware ultra duradero y logística de cadena de frío. | Proveedor global de soluciones de monitoreo remoto con sensores inalámbricos para múltiples industrias.       |
-| **Ventaja Competitiva**      | Plataforma agnóstica de hardware, altamente contextualizada al flujo de trabajo de los biólogos.                                       | Capacidad de escala masiva e integración con sistemas ERP y estricto cumplimiento regulatorio (FDA).                        | Fiabilidad extrema del hardware y registro ininterrumpido en la nube sin mantenimiento local.              | Accesibilidad económica inicial y personalización extrema para monitorear casi cualquier variable.            |
-| **Mercado Objetivo**         | Laboratorios clínicos y farmacias hospitalarias en ciudades emergentes o periféricas.                                                  | Grandes hospitales, cadenas farmacéuticas nacionales y logística farmacéutica global.                                       | Almacenes de alta tecnología, laboratorios farmacéuticos y empresas de transporte logístico.               | Pequeñas y medianas empresas (PYMES) en agricultura, TI, alimentos, clínicas y otros sectores.                |
-| **Estrategias de Marketing** | Marketing de atracción (inbound) enfocado en la Cultura Cero Residuos y la simplificación de auditorías de calidad locales.            | Ventas corporativas B2B enfocadas en el retorno de inversión (ROI) mediante mitigación de riesgos legales.                  | Presencia en ferias comerciales farmacéuticas globales.                                                    | Marketing digital masivo, comercio electrónico directo y posicionamiento en motores de búsqueda a bajo costo. |
-| **Productos y Servicios**    | Aplicación móvil nativa + integración de API con hardware genérico y asequible de terceros.                                                 | Software empresarial + Gateways + Sensores IoT propietarios.                                                                | SenseAnywhere Cloud + AiroSensors (hardware propietario cerrado).                                          | Plataforma iMonnit + sensores inalámbricos ALTA.                                                              |
-| **Precios y Costos**         | Bajo. Modelo SaaS puro con pagos mensuales o anuales, permitiendo la reutilización de equipos genéricos.                               | Muy alto. Contratos corporativos anuales que incluyen hardware costoso e instalación.                                       | Medio-Alto. Depende de sensores europeos especializados importados.                                        | Bajo-Medio. Hardware asequible y suscripciones mensuales o anuales por niveles.                               |
-| **Canales de Distribución**  | Ventas directas B2B y autoregistro (self onboarding).                                                                                  | Ventas corporativas directas. Plataforma Web y App Móvil.                                                                   | Red de distribuidores oficiales. Plataforma Web SaaS.                                                      | Tienda en línea propia y distribuidores. Plataforma Web y Móvil.                                              |
-| **Fortalezas**               | Alta agilidad para pivotar, bajo costo estructural e interfaz diseñada exclusivamente para el usuario clínico.                         | Fuerte reputación de marca y certificaciones internacionales.                                                               | Hardware líder en el mercado (10 años sin necesidad de carga) y software altamente estable.                | Amplio catálogo de sensores e interfaz altamente personalizable.                                              |
-| **Oportunidades**            | Gran mercado de laboratorios medianos que aún usan procesos en papel porque no pueden costear a los competidores principales.          | Absorción de competidores más pequeños y contratos gubernamentales.                                                         | Expansión en mercados emergentes y mejora en la integración de API.                                        | Crecimiento constante en la digitalización pospandemia de clínicas medianas.                                  |
-| **Debilidades**              | Falta de hardware propietario y falta de reconocimiento de marca en la etapa inicial.                                                  | Inaccesible para clínicas pequeñas y requiere procesos de implementación corporativa lentos.                                | Modelo de hardware cerrado; si un sensor se daña, debe importarse otro del fabricante.                     | Plataforma demasiado genérica y no diseñada específicamente para flujos de trabajo de salud.                  |
-| **Amenazas**                 | Desconfianza inicial del sector salud hacia nuevas plataformas, o el ingreso de una gran empresa tecnológica al mercado de bajo costo. | Aparición de startups ágiles y asequibles en mercados locales.                                                              | Problemas en las cadenas globales de suministro de microchips que aumentan los costos de hardware.         | Soluciones especializadas que captan clientes de salud mediante interfaces más específicas.                   |
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Atributo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">SafeLab</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">SmartSense</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">SenseAnywhere</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Monnit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Descripción general</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Startup B2B SaaS enfocada en erradicar el desperdicio biológico mediante automatización ágil y accesible.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Plataforma IoT corporativa de alto nivel para trazabilidad y cumplimiento normativo en redes hospitalarias y farmacéuticas.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sistema europeo de monitoreo en la nube enfocado en hardware de alta durabilidad y logística de cadena de frío.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Proveedor global de soluciones de monitoreo remoto con sensores inalámbricos para múltiples industrias.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Ventaja competitiva</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Plataforma agnóstica de hardware, altamente contextualizada al flujo de trabajo de los biólogos.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Capacidad de escala masiva e integración con sistemas ERP y estricto cumplimiento regulatorio (FDA).</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Fiabilidad extrema del hardware y registro ininterrumpido en la nube sin mantenimiento local.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Accesibilidad económica inicial y alta personalización para monitorear múltiples variables.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Mercado objetivo</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Laboratorios clínicos y farmacias hospitalarias en ciudades emergentes o periféricas.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Grandes hospitales, cadenas farmacéuticas nacionales y logística farmacéutica global.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Almacenes de alta tecnología, laboratorios farmacéuticos y empresas de transporte logístico.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Pequeñas y medianas empresas (PYMES) de agricultura, TI, alimentos, clínicas y otros sectores.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Estrategias de marketing</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marketing de atracción (inbound) enfocado en la cultura de cero residuos y la simplificación de auditorías de calidad locales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Ventas corporativas B2B enfocadas en el retorno de inversión (ROI) mediante mitigación de riesgos legales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Presencia en ferias comerciales farmacéuticas globales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marketing digital masivo, comercio electrónico directo y posicionamiento en motores de búsqueda a bajo costo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Productos y servicios</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Aplicación web SPA e integración de API con hardware genérico y asequible de terceros.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Software empresarial, gateways y sensores IoT propietarios.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">SenseAnywhere Cloud y AiroSensors, bajo un modelo de hardware propietario cerrado.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Plataforma iMonnit y sensores inalámbricos ALTA.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Precios y costos</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Bajo. Modelo SaaS puro con pagos mensuales o anuales, permitiendo la reutilización de equipos genéricos.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Muy alto. Contratos corporativos anuales que incluyen hardware costoso e instalación.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Medio-Alto. Depende de sensores europeos especializados importados.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Bajo-Medio. Hardware asequible y suscripciones mensuales o anuales por niveles.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Canales de distribución</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Ventas directas B2B y autorregistro (self-onboarding).</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Ventas corporativas directas. Plataforma web y aplicación móvil.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Red de distribuidores oficiales. Plataforma web SaaS.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Tienda en línea propia y distribuidores. Plataforma web y móvil.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Fortalezas</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alta agilidad para pivotar, bajo costo estructural e interfaz diseñada específicamente para el usuario clínico.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Fuerte reputación de marca y certificaciones internacionales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Hardware líder en el mercado, con hasta diez años sin necesidad de carga, y software altamente estable.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Amplio catálogo de sensores e interfaz altamente personalizable.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Oportunidades</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Gran mercado de laboratorios medianos que aún utilizan procesos en papel porque no pueden costear a los competidores principales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Absorción de competidores más pequeños y contratos gubernamentales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Expansión en mercados emergentes y mejora en la integración de API.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Crecimiento constante en la digitalización pospandemia de clínicas medianas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Debilidades</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Falta de hardware propietario y de reconocimiento de marca en la etapa inicial.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Inaccesible para clínicas pequeñas y requiere procesos de implementación corporativa lentos.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Modelo de hardware cerrado; si un sensor se daña, debe importarse otro del fabricante.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Plataforma demasiado genérica y no diseñada específicamente para flujos de trabajo del sector salud.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;"><b>Amenazas</b></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Desconfianza inicial del sector salud hacia nuevas plataformas o ingreso de una gran empresa tecnológica al mercado de bajo costo.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Aparición de startups ágiles y asequibles en mercados locales.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Problemas en las cadenas globales de suministro de microchips que aumenten los costos de hardware.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Soluciones especializadas que capten clientes del sector salud mediante interfaces más específicas.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### **2.1.2. Strategies and Tactics Against Competitors**
 
-### Offensive Strategies
+#### **Estrategias ofensivas**
 
-**Penetración mediante Hiper-especialización y Bajo Costo**
+<p style="text-align: justify;">
+  <b>Penetración mediante hiper-especialización y bajo costo.</b> Al cruzar nuestra fortaleza de contar con una arquitectura de software agnóstica, sin hardware propietario, con el mercado desatendido en ciudades de menos de 250 000 habitantes, nuestra táctica principal será ofrecer un modelo SaaS enfocado en el flujo de trabajo clínico. Mientras los competidores obligan a adquirir paquetes de sensores cerrados y costosos, SafeLab permitirá a los laboratorios medianos digitalizar sus procesos utilizando sensores locales genéricos, democratizando el acceso a tecnología de calidad y facilitando la entrada a este nicho.
+</p>
 
-Al cruzar nuestra fortaleza de contar con una arquitectura de software agnóstica (sin hardware propietario) con el inmenso mercado desatendido en ciudades de menos de 250,000 habitantes, nuestra táctica principal será ofrecer un modelo SaaS enfocado puramente en el flujo de trabajo clínico. Mientras los competidores obligan a la compra de paquetes de sensores cerrados y costosos, SafeLab permitirá a los laboratorios medianos digitalizar sus procesos usando sensores locales genéricos, democratizando el acceso a tecnología de calidad y capturando rápidamente este nicho en expansión.
+#### **Estrategias adaptativas**
 
-### Adaptive Strategies
+<p style="text-align: justify;">
+  <b>Alianzas estratégicas de distribución B2B.</b> Para contrarrestar nuestra principal debilidad, asociada a la falta de hardware propietario y al bajo reconocimiento de marca inicial, se aprovechará la creciente necesidad de digitalización mediante alianzas con distribuidores locales de refrigeradores médicos y proveedores de sensores IoT genéricos. SafeLab se ofrecerá como un valor agregado de software dentro de sus ventas, permitiendo llegar al cliente final a través de canales que ya cuentan con su confianza y reduciendo el costo de adquisición.
+</p>
 
-**Alianzas Estratégicas de Distribución B2B**
+#### **Estrategias defensivas**
 
-Para contrarrestar nuestra principal debilidad (la falta de hardware propietario y el bajo reconocimiento de marca inicial), aprovecharemos la creciente necesidad de digitalización pospandemia a través de alianzas. La táctica será asociarnos con distribuidores locales de refrigeradores médicos y proveedores de sensores IoT genéricos, ofreciendo a SafeLab como un "valor agregado" o software nativo en sus ventas. Esto nos permite llegar al cliente final a través de un canal que ya goza de confianza, mitigando el costo de adquisición.
+<p style="text-align: justify;">
+  <b>Diferenciación mediante usabilidad clínica (self-onboarding).</b> Frente a la desconfianza del sector salud hacia nuevas tecnologías o a la posible entrada de grandes empresas tecnológicas con soluciones de bajo costo, se aprovechará la agilidad y el diseño centrado en el usuario clínico. La táctica consiste en construir un flujo de incorporación Plug & Play y una interfaz con dashboard y reportes adaptados al contexto de auditorías locales, como ISO 15189, de modo que una plataforma genérica resulte menos adecuada para las necesidades específicas de los usuarios clínicos.
+</p>
 
-### Defensive Strategies
+#### **Estrategias de supervivencia**
 
-**Diferenciación mediante Usabilidad Clínica (Self-Onboarding)**
-
-Frente a la amenaza de la desconfianza del sector salud hacia nuevas tecnologías o la posible entrada de grandes empresas tecnológicas con soluciones de bajo costo, usaremos nuestra agilidad y diseño centrado en el usuario clínico como escudo. La táctica es construir un flujo de incorporación "Plug & Play" y una interfaz (dashboard/reportes PDF) tan precisamente adaptada al estrés de las auditorías locales (ej. ISO 15189), que cualquier otra plataforma genérica será percibida como torpe e inadecuada para un biólogo.
-
-### Survival Strategies
-
-**Validación Temprana y Cumplimiento Normativo Estricto**
-
-La combinación de ser una marca nueva (debilidad) en un sector altamente desconfiado y regulado (amenaza) es el mayor riesgo para el startup. Para sobrevivir a esta barrera, la táctica desde el "Día 1" será la estandarización estricta. El software se diseñará exclusivamente bajo los formatos requeridos por las entidades regulatorias de salud. Además, se implementarán programas piloto (pruebas Beta gratuitas) en laboratorios clave de ciudades secundarias para generar casos de éxito verificables y métricas reales de ROI, sustituyendo la falta de reputación inicial con evidencia empírica irrefutable.
+<p style="text-align: justify;">
+  <b>Validación temprana y cumplimiento normativo estricto.</b> La combinación de ser una marca nueva en un sector altamente regulado representa uno de los principales riesgos para la startup. Para reducir esta barrera, el software se diseñará considerando los formatos requeridos por las entidades regulatorias de salud. Asimismo, se implementarán programas piloto en laboratorios de ciudades secundarias para generar casos de éxito verificables y métricas de ROI, de manera que la falta de reputación inicial pueda compensarse con evidencia obtenida durante la validación.
+</p>
 
 ## **2.2. Interviews**
 
 ### **2.2.1. Interview Design**
 
-Segmento 1: Laboratorios de Hospitales
+#### **Segmento 1: Laboratorios de Hospitales**
 
 1. ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
 2. Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
@@ -67,7 +148,7 @@ Segmento 1: Laboratorios de Hospitales
 11. Para que confíes al 100% en un sistema así, ¿qué información o garantías necesitarías que te muestre?
 12. ¿Hay algo más sobre tu trabajo con muestras e insumos sensibles que consideres importante mencionar?
 
-Segmento 2: Empresas Farmacéuticas
+#### **Segmento 2: Empresas Farmacéuticas**
 
 1. ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
 2. Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
@@ -84,250 +165,323 @@ Segmento 2: Empresas Farmacéuticas
 
 ### **2.2.2. Interview Recording**
 
-Para recopilar información cualitativa de ambos segmentos objetivo, se realizaron seis entrevistas que fueron consolidadas en en enlace mostrado a continuación, siguiendo el formato y la estructura indicados para la sección de Entrevistas.
+<p style="text-align: justify;">
+  Para recopilar información cualitativa de ambos segmentos objetivo, se realizaron entrevistas que fueron consolidadas en el enlace mostrado a continuación, siguiendo el formato y la estructura definidos para esta sección.
+</p>
 
-Enlace: xxxxxxxxxxxx
+<p style="text-align: justify;">
+  <b>Enlace:</b> <a href="https://youtu.be/5nNHZnFrHPo">https://youtu.be/5nNHZnFrHPo</a>
+</p>
 
-Segmento 1: Laboratorios de Hospitales
+#### **Segmento 1: Laboratorios de Hospitales**
 
-Entrevista 1: Rosa Elena Campos Idme
+##### **Entrevista 1: Rosa Elena Campos Idme**
 
-Fecha: 3 de septiembre de 2026
+<p style="text-align: justify;">
+  <b>Fecha:</b> 3 de septiembre de 2026<br>
+  <b>Inicia en:</b> 00:00<br>
+  <b>Duración:</b> 06:06
+</p>
 
-Inicia en: 00:00
+<p align="center">
+  <img src="../assets/07-chapter-2/interviews/interview-recording/interview-1.jpeg" alt="Evidencia de la entrevista 1 - Rosa Elena Campos Idme" width="80%">
+</p>
 
-Duración: 06:05
+<p style="text-align: justify;">
+  Rosa Elena Campos Idme tiene 34 años, es casada y vive en el Cercado de Arequipa. Es bióloga y trabaja como Jefa del Laboratorio Clínico en un hospital de nivel II, donde supervisa el banco de sangre, los reactivos y los insumos sensibles. Se describe como meticulosa, responsable y tranquila bajo presión.
+</p>
 
-Screenshot:
-![evidencia entrevista 1](../assets/07-chapter-2/entrevistas/entrevista1.jpeg)
+<p style="text-align: justify;">
+  Su proceso de monitoreo consiste en revisar manualmente tres refrigeradoras y dos congeladoras, tres veces por turno, utilizando un termómetro digital independiente y registrando cada lectura en una hoja de papel que posteriormente se transcribe a Excel al final del día, lo cual toma aproximadamente diez minutos por revisión. Recuerda un incidente crítico en el que la puerta de una congeladora quedó mal cerrada durante la noche, provocando una subida de seis grados que dañó un lote de reactivos valorizado en varios miles de soles y que fue descubierto recién a la mañana siguiente. Lo que más le frustra es que los registros en papel se pierden o se dañan y son difíciles de correlacionar históricamente, sobre todo cuando las auditorías de DIGESA/DIRESA exigen carpetas completas de registros físicos.
+</p>
 
-Resumen: Rosa Elena Campos Idme tiene 34 años, es casada y vive en el Cercado de Arequipa. Es bióloga y trabaja como Jefa del Laboratorio Clínico en un hospital de nivel II, donde supervisa el banco de sangre, los reactivos y los insumos sensibles. Se describe como meticulosa, responsable y tranquila bajo presión.
+<p style="text-align: justify;">
+  Le gustaría contar con un sistema automatizado con alertas en tiempo real al celular y un registro de auditoría digital y exportable. Prefiere que el sistema le notifique de inmediato e incluya una acción recomendada para muestras críticas, en lugar de actuar de forma autónoma, aunque aceptaría ajustes automáticos menores para parámetros no críticos, como la humedad. Para confiar plenamente en el sistema, necesitaría evidencia de la calibración de los sensores, redundancia de energía de respaldo y cumplimiento de la normativa de salud local.
+</p>
 
-Su proceso de monitoreo consiste en revisar manualmente tres refrigeradoras y dos congeladoras, tres veces por turno, usando un termómetro digital independiente y registrando cada lectura en una hoja de papel que luego se transcribe a Excel al final del día, lo cual toma unos diez minutos por revisión. Recuerda un incidente crítico en el que la puerta de una congeladora quedó mal cerrada durante la noche, provocando una subida de seis grados que dañó un lote de reactivos valorizado en varios miles de soles, descubierto recién a la mañana siguiente. Lo que más le frustra es que los registros en papel se pierden o se dañan y son difíciles de correlacionar históricamente, sobre todo cuando las auditorías de DIGESA/DIRESA exigen carpetas completas de registros físicos.
+##### **Entrevista 2: Diego Armando Salazar Ttito**
 
-Le gustaría contar con un sistema automatizado con alertas en tiempo real al celular y un registro de auditoría digital y exportable. Prefiere que el sistema le notifique de inmediato con una acción recomendada para muestras críticas, en lugar de actuar de forma autónoma, aunque aceptaría ajustes automáticos menores para parámetros no críticos como la humedad. Para confiar plenamente en el sistema, necesitaría evidencia de la calibración de los sensores, redundancia de energía de respaldo y cumplimiento de la normativa de salud local.
+<p style="text-align: justify;">
+  <b>Fecha:</b> 2 de septiembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://youtu.be/5nNHZnFrHPo?si=b9f9cZEKH0qweBCt&t=366">06:06</a><br>
+  <b>Duración:</b> 03:25
+</p>
 
-Entrevista 2: Diego Armando Salazar Ttito
+<p align="center">
+  <img src="../assets/07-chapter-2/interviews/interview-recording/interview-2.jpeg" alt="Evidencia de la entrevista 2 - Diego Armando Salazar Ttito" width="80%">
+</p>
 
-Fecha: 2 de septiembre de 2026
+<p style="text-align: justify;">
+  Diego Armando Salazar Ttito tiene 27 años, es soltero y vive en Yanahuara, Arequipa. Trabaja como técnico de laboratorio en el turno noche del mismo hospital y se describe como responsable, tranquilo y algo «búho nocturno».
+</p>
 
-Inicia en: 00:00
+<p style="text-align: justify;">
+  Su rutina consiste en revisar los equipos de cadena de frío cada cuatro horas en dos pisos distintos, registrando los resultados en una hoja con papel carbón. Al ser el único técnico de guardia durante la noche, en una ocasión omitió una ronda programada debido al exceso de carga de trabajo y una desviación de temperatura no fue detectada hasta la llegada del turno siguiente. Lo que más le frustra es la falta de personal durante la noche y no contar con respaldo o retroalimentación si ocurre un problema mientras está solo.
+</p>
 
-Duración: 03:24
+<p style="text-align: justify;">
+  Su sistema ideal sería una aplicación móvil sencilla que le recuerde cuándo corresponden las rondas y le permita registrar la información con una sola acción, incorporando una escalación automática hacia un supervisor de guardia si no responde dentro de un tiempo determinado. Confiaría en un sistema que funcione de forma confiable incluso cuando el Wi-Fi del hospital sea inestable y que ofrezca un modo offline como respaldo.
+</p>
 
-Screenshot:
-![evidencia entrevista 2](../assets/07-chapter-2/entrevistas/entrevista2.jpeg)
+#### **Segmento 2: Empresas Farmacéuticas**
 
-Resumen: Diego Armando Salazar Ttito tiene 27 años, es soltero y vive en Yanahuara, Arequipa. Trabaja como técnico de laboratorio en el turno noche del mismo hospital y se describe como responsable, tranquilo y algo "búho nocturno".
+##### **Entrevista 3: Camilo Paredes**
 
-Su rutina consiste en revisar los equipos de cadena de frío cada cuatro horas en dos pisos distintos, registrando los resultados en una hoja con papel carbón. Al ser el único técnico de guardia en la noche, en una ocasión se le pasó una ronda programada por exceso de carga de trabajo, y una desviación de temperatura no fue detectada hasta que llegó el turno siguiente. Lo que más le frustra es la falta de personal en la noche y no contar con ningún respaldo o retroalimentación si algo sale mal mientras está solo.
+<p style="text-align: justify;">
+  <b>Fecha:</b> 3 de septiembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://youtu.be/5nNHZnFrHPo?si=Xt10dgSjdkz1G1WU&t=570">09:30</a><br>
+  <b>Duración:</b> 05:09
+</p>
 
-Su idea de sistema ideal es una aplicación móvil sencilla que le recuerde cuándo tocan las rondas y le permita registrar con un solo toque, con una escalación automática hacia un supervisor de guardia si él no responde dentro de un tiempo determinado. Confiaría en un sistema que funcione de forma confiable incluso con el wifi inestable del hospital, ofreciendo un modo offline como respaldo.
+<p align="center">
+  <img src="../assets/07-chapter-2/interviews/interview-recording/interview-3.png" alt="Evidencia de la entrevista 3 - Camilo Paredes" width="80%">
+</p>
 
-Segmento 2: Empresas Farmacéuticas
+<p style="text-align: justify;">
+  Camilo Paredes Vites tiene 31 años, vive en Los Olivos, Lima, y señaló estar casada. Es profesional de Ingeniería Química y trabaja como Supervisor de Control de Calidad en una planta farmacéutica, supervisando las salas de frío y el almacén de vacunas y medicamentos. Se describe como una persona detallista, disciplinada y proactiva.
+</p>
 
-Entrevista 3: Valeria Ximena Roque Mamani
+<p style="text-align: justify;">
+  Su equipo depende actualmente de dataloggers semi-manuales que deben descargarse físicamente mediante USB y procesarse en Excel cada semana para mantener la trazabilidad exigida por DIGEMID, incluyendo lotes, fechas de vencimiento y registros de temperatura. Recuerda un incidente crítico en el que un lote de insulina tuvo que ser destruido después de que una auditoría revelara un vacío de datos causado por un corte de energía que el datalogger no registró a tiempo, generando una pérdida económica considerable y una observación regulatoria. Lo que más le frustra son las horas semanales dedicadas a consolidar datos manualmente y la dificultad de unificar la información de la cadena de custodia, dividida entre papel y hojas de cálculo.
+</p>
 
-Fecha: 3 de septiembre de 2026
+<p style="text-align: justify;">
+  Imagina un dashboard en la nube conectado en tiempo real a los sensores, capaz de generar automáticamente reportes conformes al formato de DIGEMID y mantener un registro de auditoría inalterable. Recibiría con agrado tanto notificaciones instantáneas como acciones de mitigación automáticas, por ejemplo, activar un generador de respaldo, siempre que cada acción automatizada quede registrada para fines de auditoría. Para confiar en el sistema, necesitaría validación de la integridad de los datos alineada con los principios ALCOA+, redundancia de infraestructura y la capacidad de exportar registros para envíos regulatorios.
+</p>
 
-Inicia en: xxxxx
+##### **Entrevista 4: Diego Gabriel Huamaní Ríos**
 
-Duración: xxxxx
+<p style="text-align: justify;">
+  <b>Fecha:</b> 4 de septiembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://youtu.be/5nNHZnFrHPo?si=-vB8kZTB4MGwcUlY&t=879">14:39</a><br>
+  <b>Duración:</b> 04:25
+</p>
 
-Screenshot:
-[Insertar captura del video aquí]
+<p align="center">
+  <img src="../assets/07-chapter-2/interviews/interview-recording/interview-4.jpeg" alt="Evidencia de la entrevista 4 - Diego Gabriel Huamaní Ríos" width="80%">
+</p>
 
-Resumen: Valeria Ximena Roque Mamani tiene 31 años, es casada y vive en Los Olivos, Lima. Es ingeniera química y trabaja como Supervisora de Control de Calidad en una planta farmacéutica, supervisando las salas de frío y el almacén de vacunas y medicamentos. Se describe como detallista, disciplinada y proactiva.
+<p style="text-align: justify;">
+  Diego Gabriel Huamaní Ríos es un ingeniero recién egresado de 24 años, soltero y residente de San Borja, que trabaja como Analista Junior de Calidad. Cuenta con casi dos años de experiencia enfocados en temas de almacenamiento y cadena de frío. En su tiempo libre disfruta de los videojuegos, la tecnología y el ciclismo, y se describe a sí mismo como curioso, tecnológico y analítico.
+</p>
 
-Su equipo depende actualmente de dataloggers semi-manuales que deben descargarse físicamente por USB y procesarse en Excel cada semana para mantener la trazabilidad exigida por DIGEMID, incluyendo lotes, fechas de vencimiento y registros de temperatura. Recuerda un incidente crítico en el que un lote de insulina tuvo que ser destruido después de que una auditoría revelara un vacío de datos causado por un corte de luz que el datalogger no registró a tiempo, generando una pérdida económica considerable y observación regulatoria. Lo que más le frustra son las horas semanales dedicadas a consolidar datos manualmente y la dificultad de unificar la información de la cadena de custodia, dividida entre papel y hojas de cálculo.
+<p style="text-align: justify;">
+  En su día a día, trabaja con un proceso de monitoreo de temperatura altamente manual y desactualizado. Su equipo invierte entre 10 y 12 horas semanales desplazándose físicamente a los refrigeradores, extrayendo dataloggers por USB y trasladando los datos a Excel para generar gráficas orientadas a auditorías regulatorias. Lo que más le frustra y estresa es realizar trabajo repetitivo de «copiar y pegar», sumado a la falta de visibilidad en tiempo real, que ocasiona que los problemas se conozcan cuando ya han ocurrido. Las consecuencias de este sistema se evidenciaron en un incidente reciente: un sábado por la noche falló la refrigeradora principal. Aunque la alarma sonora local se activó, no había personal en las instalaciones para escucharla y el correo de alerta llegó con retraso, lo que obligó a poner en cuarentena un lote grande de medicamentos termosensibles.
+</p>
 
-Ella imagina un dashboard en la nube conectado en tiempo real a los sensores, que genere automáticamente reportes conformes al formato de DIGEMID con un registro de auditoría inalterable. A diferencia del personal de laboratorio, ella recibiría con gusto tanto notificaciones instantáneas como acciones de mitigación automáticas (como activar un generador de respaldo), siempre que cada acción automatizada quede registrada para fines de auditoría. Para confiar en el sistema, necesitaría validación de integridad de datos (alineada a los principios ALCOA+), redundancia de infraestructura y la capacidad de exportar registros para envíos regulatorios.
+<p style="text-align: justify;">
+  Para resolver esta problemática, Diego visualiza un sistema ideal basado en la nube, moderno y fácil de usar, equipado con sensores inalámbricos y una aplicación móvil nativa. Considera vital recibir notificaciones al instante y poder exportar reportes de auditoría con una sola acción. Sin embargo, su principal expectativa es que la plataforma sea proactiva: prefiere un sistema que active acciones de mitigación automática, como encender un equipo de enfriamiento de respaldo al detectar una desviación, en lugar de limitarse a enviar una alerta al celular.
+</p>
 
-Entrevista 4: Diego Gabriel Huamaní Ríos
+##### **Entrevista 5: Carlos Montero**
 
-Fecha: 4 de septiembre de 2026
+<p style="text-align: justify;">
+  <b>Fecha:</b> 5 de septiembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://youtu.be/5nNHZnFrHPo?si=SMuOglMlLqDQZkDf&t=1144">19:04</a><br>
+  <b>Duración:</b> 05:43
+</p>
 
-Inicia en: 00:00
+<p align="center">
+  <img src="../assets/07-chapter-2/interviews/interview-recording/interview-5.jpeg" alt="Evidencia de la entrevista 5 - Carlos Montero" width="80%">
+</p>
 
-Duración: 04:25
+<p style="text-align: justify;">
+  Carlos Montero tiene 24 años, es soltero y vive en Surquillo, Lima. Trabaja como Asistente de Logística con alrededor de dos años de experiencia, encargándose de apoyar en la recepción de productos, el control de inventario, la coordinación de despachos y la revisión de las condiciones del almacén. Se describe como minucioso y aficionado a los videojuegos.
+</p>
 
-Screenshot:
-![evidencia entrevista 4](../assets/07-chapter-2/entrevistas/entrevista4.jpeg)
+<p style="text-align: justify;">
+  Actualmente, el monitoreo que realiza es manual: utiliza dataloggers que deben descargarse físicamente mediante USB, lo que le resulta frustrante por la pérdida de tiempo asociada a tener que desplazarse para revisarlos. Además, el cierre de mes se vuelve pesado al tener que consolidar información repartida en diferentes archivos. Recuerda un incidente crítico en el que una variación de temperatura puso en riesgo un lote y el equipo no lo detectó hasta que el daño ya se había producido.
+</p>
 
-Resumen: Diego Gabriel Huamaní Ríos  es un ingeniero recién egresado de 24 años, soltero y residente de San Borja, que 
-trabaja como Analista Junior de Calidad. Cuenta con casi dos años de experiencia enfocado 
-en temas de almacenamiento y cadena de frío. En su tiempo libre disfruta de los 
-videojuegos, la tecnología y el ciclismo, y se describe a sí mismo con tres palabras clave: 
-curioso, tecnológico y analítico. 
-En su día a día, lidia con un proceso de monitoreo de temperatura altamente manual y 
-desactualizado. Su equipo invierte entre 10 y 12 horas semanales yendo físicamente a los 
-refrigeradores, extrayendo dataloggers por USB y trasladando los datos a un Excel para 
-generar gráficas orientadas a auditorías regulatorias. Lo que más le frustra y estresa es 
-tener que hacer trabajo repetitivo de "copiar y pegar" en la actualidad, sumado a la nula 
-visibilidad en tiempo real que los obliga a enterarse de los problemas cuando ya pasaron. 
-Las consecuencias de este sistema se evidenciaron en un incidente reciente: un sábado por 
-la noche falló la refrigeradora principal. Aunque la alarma sonora local se activó, no había 
-personal en las instalaciones para escucharla y el correo de alerta llegó con retraso, lo que 
-los obligó a poner en cuarentena un lote grande de medicamentos termosensibles. 
-Para resolver esta problemática, Diego visualiza un sistema ideal basado en la nube, 
-moderno y fácil de usar, equipado con sensores inalámbricos y una aplicación móvil nativa. 
-Considera vital recibir notificaciones al instante y poder exportar reportes de auditoría con 
-un solo clic. Sin embargo, su mayor expectativa es que la plataforma sea proactiva: prefiere 
-un sistema que active acciones de mitigación automática, como encender un equipo de 
-enfriamiento de respaldo al detectar una desviación, en lugar de limitarse a enviar una alerta 
-al celular. 
-
-Entrevista 5: Carlos Montero
-
-Fecha: 5 de septiembre de 2026
-
-Inicia en: 00:00
-
-Duración: 05:42
-
-Screenshot:
-![evidencia entrevista 5](../assets/07-chapter-2/entrevistas/entrevista5.jpeg)
-
-Resumen: Carlos Montero tiene 24 años, es soltero y vive en Surquillo, Lima. Trabaja como Asistente de Logística con alrededor de dos años de experiencia, encargándose de apoyar en la recepción de productos, control de inventario, coordinación de despachos y revisión de las condiciones del almacén. Se describe a sí mismo como minucioso y aficionado a los videojuegos.
-
-Actualmente, el monitoreo que realiza es manual; utiliza dataloggers que deben descargarse físicamente por USB, lo que le resulta frustrante por la pérdida de tiempo al tener que desplazarse para revisarlos. Además, el cierre de mes se vuelve pesado al tener que consolidar información repartida en diferentes archivos. Recuerda un incidente crítico en el que la temperatura puso en riesgo un lote y el equipo no se dio cuenta hasta que el daño ya estaba hecho.
-
-Él imagina un sistema en la nube que centralice las conexiones de todas las zonas del almacén, mostrando la temperatura y humedad en tiempo real con actualizaciones automáticas. Necesita que este sistema envíe alertas rápidas y preventivas antes de que se superen los límites establecidos. Para confiar plenamente, requiere que la plataforma genere reportes de forma sencilla y mantenga un historial inalterable y seguro, asegurando que cualquier modificación quede registrada para facilitar las auditorías y garantizar el cumplimiento normativo.
+<p style="text-align: justify;">
+  Imagina un sistema en la nube que centralice las conexiones de todas las zonas del almacén y muestre la temperatura y la humedad en tiempo real mediante actualizaciones automáticas. Necesita que este sistema envíe alertas rápidas y preventivas antes de que se superen los límites establecidos. Para confiar plenamente en la plataforma, requiere que genere reportes de forma sencilla y mantenga un historial inalterable y seguro, asegurando que cualquier modificación quede registrada para facilitar las auditorías y garantizar el cumplimiento normativo.
+</p>
 
 ### **2.2.3. Interview Analysis**
 
-Segmento 1: Laboratorios de Hospitales
+#### **Segmento 1: Laboratorios de Hospitales**
 
-Características
-Sexo: Femenino (50%), Masculino (50%)
-Edad: 27 – 34 años
-Dispositivos: Smartphone (100%), Laptop/Computadora (50%, equipo compartido del hospital)
-Sistemas Operativos: Android, Windows
-Navegadores: Chrome
-Influencia de marcas: Equipos de refrigeración (Haier Biomedical, Thermo Fisher), Comunicación (WhatsApp)
+##### **Características**
 
-Objetivos comunes
-Dejar de depender de procesos manuales y en papel para el monitoreo de muestras e insumos sensibles.
-Tener visibilidad confiable y en tiempo real sobre el estado de los equipos de refrigeración.
-Reducir el tiempo dedicado a registrar y consolidar datos.
-Poder superar auditorías regulatorias sin tener que armar registros físicos de última hora.
+- **Sexo:** Femenino (50%), Masculino (50%).
+- **Edad:** 27–34 años.
+- **Dispositivos:** Smartphone (100%), laptop/computadora (50%, equipo compartido del hospital).
+- **Sistemas operativos:** Android, Windows.
+- **Navegadores:** Chrome.
+- **Influencia de marcas:** Equipos de refrigeración (Haier Biomedical, Thermo Fisher) y comunicación (WhatsApp).
 
-Motivaciones comunes
-Proteger la integridad de las muestras biológicas y reactivos para que no se pierdan.
-Evitar ser responsabilizados por incidentes prevenibles causados por vacíos en la supervisión manual.
-Sentirse respaldados, especialmente durante turnos aislados con poco personal.
+##### **Objetivos comunes**
 
-Frustraciones comunes
-Procesos de monitoreo manuales y propensos a errores.
-Dificultad para correlacionar datos históricos almacenados en registros de papel.
-Falta de apoyo o escalamiento cuando ocurren incidentes en turnos con poco personal.
+- Dejar de depender de procesos manuales y en papel para el monitoreo de muestras e insumos sensibles.
+- Tener visibilidad confiable y en tiempo real sobre el estado de los equipos de refrigeración.
+- Reducir el tiempo dedicado a registrar y consolidar datos.
+- Superar auditorías regulatorias sin tener que preparar registros físicos a último momento.
 
-Segmento 2: Empresas Farmacéuticas
+##### **Motivaciones comunes**
 
-Características
-Sexo: Femenino (33%), Masculino (67%)
-Edad: 24 – 31 años
-Dispositivos: Smartphone (100%), Laptop/Computadora (100%: corporativa en el caso de Control de Calidad y Logística)
-Sistemas Operativos: Windows, iOS
-Navegadores: Chrome, Brave
-Influencia de marcas: Marco regulatorio (DIGEMID), proveedores de dataloggers USB, sistemas ERP
+- Proteger la integridad de las muestras biológicas y reactivos para evitar pérdidas.
+- Evitar ser responsabilizados por incidentes prevenibles causados por vacíos en la supervisión manual.
+- Sentirse respaldados, especialmente durante turnos aislados con poco personal.
 
-Objetivos comunes
-Eliminar la dependencia de dataloggers USB y registros en papel que deben extraerse y consolidarse manualmente.
-Tener una única fuente de verdad que unifique la información hoy repartida entre distintos archivos, hojas de cálculo y ubicaciones.
-Automatizar la generación de reportes de auditoría y trazabilidad conforme a la normativa (DIGEMID).
-Contar con un sistema que avise de forma proactiva ante una desviación, antes de que el problema se agrave, y no solo después de superado el límite.
+##### **Frustraciones comunes**
 
-Motivaciones comunes
-Evitar pérdidas económicas por lotes de producto dañados, puestos en riesgo o destruidos.
-Mantener el estatus regulatorio de la empresa y superar auditorías sin contratiempos ni carpetas armadas de último momento.
-Reducir la carga de trabajo manual y repetitiva asociada a la documentación de cumplimiento (extracción de dataloggers, consolidación en Excel, cierres de mes).
-No ser señalados individualmente por errores o incidentes que se originan en procesos manuales deficientes, no en su desempeño.
+- Procesos de monitoreo manuales y propensos a errores.
+- Dificultad para correlacionar datos históricos almacenados en registros de papel.
+- Falta de apoyo o escalamiento cuando ocurren incidentes en turnos con poco personal.
 
-Frustraciones comunes
-Procesos de monitoreo manuales (dataloggers USB, revisiones físicas) que consumen varias horas a la semana y generan trabajo repetitivo de "copiar y pegar".
-Nula o tardía visibilidad en tiempo real: los problemas (una desviación de temperatura, un lote en riesgo) se descubren recién cuando el daño ya está hecho.
-Información fragmentada entre distintos archivos, documentos y ubicaciones, lo que complica especialmente el cierre de mes y la preparación de auditorías.
-Falta de consenso sobre el nivel de autonomía deseado del sistema: mientras algunos confiarían en acciones de mitigación totalmente automáticas, otros prefieren que ciertas acciones críticas pasen primero por la revisión y aprobación de una persona.
+#### **Segmento 2: Empresas Farmacéuticas**
+
+##### **Características**
+
+- **Sexo:** Femenino (0%), Masculino (100%).
+- **Edad:** 24–31 años.
+- **Dispositivos:** Smartphone (100%), laptop/computadora (100%, corporativa en el caso de Control de Calidad y Logística).
+- **Sistemas operativos:** Windows, iOS.
+- **Navegadores:** Chrome, Brave.
+- **Influencia de marcas:** Marco regulatorio (DIGEMID), proveedores de dataloggers USB y sistemas ERP.
+
+##### **Objetivos comunes**
+
+- Eliminar la dependencia de dataloggers USB y registros en papel que deben extraerse y consolidarse manualmente.
+- Tener una única fuente de verdad que unifique la información actualmente repartida entre distintos archivos, hojas de cálculo y ubicaciones.
+- Automatizar la generación de reportes de auditoría y trazabilidad conforme a la normativa de DIGEMID.
+- Contar con un sistema que avise de forma proactiva ante una desviación, antes de que el problema se agrave, y no únicamente después de superado el límite.
+
+##### **Motivaciones comunes**
+
+- Evitar pérdidas económicas por lotes de producto dañados, puestos en riesgo o destruidos.
+- Mantener el estatus regulatorio de la empresa y superar auditorías sin contratiempos ni documentación preparada a último momento.
+- Reducir la carga de trabajo manual y repetitiva asociada a la documentación de cumplimiento, como la extracción de dataloggers, la consolidación en Excel y los cierres de mes.
+- Evitar que el personal sea señalado individualmente por errores o incidentes originados en procesos manuales deficientes y no en su desempeño.
+
+##### **Frustraciones comunes**
+
+- Procesos de monitoreo manuales, como dataloggers USB y revisiones físicas, que consumen varias horas a la semana y generan trabajo repetitivo de «copiar y pegar».
+- Visibilidad nula o tardía en tiempo real: los problemas, como una desviación de temperatura o un lote en riesgo, se descubren cuando el daño ya ocurrió.
+- Información fragmentada entre distintos archivos, documentos y ubicaciones, lo que complica especialmente el cierre de mes y la preparación de auditorías.
+- Falta de consenso sobre el nivel de autonomía deseado del sistema: mientras algunos usuarios confiarían en acciones de mitigación totalmente automáticas, otros prefieren que determinadas acciones críticas pasen primero por la revisión y aprobación de una persona.
 
 ## **2.3. Needfinding**
-En esta sección se presentan los artefactos resultantes del análisis de la información recolectada en las entrevistas (sección 2.2.3) y en el análisis competitivo (sección 2.1.1). A partir de las características demográficas, objetivos, motivaciones y frustraciones identificadas para cada segmento objetivo, se construyeron los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps correspondientes, elaborados en la herramienta UXPressia.
+
+<p style="text-align: justify;">
+  En esta sección se presentan los artefactos resultantes del análisis de la información recolectada en las entrevistas de la sección 2.2.3 y en el análisis competitivo de la sección 2.1.1. A partir de las características demográficas, objetivos, motivaciones y frustraciones identificadas para cada segmento objetivo, se construyeron los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps correspondientes mediante la herramienta UXPressia.
+</p>
 
 ### **2.3.1. User Personas**
 
-Se elaboró una ficha de User Persona por cada segmento objetivo, considerando las características demográficas y subjetivas más representativas identificadas en el análisis de entrevistas, así como el posicionamiento frente a la competencia (sección 2.1.1), que evidencia la necesidad de una solución ágil y de bajo costo para laboratorios e instituciones de salud medianas.
+<p style="text-align: justify;">
+  Se elaboró una ficha de User Persona para cada segmento objetivo, considerando las características demográficas y subjetivas más representativas identificadas en el análisis de entrevistas, así como el posicionamiento frente a la competencia de la sección 2.1.1, que evidencia la necesidad de una solución ágil y de bajo costo para laboratorios e instituciones de salud medianas.
+</p>
 
+#### **Segmento 1: Laboratorios de Hospitales**
 
-**Segmento 1: Laboratorios de Hospitales**
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/user-personas/user-persona-segmeto-1.png" alt="User Persona del Segmento 1 - Laboratorios de Hospitales" width="85%">
+</p>
 
-![User Persona Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/UserPersonasSegmeto1.png)
+<p style="text-align: justify;">
+  Gabriela Campos Rivas representa al personal de laboratorio clínico responsable de la supervisión del banco de sangre, reactivos e insumos sensibles. Su perfil refleja la dependencia de procesos manuales de monitoreo y la necesidad de contar con visibilidad en tiempo real para prevenir incidentes críticos.
+</p>
 
-Gabriela Campos Rivas representa al personal de laboratorio clínico responsable de la supervisión del banco de sangre, reactivos e insumos sensibles. Su perfil refleja la dependencia de procesos manuales de monitoreo y la necesidad de visibilidad en tiempo real para prevenir incidentes críticos.
+#### **Segmento 2: Empresas Farmacéuticas**
 
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/user-personas/user-persona-segmeto-2.png" alt="User Persona del Segmento 2 - Empresas Farmacéuticas" width="85%">
+</p>
 
-**Segmento 2: Empresas Farmacéuticas**
-
-![User Persona Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/UserPersonasSegmeto2.png)
-
-Diego Ramírez Paredes representa al personal de calidad y logística responsable de la trazabilidad regulatoria (DIGEMID) en el almacenamiento de medicamentos y vacunas. Su perfil refleja la carga operativa de la consolidación manual de datos y la necesidad de cumplimiento normativo automatizado.
-
+<p style="text-align: justify;">
+  Diego Ramírez Paredes representa al personal de calidad y logística responsable de la trazabilidad regulatoria de DIGEMID en el almacenamiento de medicamentos y vacunas. Su perfil refleja la carga operativa asociada a la consolidación manual de datos y la necesidad de automatizar el cumplimiento normativo.
+</p>
 
 ### **2.3.2. User Task Matrix**
 
-El siguiente User Task Matrix concentra las tareas que realizan los dos segmentos objetivo identificados para el proyecto SafeLab —representados por sus respectivos User Personas, **Gabriela Campos Rivas** (Segmento 1: Laboratorios de Hospitales) y **Diego Ramírez Paredes** (Segmento 2: Empresas Farmacéuticas)— para cumplir sus objetivos de monitoreo y control de cadena de frío. Las tareas listadas corresponden a actividades que ambos perfiles realizan actualmente de forma manual, independientemente de la existencia de una solución de software, y fueron identificadas a partir del análisis de las entrevistas registradas en la sección 2.2.3.
+<p style="text-align: justify;">
+  El siguiente User Task Matrix concentra las tareas que realizan los dos segmentos objetivo identificados para el proyecto SafeLab, representados por sus respectivos User Personas: <b>Gabriela Campos Rivas</b> (Segmento 1: Laboratorios de Hospitales) y <b>Diego Ramírez Paredes</b> (Segmento 2: Empresas Farmacéuticas). Las tareas corresponden a actividades que ambos perfiles realizan actualmente de forma manual, independientemente de la existencia de una solución de software, y fueron identificadas a partir del análisis de las entrevistas registradas en la sección 2.2.3.
+</p>
 
-| Tarea | Gabriela Campos Rivas (Frecuencia) | Gabriela Campos Rivas (Importancia) | Diego Ramírez Paredes (Frecuencia) | Diego Ramírez Paredes (Importancia) |
-|---|---|---|---|---|
-| Monitorear manualmente la temperatura/humedad de refrigeradoras y congeladoras | Diaria | Alta | Diaria | Alta |
-| Registrar lecturas de monitoreo en papel y transcribirlas a Excel | Diaria | Alta | No aplica | — |
-| Descargar datos de dataloggers vía USB | No aplica | — | Semanal | Alta |
-| Consolidar información dispersa en archivos y hojas de cálculo | Mensual | Media | Semanal | Alta |
-| Realizar rondas de inspección física de los equipos de refrigeración | Diaria | Alta | Semanal | Media |
-| Preparar documentación para auditorías regulatorias (DIGESA/DIRESA/DIGEMID) | Esporádica | Alta | Esporádica | Alta |
-| Responder ante incidentes de desviación de temperatura | Esporádica | Alta | Esporádica | Alta |
-| Escalar incidentes críticos a un supervisor o equipo de guardia | Esporádica | Alta | Esporádica | Media |
-| Generar reportes de trazabilidad y cumplimiento normativo | Mensual | Media | Semanal | Alta |
-| Coordinar despachos e inventario del almacén | No aplica | — | Semanal | Media |
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Tarea</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Gabriela Campos Rivas<br>Frecuencia</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Gabriela Campos Rivas<br>Importancia</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Diego Ramírez Paredes<br>Frecuencia</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Diego Ramírez Paredes<br>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Monitorear manualmente la temperatura y humedad de refrigeradoras y congeladoras.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Diaria</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Diaria</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registrar lecturas de monitoreo en papel y transcribirlas a Excel.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Diaria</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">No aplica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">—</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Descargar datos de dataloggers mediante USB.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">No aplica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">—</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Semanal</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Consolidar información dispersa en archivos y hojas de cálculo.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Mensual</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Media</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Semanal</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Realizar rondas de inspección física de los equipos de refrigeración.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Diaria</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Semanal</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Media</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Preparar documentación para auditorías regulatorias de DIGESA/DIRESA/DIGEMID.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Responder ante incidentes de desviación de temperatura.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Escalar incidentes críticos a un supervisor o equipo de guardia.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Esporádica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Media</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Generar reportes de trazabilidad y cumplimiento normativo.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Mensual</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Media</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Semanal</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Alta</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Coordinar despachos e inventario del almacén.</td><td style="text-align: center; vertical-align: middle; padding: 6px;">No aplica</td><td style="text-align: center; vertical-align: middle; padding: 6px;">—</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Semanal</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Media</td></tr>
+  </tbody>
+</table>
 
-**Análisis del cuadro**
+<p style="text-align: justify;">
+  <b>Análisis del cuadro.</b> Las tareas con mayor frecuencia e importancia para ambos segmentos son el <b>monitoreo manual de temperatura y humedad</b> y la <b>respuesta ante incidentes de desviación</b>, lo que confirma que la necesidad central de ambos perfiles es la falta de visibilidad en tiempo real sobre el estado de sus equipos de refrigeración. Asimismo, <b>preparar documentación para auditorías regulatorias</b> aparece como una tarea esporádica, pero de alta importancia en ambos casos. Esto refleja que el cumplimiento normativo —DIGESA/DIRESA para el sector salud y DIGEMID para el sector farmacéutico— constituye un factor crítico compartido, aunque el marco regulatorio específico sea diferente.
+</p>
 
-Las tareas con mayor frecuencia e importancia para ambos segmentos son el **monitoreo manual de temperatura/humedad** y la **respuesta ante incidentes de desviación**, lo que confirma que la necesidad central de ambos perfiles es la falta de visibilidad en tiempo real sobre el estado de sus equipos de refrigeración. Asimismo, **preparar documentación para auditorías regulatorias** aparece como tarea esporádica pero de alta importancia en los dos casos, reflejando que el cumplimiento normativo (DIGESA/DIRESA para el sector salud, DIGEMID para el sector farmacéutico) es un driver crítico compartido, aunque el marco regulatorio específico difiera.
-
-La principal diferencia entre ambos personas está en el método de registro: Gabriela depende de un **proceso en papel** que transcribe diariamente a Excel, mientras que Diego depende de la **extracción periódica de dataloggers USB**, una tarea que no aplica para el segmento hospitalario. Esto también se refleja en la frecuencia de consolidación de datos y generación de reportes, que es más constante (semanal) para Diego debido al volumen de información regulatoria que su rol exige, frente a una consolidación más espaciada (mensual) en el caso de Gabriela. Finalmente, la coordinación logística de despachos e inventario es una tarea exclusiva del segmento farmacéutico, sin equivalente en el entorno hospitalario.
+<p style="text-align: justify;">
+  La principal diferencia entre ambos User Personas se encuentra en el método de registro: Gabriela depende de un <b>proceso en papel</b> que se transcribe diariamente a Excel, mientras que Diego depende de la <b>extracción periódica de dataloggers USB</b>, una tarea que no aplica al segmento hospitalario. Esto también se refleja en la frecuencia de consolidación de datos y generación de reportes, que es más constante en el caso de Diego debido al volumen de información regulatoria que exige su rol, frente a una consolidación más espaciada en el caso de Gabriela. Finalmente, la coordinación logística de despachos e inventario constituye una tarea propia del segmento farmacéutico y no tiene un equivalente directo en el entorno hospitalario.
+</p>
 
 ### **2.3.3. User Journey Mapping**
 
-Se elaboraron los User Journey Maps en su versión As-Is, ilustrando el recorrido end-to-end de cada segmento objetivo desde el inicio de su proceso de monitoreo hasta el cierre de auditoría, en la situación actual, sin la existencia de la solución SafeLab. Cada Journey Map se encuentra vinculado a su respectivo User Persona en UXPressia.
+<p style="text-align: justify;">
+  Se elaboraron los User Journey Maps en su versión As-Is, ilustrando el recorrido completo de cada segmento objetivo desde el inicio de su proceso de monitoreo hasta el cierre de auditoría, dentro de la situación actual y sin la existencia de la solución SafeLab. Cada User Journey Map se encuentra vinculado con su respectivo User Persona en UXPressia.
+</p>
 
-**Segmento 1: Laboratorios de Hospitales**
+#### **Segmento 1: Laboratorios de Hospitales**
 
-![User Journey Map Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/UserJourneyMappingSegmeto1.png)
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/user-journey-mapping/user-journey-mapping-segmeto-1.png" alt="User Journey Map del Segmento 1 - Laboratorios de Hospitales" width="85%">
+</p>
 
-El recorrido de Gabriela Campos Rivas inicia con la recepción de turno y la ronda de revisión física de refrigeradoras y congeladoras, continúa con el registro manual en papel y su posterior transcripción a Excel, y se ve interrumpido cuando ocurre una desviación de temperatura que, al no contar con monitoreo en tiempo real, puede pasar desapercibida durante horas. El journey culmina con la consolidación de registros físicos para las auditorías de DIGESA/DIRESA, un proceso que genera frustración por la fragilidad y dispersión de los registros en papel.
+<p style="text-align: justify;">
+  El recorrido de Gabriela Campos Rivas inicia con la recepción de turno y la ronda de revisión física de refrigeradoras y congeladoras, continúa con el registro manual en papel y su posterior transcripción a Excel, y se ve interrumpido cuando ocurre una desviación de temperatura que, debido a la falta de monitoreo en tiempo real, puede pasar desapercibida durante horas. El journey culmina con la consolidación de registros físicos para las auditorías de DIGESA/DIRESA, un proceso que genera frustración debido a la fragilidad y dispersión de los registros en papel.
+</p>
 
-**Segmento 2: Empresas Farmacéuticas**
+#### **Segmento 2: Empresas Farmacéuticas**
 
-![User Journey Map Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/UserJourneyMappingSegmeto2.png)
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/user-journey-mapping/user-journey-mapping-segmeto-2.png" alt="User Journey Map del Segmento 2 - Empresas Farmacéuticas" width="85%">
+</p>
 
-El recorrido de Diego Ramírez Paredes inicia con el desplazamiento físico a cada sala/almacén para extraer dataloggers vía USB, continúa con el procesamiento semanal en Excel para trazabilidad, y se ve afectado cuando una desviación no detectada a tiempo (por falta de visibilidad en tiempo real) pone en riesgo un lote de producto. El journey culmina con el cierre de mes y la preparación del reporte conforme a DIGEMID, un proceso donde un vacío de datos puede derivar en la pérdida total de un lote y una observación regulatoria.
-
+<p style="text-align: justify;">
+  El recorrido de Diego Ramírez Paredes inicia con el desplazamiento físico a cada sala o almacén para extraer dataloggers mediante USB, continúa con el procesamiento semanal de la información en Excel para fines de trazabilidad y se ve afectado cuando una desviación no detectada a tiempo, por falta de visibilidad en tiempo real, pone en riesgo un lote de producto. El journey culmina con el cierre de mes y la preparación del reporte conforme a DIGEMID, proceso en el que un vacío de datos puede derivar en la pérdida total de un lote y en una observación regulatoria.
+</p>
 
 ### **2.3.4. Empathy Mapping**
 
-Se elaboraron los Empathy Maps para cada User Persona, colocando al centro al usuario representado y completando cada cuadrante a partir de las observaciones del equipo sobre la información recolectada en las entrevistas, respondiendo las preguntas sobre qué necesita hacer, qué dice, qué ve, qué hace, qué escucha, qué piensa y siente, así como identificando sus Pains y Gains.
+<p style="text-align: justify;">
+  Se elaboraron los Empathy Maps para cada User Persona, colocando al usuario representado en el centro y completando cada cuadrante a partir de las observaciones del equipo sobre la información recolectada en las entrevistas. Para ello, se consideró qué necesita hacer, qué dice, qué ve, qué hace, qué escucha, qué piensa y siente, además de identificar sus Pains y Gains.
+</p>
 
-**Segmento 1: Laboratorios de Hospitales**
+#### **Segmento 1: Laboratorios de Hospitales**
 
-![Empathy Map Segmento 1 - Laboratorios de Hospitales](../assets/07-chapter-2/needfinding/EmpathyMappingSegmento1.png)
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-1.png" alt="Empathy Map del Segmento 1 - Laboratorios de Hospitales" width="85%">
+</p>
 
-El Empathy Map de Gabriela Campos Rivas evidencia una tensión entre la tranquilidad que siente al controlar el proceso durante su turno y la preocupación constante por lo que puede ocurrir en su ausencia. Sus principales Pains giran en torno a la fragilidad de los registros en papel y la falta de respaldo durante turnos con poco personal, mientras que sus Gains se concentran en alertas en tiempo real y un registro de auditoría digital e inalterable.
+<p style="text-align: justify;">
+  El Empathy Map de Gabriela Campos Rivas evidencia una tensión entre la tranquilidad que siente al controlar el proceso durante su turno y la preocupación constante por lo que puede ocurrir en su ausencia. Sus principales Pains giran en torno a la fragilidad de los registros en papel y la falta de respaldo durante turnos con poco personal, mientras que sus Gains se concentran en alertas en tiempo real y un registro de auditoría digital e inalterable.
+</p>
 
+#### **Segmento 2: Empresas Farmacéuticas**
 
-**Segmento 2: Empresas Farmacéuticas**
+<p align="center">
+  <img src="../assets/07-chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-2.png" alt="Empathy Map del Segmento 2 - Empresas Farmacéuticas" width="85%">
+</p>
 
-![Empathy Map Segmento 2 - Empresas Farmacéuticas](../assets/07-chapter-2/needfinding/EmpathyMappingSegmento2.png)
-
-El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la carga de trabajo manual y repetitivo, así como el temor a ser señalado individualmente por errores originados en procesos deficientes que no dependen de su desempeño. Sus principales Pains están relacionados con la falta de visibilidad en tiempo real y la fragmentación de la información, mientras que sus Gains apuntan a un dashboard centralizado en la nube y reportes automáticos conformes a DIGEMID.
+<p style="text-align: justify;">
+  El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la carga de trabajo manual y repetitivo, así como el temor a ser señalado individualmente por errores originados en procesos deficientes que no dependen de su desempeño. Sus principales Pains están relacionados con la falta de visibilidad en tiempo real y la fragmentación de la información, mientras que sus Gains apuntan a un dashboard centralizado en la nube y a reportes automáticos conformes a DIGEMID.
+</p>
 
 ### **2.3.5. Big Picture Event Storming**
 
@@ -336,1298 +490,1460 @@ El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la ca
 ## **2.4. Requirements Specification**
 
 ### **2.4.1. User Stories**
+
 <p style="text-align: justify;">
-  This section presents the Epics, User Stories, Technical Stories, and Spike Stories identified for SafeLab according to the needs of Hospital Laboratories and Pharmaceutical Companies. The Acceptance Criteria are written using the Given-When-Then structure to establish verifiable conditions for each requirement without depending on specific user interface details.
+  Esta sección presenta las Epics, User Stories, Technical Stories y Spike Stories identificadas para SafeLab, de acuerdo con las necesidades de los laboratorios hospitalarios y las empresas farmacéuticas. Los Acceptance Criteria se redactan utilizando la estructura de Gherkin <b>Given-When-Then</b> para establecer condiciones verificables para cada requisito, sin depender de detalles específicos de la interfaz de usuario.
 </p>
 
 #### **Epics**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <th>Epic ID</th>
-    <th>Title</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>EP01</td>
-    <td>Monitoring Organization</td>
-    <td>Manage monitoring sites, storage areas, and equipment to organize environmental monitoring across locations.</td>
-  </tr>
-  <tr>
-    <td>EP02</td>
-    <td>Real-Time Monitoring</td>
-    <td>View temperature, humidity, equipment status, and monitoring information automatically without relying on manual recording.</td>
-  </tr>
-  <tr>
-    <td>EP03</td>
-    <td>Alerts and Notifications</td>
-    <td>Receive, view, and manage alerts related to environmental conditions and monitored equipment.</td>
-  </tr>
-  <tr>
-    <td>EP04</td>
-    <td>Reporting and Data Analysis</td>
-    <td>Access historical data, compare periods, and generate reports to support monitoring, control, and auditing.</td>
-  </tr>
-  <tr>
-    <td>EP05</td>
-    <td>Equipment Condition and Maintenance</td>
-    <td>Monitor equipment condition, reliability, and maintenance history to identify potential failures.</td>
-  </tr>
-  <tr>
-    <td>EP06</td>
-    <td>Dashboard and System Overview</td>
-    <td>Provide a centralized summary of monitoring information, alerts, and relevant indicators.</td>
-  </tr>
-  <tr>
-    <td>EP07</td>
-    <td>User Access and Roles</td>
-    <td>Allow users to access SafeLab and manage account and access information.</td>
-  </tr>
-  <tr>
-    <td>EP08</td>
-    <td>Landing Page</td>
-    <td>Present SafeLab and its product information through the static Landing Page.</td>
-  </tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Epic ID</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Organización del monitoreo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Gestionar sitios de monitoreo, áreas de almacenamiento y equipos para organizar el monitoreo ambiental entre distintas ubicaciones.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Monitoreo en tiempo real</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar automáticamente la temperatura, la humedad, el estado de los equipos y la información de monitoreo sin depender de registros manuales.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Alertas y notificaciones</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recibir, visualizar y gestionar alertas relacionadas con las condiciones ambientales y los equipos monitoreados.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Reportes y análisis de datos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Acceder a datos históricos, comparar periodos y generar reportes que apoyen el monitoreo, el control y las auditorías.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Condición y mantenimiento de equipos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Monitorear la condición, confiabilidad e historial de mantenimiento de los equipos para identificar posibles fallas.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Dashboard y vista general del sistema</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar un resumen centralizado de la información de monitoreo, las alertas y los indicadores relevantes.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Acceso de usuarios y roles</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Permitir que los usuarios accedan a SafeLab y gestionen la información de sus cuentas y accesos.</td></tr>
+  <tr><td style="text-align: center; vertical-align: top; padding: 6px;">EP08</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Landing Page</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Presentar SafeLab y la información de su producto mediante la Landing Page estática.</td></tr>
+  </tbody>
 </table>
 
 <br>
 
 #### **User Stories**
 
-##### **US01 - Register monitoring site**
+##### **US01 - Registrar sitio de monitoreo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US01</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Register monitoring site</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to register a monitoring site with its name and location so I can organize monitoring.</td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US01</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Registrar sitio de monitoreo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero registrar un sitio de monitoreo con su nombre y ubicación para organizar el monitoreo.</td></tr>
   <tr>
-    <th>Acceptance Criteria</th>
-    <td colspan="3">
-      <b>Scenario 1: Successful registration</b><br>
-      <b>Given</b> that valid site information is provided<br>
-      <b>When</b> the user registers the monitoring site<br>
-      <b>Then</b> the system stores the site information.<br><br>
-      <b>Scenario 2: Required information is missing</b><br>
-      <b>Given</b> that required site information is incomplete<br>
-      <b>When</b> the user attempts to register the monitoring site<br>
-      <b>Then</b> the system rejects the registration.
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Registro exitoso</b><br>
+      <b>Given</b> que se proporciona información válida del sitio<br>
+      <b>When</b> el usuario registra el sitio de monitoreo<br>
+      <b>Then</b> el sistema almacena la información del sitio.<br><br>
+      <b>Scenario 2: Falta información requerida</b><br>
+      <b>Given</b> que la información requerida del sitio está incompleta<br>
+      <b>When</b> el usuario intenta registrar el sitio de monitoreo<br>
+      <b>Then</b> el sistema rechaza el registro.
     </td>
   </tr>
 </table>
 
-##### **US02 - View monitoring sites**
+##### **US02 - Visualizar sitios de monitoreo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US02</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">View monitoring sites</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view the registered monitoring sites so I can manage them.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Registered sites exist</b><br>
-    <b>Given</b> that monitoring sites are registered<br>
-    <b>When</b> the user requests the registered sites<br>
-    <b>Then</b> the system provides the available sites.<br><br>
-    <b>Scenario 2: No sites are registered</b><br>
-    <b>Given</b> that no monitoring sites are registered<br>
-    <b>When</b> the user requests the registered sites<br>
-    <b>Then</b> the system indicates that no sites are available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US02</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar sitios de monitoreo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los sitios de monitoreo registrados para poder gestionarlos.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen sitios registrados</b><br>
+      <b>Given</b> que existen sitios de monitoreo registrados<br>
+      <b>When</b> el usuario solicita los sitios registrados<br>
+      <b>Then</b> el sistema proporciona los sitios disponibles.<br><br>
+      <b>Scenario 2: No existen sitios registrados</b><br>
+      <b>Given</b> que no existen sitios de monitoreo registrados<br>
+      <b>When</b> el usuario solicita los sitios registrados<br>
+      <b>Then</b> el sistema indica que no hay sitios disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US03 - Create storage area**
+##### **US03 - Crear área de almacenamiento**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US03</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Create storage area</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to create storage areas with a name and type so I can organize equipment.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Successful creation</b><br>
-    <b>Given</b> that valid storage area information is provided<br>
-    <b>When</b> the user creates the storage area<br>
-    <b>Then</b> the system stores the new storage area.<br><br>
-    <b>Scenario 2: Required information is missing</b><br>
-    <b>Given</b> that required storage area information is incomplete<br>
-    <b>When</b> the user attempts to create the storage area<br>
-    <b>Then</b> the system rejects the creation.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US03</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Crear área de almacenamiento</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero crear áreas de almacenamiento con un nombre y tipo para organizar los equipos.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Creación exitosa</b><br>
+      <b>Given</b> que se proporciona información válida del área de almacenamiento<br>
+      <b>When</b> el usuario crea el área de almacenamiento<br>
+      <b>Then</b> el sistema almacena la nueva área de almacenamiento.<br><br>
+      <b>Scenario 2: Falta información requerida</b><br>
+      <b>Given</b> que la información requerida del área de almacenamiento está incompleta<br>
+      <b>When</b> el usuario intenta crear el área de almacenamiento<br>
+      <b>Then</b> el sistema rechaza la creación.
+    </td>
+  </tr>
 </table>
 
-##### **US04 - View storage areas**
+##### **US04 - Visualizar áreas de almacenamiento**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US04</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">View storage areas</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view storage areas so I can understand how monitored equipment is organized.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Storage areas exist</b><br>
-    <b>Given</b> that storage areas are registered<br>
-    <b>When</b> the user requests the storage areas<br>
-    <b>Then</b> the system provides the registered storage areas.<br><br>
-    <b>Scenario 2: No storage areas exist</b><br>
-    <b>Given</b> that no storage areas are registered<br>
-    <b>When</b> the user requests the storage areas<br>
-    <b>Then</b> the system indicates that no storage areas are available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US04</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar áreas de almacenamiento</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las áreas de almacenamiento para comprender cómo están organizados los equipos monitoreados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen áreas de almacenamiento</b><br>
+      <b>Given</b> que existen áreas de almacenamiento registradas<br>
+      <b>When</b> el usuario solicita las áreas de almacenamiento<br>
+      <b>Then</b> el sistema proporciona las áreas de almacenamiento registradas.<br><br>
+      <b>Scenario 2: No existen áreas de almacenamiento</b><br>
+      <b>Given</b> que no existen áreas de almacenamiento registradas<br>
+      <b>When</b> el usuario solicita las áreas de almacenamiento<br>
+      <b>Then</b> el sistema indica que no hay áreas de almacenamiento disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US05 - Register equipment**
+##### **US05 - Registrar equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US05</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Register equipment</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to register equipment with its name, type, and identifier so it can be monitored.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Successful registration</b><br>
-    <b>Given</b> that valid equipment information is provided<br>
-    <b>When</b> the user registers the equipment<br>
-    <b>Then</b> the system stores the equipment information.<br><br>
-    <b>Scenario 2: Required information is missing</b><br>
-    <b>Given</b> that required equipment information is incomplete<br>
-    <b>When</b> the user attempts to register the equipment<br>
-    <b>Then</b> the system rejects the registration.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US05</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Registrar equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero registrar equipos con su nombre, tipo e identificador para que puedan ser monitoreados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Registro exitoso</b><br>
+      <b>Given</b> que se proporciona información válida del equipo<br>
+      <b>When</b> el usuario registra el equipo<br>
+      <b>Then</b> el sistema almacena la información del equipo.<br><br>
+      <b>Scenario 2: Falta información requerida</b><br>
+      <b>Given</b> que la información requerida del equipo está incompleta<br>
+      <b>When</b> el usuario intenta registrar el equipo<br>
+      <b>Then</b> el sistema rechaza el registro.
+    </td>
+  </tr>
 </table>
 
-##### **US06 - View equipment list**
+##### **US06 - Visualizar lista de equipos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US06</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment list</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view registered equipment so I can manage it.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment exists</b><br>
-    <b>Given</b> that equipment is registered<br>
-    <b>When</b> the user requests the equipment list<br>
-    <b>Then</b> the system provides the registered equipment.<br><br>
-    <b>Scenario 2: No equipment exists</b><br>
-    <b>Given</b> that no equipment is registered<br>
-    <b>When</b> the user requests the equipment list<br>
-    <b>Then</b> the system indicates that no equipment is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US06</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de equipos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los equipos registrados para poder gestionarlos.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen equipos</b><br>
+      <b>Given</b> que existen equipos registrados<br>
+      <b>When</b> el usuario solicita la lista de equipos<br>
+      <b>Then</b> el sistema proporciona los equipos registrados.<br><br>
+      <b>Scenario 2: No existen equipos</b><br>
+      <b>Given</b> que no existen equipos registrados<br>
+      <b>When</b> el usuario solicita la lista de equipos<br>
+      <b>Then</b> el sistema indica que no hay equipos disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US07 - Assign equipment to area**
+##### **US07 - Asignar equipo a un área**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US07</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Assign equipment to area</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to assign equipment to a storage area so I know its location.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid equipment and area are provided</b><br>
-    <b>Given</b> that registered equipment and a registered storage area exist<br>
-    <b>When</b> the user assigns the equipment to the storage area<br>
-    <b>Then</b> the system associates the equipment with that area.<br><br>
-    <b>Scenario 2: Required information is unavailable</b><br>
-    <b>Given</b> that the equipment or storage area is not available<br>
-    <b>When</b> the user attempts to create the assignment<br>
-    <b>Then</b> the system rejects the assignment.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US07</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Asignar equipo a un área</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero asignar un equipo a un área de almacenamiento para conocer su ubicación.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporcionan un equipo y un área válidos</b><br>
+      <b>Given</b> que existen un equipo registrado y un área de almacenamiento registrada<br>
+      <b>When</b> el usuario asigna el equipo al área de almacenamiento<br>
+      <b>Then</b> el sistema asocia el equipo con dicha área.<br><br>
+      <b>Scenario 2: La información requerida no está disponible</b><br>
+      <b>Given</b> que el equipo o el área de almacenamiento no están disponibles<br>
+      <b>When</b> el usuario intenta crear la asignación<br>
+      <b>Then</b> el sistema rechaza la asignación.
+    </td>
+  </tr>
 </table>
 
-##### **US08 - Search equipment by name**
+##### **US08 - Buscar equipo por nombre**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US08</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Search equipment by name</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to search equipment by name so I can find it quickly.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Matching equipment exists</b><br>
-    <b>Given</b> that registered equipment matches the provided name<br>
-    <b>When</b> the user performs the search<br>
-    <b>Then</b> the system provides the matching equipment.<br><br>
-    <b>Scenario 2: No matching equipment exists</b><br>
-    <b>Given</b> that no registered equipment matches the provided name<br>
-    <b>When</b> the user performs the search<br>
-    <b>Then</b> the system indicates that no matching equipment is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US08</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Buscar equipo por nombre</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero buscar equipos por nombre para encontrarlos rápidamente.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe un equipo coincidente</b><br>
+      <b>Given</b> que un equipo registrado coincide con el nombre proporcionado<br>
+      <b>When</b> el usuario realiza la búsqueda<br>
+      <b>Then</b> el sistema proporciona el equipo coincidente.<br><br>
+      <b>Scenario 2: No existe un equipo coincidente</b><br>
+      <b>Given</b> que ningún equipo registrado coincide con el nombre proporcionado<br>
+      <b>When</b> el usuario realiza la búsqueda<br>
+      <b>Then</b> el sistema indica que no existe un equipo coincidente disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US09 - View temperature values**
+##### **US09 - Visualizar valores de temperatura**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US09</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View temperature values</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view temperature values so I can monitor storage conditions.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Temperature data is available</b><br>
-    <b>Given</b> that monitored equipment has temperature data<br>
-    <b>When</b> the user requests its monitoring information<br>
-    <b>Then</b> the system provides the available temperature value.<br><br>
-    <b>Scenario 2: Temperature data is unavailable</b><br>
-    <b>Given</b> that monitored equipment does not have available temperature data<br>
-    <b>When</b> the user requests its monitoring information<br>
-    <b>Then</b> the system indicates that temperature data is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US09</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores de temperatura</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los valores de temperatura para monitorear las condiciones de almacenamiento.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos de temperatura están disponibles</b><br>
+      <b>Given</b> que el equipo monitoreado dispone de datos de temperatura<br>
+      <b>When</b> el usuario solicita su información de monitoreo<br>
+      <b>Then</b> el sistema proporciona el valor de temperatura disponible.<br><br>
+      <b>Scenario 2: Los datos de temperatura no están disponibles</b><br>
+      <b>Given</b> que el equipo monitoreado no dispone de datos de temperatura<br>
+      <b>When</b> el usuario solicita su información de monitoreo<br>
+      <b>Then</b> el sistema indica que los datos de temperatura no están disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US10 - View humidity values**
+##### **US10 - Visualizar valores de humedad**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US10</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View humidity values</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view humidity values so I can monitor storage conditions.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Humidity data is available</b><br>
-    <b>Given</b> that monitored equipment has humidity data<br>
-    <b>When</b> the user requests its monitoring information<br>
-    <b>Then</b> the system provides the available humidity value.<br><br>
-    <b>Scenario 2: Humidity data is unavailable</b><br>
-    <b>Given</b> that monitored equipment does not have available humidity data<br>
-    <b>When</b> the user requests its monitoring information<br>
-    <b>Then</b> the system indicates that humidity data is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US10</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores de humedad</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los valores de humedad para monitorear las condiciones de almacenamiento.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos de humedad están disponibles</b><br>
+      <b>Given</b> que el equipo monitoreado dispone de datos de humedad<br>
+      <b>When</b> el usuario solicita su información de monitoreo<br>
+      <b>Then</b> el sistema proporciona el valor de humedad disponible.<br><br>
+      <b>Scenario 2: Los datos de humedad no están disponibles</b><br>
+      <b>Given</b> que el equipo monitoreado no dispone de datos de humedad<br>
+      <b>When</b> el usuario solicita su información de monitoreo<br>
+      <b>Then</b> el sistema indica que los datos de humedad no están disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US11 - View equipment working status**
+##### **US11 - Visualizar estado operativo del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US11</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment working status</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to know whether monitored equipment is working so I can detect issues.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment is providing data</b><br>
-    <b>Given</b> that the equipment is providing monitoring data<br>
-    <b>When</b> the user requests its status<br>
-    <b>Then</b> the system identifies the equipment as working.<br><br>
-    <b>Scenario 2: Equipment is not providing data</b><br>
-    <b>Given</b> that the equipment is not providing monitoring data<br>
-    <b>When</b> the user requests its status<br>
-    <b>Then</b> the system identifies that the equipment is not working normally.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US11</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar estado operativo del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero saber si un equipo monitoreado está funcionando para detectar problemas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: El equipo está proporcionando datos</b><br>
+      <b>Given</b> que el equipo está proporcionando datos de monitoreo<br>
+      <b>When</b> el usuario solicita su estado<br>
+      <b>Then</b> el sistema identifica el equipo como operativo.<br><br>
+      <b>Scenario 2: El equipo no está proporcionando datos</b><br>
+      <b>Given</b> que el equipo no está proporcionando datos de monitoreo<br>
+      <b>When</b> el usuario solicita su estado<br>
+      <b>Then</b> el sistema identifica que el equipo no está funcionando con normalidad.
+    </td>
+  </tr>
 </table>
 
-##### **US12 - View equipment details**
+##### **US12 - Visualizar detalles del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US12</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment details</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment details so I can review its temperature, humidity, and status.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment exists</b><br>
-    <b>Given</b> that registered equipment exists<br>
-    <b>When</b> the user requests its details<br>
-    <b>Then</b> the system provides its available temperature, humidity, and status information.<br><br>
-    <b>Scenario 2: Equipment does not exist</b><br>
-    <b>Given</b> that the requested equipment is not registered<br>
-    <b>When</b> its details are requested<br>
-    <b>Then</b> the system indicates that the equipment is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US12</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar detalles del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los detalles de un equipo para revisar su temperatura, humedad y estado.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: El equipo existe</b><br>
+      <b>Given</b> que existe un equipo registrado<br>
+      <b>When</b> el usuario solicita sus detalles<br>
+      <b>Then</b> el sistema proporciona la información disponible de temperatura, humedad y estado.<br><br>
+      <b>Scenario 2: El equipo no existe</b><br>
+      <b>Given</b> que el equipo solicitado no está registrado<br>
+      <b>When</b> se solicitan sus detalles<br>
+      <b>Then</b> el sistema indica que el equipo no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US13 - View equipment list with real-time data**
+##### **US13 - Visualizar lista de equipos con datos en tiempo real**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US13</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment list with real-time data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment with its current monitoring values so I can monitor conditions quickly.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Current monitoring data is available</b><br>
-    <b>Given</b> that registered equipment has current monitoring data<br>
-    <b>When</b> the user requests the equipment information<br>
-    <b>Then</b> the system provides the equipment with its available current values.<br><br>
-    <b>Scenario 2: Current data is unavailable</b><br>
-    <b>Given</b> that some registered equipment does not have current data<br>
-    <b>When</b> the user requests the equipment information<br>
-    <b>Then</b> the system indicates which equipment does not have current data.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US13</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de equipos con datos en tiempo real</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los equipos junto con sus valores actuales de monitoreo para supervisar rápidamente sus condiciones.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos actuales de monitoreo están disponibles</b><br>
+      <b>Given</b> que los equipos registrados disponen de datos actuales de monitoreo<br>
+      <b>When</b> el usuario solicita la información de los equipos<br>
+      <b>Then</b> el sistema proporciona los equipos junto con sus valores actuales disponibles.<br><br>
+      <b>Scenario 2: Los datos actuales no están disponibles</b><br>
+      <b>Given</b> que algunos equipos registrados no disponen de datos actuales<br>
+      <b>When</b> el usuario solicita la información de los equipos<br>
+      <b>Then</b> el sistema indica qué equipos no disponen de datos actuales.
+    </td>
+  </tr>
 </table>
 
-##### **US14 - Filter equipment by storage area**
+##### **US14 - Filtrar equipos por área de almacenamiento**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US14</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">Filter equipment by storage area</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to filter equipment by storage area so I can focus on a specific location.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment exists in the selected area</b><br>
-    <b>Given</b> that equipment is assigned to the selected storage area<br>
-    <b>When</b> the user filters equipment by that area<br>
-    <b>Then</b> the system provides the equipment assigned to it.<br><br>
-    <b>Scenario 2: No equipment exists in the selected area</b><br>
-    <b>Given</b> that no equipment is assigned to the selected storage area<br>
-    <b>When</b> the user applies the filter<br>
-    <b>Then</b> the system indicates that no equipment is available for that area.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US14</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Filtrar equipos por área de almacenamiento</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero filtrar los equipos por área de almacenamiento para concentrarme en una ubicación específica.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen equipos en el área seleccionada</b><br>
+      <b>Given</b> que existen equipos asignados al área de almacenamiento seleccionada<br>
+      <b>When</b> el usuario filtra los equipos por dicha área<br>
+      <b>Then</b> el sistema proporciona los equipos asignados a ella.<br><br>
+      <b>Scenario 2: No existen equipos en el área seleccionada</b><br>
+      <b>Given</b> que no existen equipos asignados al área de almacenamiento seleccionada<br>
+      <b>When</b> el usuario aplica el filtro<br>
+      <b>Then</b> el sistema indica que no hay equipos disponibles para dicha área.
+    </td>
+  </tr>
 </table>
 
-##### **US15 - Identify equipment without recent data**
+##### **US15 - Identificar equipos sin datos recientes**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US15</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">Identify equipment without recent data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to identify equipment without recent data so I can detect monitoring interruptions.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment has no recent data</b><br>
-    <b>Given</b> that registered equipment has not provided recent monitoring data<br>
-    <b>When</b> the system evaluates its available readings<br>
-    <b>Then</b> the equipment is identified as having no recent data.<br><br>
-    <b>Scenario 2: Equipment has recent data</b><br>
-    <b>Given</b> that registered equipment has recent monitoring data<br>
-    <b>When</b> the system evaluates its available readings<br>
-    <b>Then</b> the equipment is not identified as having missing recent data.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US15</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Identificar equipos sin datos recientes</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero identificar los equipos que no tienen datos recientes para detectar interrupciones en el monitoreo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: El equipo no tiene datos recientes</b><br>
+      <b>Given</b> que un equipo registrado no ha proporcionado datos recientes de monitoreo<br>
+      <b>When</b> el sistema evalúa sus lecturas disponibles<br>
+      <b>Then</b> el equipo se identifica como un equipo sin datos recientes.<br><br>
+      <b>Scenario 2: El equipo tiene datos recientes</b><br>
+      <b>Given</b> que un equipo registrado dispone de datos recientes de monitoreo<br>
+      <b>When</b> el sistema evalúa sus lecturas disponibles<br>
+      <b>Then</b> el equipo no se identifica como un equipo con datos recientes faltantes.
+    </td>
+  </tr>
 </table>
 
-##### **US16 - Automatic data collection**
+##### **US16 - Recolección automática de datos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US16</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">Automatic data collection</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want monitoring data to be collected automatically so I do not have to record it manually.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Monitoring data is received</b><br>
-    <b>Given</b> that monitored equipment is providing data<br>
-    <b>When</b> the system receives a new reading<br>
-    <b>Then</b> the reading is recorded automatically.<br><br>
-    <b>Scenario 2: Monitoring data is not received</b><br>
-    <b>Given</b> that monitored equipment does not provide data<br>
-    <b>When</b> the system expects a monitoring reading<br>
-    <b>Then</b> the system identifies that new data was not received.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US16</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recolección automática de datos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero que los datos de monitoreo se recolecten automáticamente para no tener que registrarlos de forma manual.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se reciben datos de monitoreo</b><br>
+      <b>Given</b> que el equipo monitoreado está proporcionando datos<br>
+      <b>When</b> el sistema recibe una nueva lectura<br>
+      <b>Then</b> la lectura se registra automáticamente.<br><br>
+      <b>Scenario 2: No se reciben datos de monitoreo</b><br>
+      <b>Given</b> que el equipo monitoreado no proporciona datos<br>
+      <b>When</b> el sistema espera una lectura de monitoreo<br>
+      <b>Then</b> el sistema identifica que no se recibió un nuevo dato.
+    </td>
+  </tr>
 </table>
 
-##### **US17 - View data on mobile**
+##### **US17 - Visualizar datos en dispositivo móvil**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US17</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">View data on mobile</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view monitoring data on a mobile device so I can access monitoring information from the mobile application.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Monitoring data is available</b><br>
-    <b>Given</b> that the user has access to SafeLab and monitoring data is available<br>
-    <b>When</b> the user requests monitoring information from the mobile application<br>
-    <b>Then</b> the system provides the available monitoring data.<br><br>
-    <b>Scenario 2: Monitoring data cannot be obtained</b><br>
-    <b>Given</b> that monitoring data is unavailable<br>
-    <b>When</b> the user requests the monitoring information<br>
-    <b>Then</b> the system indicates that the requested data cannot be obtained.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US17</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos en dispositivo móvil</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los datos de monitoreo desde un dispositivo móvil para acceder a la información desde la aplicación móvil.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos de monitoreo están disponibles</b><br>
+      <b>Given</b> que el usuario tiene acceso a SafeLab y existen datos de monitoreo disponibles<br>
+      <b>When</b> el usuario solicita información de monitoreo desde la aplicación móvil<br>
+      <b>Then</b> el sistema proporciona los datos de monitoreo disponibles.<br><br>
+      <b>Scenario 2: Los datos de monitoreo no pueden obtenerse</b><br>
+      <b>Given</b> que los datos de monitoreo no están disponibles<br>
+      <b>When</b> el usuario solicita la información de monitoreo<br>
+      <b>Then</b> el sistema indica que los datos solicitados no pueden obtenerse.
+    </td>
+  </tr>
 </table>
 
-##### **US18 - Receive temperature alerts**
+##### **US18 - Recibir alertas de temperatura**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US18</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Receive temperature alerts</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to receive alerts when temperature exceeds established limits so I can respond to the deviation.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Temperature exceeds an established limit</b><br>
-    <b>Given</b> that a temperature limit has been defined<br>
-    <b>When</b> a recorded temperature exceeds that limit<br>
-    <b>Then</b> the system generates a temperature alert.<br><br>
-    <b>Scenario 2: Temperature remains within established limits</b><br>
-    <b>Given</b> that a temperature limit has been defined<br>
-    <b>When</b> a recorded temperature remains within the established limits<br>
-    <b>Then</b> the system does not generate a temperature deviation alert.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US18</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de temperatura</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero recibir alertas cuando la temperatura supere los límites establecidos para responder ante la desviación.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La temperatura supera un límite establecido</b><br>
+      <b>Given</b> que se ha definido un límite de temperatura<br>
+      <b>When</b> una temperatura registrada supera dicho límite<br>
+      <b>Then</b> el sistema genera una alerta de temperatura.<br><br>
+      <b>Scenario 2: La temperatura se mantiene dentro de los límites establecidos</b><br>
+      <b>Given</b> que se ha definido un límite de temperatura<br>
+      <b>When</b> una temperatura registrada se mantiene dentro de los límites establecidos<br>
+      <b>Then</b> el sistema no genera una alerta por desviación de temperatura.
+    </td>
+  </tr>
 </table>
 
-##### **US19 - Receive humidity alerts**
+##### **US19 - Recibir alertas de humedad**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US19</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Receive humidity alerts</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to receive alerts when humidity exceeds established limits so I can respond to the deviation.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Humidity exceeds an established limit</b><br>
-    <b>Given</b> that a humidity limit has been defined<br>
-    <b>When</b> a recorded humidity value exceeds that limit<br>
-    <b>Then</b> the system generates a humidity alert.<br><br>
-    <b>Scenario 2: Humidity remains within established limits</b><br>
-    <b>Given</b> that a humidity limit has been defined<br>
-    <b>When</b> a recorded humidity value remains within the established limits<br>
-    <b>Then</b> the system does not generate a humidity deviation alert.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US19</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de humedad</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero recibir alertas cuando la humedad supere los límites establecidos para responder ante la desviación.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La humedad supera un límite establecido</b><br>
+      <b>Given</b> que se ha definido un límite de humedad<br>
+      <b>When</b> un valor de humedad registrado supera dicho límite<br>
+      <b>Then</b> el sistema genera una alerta de humedad.<br><br>
+      <b>Scenario 2: La humedad se mantiene dentro de los límites establecidos</b><br>
+      <b>Given</b> que se ha definido un límite de humedad<br>
+      <b>When</b> un valor de humedad registrado se mantiene dentro de los límites establecidos<br>
+      <b>Then</b> el sistema no genera una alerta por desviación de humedad.
+    </td>
+  </tr>
 </table>
 
-##### **US20 - View alerts list**
+##### **US20 - Visualizar lista de alertas**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US20</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">View alerts list</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view generated alerts so I can manage detected incidents.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Alerts exist</b><br>
-    <b>Given</b> that alerts have been generated<br>
-    <b>When</b> the user requests the alert information<br>
-    <b>Then</b> the system provides the available alerts.<br><br>
-    <b>Scenario 2: No alerts exist</b><br>
-    <b>Given</b> that no alerts have been generated<br>
-    <b>When</b> the user requests the alert information<br>
-    <b>Then</b> the system indicates that no alerts are available.
-  </td></tr>
-</table>
-##### **US21 - View alert details**
-
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US21</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">View alert details</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view alert details so I can understand the detected issue.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Alert exists</b><br>
-    <b>Given</b> that a generated alert exists<br>
-    <b>When</b> the user requests its details<br>
-    <b>Then</b> the system provides the related equipment, recorded value, and time information.<br><br>
-    <b>Scenario 2: Alert does not exist</b><br>
-    <b>Given</b> that the requested alert is unavailable<br>
-    <b>When</b> its details are requested<br>
-    <b>Then</b> the system indicates that the alert cannot be found.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US20</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de alertas</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las alertas generadas para gestionar los incidentes detectados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen alertas</b><br>
+      <b>Given</b> que se han generado alertas<br>
+      <b>When</b> el usuario solicita la información de alertas<br>
+      <b>Then</b> el sistema proporciona las alertas disponibles.<br><br>
+      <b>Scenario 2: No existen alertas</b><br>
+      <b>Given</b> que no se han generado alertas<br>
+      <b>When</b> el usuario solicita la información de alertas<br>
+      <b>Then</b> el sistema indica que no hay alertas disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US22 - Acknowledge alert**
+##### **US21 - Visualizar detalles de una alerta**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US22</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Acknowledge alert</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to acknowledge an alert so I can keep track of alerts that have already been handled.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Active alert is acknowledged</b><br>
-    <b>Given</b> that an alert has not been acknowledged<br>
-    <b>When</b> the user acknowledges the alert<br>
-    <b>Then</b> the system records its acknowledged status.<br><br>
-    <b>Scenario 2: Alert is already acknowledged</b><br>
-    <b>Given</b> that an alert has already been acknowledged<br>
-    <b>When</b> its acknowledgment is requested again<br>
-    <b>Then</b> the system preserves its acknowledged status.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US21</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar detalles de una alerta</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar los detalles de una alerta para comprender el problema detectado.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La alerta existe</b><br>
+      <b>Given</b> que existe una alerta generada<br>
+      <b>When</b> el usuario solicita sus detalles<br>
+      <b>Then</b> el sistema proporciona el equipo relacionado, el valor registrado y la información de fecha y hora.<br><br>
+      <b>Scenario 2: La alerta no existe</b><br>
+      <b>Given</b> que la alerta solicitada no está disponible<br>
+      <b>When</b> se solicitan sus detalles<br>
+      <b>Then</b> el sistema indica que la alerta no puede encontrarse.
+    </td>
+  </tr>
 </table>
 
-##### **US23 - View alerts sorted by severity**
+##### **US22 - Confirmar atención de una alerta**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US23</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">View alerts sorted by severity</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view alerts according to their severity so I can prioritize them.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Alerts with different severity levels exist</b><br>
-    <b>Given</b> that multiple alerts with different severity levels are available<br>
-    <b>When</b> the user requests alerts ordered by severity<br>
-    <b>Then</b> the system provides the alerts according to their severity.<br><br>
-    <b>Scenario 2: Alerts have the same severity</b><br>
-    <b>Given</b> that available alerts have the same severity<br>
-    <b>When</b> the user requests them ordered by severity<br>
-    <b>Then</b> the system provides those alerts without changing their severity classification.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US22</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Confirmar atención de una alerta</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero confirmar la atención de una alerta para llevar un control de las alertas que ya fueron gestionadas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se confirma la atención de una alerta activa</b><br>
+      <b>Given</b> que una alerta aún no ha sido confirmada como atendida<br>
+      <b>When</b> el usuario confirma la atención de la alerta<br>
+      <b>Then</b> el sistema registra su estado como atendida.<br><br>
+      <b>Scenario 2: La alerta ya fue confirmada como atendida</b><br>
+      <b>Given</b> que una alerta ya fue confirmada como atendida<br>
+      <b>When</b> se solicita nuevamente su confirmación<br>
+      <b>Then</b> el sistema conserva su estado de atención.
+    </td>
+  </tr>
 </table>
 
-##### **US24 - Receive alerts on mobile device**
+##### **US23 - Visualizar alertas ordenadas por severidad**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US24</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Receive alerts on mobile device</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to receive SafeLab alerts on a mobile device so I can become aware of detected incidents.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: An alert requires mobile notification</b><br>
-    <b>Given</b> that the system generates an alert that must be communicated to the user<br>
-    <b>When</b> the notification process is executed<br>
-    <b>Then</b> the alert information is sent to the registered mobile device.<br><br>
-    <b>Scenario 2: Delivery cannot be completed</b><br>
-    <b>Given</b> that the alert information cannot be delivered to the device<br>
-    <b>When</b> the notification process is executed<br>
-    <b>Then</b> the system preserves the generated alert information.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US23</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar alertas ordenadas por severidad</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las alertas según su severidad para poder priorizarlas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen alertas con distintos niveles de severidad</b><br>
+      <b>Given</b> que existen múltiples alertas con diferentes niveles de severidad<br>
+      <b>When</b> el usuario solicita las alertas ordenadas por severidad<br>
+      <b>Then</b> el sistema proporciona las alertas de acuerdo con su severidad.<br><br>
+      <b>Scenario 2: Las alertas tienen la misma severidad</b><br>
+      <b>Given</b> que las alertas disponibles tienen el mismo nivel de severidad<br>
+      <b>When</b> el usuario solicita que se ordenen por severidad<br>
+      <b>Then</b> el sistema proporciona dichas alertas sin modificar su clasificación de severidad.
+    </td>
+  </tr>
 </table>
 
-##### **US25 - Set alert limits per equipment**
+##### **US24 - Recibir alertas en un dispositivo móvil**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US25</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Set alert limits per equipment</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to define temperature and humidity limits for monitored equipment so alerts can be generated when those limits are exceeded.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid limits are provided</b><br>
-    <b>Given</b> that valid environmental limits are provided for registered equipment<br>
-    <b>When</b> the user saves the limits<br>
-    <b>Then</b> the system stores the configured limits for that equipment.<br><br>
-    <b>Scenario 2: Invalid limits are provided</b><br>
-    <b>Given</b> that the provided limits are invalid or incomplete<br>
-    <b>When</b> the user attempts to save them<br>
-    <b>Then</b> the system rejects the configuration.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US24</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas en un dispositivo móvil</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero recibir las alertas de SafeLab en un dispositivo móvil para enterarme de los incidentes detectados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Una alerta requiere notificación móvil</b><br>
+      <b>Given</b> que el sistema genera una alerta que debe comunicarse al usuario<br>
+      <b>When</b> se ejecuta el proceso de notificación<br>
+      <b>Then</b> la información de la alerta se envía al dispositivo móvil registrado.<br><br>
+      <b>Scenario 2: La entrega no puede completarse</b><br>
+      <b>Given</b> que la información de la alerta no puede entregarse al dispositivo<br>
+      <b>When</b> se ejecuta el proceso de notificación<br>
+      <b>Then</b> el sistema conserva la información de la alerta generada.
+    </td>
+  </tr>
 </table>
 
-##### **US26 - Share alerts with team**
+##### **US25 - Configurar límites de alerta por equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US26</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Share alerts with team</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want alerts to be available to the team so monitoring incidents can be coordinated.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Alert is available</b><br>
-    <b>Given</b> that an alert has been generated<br>
-    <b>When</b> authorized team members request the alert information<br>
-    <b>Then</b> the system provides the same registered alert information.<br><br>
-    <b>Scenario 2: Alert is unavailable</b><br>
-    <b>Given</b> that the requested alert does not exist<br>
-    <b>When</b> a team member requests its information<br>
-    <b>Then</b> the system indicates that the alert is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US25</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Configurar límites de alerta por equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero definir límites de temperatura y humedad para cada equipo monitoreado para que se generen alertas cuando esos límites sean superados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporcionan límites válidos</b><br>
+      <b>Given</b> que se proporcionan límites ambientales válidos para un equipo registrado<br>
+      <b>When</b> el usuario guarda los límites<br>
+      <b>Then</b> el sistema almacena los límites configurados para dicho equipo.<br><br>
+      <b>Scenario 2: Se proporcionan límites inválidos</b><br>
+      <b>Given</b> que los límites proporcionados son inválidos o están incompletos<br>
+      <b>When</b> el usuario intenta guardarlos<br>
+      <b>Then</b> el sistema rechaza la configuración.
+    </td>
+  </tr>
 </table>
 
-##### **US27 - View historical data**
+##### **US26 - Compartir alertas con el equipo de trabajo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US27</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">View historical data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view historical monitoring data so I can analyze past conditions.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Historical data exists</b><br>
-    <b>Given</b> that historical monitoring data is stored for equipment<br>
-    <b>When</b> the user requests its history<br>
-    <b>Then</b> the system provides the available historical data.<br><br>
-    <b>Scenario 2: Historical data does not exist</b><br>
-    <b>Given</b> that no historical monitoring data is stored for the requested equipment<br>
-    <b>When</b> the user requests its history<br>
-    <b>Then</b> the system indicates that no historical data is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US26</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Compartir alertas con el equipo de trabajo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero que las alertas estén disponibles para el equipo de trabajo para coordinar la atención de los incidentes de monitoreo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La alerta está disponible</b><br>
+      <b>Given</b> que se ha generado una alerta<br>
+      <b>When</b> los miembros autorizados del equipo solicitan la información de la alerta<br>
+      <b>Then</b> el sistema proporciona la misma información registrada de la alerta.<br><br>
+      <b>Scenario 2: La alerta no está disponible</b><br>
+      <b>Given</b> que la alerta solicitada no existe<br>
+      <b>When</b> un miembro del equipo solicita su información<br>
+      <b>Then</b> el sistema indica que la alerta no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US28 - Select date range for data**
+##### **US27 - Visualizar datos históricos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US28</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Select date range for data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to select a date range so I can review monitoring information for a specific period.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid date range is provided</b><br>
-    <b>Given</b> that a valid start and end date are provided<br>
-    <b>When</b> the user requests monitoring data for that range<br>
-    <b>Then</b> the system provides data corresponding to the selected period.<br><br>
-    <b>Scenario 2: Invalid date range is provided</b><br>
-    <b>Given</b> that the provided date range is invalid<br>
-    <b>When</b> monitoring data is requested<br>
-    <b>Then</b> the system rejects the date range.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US27</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos históricos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar datos históricos de monitoreo para analizar condiciones pasadas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen datos históricos</b><br>
+      <b>Given</b> que se almacenan datos históricos de monitoreo para un equipo<br>
+      <b>When</b> el usuario solicita su historial<br>
+      <b>Then</b> el sistema proporciona los datos históricos disponibles.<br><br>
+      <b>Scenario 2: No existen datos históricos</b><br>
+      <b>Given</b> que no existen datos históricos de monitoreo almacenados para el equipo solicitado<br>
+      <b>When</b> el usuario solicita su historial<br>
+      <b>Then</b> el sistema indica que no hay datos históricos disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US29 - Compare data between periods**
+##### **US28 - Seleccionar un rango de fechas para los datos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US29</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Compare data between periods</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to compare monitoring data between periods so I can identify variations.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Both periods contain data</b><br>
-    <b>Given</b> that two valid periods with monitoring data are provided<br>
-    <b>When</b> the user requests the comparison<br>
-    <b>Then</b> the system provides monitoring information for both periods.<br><br>
-    <b>Scenario 2: Required comparison information is incomplete</b><br>
-    <b>Given</b> that the required periods are not completely defined<br>
-    <b>When</b> the user requests the comparison<br>
-    <b>Then</b> the system rejects the comparison request.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US28</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Seleccionar un rango de fechas para los datos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero seleccionar un rango de fechas para revisar la información de monitoreo de un periodo específico.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporciona un rango de fechas válido</b><br>
+      <b>Given</b> que se proporcionan una fecha de inicio y una fecha de fin válidas<br>
+      <b>When</b> el usuario solicita datos de monitoreo para ese rango<br>
+      <b>Then</b> el sistema proporciona los datos correspondientes al periodo seleccionado.<br><br>
+      <b>Scenario 2: Se proporciona un rango de fechas inválido</b><br>
+      <b>Given</b> que el rango de fechas proporcionado es inválido<br>
+      <b>When</b> se solicitan datos de monitoreo<br>
+      <b>Then</b> el sistema rechaza el rango de fechas.
+    </td>
+  </tr>
 </table>
 
-##### **US30 - Generate report by equipment and date**
+##### **US29 - Comparar datos entre periodos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US30</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Generate report by equipment and date</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to generate reports by equipment and date so I can use monitoring records for control and auditing.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Required report information is available</b><br>
-    <b>Given</b> that valid equipment and date information are provided<br>
-    <b>When</b> the user requests a report<br>
-    <b>Then</b> the system generates a report using the available monitoring information.<br><br>
-    <b>Scenario 2: Required information is incomplete</b><br>
-    <b>Given</b> that required report information is missing<br>
-    <b>When</b> the user requests a report<br>
-    <b>Then</b> the system rejects the report request.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US29</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Comparar datos entre periodos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero comparar los datos de monitoreo entre periodos para identificar variaciones.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Ambos periodos contienen datos</b><br>
+      <b>Given</b> que se proporcionan dos periodos válidos con datos de monitoreo<br>
+      <b>When</b> el usuario solicita la comparación<br>
+      <b>Then</b> el sistema proporciona la información de monitoreo de ambos periodos.<br><br>
+      <b>Scenario 2: La información requerida para la comparación está incompleta</b><br>
+      <b>Given</b> que los periodos requeridos no están completamente definidos<br>
+      <b>When</b> el usuario solicita la comparación<br>
+      <b>Then</b> el sistema rechaza la solicitud de comparación.
+    </td>
+  </tr>
 </table>
 
-##### **US31 - Download report file**
+##### **US30 - Generar reporte por equipo y fecha**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US31</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Download report file</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to download generated reports so I can use or share them outside SafeLab.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Generated report exists</b><br>
-    <b>Given</b> that a report has been generated<br>
-    <b>When</b> the user requests its download<br>
-    <b>Then</b> the system provides the generated report file.<br><br>
-    <b>Scenario 2: Generated report does not exist</b><br>
-    <b>Given</b> that no generated report is available<br>
-    <b>When</b> the user requests a report download<br>
-    <b>Then</b> the system indicates that no report is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US30</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Generar reporte por equipo y fecha</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero generar reportes por equipo y fecha para utilizar los registros de monitoreo en actividades de control y auditoría.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La información requerida para el reporte está disponible</b><br>
+      <b>Given</b> que se proporcionan información válida del equipo y de la fecha<br>
+      <b>When</b> el usuario solicita un reporte<br>
+      <b>Then</b> el sistema genera un reporte utilizando la información de monitoreo disponible.<br><br>
+      <b>Scenario 2: La información requerida está incompleta</b><br>
+      <b>Given</b> que falta información requerida para el reporte<br>
+      <b>When</b> el usuario solicita un reporte<br>
+      <b>Then</b> el sistema rechaza la solicitud del reporte.
+    </td>
+  </tr>
 </table>
 
-##### **US32 - View incident history**
+##### **US31 - Descargar archivo de reporte**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US32</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">View incident history</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view incident history so I can review previous alerts and events.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Incident history exists</b><br>
-    <b>Given</b> that previous alerts or incidents have been recorded<br>
-    <b>When</b> the user requests incident history<br>
-    <b>Then</b> the system provides the available historical incident information.<br><br>
-    <b>Scenario 2: Incident history does not exist</b><br>
-    <b>Given</b> that no previous alerts or incidents have been recorded<br>
-    <b>When</b> the user requests incident history<br>
-    <b>Then</b> the system indicates that no incident history is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US31</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Descargar archivo de reporte</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero descargar los reportes generados para utilizarlos o compartirlos fuera de SafeLab.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe un reporte generado</b><br>
+      <b>Given</b> que se ha generado un reporte<br>
+      <b>When</b> el usuario solicita su descarga<br>
+      <b>Then</b> el sistema proporciona el archivo del reporte generado.<br><br>
+      <b>Scenario 2: No existe un reporte generado</b><br>
+      <b>Given</b> que no hay un reporte generado disponible<br>
+      <b>When</b> el usuario solicita descargar un reporte<br>
+      <b>Then</b> el sistema indica que no hay ningún reporte disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US33 - Export data file**
+##### **US32 - Visualizar historial de incidentes**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US33</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Export data file</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to export monitoring data so I can use it outside the system.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Data is available</b><br>
-    <b>Given</b> that monitoring data is available for export<br>
-    <b>When</b> the user requests the export<br>
-    <b>Then</b> the system generates an export file using the available data.<br><br>
-    <b>Scenario 2: Data is unavailable</b><br>
-    <b>Given</b> that no monitoring data is available for export<br>
-    <b>When</b> the user requests the export<br>
-    <b>Then</b> the system indicates that no data is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US32</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar historial de incidentes</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar el historial de incidentes para revisar alertas y eventos anteriores.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe un historial de incidentes</b><br>
+      <b>Given</b> que se han registrado alertas o incidentes anteriores<br>
+      <b>When</b> el usuario solicita el historial de incidentes<br>
+      <b>Then</b> el sistema proporciona la información histórica disponible de los incidentes.<br><br>
+      <b>Scenario 2: No existe un historial de incidentes</b><br>
+      <b>Given</b> que no se han registrado alertas ni incidentes anteriores<br>
+      <b>When</b> el usuario solicita el historial de incidentes<br>
+      <b>Then</b> el sistema indica que no hay un historial de incidentes disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US34 - Compare weekly and monthly data**
+##### **US33 - Exportar archivo de datos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US34</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Compare weekly and monthly data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to compare weekly and monthly monitoring data so I can identify variations between periods.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Weekly and monthly data are available</b><br>
-    <b>Given</b> that monitoring information exists for the selected week and month<br>
-    <b>When</b> the user requests the comparison<br>
-    <b>Then</b> the system provides the information corresponding to both periods.<br><br>
-    <b>Scenario 2: Required period information is incomplete</b><br>
-    <b>Given</b> that the week or month has not been completely defined<br>
-    <b>When</b> the user requests the comparison<br>
-    <b>Then</b> the system rejects the comparison request.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US33</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Exportar archivo de datos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero exportar los datos de monitoreo para utilizarlos fuera del sistema.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos están disponibles</b><br>
+      <b>Given</b> que existen datos de monitoreo disponibles para exportación<br>
+      <b>When</b> el usuario solicita la exportación<br>
+      <b>Then</b> el sistema genera un archivo de exportación utilizando los datos disponibles.<br><br>
+      <b>Scenario 2: Los datos no están disponibles</b><br>
+      <b>Given</b> que no existen datos de monitoreo disponibles para exportación<br>
+      <b>When</b> el usuario solicita la exportación<br>
+      <b>Then</b> el sistema indica que no hay datos disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US35 - View equipment condition**
+##### **US34 - Comparar datos semanales y mensuales**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US35</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment condition</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment condition so I can identify possible failures.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment operates normally</b><br>
-    <b>Given</b> that the equipment operates under its expected conditions<br>
-    <b>When</b> the user requests its condition<br>
-    <b>Then</b> the system identifies its condition as normal.<br><br>
-    <b>Scenario 2: An abnormal condition is detected</b><br>
-    <b>Given</b> that an abnormal equipment condition has been detected<br>
-    <b>When</b> the user requests its condition<br>
-    <b>Then</b> the system identifies the detected abnormal condition.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US34</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Comparar datos semanales y mensuales</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero comparar datos de monitoreo semanales y mensuales para identificar variaciones entre periodos.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Los datos semanales y mensuales están disponibles</b><br>
+      <b>Given</b> que existe información de monitoreo para la semana y el mes seleccionados<br>
+      <b>When</b> el usuario solicita la comparación<br>
+      <b>Then</b> el sistema proporciona la información correspondiente a ambos periodos.<br><br>
+      <b>Scenario 2: La información requerida del periodo está incompleta</b><br>
+      <b>Given</b> que la semana o el mes no están completamente definidos<br>
+      <b>When</b> el usuario solicita la comparación<br>
+      <b>Then</b> el sistema rechaza la solicitud de comparación.
+    </td>
+  </tr>
 </table>
 
-##### **US36 - View abnormal values**
+##### **US35 - Visualizar condición del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US36</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View abnormal values</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to identify environmental values outside established limits so I can detect problems.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Value exceeds established limits</b><br>
-    <b>Given</b> that environmental limits are defined<br>
-    <b>When</b> a recorded value is outside those limits<br>
-    <b>Then</b> the system identifies the value as abnormal.<br><br>
-    <b>Scenario 2: Value remains within limits</b><br>
-    <b>Given</b> that environmental limits are defined<br>
-    <b>When</b> a recorded value remains within those limits<br>
-    <b>Then</b> the system does not identify the value as abnormal.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US35</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar condición del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar la condición de un equipo para identificar posibles fallas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: El equipo funciona con normalidad</b><br>
+      <b>Given</b> que el equipo funciona dentro de las condiciones esperadas<br>
+      <b>When</b> el usuario solicita conocer su condición<br>
+      <b>Then</b> el sistema identifica su condición como normal.<br><br>
+      <b>Scenario 2: Se detecta una condición anómala</b><br>
+      <b>Given</b> que se ha detectado una condición anómala en el equipo<br>
+      <b>When</b> el usuario solicita conocer su condición<br>
+      <b>Then</b> el sistema identifica la condición anómala detectada.
+    </td>
+  </tr>
 </table>
 
-##### **US37 - Receive equipment warning alerts**
+##### **US36 - Visualizar valores anómalos**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US37</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">Receive equipment warning alerts</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to receive equipment warnings so I can identify possible failures.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Abnormal equipment condition is detected</b><br>
-    <b>Given</b> that the system detects an abnormal equipment condition<br>
-    <b>When</b> the condition meets the criteria for a warning<br>
-    <b>Then</b> the system generates an equipment warning.<br><br>
-    <b>Scenario 2: Equipment operates normally</b><br>
-    <b>Given</b> that no abnormal equipment condition is detected<br>
-    <b>When</b> the equipment is monitored<br>
-    <b>Then</b> the system does not generate an equipment warning.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US36</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores anómalos</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero identificar valores ambientales fuera de los límites establecidos para detectar problemas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: El valor supera los límites establecidos</b><br>
+      <b>Given</b> que los límites ambientales están definidos<br>
+      <b>When</b> un valor registrado se encuentra fuera de dichos límites<br>
+      <b>Then</b> el sistema identifica el valor como anómalo.<br><br>
+      <b>Scenario 2: El valor se mantiene dentro de los límites</b><br>
+      <b>Given</b> que los límites ambientales están definidos<br>
+      <b>When</b> un valor registrado se mantiene dentro de dichos límites<br>
+      <b>Then</b> el sistema no identifica el valor como anómalo.
+    </td>
+  </tr>
 </table>
 
-##### **US38 - View equipment performance data**
+##### **US37 - Recibir alertas de advertencia del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US38</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment performance data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment performance over time so I can evaluate its operation.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Performance data exists</b><br>
-    <b>Given</b> that historical equipment data is available<br>
-    <b>When</b> the user requests equipment performance information<br>
-    <b>Then</b> the system provides the available performance data.<br><br>
-    <b>Scenario 2: Performance data does not exist</b><br>
-    <b>Given</b> that no performance data is available<br>
-    <b>When</b> the user requests equipment performance information<br>
-    <b>Then</b> the system indicates that no performance data is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US37</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de advertencia del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero recibir advertencias sobre los equipos para identificar posibles fallas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se detecta una condición anómala del equipo</b><br>
+      <b>Given</b> que el sistema detecta una condición anómala en un equipo<br>
+      <b>When</b> la condición cumple los criterios para generar una advertencia<br>
+      <b>Then</b> el sistema genera una advertencia del equipo.<br><br>
+      <b>Scenario 2: El equipo funciona con normalidad</b><br>
+      <b>Given</b> que no se detecta ninguna condición anómala en el equipo<br>
+      <b>When</b> el equipo es monitoreado<br>
+      <b>Then</b> el sistema no genera una advertencia del equipo.
+    </td>
+  </tr>
 </table>
 
-##### **US39 - View equipment usage data**
+##### **US38 - Visualizar datos de rendimiento del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US39</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment usage data</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment usage data so I can manage monitored resources.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Usage data exists</b><br>
-    <b>Given</b> that equipment usage data is available<br>
-    <b>When</b> the user requests usage information<br>
-    <b>Then</b> the system provides the available usage data.<br><br>
-    <b>Scenario 2: Usage data does not exist</b><br>
-    <b>Given</b> that no usage data is available<br>
-    <b>When</b> the user requests usage information<br>
-    <b>Then</b> the system indicates that no usage data is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US38</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos de rendimiento del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar el rendimiento de los equipos a lo largo del tiempo para evaluar su funcionamiento.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen datos de rendimiento</b><br>
+      <b>Given</b> que existen datos históricos del equipo disponibles<br>
+      <b>When</b> el usuario solicita información sobre el rendimiento del equipo<br>
+      <b>Then</b> el sistema proporciona los datos de rendimiento disponibles.<br><br>
+      <b>Scenario 2: No existen datos de rendimiento</b><br>
+      <b>Given</b> que no existen datos de rendimiento disponibles<br>
+      <b>When</b> el usuario solicita información sobre el rendimiento del equipo<br>
+      <b>Then</b> el sistema indica que no hay datos de rendimiento disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US40 - Register maintenance record**
+##### **US39 - Visualizar datos de uso del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US40</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">Register maintenance record</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to register equipment maintenance information so I can keep its maintenance history.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid maintenance information is provided</b><br>
-    <b>Given</b> that valid maintenance information is provided for registered equipment<br>
-    <b>When</b> the user registers the maintenance record<br>
-    <b>Then</b> the system stores the maintenance information.<br><br>
-    <b>Scenario 2: Maintenance information is incomplete</b><br>
-    <b>Given</b> that required maintenance information is missing<br>
-    <b>When</b> the user attempts to register the maintenance record<br>
-    <b>Then</b> the system rejects the registration.
-  </td></tr>
-</table>
-##### **US41 - View maintenance history**
-
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US41</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View maintenance history</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment maintenance history so I can review previous maintenance records.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Maintenance records exist</b><br>
-    <b>Given</b> that maintenance records have been registered for equipment<br>
-    <b>When</b> the user requests its maintenance history<br>
-    <b>Then</b> the system provides the available maintenance records.<br><br>
-    <b>Scenario 2: Maintenance records do not exist</b><br>
-    <b>Given</b> that no maintenance records have been registered<br>
-    <b>When</b> the user requests the maintenance history<br>
-    <b>Then</b> the system indicates that no maintenance records are available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US39</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos de uso del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar datos de uso de los equipos para gestionar los recursos monitoreados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen datos de uso</b><br>
+      <b>Given</b> que existen datos de uso del equipo disponibles<br>
+      <b>When</b> el usuario solicita información de uso<br>
+      <b>Then</b> el sistema proporciona los datos de uso disponibles.<br><br>
+      <b>Scenario 2: No existen datos de uso</b><br>
+      <b>Given</b> que no existen datos de uso disponibles<br>
+      <b>When</b> el usuario solicita información de uso<br>
+      <b>Then</b> el sistema indica que no hay datos de uso disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US42 - View equipment reliability**
+##### **US40 - Registrar mantenimiento**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US42</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP05</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment reliability</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view equipment stability over time so I can evaluate its reliability.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Historical equipment data exists</b><br>
-    <b>Given</b> that historical equipment data is available<br>
-    <b>When</b> the user requests reliability information<br>
-    <b>Then</b> the system provides the available stability information over time.<br><br>
-    <b>Scenario 2: Historical equipment data does not exist</b><br>
-    <b>Given</b> that no historical equipment data is available<br>
-    <b>When</b> the user requests reliability information<br>
-    <b>Then</b> the system indicates that reliability information is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US40</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Registrar mantenimiento</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero registrar información de mantenimiento de los equipos para conservar su historial de mantenimiento.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporciona información válida de mantenimiento</b><br>
+      <b>Given</b> que se proporciona información válida de mantenimiento para un equipo registrado<br>
+      <b>When</b> el usuario registra el mantenimiento<br>
+      <b>Then</b> el sistema almacena la información de mantenimiento.<br><br>
+      <b>Scenario 2: La información de mantenimiento está incompleta</b><br>
+      <b>Given</b> que falta información requerida de mantenimiento<br>
+      <b>When</b> el usuario intenta registrar el mantenimiento<br>
+      <b>Then</b> el sistema rechaza el registro.
+    </td>
+  </tr>
 </table>
 
-##### **US43 - View dashboard**
+##### **US41 - Visualizar historial de mantenimiento**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US43</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View dashboard</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view key SafeLab information so I can understand the current monitoring status.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: System information is available</b><br>
-    <b>Given</b> that SafeLab contains monitoring information<br>
-    <b>When</b> the user requests the system overview<br>
-    <b>Then</b> the system provides the available key monitoring information.<br><br>
-    <b>Scenario 2: System information is unavailable</b><br>
-    <b>Given</b> that no monitoring information is currently available<br>
-    <b>When</b> the user requests the system overview<br>
-    <b>Then</b> the system indicates that no monitoring information is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US41</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar historial de mantenimiento</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar el historial de mantenimiento de un equipo para revisar los mantenimientos realizados previamente.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen registros de mantenimiento</b><br>
+      <b>Given</b> que se han registrado mantenimientos para un equipo<br>
+      <b>When</b> el usuario solicita su historial de mantenimiento<br>
+      <b>Then</b> el sistema proporciona los registros de mantenimiento disponibles.<br><br>
+      <b>Scenario 2: No existen registros de mantenimiento</b><br>
+      <b>Given</b> que no se han registrado mantenimientos<br>
+      <b>When</b> el usuario solicita el historial de mantenimiento<br>
+      <b>Then</b> el sistema indica que no hay registros de mantenimiento disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US44 - View critical alerts**
+##### **US42 - Visualizar confiabilidad del equipo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US44</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View critical alerts</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view critical alerts so I can prioritize situations requiring attention.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Critical alerts exist</b><br>
-    <b>Given</b> that alerts classified as critical are available<br>
-    <b>When</b> the user requests critical alerts<br>
-    <b>Then</b> the system provides the available critical alerts.<br><br>
-    <b>Scenario 2: No critical alerts exist</b><br>
-    <b>Given</b> that no alerts are classified as critical<br>
-    <b>When</b> the user requests critical alerts<br>
-    <b>Then</b> the system indicates that no critical alerts are available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US42</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP05</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar confiabilidad del equipo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar la estabilidad de un equipo a lo largo del tiempo para evaluar su confiabilidad.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen datos históricos del equipo</b><br>
+      <b>Given</b> que existen datos históricos del equipo disponibles<br>
+      <b>When</b> el usuario solicita información de confiabilidad<br>
+      <b>Then</b> el sistema proporciona la información de estabilidad disponible a lo largo del tiempo.<br><br>
+      <b>Scenario 2: No existen datos históricos del equipo</b><br>
+      <b>Given</b> que no existen datos históricos del equipo disponibles<br>
+      <b>When</b> el usuario solicita información de confiabilidad<br>
+      <b>Then</b> el sistema indica que la información de confiabilidad no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US45 - View summary with totals**
+##### **US43 - Visualizar dashboard**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US45</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View summary with totals</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view a summary of equipment and alerts so I can obtain an overview of the monitored environment.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Summary information exists</b><br>
-    <b>Given</b> that equipment or alert information is available<br>
-    <b>When</b> the user requests the monitoring summary<br>
-    <b>Then</b> the system provides the available totals.<br><br>
-    <b>Scenario 2: Summary information does not exist</b><br>
-    <b>Given</b> that no equipment or alert information is available<br>
-    <b>When</b> the user requests the monitoring summary<br>
-    <b>Then</b> the system indicates that summary information is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US43</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar dashboard</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar la información clave de SafeLab para comprender el estado actual del monitoreo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La información del sistema está disponible</b><br>
+      <b>Given</b> que SafeLab contiene información de monitoreo<br>
+      <b>When</b> el usuario solicita la vista general del sistema<br>
+      <b>Then</b> el sistema proporciona la información clave de monitoreo disponible.<br><br>
+      <b>Scenario 2: La información del sistema no está disponible</b><br>
+      <b>Given</b> que actualmente no existe información de monitoreo disponible<br>
+      <b>When</b> el usuario solicita la vista general del sistema<br>
+      <b>Then</b> el sistema indica que no hay información de monitoreo disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US46 - View equipment with active alerts**
+##### **US44 - Visualizar alertas críticas**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US46</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View equipment with active alerts</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to identify equipment with active alerts so I can focus on equipment with detected issues.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Equipment has active alerts</b><br>
-    <b>Given</b> that registered equipment has active alerts<br>
-    <b>When</b> the user requests equipment with active alerts<br>
-    <b>Then</b> the system provides the corresponding equipment.<br><br>
-    <b>Scenario 2: No equipment has active alerts</b><br>
-    <b>Given</b> that no registered equipment has active alerts<br>
-    <b>When</b> the user requests equipment with active alerts<br>
-    <b>Then</b> the system indicates that no affected equipment is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US44</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar alertas críticas</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las alertas críticas para priorizar las situaciones que requieren atención.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen alertas críticas</b><br>
+      <b>Given</b> que existen alertas clasificadas como críticas<br>
+      <b>When</b> el usuario solicita las alertas críticas<br>
+      <b>Then</b> el sistema proporciona las alertas críticas disponibles.<br><br>
+      <b>Scenario 2: No existen alertas críticas</b><br>
+      <b>Given</b> que no existen alertas clasificadas como críticas<br>
+      <b>When</b> el usuario solicita las alertas críticas<br>
+      <b>Then</b> el sistema indica que no hay alertas críticas disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US48 - View alert trends**
+##### **US45 - Visualizar resumen con totales**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US48</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View alert trends</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view alert trends so I can analyze alert behavior over time.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Alert history exists</b><br>
-    <b>Given</b> that historical alert information is available<br>
-    <b>When</b> the user requests alert trends<br>
-    <b>Then</b> the system provides trend information using the available alert history.<br><br>
-    <b>Scenario 2: Alert history does not exist</b><br>
-    <b>Given</b> that no historical alert information is available<br>
-    <b>When</b> the user requests alert trends<br>
-    <b>Then</b> the system indicates that trend information is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US45</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar resumen con totales</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar un resumen de equipos y alertas para obtener una visión general del entorno monitoreado.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe información para el resumen</b><br>
+      <b>Given</b> que existe información de equipos o alertas disponible<br>
+      <b>When</b> el usuario solicita el resumen de monitoreo<br>
+      <b>Then</b> el sistema proporciona los totales disponibles.<br><br>
+      <b>Scenario 2: No existe información para el resumen</b><br>
+      <b>Given</b> que no existe información de equipos ni alertas disponible<br>
+      <b>When</b> el usuario solicita el resumen de monitoreo<br>
+      <b>Then</b> el sistema indica que la información del resumen no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US49 - View temperature trends**
+##### **US46 - Visualizar equipos con alertas activas**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US49</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View temperature trends</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view temperature trends so I can analyze temperature changes over time.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Temperature history exists</b><br>
-    <b>Given</b> that historical temperature data is available<br>
-    <b>When</b> the user requests temperature trends<br>
-    <b>Then</b> the system provides trend information using the available historical data.<br><br>
-    <b>Scenario 2: Temperature history does not exist</b><br>
-    <b>Given</b> that historical temperature data is unavailable<br>
-    <b>When</b> the user requests temperature trends<br>
-    <b>Then</b> the system indicates that temperature trend information is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US46</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar equipos con alertas activas</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero identificar los equipos con alertas activas para concentrarme en aquellos que presentan problemas detectados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen equipos con alertas activas</b><br>
+      <b>Given</b> que existen equipos registrados con alertas activas<br>
+      <b>When</b> el usuario solicita los equipos con alertas activas<br>
+      <b>Then</b> el sistema proporciona los equipos correspondientes.<br><br>
+      <b>Scenario 2: Ningún equipo tiene alertas activas</b><br>
+      <b>Given</b> que ningún equipo registrado tiene alertas activas<br>
+      <b>When</b> el usuario solicita los equipos con alertas activas<br>
+      <b>Then</b> el sistema indica que no hay equipos afectados disponibles.
+    </td>
+  </tr>
 </table>
 
-##### **US50 - View humidity trends**
+##### **US48 - Visualizar tendencias de alertas**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US50</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP06</td></tr>
-  <tr><th>Title</th><td colspan="3">View humidity trends</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to view humidity trends so I can analyze humidity changes over time.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Humidity history exists</b><br>
-    <b>Given</b> that historical humidity data is available<br>
-    <b>When</b> the user requests humidity trends<br>
-    <b>Then</b> the system provides trend information using the available historical data.<br><br>
-    <b>Scenario 2: Humidity history does not exist</b><br>
-    <b>Given</b> that historical humidity data is unavailable<br>
-    <b>When</b> the user requests humidity trends<br>
-    <b>Then</b> the system indicates that humidity trend information is unavailable.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US48</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de alertas</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las tendencias de las alertas para analizar su comportamiento a lo largo del tiempo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe historial de alertas</b><br>
+      <b>Given</b> que existe información histórica de alertas disponible<br>
+      <b>When</b> el usuario solicita las tendencias de alertas<br>
+      <b>Then</b> el sistema proporciona información de tendencias utilizando el historial de alertas disponible.<br><br>
+      <b>Scenario 2: No existe historial de alertas</b><br>
+      <b>Given</b> que no existe información histórica de alertas disponible<br>
+      <b>When</b> el usuario solicita las tendencias de alertas<br>
+      <b>Then</b> el sistema indica que la información de tendencias no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US51 - Login with Google account**
+##### **US49 - Visualizar tendencias de temperatura**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US51</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Login with Google account</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to log in using a Google account so I can access SafeLab.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Authentication is successful</b><br>
-    <b>Given</b> that valid Google authentication information is provided<br>
-    <b>When</b> the user requests access to SafeLab<br>
-    <b>Then</b> the system grants access to the corresponding account.<br><br>
-    <b>Scenario 2: Authentication is unsuccessful</b><br>
-    <b>Given</b> that Google authentication cannot be validated<br>
-    <b>When</b> the user requests access to SafeLab<br>
-    <b>Then</b> the system does not grant access.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US49</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de temperatura</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las tendencias de temperatura para analizar sus cambios a lo largo del tiempo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe historial de temperatura</b><br>
+      <b>Given</b> que existen datos históricos de temperatura disponibles<br>
+      <b>When</b> el usuario solicita las tendencias de temperatura<br>
+      <b>Then</b> el sistema proporciona información de tendencias utilizando los datos históricos disponibles.<br><br>
+      <b>Scenario 2: No existe historial de temperatura</b><br>
+      <b>Given</b> que los datos históricos de temperatura no están disponibles<br>
+      <b>When</b> el usuario solicita las tendencias de temperatura<br>
+      <b>Then</b> el sistema indica que la información de tendencias de temperatura no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US52 - Login with email and password**
+##### **US50 - Visualizar tendencias de humedad**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US52</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Login with email and password</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to log in using email and password so I can access my SafeLab account.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Credentials are valid</b><br>
-    <b>Given</b> that valid account credentials are provided<br>
-    <b>When</b> the user requests access<br>
-    <b>Then</b> the system grants access to the corresponding account.<br><br>
-    <b>Scenario 2: Credentials are invalid</b><br>
-    <b>Given</b> that invalid account credentials are provided<br>
-    <b>When</b> the user requests access<br>
-    <b>Then</b> the system does not grant access.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US50</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP06</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de humedad</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero visualizar las tendencias de humedad para analizar sus cambios a lo largo del tiempo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe historial de humedad</b><br>
+      <b>Given</b> que existen datos históricos de humedad disponibles<br>
+      <b>When</b> el usuario solicita las tendencias de humedad<br>
+      <b>Then</b> el sistema proporciona información de tendencias utilizando los datos históricos disponibles.<br><br>
+      <b>Scenario 2: No existe historial de humedad</b><br>
+      <b>Given</b> que los datos históricos de humedad no están disponibles<br>
+      <b>When</b> el usuario solicita las tendencias de humedad<br>
+      <b>Then</b> el sistema indica que la información de tendencias de humedad no está disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US53 - Recover password by email**
+##### **US51 - Iniciar sesión con una cuenta de Google**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US53</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Recover password by email</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to recover account access through email so I can regain access when I cannot use my password.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Registered email is provided</b><br>
-    <b>Given</b> that the provided email belongs to a registered account<br>
-    <b>When</b> the user requests password recovery<br>
-    <b>Then</b> the system initiates the password recovery process for that email.<br><br>
-    <b>Scenario 2: Unregistered email is provided</b><br>
-    <b>Given</b> that the provided email does not belong to a registered account<br>
-    <b>When</b> password recovery is requested<br>
-    <b>Then</b> the system does not initiate recovery for an account that does not exist.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US51</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Iniciar sesión con una cuenta de Google</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero iniciar sesión utilizando una cuenta de Google para acceder a SafeLab.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La autenticación es exitosa</b><br>
+      <b>Given</b> que se proporciona información válida de autenticación de Google<br>
+      <b>When</b> el usuario solicita acceso a SafeLab<br>
+      <b>Then</b> el sistema concede acceso a la cuenta correspondiente.<br><br>
+      <b>Scenario 2: La autenticación no es exitosa</b><br>
+      <b>Given</b> que la autenticación de Google no puede validarse<br>
+      <b>When</b> el usuario solicita acceso a SafeLab<br>
+      <b>Then</b> el sistema no concede el acceso.
+    </td>
+  </tr>
 </table>
 
-##### **US54 - Logout from system**
+##### **US52 - Iniciar sesión con correo electrónico y contraseña**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US54</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Logout from system</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to log out so I can end my SafeLab session.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Active session exists</b><br>
-    <b>Given</b> that the user has an active session<br>
-    <b>When</b> the user requests to log out<br>
-    <b>Then</b> the system ends the active session.<br><br>
-    <b>Scenario 2: Session is no longer active</b><br>
-    <b>Given</b> that the user session has already expired<br>
-    <b>When</b> access to protected information is requested<br>
-    <b>Then</b> the system requires authentication again.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US52</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Iniciar sesión con correo electrónico y contraseña</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero iniciar sesión utilizando correo electrónico y contraseña para acceder a mi cuenta de SafeLab.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Las credenciales son válidas</b><br>
+      <b>Given</b> que se proporcionan credenciales válidas de la cuenta<br>
+      <b>When</b> el usuario solicita acceso<br>
+      <b>Then</b> el sistema concede acceso a la cuenta correspondiente.<br><br>
+      <b>Scenario 2: Las credenciales son inválidas</b><br>
+      <b>Given</b> que se proporcionan credenciales inválidas de la cuenta<br>
+      <b>When</b> el usuario solicita acceso<br>
+      <b>Then</b> el sistema no concede el acceso.
+    </td>
+  </tr>
 </table>
 
-##### **US55 - Assign user role**
+##### **US53 - Recuperar contraseña por correo electrónico**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US55</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Assign user role</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company with user management responsibility, I want to assign roles so registered users have the corresponding access.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Registered user exists</b><br>
-    <b>Given</b> that a registered user exists<br>
-    <b>When</b> an authorized user assigns a valid role<br>
-    <b>Then</b> the system associates the role with that user.<br><br>
-    <b>Scenario 2: Requested user does not exist</b><br>
-    <b>Given</b> that the requested user is not registered<br>
-    <b>When</b> a role assignment is requested<br>
-    <b>Then</b> the system rejects the assignment.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US53</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Recuperar contraseña por correo electrónico</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero recuperar el acceso a mi cuenta mediante correo electrónico para volver a ingresar cuando no pueda utilizar mi contraseña.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporciona un correo electrónico registrado</b><br>
+      <b>Given</b> que el correo electrónico proporcionado pertenece a una cuenta registrada<br>
+      <b>When</b> el usuario solicita la recuperación de contraseña<br>
+      <b>Then</b> el sistema inicia el proceso de recuperación de contraseña para dicho correo electrónico.<br><br>
+      <b>Scenario 2: Se proporciona un correo electrónico no registrado</b><br>
+      <b>Given</b> que el correo electrónico proporcionado no pertenece a una cuenta registrada<br>
+      <b>When</b> se solicita la recuperación de contraseña<br>
+      <b>Then</b> el sistema no inicia la recuperación para una cuenta que no existe.
+    </td>
+  </tr>
 </table>
 
-##### **US56 - View SafeLab Landing Page**
+##### **US54 - Cerrar sesión en el sistema**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US56</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP08</td></tr>
-  <tr><th>Title</th><td colspan="3">View SafeLab Landing Page</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to access the SafeLab Landing Page so I can learn about the product.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Landing Page is available</b><br>
-    <b>Given</b> that the SafeLab Landing Page is publicly available<br>
-    <b>When</b> a visitor accesses it<br>
-    <b>Then</b> the site provides the available SafeLab product information.<br><br>
-    <b>Scenario 2: Requested Landing Page resource is unavailable</b><br>
-    <b>Given</b> that a requested Landing Page resource cannot be obtained<br>
-    <b>When</b> the visitor accesses that resource<br>
-    <b>Then</b> the site does not present invalid content as available information.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US54</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Cerrar sesión en el sistema</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero cerrar sesión para finalizar mi sesión activa en SafeLab.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe una sesión activa</b><br>
+      <b>Given</b> que el usuario tiene una sesión activa<br>
+      <b>When</b> el usuario solicita cerrar sesión<br>
+      <b>Then</b> el sistema finaliza la sesión activa.<br><br>
+      <b>Scenario 2: La sesión ya no está activa</b><br>
+      <b>Given</b> que la sesión del usuario ya expiró<br>
+      <b>When</b> se solicita acceso a información protegida<br>
+      <b>Then</b> el sistema requiere autenticación nuevamente.
+    </td>
+  </tr>
 </table>
 
-##### **US57 - Change Landing Page language**
+##### **US55 - Asignar rol de usuario**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US57</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP08</td></tr>
-  <tr><th>Title</th><td colspan="3">Change Landing Page language</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to access Landing Page content in the supported languages so I can understand the presented information.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Supported language is selected</b><br>
-    <b>Given</b> that the Landing Page supports English (en_US) and Latin American Spanish (es_419)<br>
-    <b>When</b> the visitor selects a supported language<br>
-    <b>Then</b> the available Landing Page content is provided in the selected language.<br><br>
-    <b>Scenario 2: No alternative language is selected</b><br>
-    <b>Given</b> that the visitor has not selected another supported language<br>
-    <b>When</b> the Landing Page is accessed<br>
-    <b>Then</b> the content is provided in English (en_US), the default language.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US55</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Asignar rol de usuario</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica con responsabilidad de gestión de usuarios, quiero asignar roles para que los usuarios registrados tengan los accesos correspondientes.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe un usuario registrado</b><br>
+      <b>Given</b> que existe un usuario registrado<br>
+      <b>When</b> un usuario autorizado asigna un rol válido<br>
+      <b>Then</b> el sistema asocia el rol con dicho usuario.<br><br>
+      <b>Scenario 2: El usuario solicitado no existe</b><br>
+      <b>Given</b> que el usuario solicitado no está registrado<br>
+      <b>When</b> se solicita una asignación de rol<br>
+      <b>Then</b> el sistema rechaza la asignación.
+    </td>
+  </tr>
 </table>
 
-##### **US58 - Access Terms and Conditions**
+##### **US56 - Visualizar la Landing Page de SafeLab**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US58</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP08</td></tr>
-  <tr><th>Title</th><td colspan="3">Access Terms and Conditions</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to access SafeLab's Terms and Conditions so I can review the conditions associated with the service.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Terms and Conditions are requested from the Landing Page</b><br>
-    <b>Given</b> that SafeLab Terms and Conditions are available<br>
-    <b>When</b> a visitor requests them from the Landing Page<br>
-    <b>Then</b> the site provides the Terms and Conditions.<br><br>
-    <b>Scenario 2: Terms and Conditions are requested during account registration</b><br>
-    <b>Given</b> that a user is registering a SafeLab account<br>
-    <b>When</b> the Terms and Conditions are requested<br>
-    <b>Then</b> the application provides access to the Terms and Conditions.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US56</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP08</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar la Landing Page de SafeLab</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero acceder a la Landing Page de SafeLab para conocer el producto.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: La Landing Page está disponible</b><br>
+      <b>Given</b> que la Landing Page de SafeLab está disponible públicamente<br>
+      <b>When</b> un visitante accede a ella<br>
+      <b>Then</b> el sitio proporciona la información disponible del producto SafeLab.<br><br>
+      <b>Scenario 2: El recurso solicitado de la Landing Page no está disponible</b><br>
+      <b>Given</b> que un recurso solicitado de la Landing Page no puede obtenerse<br>
+      <b>When</b> el visitante accede a dicho recurso<br>
+      <b>Then</b> el sitio no presenta contenido inválido como si fuera información disponible.
+    </td>
+  </tr>
 </table>
 
-##### **US59 - Register user account**
+##### **US57 - Cambiar el idioma de la Landing Page**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US59</td><th>User</th><td>Hospital Laboratory Staff / Pharmaceutical Company</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Register user account</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Hospital Laboratory Staff member or Pharmaceutical Company, I want to register a SafeLab account so I can access the service.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid registration information is provided</b><br>
-    <b>Given</b> that the required account information is valid<br>
-    <b>When</b> the user requests account registration<br>
-    <b>Then</b> the system creates the account.<br><br>
-    <b>Scenario 2: Required registration information is invalid or incomplete</b><br>
-    <b>Given</b> that required account information is invalid or incomplete<br>
-    <b>When</b> the user requests account registration<br>
-    <b>Then</b> the system rejects the account registration.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US57</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP08</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Cambiar el idioma de la Landing Page</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero acceder al contenido de la Landing Page en los idiomas soportados para comprender la información presentada.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se selecciona un idioma soportado</b><br>
+      <b>Given</b> que la Landing Page soporta inglés (en_US) y español latinoamericano (es_419)<br>
+      <b>When</b> el visitante selecciona un idioma soportado<br>
+      <b>Then</b> el contenido disponible de la Landing Page se proporciona en el idioma seleccionado.<br><br>
+      <b>Scenario 2: No se selecciona un idioma alternativo</b><br>
+      <b>Given</b> que el visitante no ha seleccionado otro idioma soportado<br>
+      <b>When</b> se accede a la Landing Page<br>
+      <b>Then</b> el contenido se proporciona en inglés (en_US), que es el idioma predeterminado.
+    </td>
+  </tr>
 </table>
 
-<br>
+##### **US58 - Acceder a los Términos y Condiciones**
 
-##### **US60 - Provide monitoring organization services**
-
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US60</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP01</td></tr>
-  <tr><th>Title</th><td colspan="3">Provide monitoring organization services</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the RESTful API to provide operations for monitoring sites, storage areas, and equipment so SafeLab applications can use the corresponding organization information.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid request is received</b><br>
-    <b>Given</b> that a valid request for supported monitoring organization data is received<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns the corresponding successful response.<br><br>
-    <b>Scenario 2: Requested resource does not exist</b><br>
-    <b>Given</b> that the requested monitoring organization resource does not exist<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns a response indicating that the resource was not found.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US58</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP08</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Acceder a los Términos y Condiciones</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero acceder a los Términos y Condiciones de SafeLab para revisar las condiciones asociadas al servicio.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se solicitan los Términos y Condiciones desde la Landing Page</b><br>
+      <b>Given</b> que los Términos y Condiciones de SafeLab están disponibles<br>
+      <b>When</b> un visitante los solicita desde la Landing Page<br>
+      <b>Then</b> el sitio proporciona los Términos y Condiciones.<br><br>
+      <b>Scenario 2: Se solicitan los Términos y Condiciones durante el registro de una cuenta</b><br>
+      <b>Given</b> que un usuario está registrando una cuenta de SafeLab<br>
+      <b>When</b> se solicitan los Términos y Condiciones<br>
+      <b>Then</b> la aplicación proporciona acceso a los Términos y Condiciones.
+    </td>
+  </tr>
 </table>
 
-##### **US61 - Provide environmental monitoring services**
+##### **US59 - Registrar cuenta de usuario**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US61</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">Provide environmental monitoring services</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the RESTful API to provide environmental monitoring data so SafeLab applications can consume temperature, humidity, and equipment status information.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Monitoring data exists</b><br>
-    <b>Given</b> that monitoring information is available for the requested equipment<br>
-    <b>When</b> a valid request is processed<br>
-    <b>Then</b> the service returns the available monitoring information.<br><br>
-    <b>Scenario 2: Requested equipment does not exist</b><br>
-    <b>Given</b> that the requested equipment is not registered<br>
-    <b>When</b> a monitoring request is processed<br>
-    <b>Then</b> the service returns a response indicating that the equipment was not found.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US59</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Personal de Laboratorio Hospitalario / Empresa Farmacéutica</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Registrar cuenta de usuario</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como miembro del personal de un laboratorio hospitalario o de una empresa farmacéutica, quiero registrar una cuenta de SafeLab para acceder al servicio.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se proporciona información válida de registro</b><br>
+      <b>Given</b> que la información requerida de la cuenta es válida<br>
+      <b>When</b> el usuario solicita el registro de la cuenta<br>
+      <b>Then</b> el sistema crea la cuenta.<br><br>
+      <b>Scenario 2: La información requerida de registro es inválida o está incompleta</b><br>
+      <b>Given</b> que la información requerida de la cuenta es inválida o está incompleta<br>
+      <b>When</b> el usuario solicita el registro de la cuenta<br>
+      <b>Then</b> el sistema rechaza el registro de la cuenta.
+    </td>
+  </tr>
 </table>
 
-##### **US62 - Provide alert and incident services**
+##### **US60 - Proporcionar servicios de organización del monitoreo**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US62</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP03</td></tr>
-  <tr><th>Title</th><td colspan="3">Provide alert and incident services</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the RESTful API to provide alert and incident information so SafeLab applications can use generated alerts and their status.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid alert request is received</b><br>
-    <b>Given</b> that the requested alert information exists<br>
-    <b>When</b> the RESTful service processes a valid request<br>
-    <b>Then</b> the service returns the corresponding alert information.<br><br>
-    <b>Scenario 2: Requested alert does not exist</b><br>
-    <b>Given</b> that the requested alert is unavailable<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns a response indicating that the alert was not found.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US60</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP01</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de organización del monitoreo</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la RESTful API proporcione operaciones para sitios de monitoreo, áreas de almacenamiento y equipos, de modo que las aplicaciones de SafeLab puedan utilizar la información correspondiente a la organización del monitoreo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se recibe una solicitud válida</b><br>
+      <b>Given</b> que se recibe una solicitud válida de datos soportados para la organización del monitoreo<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve la respuesta exitosa correspondiente.<br><br>
+      <b>Scenario 2: El recurso solicitado no existe</b><br>
+      <b>Given</b> que el recurso solicitado de organización del monitoreo no existe<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve una respuesta indicando que el recurso no fue encontrado.
+    </td>
+  </tr>
 </table>
 
-##### **US63 - Provide historical data and report services**
+##### **US61 - Proporcionar servicios de monitoreo ambiental**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US63</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>Medium</td><th>Epic</th><td>EP04</td></tr>
-  <tr><th>Title</th><td colspan="3">Provide historical data and report services</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the RESTful API to provide historical monitoring data and report information so SafeLab applications can support analysis and reporting features.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Requested historical information exists</b><br>
-    <b>Given</b> that historical monitoring information exists for a valid request<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns the available historical information.<br><br>
-    <b>Scenario 2: Historical information is unavailable</b><br>
-    <b>Given</b> that no information exists for the requested criteria<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns a response indicating that no corresponding information is available.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US61</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de monitoreo ambiental</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la RESTful API proporcione datos de monitoreo ambiental para que las aplicaciones de SafeLab puedan consumir información de temperatura, humedad y estado de los equipos.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existen datos de monitoreo</b><br>
+      <b>Given</b> que existe información de monitoreo disponible para el equipo solicitado<br>
+      <b>When</b> se procesa una solicitud válida<br>
+      <b>Then</b> el servicio devuelve la información de monitoreo disponible.<br><br>
+      <b>Scenario 2: El equipo solicitado no existe</b><br>
+      <b>Given</b> que el equipo solicitado no está registrado<br>
+      <b>When</b> se procesa una solicitud de monitoreo<br>
+      <b>Then</b> el servicio devuelve una respuesta indicando que el equipo no fue encontrado.
+    </td>
+  </tr>
 </table>
 
-##### **US64 - Provide user access services**
+##### **US62 - Proporcionar servicios de alertas e incidentes**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US64</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP07</td></tr>
-  <tr><th>Title</th><td colspan="3">Provide user access services</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the RESTful API to support SafeLab account and access operations so the mobile applications can use the required user access capabilities.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Valid access request is received</b><br>
-    <b>Given</b> that valid account information is provided<br>
-    <b>When</b> the RESTful service processes a supported access request<br>
-    <b>Then</b> the service returns the corresponding successful response.<br><br>
-    <b>Scenario 2: Invalid account information is provided</b><br>
-    <b>Given</b> that the provided account information cannot be validated<br>
-    <b>When</b> the RESTful service processes the request<br>
-    <b>Then</b> the service returns a response indicating that the operation cannot be completed.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US62</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP03</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de alertas e incidentes</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la RESTful API proporcione información de alertas e incidentes para que las aplicaciones de SafeLab puedan utilizar las alertas generadas y sus estados.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se recibe una solicitud válida de alerta</b><br>
+      <b>Given</b> que existe la información de la alerta solicitada<br>
+      <b>When</b> el servicio RESTful procesa una solicitud válida<br>
+      <b>Then</b> el servicio devuelve la información correspondiente de la alerta.<br><br>
+      <b>Scenario 2: La alerta solicitada no existe</b><br>
+      <b>Given</b> que la alerta solicitada no está disponible<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve una respuesta indicando que la alerta no fue encontrada.
+    </td>
+  </tr>
 </table>
 
-##### **US65 - Support local data storage on mobile device**
+##### **US63 - Proporcionar servicios de datos históricos y reportes**
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr><th>Story ID</th><td>US65</td><th>User</th><td>Developer</td></tr>
-  <tr><th>Priority</th><td>High</td><th>Epic</th><td>EP02</td></tr>
-  <tr><th>Title</th><td colspan="3">Support local data storage on mobile device</td></tr>
-  <tr><th>Description</th><td colspan="3">As a Developer, I want the mobile application to support local storage of selected SafeLab information so SafeLab can persist and retrieve monitoring information on the device.</td></tr>
-  <tr><th>Acceptance Criteria</th><td colspan="3">
-    <b>Scenario 1: Information is selected for local persistence</b><br>
-    <b>Given</b> that SafeLab information has been defined for local storage<br>
-    <b>When</b> the mobile application stores that information<br>
-    <b>Then</b> the information remains persisted on the device according to the defined storage behavior.<br><br>
-    <b>Scenario 2: Stored information is requested</b><br>
-    <b>Given</b> that selected SafeLab information has been stored locally<br>
-    <b>When</b> the mobile application requests the stored information<br>
-    <b>Then</b> the locally persisted information can be retrieved.
-  </td></tr>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US63</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Media</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP04</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de datos históricos y reportes</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la RESTful API proporcione datos históricos de monitoreo e información de reportes para que las aplicaciones de SafeLab puedan soportar funcionalidades de análisis y generación de reportes.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Existe la información histórica solicitada</b><br>
+      <b>Given</b> que existe información histórica de monitoreo para una solicitud válida<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve la información histórica disponible.<br><br>
+      <b>Scenario 2: La información histórica no está disponible</b><br>
+      <b>Given</b> que no existe información para los criterios solicitados<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve una respuesta indicando que no hay información correspondiente disponible.
+    </td>
+  </tr>
+</table>
+
+##### **US64 - Proporcionar servicios de acceso de usuario**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US64</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP07</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de acceso de usuario</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la RESTful API soporte operaciones de cuenta y acceso de SafeLab para que las aplicaciones móviles puedan utilizar las capacidades de acceso de usuario requeridas.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se recibe una solicitud válida de acceso</b><br>
+      <b>Given</b> que se proporciona información válida de la cuenta<br>
+      <b>When</b> el servicio RESTful procesa una solicitud de acceso soportada<br>
+      <b>Then</b> el servicio devuelve la respuesta exitosa correspondiente.<br><br>
+      <b>Scenario 2: Se proporciona información inválida de la cuenta</b><br>
+      <b>Given</b> que la información proporcionada de la cuenta no puede validarse<br>
+      <b>When</b> el servicio RESTful procesa la solicitud<br>
+      <b>Then</b> el servicio devuelve una respuesta indicando que la operación no puede completarse.
+    </td>
+  </tr>
+</table>
+
+##### **US65 - Soportar almacenamiento local de datos en el dispositivo móvil**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Story ID</th><td style="text-align: center; vertical-align: top; padding: 6px;">US65</td><th style="text-align: center; vertical-align: middle; padding: 6px;">User</th><td style="text-align: center; vertical-align: top; padding: 6px;">Developer</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Priority</th><td style="text-align: center; vertical-align: top; padding: 6px;">Alta</td><th style="text-align: center; vertical-align: middle; padding: 6px;">Epic</th><td style="text-align: center; vertical-align: top; padding: 6px;">EP02</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Soportar almacenamiento local de datos en el dispositivo móvil</td></tr>
+  <tr><th style="text-align: center; vertical-align: middle; padding: 6px;">Description</th><td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">Como Developer, quiero que la aplicación móvil soporte el almacenamiento local de información seleccionada de SafeLab para persistir y recuperar información de monitoreo en el dispositivo.</td></tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle; padding: 6px;">Acceptance Criteria</th>
+    <td colspan="3" style="text-align: justify; vertical-align: top; padding: 6px;">
+      <b>Scenario 1: Se selecciona información para persistencia local</b><br>
+      <b>Given</b> que se ha definido información de SafeLab para almacenamiento local<br>
+      <b>When</b> la aplicación móvil almacena dicha información<br>
+      <b>Then</b> la información permanece persistida en el dispositivo de acuerdo con el comportamiento de almacenamiento definido.<br><br>
+      <b>Scenario 2: Se solicita información almacenada</b><br>
+      <b>Given</b> que se ha almacenado localmente información seleccionada de SafeLab<br>
+      <b>When</b> la aplicación móvil solicita la información almacenada<br>
+      <b>Then</b> la información persistida localmente puede recuperarse.
+    </td>
+  </tr>
 </table>
 
 <br>
 
 #### **Spike Stories**
 
-##### **SP01 - Investigate Google Authentication Integration Options**
+##### **SP01 - Investigar opciones de integración para autenticación con Google**
 
 <p style="text-align: justify;">
-  <b>Context:</b> SafeLab includes Google account login through US51 - Login with Google account. The mobile solution includes native and cross-platform applications that interact with internally developed RESTful services. Before developing the complete authentication flow, the development team needs to evaluate the integration approach, mobile compatibility, backend requirements, and technical considerations required to validate authenticated users.
+  <b>Context:</b> SafeLab incluye el inicio de sesión con una cuenta de Google mediante la US51 - Iniciar sesión con una cuenta de Google. La solución móvil contempla aplicaciones nativas y cross-platform que interactúan con servicios RESTful desarrollados internamente. Antes de desarrollar el flujo completo de autenticación, el equipo de desarrollo necesita evaluar el enfoque de integración, la compatibilidad móvil, los requisitos del backend y las consideraciones técnicas necesarias para validar a los usuarios autenticados.
 </p>
 
 <p style="text-align: justify;">
   <b>Spike Story:</b><br>
-  As a Development Team,<br>
-  I want to investigate and prototype the integration of Google account authentication in the SafeLab mobile applications and RESTful services,<br>
-  so we can understand the technical requirements, dependencies, risks, and effort required before implementing US51 - Login with Google account.
+  Como equipo de desarrollo,<br>
+  queremos investigar y prototipar la integración de autenticación con una cuenta de Google en las aplicaciones móviles y los servicios RESTful de SafeLab,<br>
+  para comprender los requisitos técnicos, dependencias, riesgos y esfuerzo requeridos antes de implementar la US51 - Iniciar sesión con una cuenta de Google.
 </p>
 
 <p style="text-align: justify;">
@@ -1635,83 +1951,82 @@ El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la ca
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Official authentication documentation is reviewed</b><br>
-  <b>Given</b> that SafeLab requires users to authenticate using a Google account<br>
-  <b>When</b> the developer reviews the official documentation related to Google authentication<br>
-  <b>Then</b> the authentication flow, required configurations, and main integration requirements are documented.
+  <b>Scenario 1: Se revisa la documentación oficial de autenticación</b><br>
+  <b>Given</b> que SafeLab requiere que los usuarios se autentiquen mediante una cuenta de Google<br>
+  <b>When</b> el Developer revisa la documentación oficial relacionada con la autenticación de Google<br>
+  <b>Then</b> se documentan el flujo de autenticación, las configuraciones requeridas y los principales requisitos de integración.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Native mobile compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a native mobile application<br>
-  <b>When</b> the developer evaluates the authentication integration for the native mobile implementation<br>
-  <b>Then</b> the required configuration, dependencies, and authentication flow are documented.
+  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa la integración de autenticación para la implementación nativa<br>
+  <b>Then</b> se documentan la configuración requerida, las dependencias y el flujo de autenticación.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Cross-platform compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must also include a cross-platform mobile application<br>
-  <b>When</b> the developer evaluates the authentication integration for the cross-platform implementation<br>
-  <b>Then</b> the compatibility requirements and identified integration differences are documented.
+  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
+  <b>Given</b> que SafeLab también debe incluir una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa la integración de autenticación para la implementación cross-platform<br>
+  <b>Then</b> se documentan los requisitos de compatibilidad y las diferencias de integración identificadas.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Backend authentication requirements are evaluated</b><br>
-  <b>Given</b> that SafeLab uses internally developed RESTful services<br>
-  <b>When</b> the developer analyzes how authenticated user information must be validated by the backend<br>
-  <b>Then</b> the required interaction between the mobile application and the RESTful services is documented.
+  <b>Scenario 4: Se evalúan los requisitos de autenticación del backend</b><br>
+  <b>Given</b> que SafeLab utiliza servicios RESTful desarrollados internamente<br>
+  <b>When</b> el Developer analiza cómo debe validarse en el backend la información de un usuario autenticado<br>
+  <b>Then</b> se documenta la interacción requerida entre la aplicación móvil y los servicios RESTful.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Security considerations are identified</b><br>
-  <b>Given</b> that authentication provides access to SafeLab user information and functionalities<br>
-  <b>When</b> the developer analyzes the authentication flow<br>
-  <b>Then</b> the main security considerations and required validation steps are documented.
+  <b>Scenario 5: Se identifican las consideraciones de seguridad</b><br>
+  <b>Given</b> que la autenticación proporciona acceso a información y funcionalidades de los usuarios de SafeLab<br>
+  <b>When</b> el Developer analiza el flujo de autenticación<br>
+  <b>Then</b> se documentan las principales consideraciones de seguridad y los pasos de validación requeridos.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Authentication integration is prototyped</b><br>
-  <b>Given</b> that an integration approach has been selected for evaluation<br>
-  <b>When</b> the developer creates a minimal proof of concept<br>
-  <b>Then</b> the prototype verifies whether a Google account can be authenticated and recognized by SafeLab.
+  <b>Scenario 6: Se prototipa la integración de autenticación</b><br>
+  <b>Given</b> que se ha seleccionado un enfoque de integración para su evaluación<br>
+  <b>When</b> el Developer crea un Proof of Concept mínimo<br>
+  <b>Then</b> el prototipo verifica si una cuenta de Google puede autenticarse y ser reconocida por SafeLab.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Implementation effort is estimated</b><br>
-  <b>Given</b> that the authentication requirements and dependencies have been identified<br>
-  <b>When</b> the development team reviews the work required for the complete implementation<br>
-  <b>Then</b> the main implementation tasks and an approximate effort estimation are documented.
+  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han identificado los requisitos y dependencias de autenticación<br>
+  <b>When</b> el equipo de desarrollo revisa el trabajo requerido para la implementación completa<br>
+  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Findings are documented and reviewed</b><br>
-  <b>Given</b> that the investigation and technical validation are complete<br>
-  <b>When</b> the development team reviews the collected findings<br>
-  <b>Then</b> the selected approach, requirements, dependencies, risks, and implementation considerations are documented for the refinement of US51.
+  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
+  <b>Given</b> que la investigación y la validación técnica han finalizado<br>
+  <b>When</b> el equipo de desarrollo revisa los hallazgos recopilados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, los requisitos, las dependencias, los riesgos y las consideraciones de implementación para el refinamiento de la US51.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Official authentication documentation is reviewed.<br>
-  - Native, cross-platform, and backend integration requirements are documented.<br>
-  - Security considerations and dependencies are identified.<br>
-  - A minimal authentication proof of concept is completed.<br>
-  - The implementation effort is estimated.<br>
-  - The findings are reviewed by the development team and used to refine US51.
+  - Se revisó la documentación oficial de autenticación.<br>
+  - Se documentaron los requisitos de integración nativa, cross-platform y de backend.<br>
+  - Se identificaron las consideraciones de seguridad y las dependencias.<br>
+  - Se completó un Proof of Concept mínimo de autenticación.<br>
+  - Se estimó el esfuerzo de implementación.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US51.
 </p>
 
-
-##### **SP02 - Investigate Local Storage Options for Monitoring Data**
+##### **SP02 - Investigar opciones de almacenamiento local para datos de monitoreo**
 
 <p style="text-align: justify;">
-  <b>Context:</b> SafeLab manages environmental monitoring information such as temperature, humidity, and equipment status and includes local persistence through US65 - Support local data storage on mobile device. Before implementing the complete persistence mechanism, the development team needs to evaluate a suitable local storage approach and verify that SafeLab monitoring information can be stored and retrieved correctly.
+  <b>Context:</b> SafeLab gestiona información de monitoreo ambiental, como temperatura, humedad y estado de los equipos, e incluye persistencia local mediante la US65 - Soportar almacenamiento local de datos en el dispositivo móvil. Antes de implementar el mecanismo completo de persistencia, el equipo de desarrollo necesita evaluar un enfoque adecuado de almacenamiento local y verificar que la información de monitoreo de SafeLab pueda almacenarse y recuperarse correctamente.
 </p>
 
 <p style="text-align: justify;">
   <b>Spike Story:</b><br>
-  As a Development Team,<br>
-  I want to investigate and prototype local storage alternatives for SafeLab monitoring data,<br>
-  so we can select an appropriate persistence approach and understand its requirements, limitations, dependencies, and implementation effort before implementing US65 - Support local data storage on mobile device.
+  Como equipo de desarrollo,<br>
+  queremos investigar y prototipar alternativas de almacenamiento local para los datos de monitoreo de SafeLab,<br>
+  para seleccionar un enfoque de persistencia apropiado y comprender sus requisitos, limitaciones, dependencias y esfuerzo de implementación antes de desarrollar la US65.
 </p>
 
 <p style="text-align: justify;">
@@ -1719,84 +2034,83 @@ El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la ca
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Local storage alternatives are investigated</b><br>
-  <b>Given</b> that SafeLab must persist selected information locally on the mobile device<br>
-  <b>When</b> the developer investigates storage alternatives compatible with the mobile solution<br>
-  <b>Then</b> the available alternatives and their main characteristics are documented.
+  <b>Scenario 1: Se investigan alternativas de almacenamiento local</b><br>
+  <b>Given</b> que SafeLab debe persistir determinada información de forma local en el dispositivo móvil<br>
+  <b>When</b> el Developer investiga alternativas de almacenamiento compatibles con la solución móvil<br>
+  <b>Then</b> se documentan las alternativas disponibles y sus principales características.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Native mobile compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a native mobile application<br>
-  <b>When</b> the developer evaluates the candidate persistence alternatives<br>
-  <b>Then</b> their compatibility and integration requirements for the native implementation are documented.
+  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de persistencia<br>
+  <b>Then</b> se documentan su compatibilidad y sus requisitos de integración para la implementación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Cross-platform compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a cross-platform mobile application<br>
-  <b>When</b> the developer evaluates the candidate persistence alternatives<br>
-  <b>Then</b> their compatibility and integration requirements for the cross-platform implementation are documented.
+  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de persistencia<br>
+  <b>Then</b> se documentan su compatibilidad y sus requisitos de integración para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Monitoring information for the prototype is defined</b><br>
-  <b>Given</b> that SafeLab manages temperature, humidity, and equipment status information<br>
-  <b>When</b> the developer defines the data required for the persistence test<br>
-  <b>Then</b> the monitoring information used by the proof of concept is documented.
+  <b>Scenario 4: Se define la información de monitoreo para el prototipo</b><br>
+  <b>Given</b> que SafeLab gestiona información de temperatura, humedad y estado de los equipos<br>
+  <b>When</b> el Developer define los datos requeridos para la prueba de persistencia<br>
+  <b>Then</b> se documenta la información de monitoreo que utilizará el Proof of Concept.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Local persistence is prototyped</b><br>
-  <b>Given</b> that a candidate storage approach has been selected<br>
-  <b>When</b> the developer stores sample SafeLab monitoring information on the device<br>
-  <b>Then</b> the prototype verifies that the selected information remains locally persisted.
+  <b>Scenario 5: Se prototipa la persistencia local</b><br>
+  <b>Given</b> que se ha seleccionado un enfoque candidato de almacenamiento<br>
+  <b>When</b> el Developer almacena en el dispositivo información de monitoreo de ejemplo de SafeLab<br>
+  <b>Then</b> el prototipo verifica que la información seleccionada permanezca persistida localmente.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Stored monitoring information is retrieved</b><br>
-  <b>Given</b> that SafeLab monitoring information has been persisted locally<br>
-  <b>When</b> the prototype requests the stored information<br>
-  <b>Then</b> the previously stored information can be retrieved correctly.
+  <b>Scenario 6: Se recupera la información de monitoreo almacenada</b><br>
+  <b>Given</b> que la información de monitoreo de SafeLab ha sido persistida localmente<br>
+  <b>When</b> el prototipo solicita la información almacenada<br>
+  <b>Then</b> la información previamente almacenada puede recuperarse correctamente.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Persistence after application restart is evaluated</b><br>
-  <b>Given</b> that monitoring information has been stored locally<br>
-  <b>When</b> the application is closed and started again<br>
-  <b>Then</b> the prototype verifies whether the persisted information remains available.
+  <b>Scenario 7: Se evalúa la persistencia después de reiniciar la aplicación</b><br>
+  <b>Given</b> que la información de monitoreo ha sido almacenada localmente<br>
+  <b>When</b> la aplicación se cierra y vuelve a iniciarse<br>
+  <b>Then</b> el prototipo verifica si la información persistida continúa disponible.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Implementation effort and findings are documented</b><br>
-  <b>Given</b> that the storage alternatives and proof of concept have been evaluated<br>
-  <b>When</b> the development team reviews the results<br>
-  <b>Then</b> the selected approach, dependencies, limitations, implementation tasks, and approximate effort are documented for the refinement of US65.
+  <b>Scenario 8: Se documentan el esfuerzo de implementación y los hallazgos</b><br>
+  <b>Given</b> que se han evaluado las alternativas de almacenamiento y el Proof of Concept<br>
+  <b>When</b> el equipo de desarrollo revisa los resultados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, las dependencias, las limitaciones, las tareas de implementación y una estimación aproximada del esfuerzo para el refinamiento de la US65.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Compatible local storage alternatives are reviewed.<br>
-  - Native and cross-platform integration requirements are documented.<br>
-  - The monitoring information used for technical validation is identified.<br>
-  - A minimal proof of concept stores and retrieves monitoring information locally.<br>
-  - Persistence after application restart is validated.<br>
-  - The implementation effort is estimated.<br>
-  - The findings are reviewed by the development team and used to refine US65.
+  - Se revisaron alternativas compatibles de almacenamiento local.<br>
+  - Se documentaron los requisitos de integración nativa y cross-platform.<br>
+  - Se identificó la información de monitoreo utilizada para la validación técnica.<br>
+  - Un Proof of Concept mínimo almacena y recupera información de monitoreo de forma local.<br>
+  - Se validó la persistencia después de reiniciar la aplicación.<br>
+  - Se estimó el esfuerzo de implementación.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US65.
 </p>
 
-
-##### **SP03 - Investigate Mobile Alert Delivery Options**
+##### **SP03 - Investigar opciones de entrega de alertas móviles**
 
 <p style="text-align: justify;">
-  <b>Context:</b> SafeLab includes alerts related to temperature, humidity, and equipment conditions and mobile alert reception through US24 - Receive alerts on mobile device. Before implementing the complete delivery mechanism, the development team needs to investigate how SafeLab alerts can be communicated to mobile devices and how this process interacts with the mobile applications and the internally developed RESTful services.
+  <b>Context:</b> SafeLab incluye alertas relacionadas con temperatura, humedad y condiciones de los equipos, así como la recepción móvil de alertas mediante la US24 - Recibir alertas en un dispositivo móvil. Antes de implementar el mecanismo completo de entrega, el equipo de desarrollo necesita investigar cómo pueden comunicarse las alertas de SafeLab a los dispositivos móviles y cómo este proceso interactúa con las aplicaciones móviles y los servicios RESTful desarrollados internamente.
 </p>
 
 <p style="text-align: justify;">
   <b>Spike Story:</b><br>
-  As a Development Team,<br>
-  I want to investigate and prototype mobile alert delivery alternatives for SafeLab,<br>
-  so we can select an appropriate approach and understand its technical requirements, dependencies, risks, and implementation effort before implementing US24 - Receive alerts on mobile device.
+  Como equipo de desarrollo,<br>
+  queremos investigar y prototipar alternativas para la entrega de alertas móviles de SafeLab,<br>
+  para seleccionar un enfoque adecuado y comprender sus requisitos técnicos, dependencias, riesgos y esfuerzo de implementación antes de desarrollar la US24.
 </p>
 
 <p style="text-align: justify;">
@@ -1804,84 +2118,83 @@ El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la ca
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Alert delivery alternatives are investigated</b><br>
-  <b>Given</b> that SafeLab needs to communicate generated alerts to mobile users<br>
-  <b>When</b> the developer investigates technically viable mobile alert delivery alternatives<br>
-  <b>Then</b> the available alternatives and their main integration requirements are documented.
+  <b>Scenario 1: Se investigan alternativas de entrega de alertas</b><br>
+  <b>Given</b> que SafeLab necesita comunicar las alertas generadas a los usuarios móviles<br>
+  <b>When</b> el Developer investiga alternativas técnicamente viables para la entrega de alertas móviles<br>
+  <b>Then</b> se documentan las alternativas disponibles y sus principales requisitos de integración.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Native mobile compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a native mobile application<br>
-  <b>When</b> the developer evaluates the candidate alert delivery alternatives<br>
-  <b>Then</b> their compatibility and configuration requirements for the native mobile application are documented.
+  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de entrega de alertas<br>
+  <b>Then</b> se documentan su compatibilidad y los requisitos de configuración para la aplicación móvil nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Cross-platform compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a cross-platform mobile application<br>
-  <b>When</b> the developer evaluates the candidate alert delivery alternatives<br>
-  <b>Then</b> their compatibility and configuration requirements for the cross-platform implementation are documented.
+  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de entrega de alertas<br>
+  <b>Then</b> se documentan su compatibilidad y los requisitos de configuración para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Integration with SafeLab alerts is analyzed</b><br>
-  <b>Given</b> that SafeLab generates alerts from temperature, humidity, and equipment conditions<br>
-  <b>When</b> the developer analyzes the mobile alert delivery process<br>
-  <b>Then</b> the required interaction between generated alerts, RESTful services, and mobile applications is documented.
+  <b>Scenario 4: Se analiza la integración con las alertas de SafeLab</b><br>
+  <b>Given</b> que SafeLab genera alertas a partir de las condiciones de temperatura, humedad y de los equipos<br>
+  <b>When</b> el Developer analiza el proceso de entrega de alertas móviles<br>
+  <b>Then</b> se documenta la interacción requerida entre las alertas generadas, los servicios RESTful y las aplicaciones móviles.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Required dependencies and configuration are identified</b><br>
-  <b>Given</b> that mobile alert delivery may require additional configuration or dependencies<br>
-  <b>When</b> the developer evaluates the selected alternative<br>
-  <b>Then</b> the required dependencies, configuration steps, and identified limitations are documented.
+  <b>Scenario 5: Se identifican las dependencias y configuraciones requeridas</b><br>
+  <b>Given</b> que la entrega de alertas móviles puede requerir configuraciones o dependencias adicionales<br>
+  <b>When</b> el Developer evalúa la alternativa seleccionada<br>
+  <b>Then</b> se documentan las dependencias requeridas, los pasos de configuración y las limitaciones identificadas.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Alert delivery is prototyped</b><br>
-  <b>Given</b> that an alert delivery alternative has been selected for evaluation<br>
-  <b>When</b> the developer generates and sends a SafeLab test alert<br>
-  <b>Then</b> the proof of concept verifies whether the alert can be delivered to a mobile device.
+  <b>Scenario 6: Se prototipa la entrega de alertas</b><br>
+  <b>Given</b> que se ha seleccionado una alternativa de entrega de alertas para su evaluación<br>
+  <b>When</b> el Developer genera y envía una alerta de prueba de SafeLab<br>
+  <b>Then</b> el Proof of Concept verifica si la alerta puede entregarse a un dispositivo móvil.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Implementation effort is estimated</b><br>
-  <b>Given</b> that the technical requirements and dependencies have been identified<br>
-  <b>When</b> the development team reviews the work required for mobile alert delivery<br>
-  <b>Then</b> the main implementation tasks and an approximate effort estimation are documented.
+  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han identificado los requisitos técnicos y las dependencias<br>
+  <b>When</b> el equipo de desarrollo revisa el trabajo requerido para la entrega de alertas móviles<br>
+  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Findings are documented and reviewed</b><br>
-  <b>Given</b> that the technical evaluation is complete<br>
-  <b>When</b> the development team reviews the results<br>
-  <b>Then</b> the selected approach, integration requirements, dependencies, limitations, risks, and implementation considerations are documented for the refinement of US24.
+  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
+  <b>Given</b> que la evaluación técnica ha finalizado<br>
+  <b>When</b> el equipo de desarrollo revisa los resultados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, los requisitos de integración, las dependencias, las limitaciones, los riesgos y las consideraciones de implementación para el refinamiento de la US24.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Mobile alert delivery alternatives are evaluated.<br>
-  - Native and cross-platform compatibility is documented.<br>
-  - Integration requirements with SafeLab alerts and RESTful services are identified.<br>
-  - A minimal proof of concept using a SafeLab test alert is completed.<br>
-  - Technical dependencies, limitations, and risks are documented.<br>
-  - The implementation effort is estimated.<br>
-  - The findings are reviewed by the development team and used to refine US24.
+  - Se evaluaron alternativas de entrega de alertas móviles.<br>
+  - Se documentó la compatibilidad nativa y cross-platform.<br>
+  - Se identificaron los requisitos de integración con las alertas de SafeLab y los servicios RESTful.<br>
+  - Se completó un Proof of Concept mínimo utilizando una alerta de prueba de SafeLab.<br>
+  - Se documentaron las dependencias técnicas, las limitaciones y los riesgos.<br>
+  - Se estimó el esfuerzo de implementación.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US24.
 </p>
 
-
-##### **SP04 - Investigate Monitoring Trend Visualization Options**
+##### **SP04 - Investigar opciones de visualización de tendencias de monitoreo**
 
 <p style="text-align: justify;">
-  <b>Context:</b> SafeLab includes alert, temperature, and humidity trend analysis through US48 - View alert trends, US49 - View temperature trends, and US50 - View humidity trends. These functionalities use historical monitoring information to represent changes over time. Before implementing the trend visualizations in the mobile applications, the development team needs to evaluate compatible visualization alternatives and validate how SafeLab historical monitoring data can be represented.
+  <b>Context:</b> SafeLab incluye el análisis de tendencias de alertas, temperatura y humedad mediante las US48 - Visualizar tendencias de alertas, US49 - Visualizar tendencias de temperatura y US50 - Visualizar tendencias de humedad. Estas funcionalidades utilizan información histórica de monitoreo para representar cambios a lo largo del tiempo. Antes de implementar las visualizaciones de tendencias en las aplicaciones móviles, el equipo de desarrollo necesita evaluar alternativas de visualización compatibles y validar cómo pueden representarse los datos históricos de monitoreo de SafeLab.
 </p>
 
 <p style="text-align: justify;">
   <b>Spike Story:</b><br>
-  As a Development Team,<br>
-  I want to investigate and prototype visualization alternatives for SafeLab monitoring trends,<br>
-  so we can select an appropriate approach for representing alert, temperature, and humidity historical information before implementing US48, US49, and US50.
+  Como equipo de desarrollo,<br>
+  queremos investigar y prototipar alternativas de visualización para las tendencias de monitoreo de SafeLab,<br>
+  para seleccionar un enfoque adecuado que permita representar información histórica de alertas, temperatura y humedad antes de implementar las US48, US49 y US50.
 </p>
 
 <p style="text-align: justify;">
@@ -1889,162 +2202,178 @@ El Empathy Map de Diego Ramírez Paredes evidencia el estrés generado por la ca
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Visualization alternatives are investigated</b><br>
-  <b>Given</b> that SafeLab needs to represent historical alert, temperature, and humidity information<br>
-  <b>When</b> the developer investigates visualization alternatives compatible with the mobile solution<br>
-  <b>Then</b> the available alternatives and their main characteristics are documented.
+  <b>Scenario 1: Se investigan alternativas de visualización</b><br>
+  <b>Given</b> que SafeLab necesita representar información histórica de alertas, temperatura y humedad<br>
+  <b>When</b> el Developer investiga alternativas de visualización compatibles con la solución móvil<br>
+  <b>Then</b> se documentan las alternativas disponibles y sus principales características.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Native mobile compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a native mobile application<br>
-  <b>When</b> the developer evaluates the candidate visualization alternatives<br>
-  <b>Then</b> their compatibility and integration requirements for the native implementation are documented.
+  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de visualización<br>
+  <b>Then</b> se documentan su compatibilidad y los requisitos de integración para la implementación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Cross-platform compatibility is evaluated</b><br>
-  <b>Given</b> that SafeLab must include a cross-platform mobile application<br>
-  <b>When</b> the developer evaluates the candidate visualization alternatives<br>
-  <b>Then</b> their compatibility and integration requirements for the cross-platform implementation are documented.
+  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
+  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de visualización<br>
+  <b>Then</b> se documentan su compatibilidad y los requisitos de integración para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: SafeLab historical data is evaluated</b><br>
-  <b>Given</b> that SafeLab stores historical information related to alerts, temperature, and humidity<br>
-  <b>When</b> the developer analyzes the data required by the trend functionalities<br>
-  <b>Then</b> the information required for the visualization prototype is documented.
+  <b>Scenario 4: Se evalúan los datos históricos de SafeLab</b><br>
+  <b>Given</b> que SafeLab almacena información histórica relacionada con alertas, temperatura y humedad<br>
+  <b>When</b> el Developer analiza los datos requeridos por las funcionalidades de tendencias<br>
+  <b>Then</b> se documenta la información requerida para el prototipo de visualización.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Temperature trend visualization is prototyped</b><br>
-  <b>Given</b> that historical temperature data is available for technical validation<br>
-  <b>When</b> the developer uses the selected visualization alternative<br>
-  <b>Then</b> the prototype represents the temperature information across the evaluated period.
+  <b>Scenario 5: Se prototipa la visualización de tendencias de temperatura</b><br>
+  <b>Given</b> que existen datos históricos de temperatura disponibles para la validación técnica<br>
+  <b>When</b> el Developer utiliza la alternativa de visualización seleccionada<br>
+  <b>Then</b> el prototipo representa la información de temperatura a lo largo del periodo evaluado.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Humidity and alert trend visualization is validated</b><br>
-  <b>Given</b> that historical humidity and alert information is available for technical validation<br>
-  <b>When</b> the developer uses the selected visualization alternative<br>
-  <b>Then</b> the prototype verifies that the required historical information can also be represented.
+  <b>Scenario 6: Se valida la visualización de tendencias de humedad y alertas</b><br>
+  <b>Given</b> que existen datos históricos de humedad y alertas disponibles para la validación técnica<br>
+  <b>When</b> el Developer utiliza la alternativa de visualización seleccionada<br>
+  <b>Then</b> el prototipo verifica que la información histórica requerida también pueda representarse.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Implementation effort is estimated</b><br>
-  <b>Given</b> that the candidate visualization alternatives have been evaluated<br>
-  <b>When</b> the development team compares their implementation requirements<br>
-  <b>Then</b> the main implementation tasks and approximate effort are documented.
+  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han evaluado las alternativas candidatas de visualización<br>
+  <b>When</b> el equipo de desarrollo compara sus requisitos de implementación<br>
+  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Findings are documented and reviewed</b><br>
-  <b>Given</b> that the visualization prototype has been evaluated<br>
-  <b>When</b> the development team reviews the results<br>
-  <b>Then</b> the selected approach, requirements, limitations, and implementation considerations are documented for the refinement of US48, US49, and US50.
+  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
+  <b>Given</b> que el prototipo de visualización ha sido evaluado<br>
+  <b>When</b> el equipo de desarrollo revisa los resultados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, los requisitos, las limitaciones y las consideraciones de implementación para el refinamiento de las US48, US49 y US50.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Compatible visualization alternatives are evaluated.<br>
-  - Native and cross-platform integration requirements are documented.<br>
-  - The historical information required for the prototype is identified.<br>
-  - A minimal trend visualization prototype is completed.<br>
-  - Temperature, humidity, and alert information can be represented in the technical validation.<br>
-  - The implementation effort is estimated.<br>
-  - The findings are reviewed by the development team and used to refine US48, US49, and US50.
+  - Se evaluaron alternativas de visualización compatibles.<br>
+  - Se documentaron los requisitos de integración nativa y cross-platform.<br>
+  - Se identificó la información histórica requerida para el prototipo.<br>
+  - Se completó un prototipo mínimo de visualización de tendencias.<br>
+  - La información de temperatura, humedad y alertas puede representarse en la validación técnica.<br>
+  - Se estimó el esfuerzo de implementación.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar las US48, US49 y US50.
 </p>
 
 ### **2.4.2. Impact Mapping**
+
 <p style="text-align: justify;">
-  The SafeLab Impact Mapping connects the business goals of the digital product with the expected behavior of its User Personas, the deliverables that support those behaviors, and the User Stories that enable their implementation.
+  El Impact Mapping de SafeLab conecta los objetivos de negocio del producto digital con el comportamiento esperado de sus User Personas, los Deliverables que respaldan dichos comportamientos y las User Stories que permiten su implementación.
 </p>
 
 <p style="text-align: justify;">
-  The first business goal focuses on reducing the time required by the Laboratorist to consult current temperature, humidity, and equipment status information. To contribute to this goal, the Laboratorist is expected to continuously supervise environmental conditions and quickly identify interruptions or abnormal conditions in monitored equipment. These impacts are supported by real-time environmental monitoring and monitoring problem detection capabilities.
+  El primer objetivo de negocio se enfoca en reducir el tiempo requerido por el personal de laboratorio para consultar información actualizada de temperatura, humedad y estado de los equipos. Para contribuir con este objetivo, se espera que el User Persona supervise continuamente las condiciones ambientales e identifique con rapidez las interrupciones o condiciones anómalas de los equipos monitoreados. Estos impactos se respaldan mediante capacidades de monitoreo ambiental en tiempo real y detección de problemas de monitoreo.
 </p>
 
 <p style="text-align: justify;">
-  The second business goal focuses on ensuring that environmental alerts generated in SafeLab are reviewed and acknowledged within an appropriate response time. To contribute to this goal, the Pharmacist is expected to quickly review generated alerts, understand detected incidents, prioritize critical alerts, and register those that have already been attended. These impacts are supported by alert consultation, tracking, prioritization, and management capabilities.
+  El segundo objetivo de negocio se orienta a asegurar que las alertas ambientales generadas en SafeLab sean revisadas y confirmadas dentro de un tiempo de respuesta adecuado. Para contribuir con este objetivo, se espera que el User Persona del segmento farmacéutico revise rápidamente las alertas generadas, comprenda los incidentes detectados, priorice las alertas críticas y registre aquellas que ya fueron atendidas. Estos impactos se respaldan mediante capacidades de consulta, seguimiento, priorización y gestión de alertas.
 </p>
 
 <p align="center">
-  <img src="../assets/07-chapter-2/impact-map-safelab.png" alt="SafeLab Impact Mapping" width="95%">
+  <img src="../assets/07-chapter-2/requirements-specification/impact-mapping/impact-map-safelab.png" alt="Impact Mapping de SafeLab" width="95%">
 </p>
 
 <p align="center">
-  <b>Figure X. SafeLab Impact Mapping.</b><br>
-  <i>Source: Own elaboration using UXPressia.</i>
+  <b>Figura X. Impact Mapping de SafeLab.</b><br>
+  <i>Fuente: Elaboración propia utilizando UXPressia.</i>
 </p>
 
 ### **2.4.3. Product Backlog**
 
-| # Order | User Story ID | Title | Story Points | Sprint |
-| ------- | ------------- | ----- | ------------ | ------ |
-| 1 | US16 | Automatic data collection | 8 | Sprint 1 |
-| 2 | US09 | View temperature values | 3 | Sprint 1 |
-| 3 | US10 | View humidity values | 3 | Sprint 1 |
-| 4 | US13 | View equipment list with real-time data | 3 | Sprint 1 |
-| 5 | US18 | Receive temperature alerts | 5 | Sprint 1 |
-| 6 | US19 | Receive humidity alerts | 5 | Sprint 1 |
-| 7 | US20 | View alerts list | 3 | Sprint 1 |
-| 8 | US15 | Identify equipment without recent data | 3 | Sprint 1 |
-| 9 | US05 | Register equipment | 5 | Sprint 1 |
-| 10 | US07 | Assign equipment to area | 3 | Sprint 1 |
-| 11 | US03 | Create storage area | 3 | Sprint 1 |
-| 12 | US01 | Register monitoring site | 3 | Sprint 1 |
-| 13 | US56 | View SafeLab Landing Page | 2 | Sprint 1 |
-| 14 | US57 | Change Landing Page language | 3 | Sprint 1 |
-| 15 | US58 | Access Terms and Conditions | 2 | Sprint 1 |
-| 16 | US61 | Provide environmental monitoring services | 5 | Sprint 1 |
-| 17 | US60 | Provide monitoring organization services | 8 | Sprint 1 |
-| 18 | US62 | Provide alert and incident services | 5 | Sprint 1 |
-| 19 | US11 | View equipment working status | 3 | Sprint 1 |
-| 20 | US12 | View equipment details | 2 | Sprint 1 |
-| 21 | US02 | View monitoring sites | 2 | Sprint 1 |
-| 22 | US04 | View storage areas | 2 | Sprint 1 |
-| 23 | US06 | View equipment list | 3 | Sprint 1 |
-| 24 | US08 | Search equipment by name | 2 | Sprint 1 |
-| 25 | US14 | Filter equipment by storage area | 2 | Sprint 1 |
-| 26 | US25 | Set alert limits per equipment | 5 | Sprint 2 |
-| 27 | US24 | Receive alerts on mobile device | 5 | Sprint 2 |
-| 28 | US21 | View alert details | 2 | Sprint 2 |
-| 29 | US22 | Acknowledge alert | 2 | Sprint 2 |
-| 30 | US23 | View alerts sorted by severity | 2 | Sprint 2 |
-| 31 | US44 | View critical alerts | 3 | Sprint 2 |
-| 32 | US46 | View equipment with active alerts | 2 | Sprint 2 |
-| 33 | US36 | View abnormal values | 3 | Sprint 2 |
-| 34 | US37 | Receive equipment warning alerts | 3 | Sprint 2 |
-| 35 | US17 | View data on mobile | 5 | Sprint 2 |
-| 36 | US65 | Support local data storage on mobile device | 5 | Sprint 2 |
-| 37 | US43 | View dashboard | 5 | Sprint 2 |
-| 38 | US45 | View summary with totals | 3 | Sprint 2 |
-| 39 | US27 | View historical data | 5 | Sprint 2 |
-| 40 | US28 | Select date range for data | 2 | Sprint 2 |
-| 41 | US30 | Generate report by equipment and date | 5 | Sprint 2 |
-| 42 | US31 | Download report file | 3 | Sprint 2 |
-| 43 | US63 | Provide historical data and report services | 5 | Sprint 2 |
-| 44 | US59 | Register user account | 5 | Sprint 2 |
-| 45 | US52 | Login with email and password | 3 | Sprint 2 |
-| 46 | US51 | Login with Google account | 3 | Sprint 2 |
-| 47 | US64 | Provide user access services | 5 | Sprint 2 |
-| 48 | US29 | Compare data between periods | 3 | Sprint 3 |
-| 49 | US32 | View incident history | 3 | Sprint 3 |
-| 50 | US33 | Export data file | 3 | Sprint 3 |
-| 51 | US34 | Compare weekly and monthly data | 3 | Sprint 3 |
-| 52 | US48 | View alert trends | 3 | Sprint 3 |
-| 53 | US49 | View temperature trends | 3 | Sprint 3 |
-| 54 | US50 | View humidity trends | 3 | Sprint 3 |
-| 55 | US35 | View equipment condition | 3 | Sprint 3 |
-| 56 | US40 | Register maintenance record | 3 | Sprint 3 |
-| 57 | US41 | View maintenance history | 3 | Sprint 3 |
-| 58 | US42 | View equipment reliability | 5 | Sprint 3 |
-| 59 | US38 | View equipment performance data | 3 | Sprint 3 |
-| 60 | US39 | View equipment usage data | 3 | Sprint 3 |
-| 61 | US26 | Share alerts with team | 3 | Sprint 3 |
-| 62 | US53 | Recover password by email | 3 | Sprint 3 |
-| 63 | US54 | Logout from system | 1 | Sprint 3 |
-| 64 | US55 | Assign user role | 3 | Sprint 3 |
+<p style="text-align: justify;">
+  El siguiente Product Backlog organiza las User Stories de SafeLab según su prioridad de negocio, estimación en Story Points y Sprint planificado. La secuencia considera primero las funcionalidades vinculadas con el monitoreo ambiental, la detección de desviaciones y la organización básica del entorno monitoreado; posteriormente incorpora funcionalidades móviles, históricas, de autenticación, análisis y mantenimiento.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;"># Order</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">User Story ID</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Title</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Story Points</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Sprint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">1</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US16</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recolección automática de datos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">8</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US09</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores de temperatura</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US10</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores de humedad</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">4</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US13</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de equipos con datos en tiempo real</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US18</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de temperatura</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">6</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US19</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de humedad</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">7</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US20</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de alertas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">8</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US15</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Identificar equipos sin datos recientes</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">9</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US05</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Registrar equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">10</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US07</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Asignar equipo a un área</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">11</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US03</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Crear área de almacenamiento</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">12</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US01</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Registrar sitio de monitoreo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">13</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US56</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar la Landing Page de SafeLab</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">14</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US57</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Cambiar el idioma de la Landing Page</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">15</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US58</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Acceder a los Términos y Condiciones</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">16</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US61</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de monitoreo ambiental</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">17</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US60</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de organización del monitoreo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">8</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">18</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US62</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de alertas e incidentes</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">19</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US11</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar estado operativo del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">20</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US12</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar detalles del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">21</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US02</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar sitios de monitoreo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">22</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US04</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar áreas de almacenamiento</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">23</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US06</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar lista de equipos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">24</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US08</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Buscar equipo por nombre</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">25</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US14</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Filtrar equipos por área de almacenamiento</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 1</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">26</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US25</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Configurar límites de alerta por equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">27</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US24</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas en un dispositivo móvil</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">28</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US21</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar detalles de una alerta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">29</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US22</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Confirmar atención de una alerta</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">30</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US23</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar alertas ordenadas por severidad</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">31</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US44</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar alertas críticas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">32</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US46</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar equipos con alertas activas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">33</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US36</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar valores anómalos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">34</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US37</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recibir alertas de advertencia del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">35</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US17</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos en dispositivo móvil</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">36</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US65</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Soportar almacenamiento local de datos en el dispositivo móvil</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">37</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US43</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar dashboard</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">38</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US45</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar resumen con totales</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">39</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US27</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos históricos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">40</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US28</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Seleccionar un rango de fechas para los datos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">2</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">41</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US30</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Generar reporte por equipo y fecha</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">42</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US31</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Descargar archivo de reporte</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">43</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US63</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de datos históricos y reportes</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">44</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US59</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Registrar cuenta de usuario</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">45</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US52</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Iniciar sesión con correo electrónico y contraseña</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">46</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US51</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Iniciar sesión con una cuenta de Google</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">47</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US64</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Proporcionar servicios de acceso de usuario</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 2</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">48</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US29</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Comparar datos entre periodos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">49</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US32</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar historial de incidentes</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">50</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US33</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Exportar archivo de datos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">51</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US34</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Comparar datos semanales y mensuales</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">52</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US48</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de alertas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">53</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US49</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de temperatura</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">54</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US50</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar tendencias de humedad</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">55</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US35</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar condición del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">56</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US40</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Registrar mantenimiento</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">57</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US41</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar historial de mantenimiento</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">58</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US42</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar confiabilidad del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">5</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">59</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US38</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos de rendimiento del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">60</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US39</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualizar datos de uso del equipo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">61</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US26</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Compartir alertas con el equipo de trabajo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">62</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US53</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Recuperar contraseña por correo electrónico</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">63</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US54</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Cerrar sesión en el sistema</td><td style="text-align: center; vertical-align: middle; padding: 6px;">1</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+    <tr><td style="text-align: center; vertical-align: middle; padding: 6px;">64</td><td style="text-align: center; vertical-align: middle; padding: 6px;">US55</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Asignar rol de usuario</td><td style="text-align: center; vertical-align: middle; padding: 6px;">3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Sprint 3</td></tr>
+  </tbody>
+</table>
 
 ## **2.5. Strategic-Level Domain-Driven Design**
 
