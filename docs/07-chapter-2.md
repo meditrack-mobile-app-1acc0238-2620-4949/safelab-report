@@ -2579,49 +2579,49 @@ Cada Candidate Bounded Context se documenta mediante un Bounded Context Canvas q
 ##### **Identity & Access Management**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/IdentityBounded.png" alt="Identity & Access Management Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/identity-bounded.png" alt="Identity & Access Management Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Monitoring Organization**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/MonitoringBounded.png" alt="Monitoring Organization Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/monitoring-bounded.png" alt="Monitoring Organization Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Sensor Monitoring**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/SensorBounded.png" alt="Sensor Monitoring Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/sensor-bounded.png" alt="Sensor Monitoring Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Alerts & Incident Management**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/AlertsBounded.png" alt="Alerts & Incident Management Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/alerts-bounded.png" alt="Alerts & Incident Management Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Equipment Condition & Maintenance**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/EquipmentBounded.png" alt="Equipment Condition & Maintenance Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/equipment-bounded.png" alt="Equipment Condition & Maintenance Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Reporting & Compliance**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/ReportingBounded.png" alt="Reporting & Compliance Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/reporting-bounded.png" alt="Reporting & Compliance Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Dashboard & Overview**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/DashboardBounded.png" alt="Dashboard & Overview Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/dashboard-bounded.png" alt="Dashboard & Overview Bounded Context Canvas" width="95%">
 </p>
 
 ##### **Audit & Traceability**
 
 <p align="center">
-  <img src="../assets/07-chapter-2/strategic-level-ddd/bounded-context-canvas/AuditBounded.png" alt="Audit & Traceability Bounded Context Canvas" width="95%">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/audit-bounded.png" alt="Audit & Traceability Bounded Context Canvas" width="95%">
 </p>
 
 ### **2.5.2. Context Mapping**
