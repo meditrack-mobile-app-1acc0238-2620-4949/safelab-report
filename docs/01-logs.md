@@ -49,17 +49,20 @@
   <!-- ROW 3 -->
   <tr>
     <td style="text-align: center;">
-      1.x.x
+      1.0.1
     </td>
     <td style="text-align: center;">
-      xx/09/2026
+      15/09/2026
     </td>
     <td style="text-align: center;">
       Garcia Cerpa, Braden Raid
     </td>
     <td style="text-align: justify;">
-      (version log)
+    Desarrollo de las secciones Interviews, Interview Design, Interview Recording e Interview Analysis, con la elaboración de los guiones de entrevista para los segmentos objetivo Laboratorios de Hospitales y Empresas Farmacéuticas, el registro de las seis entrevistas realizadas y el análisis estadístico de las características objetivas y subjetivas de cada segmento. Adicionalmente, desarrollo de la sección Annexes y actualización de la tabla de contenido.
     </td>
+    
+
+    
  <!-- ROW 4 -->
 <tr>
   <td style="text-align: center;">
