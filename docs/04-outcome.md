@@ -49,8 +49,7 @@ necessary, using appropriate learning strategies.
         AV1
       </i></b>
       <br>
-        During AV1, I...
-      <br><br>
+Durante la AV1, actualicé y profundicé mis conocimientos sobre el método Lean UX, que ya había trabajado en ciclos anteriores pero que esta vez tuve que aplicar sobre un dominio nuevo para mí. Reforcé la redacción del Problem Statement a partir del contexto, la observación del problema y su impacto, la clasificación de los supuestos del equipo en User, Business y Feature Assumptions, y su conversión en hipótesis verificables bajo la estructura "Creemos que… si… obtienen… con…", cuidando que cada una quedara asociada a un resultado medible y no a una apreciación general. Asimismo, para la sección Competitors profundicé en la construcción de matrices de análisis competitivo y en la derivación de estrategias ofensivas, adaptativas, defensivas y de supervivencia, lo que me exigió investigar a competidores internacionales como SmartSense, SenseAnywhere y Monnit y familiarizarme con el dominio de la cadena de frío clínica y con los requisitos de trazabilidad aplicables al sector salud en el Perú, incluyendo DIGEMID e ISO 15189.      <br><br>
         ------------------------------------
       <br><br>
         <b>
@@ -131,7 +130,7 @@ Empresas Farmacéuticas).
         AV1
       </i></b>
       <br>
-        During AV1, I...
+        Durante la AV1, reconocí que el desarrollo de una solución de software exige un aprendizaje permanente que va más allá de lo cubierto en clase, ya que para formular hipótesis y estrategias competitivas sustentables tuve que documentarme previamente sobre el dominio de la cadena de frío clínica, el marco regulatorio peruano y el mercado internacional de plataformas de monitoreo. Comprendí además que el trabajo de documentación no se resuelve en una única versión final, sino que requiere revisiones sucesivas a medida que el equipo avanza y el entendimiento del problema se profundiza, lo que me obligó a volver sobre mis secciones y ajustarlas conforme se consolidaban los hallazgos de las entrevistas y del análisis de competidores. A partir de esta experiencia identifiqué que, para las siguientes entregas, necesito reforzar mis conocimientos de Domain-Driven Design para el modelado estratégico y táctico del Capítulo II, así como de desarrollo de aplicaciones móviles nativas, que constituye la base técnica de la solución propuesta.
       <br><br>
         ------------------------------------
       <br><br>
