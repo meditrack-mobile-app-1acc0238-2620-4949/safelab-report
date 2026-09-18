@@ -487,6 +487,85 @@
 
 ### **2.3.6. Ubiquitous Language**
 
+<p style="text-align: justify;">
+El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de manera consistente para describir el monitoreo de la cadena de frío, la gestión de desviaciones, el mantenimiento de equipos, la trazabilidad y el cumplimiento regulatorio.
+</p>
+
+<table style="margin: auto; width: 100%; border-collapse: collapse;" border="1">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ubiquitous Term</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Definición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Cold Chain</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Proceso continuo de conservación de productos, muestras o insumos sensibles dentro de condiciones de temperatura controlada durante su almacenamiento y manipulación.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Monitoring Site</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Instalación física, como un laboratorio, planta o almacén, en la que SafeLab organiza y supervisa las áreas y equipos sujetos a monitoreo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Storage Area</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Zona física dentro de un Monitoring Site destinada al almacenamiento controlado y en la que se encuentran uno o más equipos monitoreados.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Monitored Equipment</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Equipo de refrigeración, congelación o conservación cuyas condiciones ambientales y estado operativo son supervisados por SafeLab.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Environmental Sensor</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Dispositivo asociado a un equipo monitoreado que captura variables ambientales, principalmente temperatura y humedad.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Environmental Reading</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Medición de una variable ambiental registrada por un sensor en una fecha y hora determinadas y asociada al equipo correspondiente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Environmental Threshold</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Límite mínimo o máximo configurado para una variable ambiental de un equipo, utilizado para determinar si una lectura se encuentra dentro de las condiciones permitidas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Thermal Excursion</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Desviación en la que la temperatura registrada se encuentra fuera del rango permitido durante un periodo determinado y puede comprometer la cadena de frío.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Alert</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Registro generado cuando SafeLab detecta una condición que requiere atención, como la superación de un Environmental Threshold o una anomalía del equipo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Incident</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Evento de seguimiento formal asociado a una desviación o alerta que requiere investigación, atención y registro de las acciones realizadas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Corrective Action</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acción ejecutada por el personal para contener, corregir o reducir el impacto de un Incident, manteniendo evidencia de quién la realizó y cuándo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Equipment Condition</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Estado evaluado de un equipo a partir de sus lecturas, disponibilidad e historial, utilizado para identificar funcionamiento normal, advertencias o condiciones críticas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Maintenance Record</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Registro de una actividad de mantenimiento, calibración, inspección o reparación realizada sobre un equipo monitoreado.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Traceability Record</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Conjunto ordenado de evidencias que permite reconstruir los eventos y acciones relacionados con un equipo, una alerta o un incidente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Audit Entry</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Registro de auditoría que identifica una acción relevante, el actor involucrado, el objeto afectado y la fecha y hora en que ocurrió.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Compliance Report</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Documento que consolida información histórica de monitoreo, incidentes, acciones y trazabilidad para sustentar actividades de control y auditorías regulatorias.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## **2.4. Requirements Specification**
 
 ### **2.4.1. User Stories**
@@ -2377,40 +2456,799 @@
 
 ## **2.5. Strategic-Level Domain-Driven Design**
 
+<p style="text-align: justify;">
+El diseño estratégico de SafeLab organiza el dominio alrededor de las capacidades necesarias para el monitoreo ambiental en tiempo real, la gestión de alertas e incidentes, la trazabilidad, los reportes regulatorios, el mantenimiento de equipos, el acceso de usuarios y la visualización de información desde aplicaciones móviles nativas y multiplataforma.
+</p>
+
+<p style="text-align: justify;">
+A partir de las Epics, User Stories, entrevistas, Needfinding y Ubiquitous Language del capítulo, el dominio se divide en ocho Bounded Contexts: <b>Identity & Access Management</b>, <b>Monitoring Organization</b>, <b>Sensor Monitoring</b>, <b>Alerts & Incident Management</b>, <b>Equipment Condition & Maintenance</b>, <b>Reporting & Compliance</b>, <b>Dashboard & Overview</b> y <b>Audit & Traceability</b>. Los contextos con mayor relación con el valor principal del negocio son Sensor Monitoring, Alerts & Incident Management y Reporting & Compliance, ya que concentran la captura de información ambiental, la respuesta ante desviaciones y la generación de evidencia para control y auditoría.
+</p>
+
 ### **2.5.1. Event Storming**
+
+<p style="text-align: justify;">
+Para el Event Storming estratégico de SafeLab se parte de los principales procesos identificados en las entrevistas y en las User Stories. El flujo comienza con la configuración de sitios, áreas y equipos; continúa con la recepción automática de lecturas ambientales; posteriormente evalúa desviaciones y genera alertas; finalmente registra la atención del incidente, las acciones correctivas, el mantenimiento relacionado y la evidencia de trazabilidad que puede utilizarse en reportes regulatorios. Esta secuencia permite visualizar el dominio completo sin depender todavía de una implementación tecnológica específica.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; padding: 6px;">Orden</th>
+      <th style="text-align: center; padding: 6px;">Domain Event</th>
+      <th style="text-align: center; padding: 6px;">Origen</th>
+      <th style="text-align: center; padding: 6px;">Consecuencia de negocio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:center; padding:6px;">1</td><td style="text-align:center; padding:6px;">Monitoring Site Registered</td><td style="text-align:justify; padding:6px;">Un usuario autorizado registra una sede o sitio de monitoreo.</td><td style="text-align:justify; padding:6px;">La organización dispone de un ámbito físico sobre el cual asociar áreas y equipos.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">2</td><td style="text-align:center; padding:6px;">Storage Area Created</td><td style="text-align:justify; padding:6px;">Se crea una sala, cámara o área de almacenamiento.</td><td style="text-align:justify; padding:6px;">Los equipos pueden organizarse según su ubicación real.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">3</td><td style="text-align:center; padding:6px;">Equipment Registered</td><td style="text-align:justify; padding:6px;">Se incorpora un refrigerador, congelador u otro equipo monitoreado.</td><td style="text-align:justify; padding:6px;">El equipo queda disponible para recibir sensores y reglas de monitoreo.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">4</td><td style="text-align:center; padding:6px;">Sensor Reading Received</td><td style="text-align:justify; padding:6px;">Un sensor o gateway envía una nueva lectura.</td><td style="text-align:justify; padding:6px;">SafeLab almacena temperatura, humedad, timestamp y origen de la medición.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">5</td><td style="text-align:center; padding:6px;">Environmental Threshold Exceeded</td><td style="text-align:justify; padding:6px;">Una lectura queda fuera del rango configurado.</td><td style="text-align:justify; padding:6px;">Se inicia el proceso de evaluación de una desviación.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">6</td><td style="text-align:center; padding:6px;">Alert Generated</td><td style="text-align:justify; padding:6px;">Una condición cumple los criterios definidos para una alerta.</td><td style="text-align:justify; padding:6px;">Se registra la alerta y se prepara su comunicación al personal responsable.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">7</td><td style="text-align:center; padding:6px;">Alert Notification Delivered</td><td style="text-align:justify; padding:6px;">El servicio de notificación comunica la alerta.</td><td style="text-align:justify; padding:6px;">El personal conoce el incidente aun cuando no se encuentra frente al equipo.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">8</td><td style="text-align:center; padding:6px;">Alert Acknowledged</td><td style="text-align:justify; padding:6px;">Un usuario confirma que la alerta fue atendida.</td><td style="text-align:justify; padding:6px;">SafeLab conserva evidencia del responsable y momento de atención.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">9</td><td style="text-align:center; padding:6px;">Incident Opened</td><td style="text-align:justify; padding:6px;">La desviación requiere seguimiento formal.</td><td style="text-align:justify; padding:6px;">Se crea un incidente asociado al equipo, alerta y periodo afectado.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">10</td><td style="text-align:center; padding:6px;">Corrective Action Recorded</td><td style="text-align:justify; padding:6px;">El personal ejecuta y registra una acción.</td><td style="text-align:justify; padding:6px;">Se mantiene trazabilidad de la respuesta aplicada.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">11</td><td style="text-align:center; padding:6px;">Maintenance Record Registered</td><td style="text-align:justify; padding:6px;">Se realiza mantenimiento preventivo o correctivo.</td><td style="text-align:justify; padding:6px;">Se actualiza el historial de condición y confiabilidad del equipo.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">12</td><td style="text-align:center; padding:6px;">Compliance Report Generated</td><td style="text-align:justify; padding:6px;">Un usuario solicita evidencia de un periodo o equipo.</td><td style="text-align:justify; padding:6px;">Se consolida información histórica para control y auditoría.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">13</td><td style="text-align:center; padding:6px;">Audit Entry Appended</td><td style="text-align:justify; padding:6px;">Una operación relevante modifica o consulta información sensible.</td><td style="text-align:justify; padding:6px;">Se agrega una entrada inmutable al historial de auditoría.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+Además del flujo principal, se consideran eventos relacionados con el acceso al sistema, como <b>User Registered</b>, <b>User Authenticated</b> y <b>User Role Assigned</b>. Estos eventos pertenecen a un contexto de soporte y permiten controlar quién puede consultar, registrar o administrar información operacional.
+</p>
+
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/event-storming.png" alt="SafeLab Strategic Event Storming" width="95%">
+</p>
+
 
 #### **2.5.1.1. Candidate Context Discovery**
 
+<p style="text-align: justify;">
+La identificación de los Candidate Bounded Contexts combina las técnicas <b>start-with-value</b> y <b>look-for-pivotal-events</b>. Primero se agrupan los eventos que producen el valor principal de SafeLab, especialmente la recepción de lecturas ambientales, la detección de desviaciones, la atención de incidentes y la generación de evidencia regulatoria. Luego se utilizan los eventos que representan cambios importantes de estado para separar responsabilidades con reglas, vocabulario y ritmos de cambio diferentes.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align:center; padding:6px;">Candidate Bounded Context</th>
+      <th style="text-align:center; padding:6px;">Clasificación estratégica</th>
+      <th style="text-align:center; padding:6px;">Responsabilidad principal</th>
+      <th style="text-align:center; padding:6px;">Requisitos relacionados</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:center; padding:6px;">Identity & Access Management</td><td style="text-align:center; padding:6px;">Generic</td><td style="text-align:justify; padding:6px;">Registro, autenticación, recuperación de acceso y asignación de roles.</td><td style="text-align:justify; padding:6px;">EP07; US51-US55, US59 y US64.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Monitoring Organization</td><td style="text-align:center; padding:6px;">Supporting</td><td style="text-align:justify; padding:6px;">Organización de sitios, áreas de almacenamiento y equipos monitoreados.</td><td style="text-align:justify; padding:6px;">EP01; US01-US08 y US60.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Sensor Monitoring</td><td style="text-align:center; padding:6px;">Core</td><td style="text-align:justify; padding:6px;">Captura y consulta de temperatura, humedad, estado y continuidad de las lecturas.</td><td style="text-align:justify; padding:6px;">EP02; US09-US17 y US61.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Alerts & Incident Management</td><td style="text-align:center; padding:6px;">Core</td><td style="text-align:justify; padding:6px;">Evaluación de desviaciones, alertas, notificaciones, reconocimiento e incidentes.</td><td style="text-align:justify; padding:6px;">EP03; US18-US26, US32, US44, US46 y US62.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Equipment Condition & Maintenance</td><td style="text-align:center; padding:6px;">Supporting</td><td style="text-align:justify; padding:6px;">Estado, confiabilidad, rendimiento, uso e historial de mantenimiento.</td><td style="text-align:justify; padding:6px;">EP05; US35-US42.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Reporting & Compliance</td><td style="text-align:center; padding:6px;">Core</td><td style="text-align:justify; padding:6px;">Históricos, comparaciones, exportaciones y generación de reportes para control y auditoría.</td><td style="text-align:justify; padding:6px;">EP04; US27-US34 y US63.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Dashboard & Overview</td><td style="text-align:center; padding:6px;">Supporting</td><td style="text-align:justify; padding:6px;">Resumen operacional, totales, tendencias e información crítica para decisiones rápidas.</td><td style="text-align:justify; padding:6px;">EP06; US43-US50.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">Audit & Traceability</td><td style="text-align:center; padding:6px;">Supporting</td><td style="text-align:justify; padding:6px;">Registro inmutable de acciones, cambios, responsables y correlación de eventos para trazabilidad.</td><td style="text-align:justify; padding:6px;">Necesidades de entrevistas, Incident Log, Compliance Report y requisitos transversales de auditoría.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+La separación de responsabilidades prioriza los límites que aparecen de forma consistente en los requisitos actuales. Identity & Access Management concentra identidad, autenticación y roles; Reporting & Compliance reúne históricos, exportación y evidencia regulatoria; y Equipment Condition & Maintenance agrupa la evaluación de condición, confiabilidad e historial de mantenimiento. Esta organización mantiene cada capacidad dentro de un contexto con lenguaje y reglas de negocio coherentes.
+</p>
+
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/candidate-context-discovery/candidate-context-discovery.png" alt="SafeLab Candidate Context Discovery" width="95%">
+</p>
+
 #### **2.5.1.2. Domain Message Flows Modeling**
+
+<p style="text-align: justify;">
+El Domain Message Flows Modeling representa cómo los Bounded Contexts colaboran para completar los escenarios de negocio mediante Domain Storytelling. Los actores, objetos de dominio y mensajes permiten visualizar la secuencia de colaboración en los flujos principales de SafeLab.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align:center; padding:6px;">Flujo</th>
+      <th style="text-align:center; padding:6px;">Secuencia entre contextos</th>
+      <th style="text-align:center; padding:6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:center; padding:6px;">F1 - Configuración del monitoreo</td><td style="text-align:justify; padding:6px;">Identity & Access Management → Monitoring Organization → Sensor Monitoring.</td><td style="text-align:justify; padding:6px;">Un usuario autorizado registra la ubicación y el equipo, y posteriormente vincula el origen de telemetría.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">F2 - Recepción de telemetría</td><td style="text-align:justify; padding:6px;">IoT Sensor/Gateway → Sensor Monitoring → Dashboard & Overview → Audit & Traceability.</td><td style="text-align:justify; padding:6px;">La lectura queda registrada, disponible para consulta y trazada.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">F3 - Desviación y alerta</td><td style="text-align:justify; padding:6px;">Sensor Monitoring → Alerts & Incident Management → servicio de notificaciones → usuario móvil.</td><td style="text-align:justify; padding:6px;">Una condición fuera de rango se convierte en alerta y es comunicada al responsable.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">F4 - Atención del incidente</td><td style="text-align:justify; padding:6px;">Alerts & Incident Management → Audit & Traceability → Reporting & Compliance.</td><td style="text-align:justify; padding:6px;">Quedan registrados el responsable, la atención y la acción correctiva para su posterior auditoría.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">F5 - Condición y mantenimiento</td><td style="text-align:justify; padding:6px;">Sensor Monitoring → Equipment Condition & Maintenance → Dashboard & Overview.</td><td style="text-align:justify; padding:6px;">Las tendencias y anomalías pueden utilizarse para evaluar la condición del equipo y registrar mantenimientos.</td></tr>
+    <tr><td style="text-align:center; padding:6px;">F6 - Reporte regulatorio</td><td style="text-align:justify; padding:6px;">Reporting & Compliance consulta información de Sensor Monitoring, Alerts & Incident Management, Equipment Condition & Maintenance y Audit & Traceability.</td><td style="text-align:justify; padding:6px;">Se genera un reporte histórico consistente para control o auditoría.</td></tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/domain-message-flows-modeling/domain-message-flows-modeling.png" alt="SafeLab Domain Message Flows Modeling" width="95%">
+</p>
 
 #### **2.5.1.3. Bounded Context Canvases**
 
+<p style="text-align: justify;">
+Cada Candidate Bounded Context se documenta mediante un Bounded Context Canvas que reúne su Context Overview, Business Rules, Ubiquitous Language, Capabilities, Dependencies y Design Critique.
+</p>
+
+##### **Identity & Access Management - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Garantizar que únicamente usuarios identificados y autorizados accedan a SafeLab y ejecuten operaciones compatibles con su rol.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">El correo debe identificar una cuenta válida; los roles determinan permisos; una sesión inválida o expirada no puede acceder a información protegida.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registro, login con correo, login con Google, recuperación de contraseña, logout y asignación de roles.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">User Account, Role, Authentication, Authorization, Session.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Servicio externo de autenticación de Google; todos los demás contextos consumen la identidad y los permisos resueltos.</td></tr>
+</table>
+
+##### **Monitoring Organization - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Representar la estructura física sobre la cual se realiza el monitoreo ambiental.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Un Storage Area pertenece a un Monitoring Site; un Monitored Equipment debe estar asociado a un área antes de ser monitoreado.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registrar sitios, crear áreas, registrar equipos, asignar equipos y realizar búsquedas.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Monitoring Site, Storage Area, Cold Storage Unit, Monitored Equipment.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Proporciona identificadores y ubicación a Sensor Monitoring, Equipment Condition & Maintenance, Dashboard & Overview y Reporting & Compliance.</td></tr>
+</table>
+
+##### **Sensor Monitoring - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Capturar y conservar lecturas ambientales confiables, actuales e históricas.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Cada lectura debe incluir sensor, equipo, timestamp y valor; se debe identificar ausencia de lecturas recientes; la medición no debe perder trazabilidad con su origen.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Recepción automática, consulta de temperatura/humedad, estado de equipos y detección de interrupciones.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">IoT Sensor, Temperature Reading, Humidity Reading, Cold Chain, Safe Temperature Threshold.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Recibe datos de sensores/gateways y publica lecturas para Alerts & Incident Management, Dashboard & Overview y Reporting & Compliance.</td></tr>
+</table>
+
+##### **Alerts & Incident Management - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Transformar desviaciones ambientales en alertas accionables y registrar su atención hasta el cierre del incidente.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Una alerta se genera cuando se cumple una regla; una alerta reconocida conserva responsable y hora; un incidente crítico debe mantener acciones correctivas asociadas.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Configurar límites, generar alertas, priorizar por severidad, notificar dispositivos móviles, reconocer alertas y registrar incidentes.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Thermal Excursion, Preventive Alert, Severity, Incident, Corrective Action.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume lecturas de Sensor Monitoring; publica eventos hacia Audit & Traceability, Dashboard & Overview y Reporting & Compliance.</td></tr>
+</table>
+
+##### **Equipment Condition & Maintenance - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Mantener evidencia sobre la condición, confiabilidad y mantenimiento de los equipos de cadena de frío.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Todo mantenimiento se asocia a un equipo; la condición puede derivarse de lecturas y fallas registradas; el historial no debe eliminarse al cambiar el estado actual.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Consultar condición, identificar valores anómalos, registrar mantenimiento, consultar historial y evaluar confiabilidad.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Equipment Condition, Maintenance Record, Reliability, Failure Indicator.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume identificación del equipo y datos históricos; aporta estado y mantenimiento a Dashboard & Overview y Reporting & Compliance.</td></tr>
+</table>
+
+##### **Reporting & Compliance - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Convertir el historial operacional de SafeLab en información útil para análisis y auditorías.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Los reportes deben conservar el periodo, equipo y criterios utilizados; la información exportada debe corresponder a registros trazables; las comparaciones utilizan periodos válidos.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Consultar históricos, seleccionar rangos, comparar periodos, generar reportes, descargar/exportar archivos y consultar historial de incidentes.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Compliance Report, Historical Data, Reporting Period, Export, Regulatory Evidence.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consulta datos de Sensor Monitoring, Alerts & Incident Management, Equipment Condition & Maintenance y Audit & Traceability.</td></tr>
+</table>
+
+##### **Dashboard & Overview - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Ofrecer una vista resumida del estado operacional para facilitar decisiones rápidas desde el dispositivo móvil.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Los indicadores deben derivarse de datos vigentes; las tendencias no modifican los registros fuente; la ausencia de datos debe mostrarse como un estado conocido.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Dashboard, totales, alertas críticas, equipos con alertas y tendencias de temperatura, humedad y alertas.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Dashboard, Monitoring Summary, Trend, Critical Alert, Current Status.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume información de los contextos operacionales mediante consultas o proyecciones de lectura.</td></tr>
+</table>
+
+##### **Audit & Traceability - Canvas Base**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
+<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Mantener evidencia inmutable de eventos relevantes, responsables, cambios y relaciones entre mediciones, alertas e incidentes.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Una entrada de auditoría no se edita ni elimina; toda entrada identifica actor, acción, fecha/hora y objeto afectado; los eventos relacionados utilizan un Correlation ID.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registrar eventos de auditoría, consultar historial, reconstruir secuencias y exportar evidencia de trazabilidad.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Incident Log, Audit Entry, Traceability Record, Actor, Correlation ID.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume eventos publicados por todos los contextos que realicen operaciones auditables.</td></tr>
+</table>
+
+
 ### **2.5.2. Context Mapping**
+
+<p style="text-align: justify;">
+El Context Map organiza las dependencias de forma que los contextos core mantengan bajo acoplamiento. Las relaciones internas se modelan principalmente como <b>Customer/Supplier</b>, donde un upstream publica información que un downstream necesita para cumplir una capacidad. Las integraciones con sistemas externos se aíslan mediante <b>Anti-Corruption Layer</b>, evitando que los modelos externos condicionen el modelo interno de SafeLab. Los contextos core evolucionan de forma independiente y no comparten un Shared Kernel.
+</p>
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Upstream</th><th style="text-align:center;padding:6px;">Downstream</th><th style="text-align:center;padding:6px;">Patrón</th><th style="text-align:center;padding:6px;">Relación</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">Google Authentication</td><td style="text-align:center;padding:6px;">Identity & Access Management</td><td style="text-align:center;padding:6px;">Anti-Corruption Layer</td><td style="text-align:justify;padding:6px;">El adaptador traduce identidad externa a User Account y permisos internos.</td></tr>
+<tr><td style="text-align:center;padding:6px;">IoT Sensor / Gateway</td><td style="text-align:center;padding:6px;">Sensor Monitoring</td><td style="text-align:center;padding:6px;">Anti-Corruption Layer</td><td style="text-align:justify;padding:6px;">Se normalizan formatos, unidades y estados antes de crear lecturas del dominio.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Monitoring Organization</td><td style="text-align:center;padding:6px;">Sensor Monitoring</td><td style="text-align:center;padding:6px;">Customer/Supplier</td><td style="text-align:justify;padding:6px;">Sensor Monitoring necesita equipo, área y sitio válidos para asociar telemetría.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Sensor Monitoring</td><td style="text-align:center;padding:6px;">Alerts & Incident Management</td><td style="text-align:center;padding:6px;">Customer/Supplier</td><td style="text-align:justify;padding:6px;">Publica lecturas y estados utilizados para evaluar reglas de alerta.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Sensor Monitoring</td><td style="text-align:center;padding:6px;">Equipment Condition & Maintenance</td><td style="text-align:center;padding:6px;">Customer/Supplier</td><td style="text-align:justify;padding:6px;">Aporta señales e históricos utilizados para analizar condición y confiabilidad.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Alerts & Incident Management</td><td style="text-align:center;padding:6px;">Reporting & Compliance</td><td style="text-align:center;padding:6px;">Customer/Supplier</td><td style="text-align:justify;padding:6px;">Aporta alertas, incidentes, severidad, atención y acciones correctivas.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Sensor Monitoring</td><td style="text-align:center;padding:6px;">Reporting & Compliance</td><td style="text-align:center;padding:6px;">Customer/Supplier</td><td style="text-align:justify;padding:6px;">Aporta series históricas de temperatura y humedad.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Contextos operacionales</td><td style="text-align:center;padding:6px;">Dashboard & Overview</td><td style="text-align:center;padding:6px;">Conformist / Read Model</td><td style="text-align:justify;padding:6px;">El Dashboard consume representaciones publicadas sin redefinir las reglas transaccionales de los contextos fuente.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Todos los contextos auditables</td><td style="text-align:center;padding:6px;">Audit & Traceability</td><td style="text-align:center;padding:6px;">Customer/Supplier mediante eventos</td><td style="text-align:justify;padding:6px;">Los contextos publican eventos de negocio y auditoría para mantener un historial append-only.</td></tr>
+</tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/context-mapping/context-mapping.png" alt="SafeLab Context Map" width="95%">
+</p>
 
 ### **2.5.3. Software Architecture**
 
+<p style="text-align: justify;">
+La arquitectura de SafeLab incluye una <b>Native Mobile Application</b>, una <b>Cross-Platform Mobile Application</b>, servicios <b>RESTful</b> de desarrollo interno, almacenamiento local en el dispositivo y un <b>Landing Page</b> estático. También incorpora los sensores o gateways que proporcionan lecturas ambientales y los servicios externos utilizados para autenticación y notificaciones.
+</p>
+
 #### **2.5.3.1. Software Architecture Context Level Diagrams**
+
+<p style="text-align: justify;">
+El Context Diagram presenta a <b>SafeLab</b> como sistema central y muestra a las personas y sistemas externos con los que interactúa. Los usuarios principales son el personal de laboratorios hospitalarios y el personal de empresas farmacéuticas. Ambos consultan información ambiental, reciben alertas y revisan históricos y reportes; los perfiles con permisos de supervisión administran sitios, equipos, límites, mantenimiento y roles.
+</p>
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento externo</th><th style="text-align:center;padding:6px;">Relación con SafeLab</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">Hospital Laboratory Staff</td><td style="text-align:justify;padding:6px;">Consulta monitoreo, alertas, estado de equipos, históricos y reportes desde la aplicación móvil.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Pharmaceutical Company Staff</td><td style="text-align:justify;padding:6px;">Gestiona trazabilidad, monitoreo, alertas, mantenimiento y evidencia de cumplimiento.</td></tr>
+<tr><td style="text-align:center;padding:6px;">IoT Sensors / Gateway</td><td style="text-align:justify;padding:6px;">Envía lecturas ambientales y estado de equipos hacia los servicios internos.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Google Authentication Service</td><td style="text-align:justify;padding:6px;">Proveedor externo utilizado para el flujo de autenticación con cuenta Google.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Mobile Notification Service</td><td style="text-align:justify;padding:6px;">Entrega notificaciones al dispositivo cuando SafeLab genera una alerta.</td></tr>
+</tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/software-architecture/context-level-ciagrams/context-level-diagram.png" alt="SafeLab Software Architecture Context Level Diagram" width="95%">
+</p>
 
 #### **2.5.3.2. Software Architecture Container Level Diagrams**
 
+<p style="text-align: justify;">
+El Container Diagram muestra cómo se distribuyen las responsabilidades entre los productos digitales, los servicios internos y los almacenes de datos que conforman SafeLab.
+</p>
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Container</th><th style="text-align:center;padding:6px;">Responsabilidad</th><th style="text-align:center;padding:6px;">Tecnología</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">Static Landing Page</td><td style="text-align:justify;padding:6px;">Presenta SafeLab, propuesta de valor, información del producto, términos y acceso al ecosistema.</td><td style="text-align:center;padding:6px;">Tecnologías web estáticas para publicación del Landing Page.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Native Mobile Application</td><td style="text-align:justify;padding:6px;">Experiencia móvil nativa para autenticación, monitoreo, alertas, dashboard, históricos y capacidades que requieran integración con el dispositivo.</td><td style="text-align:center;padding:6px;">SDK y componentes nativos de la plataforma móvil</td></tr>
+<tr><td style="text-align:center;padding:6px;">Cross-Platform Mobile Application</td><td style="text-align:justify;padding:6px;">Experiencia multiplataforma equivalente alineada a los principales User Goals del producto.</td><td style="text-align:center;padding:6px;">Framework multiplataforma para dispositivos móviles</td></tr>
+<tr><td style="text-align:center;padding:6px;">Local Mobile Storage</td><td style="text-align:justify;padding:6px;">Persistencia local de información seleccionada para mejorar continuidad y experiencia del usuario móvil.</td><td style="text-align:center;padding:6px;">Almacenamiento local seguro en el dispositivo</td></tr>
+<tr><td style="text-align:center;padding:6px;">SafeLab RESTful API</td><td style="text-align:justify;padding:6px;">Expone casos de uso, coordina Bounded Contexts, valida reglas y proporciona información a las aplicaciones.</td><td style="text-align:center;padding:6px;">Servicios RESTful del backend de SafeLab</td></tr>
+<tr><td style="text-align:center;padding:6px;">Operational Database</td><td style="text-align:justify;padding:6px;">Persistencia de usuarios, organización, equipos, lecturas, alertas, incidentes, mantenimientos, reportes y auditoría.</td><td style="text-align:center;padding:6px;">Base de datos operacional</td></tr>
+</tbody>
+</table>
+
+<p style="text-align: justify;">
+Los sensores, Google Authentication y el proveedor de notificaciones móviles se representan como sistemas externos, no como containers internos de SafeLab. Las aplicaciones móviles consumen el RESTful API y mantienen únicamente la información local estrictamente necesaria según las User Stories y el alcance definido.
+</p>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/software-architecture/container-level-diagrams/container-level-diagram.png" alt="SafeLab Software Architecture Container Level Diagram" width="95%">
+</p>
+
+
 #### **2.5.3.3. Software Architecture Deployment Diagrams**
+
+<p style="text-align: justify;">
+El Deployment Diagram representa la distribución física de SafeLab y las conexiones entre dispositivos y servicios. La arquitectura contempla <b>Mobile Device</b> para las aplicaciones móviles y el almacenamiento local, <b>IoT Sensor/Gateway</b> para la captura de datos ambientales, <b>Static Web Hosting</b> para el Landing Page, <b>Cloud Application Runtime</b> para el RESTful API, <b>Database Service</b> para la información operacional y <b>Third-Party Services</b> para autenticación y notificaciones.
+</p>
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Deployment Node</th><th style="text-align:center;padding:6px;">Artefactos desplegados</th><th style="text-align:center;padding:6px;">Comunicación principal</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">User Mobile Device</td><td style="text-align:justify;padding:6px;">Native Mobile App / Cross-Platform Mobile App / Local Storage.</td><td style="text-align:justify;padding:6px;">HTTPS con RESTful API y comunicación con servicios del dispositivo.</td></tr>
+<tr><td style="text-align:center;padding:6px;">IoT Sensor or Gateway</td><td style="text-align:justify;padding:6px;">Firmware o servicio de adquisición de telemetría.</td><td style="text-align:justify;padding:6px;">Canal seguro hacia el backend o adaptador de ingestión.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Static Web Hosting</td><td style="text-align:justify;padding:6px;">Landing Page.</td><td style="text-align:justify;padding:6px;">HTTPS desde navegador.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Cloud Application Runtime</td><td style="text-align:justify;padding:6px;">RESTful API y componentes de aplicación.</td><td style="text-align:justify;padding:6px;">HTTPS con móviles y conexiones privadas/seguras con base de datos y servicios externos.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Database Service</td><td style="text-align:justify;padding:6px;">Esquema operacional y registros de auditoría.</td><td style="text-align:justify;padding:6px;">Acceso restringido desde el backend.</td></tr>
+<tr><td style="text-align:center;padding:6px;">Third-Party Services</td><td style="text-align:justify;padding:6px;">Autenticación Google y servicio de notificaciones móviles.</td><td style="text-align:justify;padding:6px;">APIs/SDKs seguros desde backend o aplicación según la integración elegida.</td></tr>
+</tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/software-architecture/deployment-diagrams/deployment-diagram.png" alt="SafeLab Software Architecture Deployment Diagram" width="95%">
+</p>
 
 ## **2.6. Tactical-Level Domain-Driven Design**
 
-### **2.6.x. Bounded Context: <Bounded Context Name>**
+<p style="text-align: justify;">
+La perspectiva táctica define el modelo interno de cada Bounded Context a partir de las User Stories, las reglas de negocio y el Ubiquitous Language de SafeLab. La organización por Domain, Application, Interface e Infrastructure Layer mantiene separadas las reglas del dominio de los mecanismos de entrega, integración y persistencia.
+</p>
 
-#### **2.6.x.1. Domain Layer**
+### **2.6.1. Bounded Context: Identity & Access Management**
 
-#### **2.6.x.2. Interface Layer**
+<p style="text-align: justify;">
+Este contexto controla el ciclo de vida de las cuentas, autenticación y autorización. Reúne las capacidades que en el Product Backlog corresponden al registro, login con correo y Google, recuperación de contraseña, cierre de sesión y asignación de roles.
+</p>
 
-#### **2.6.x.3. Application Layer**
+#### **2.6.1.1. Domain Layer**
 
-#### **2.6.x.4 Infrastructure Layer**
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">UserAccount</td><td style="text-align:center;padding:6px;">Aggregate Root / Entity</td><td style="text-align:justify;padding:6px;">userId, email, status, roles, createdAt.</td><td style="text-align:justify;padding:6px;">activate(), deactivate(), assignRole(), removeRole().</td></tr>
+<tr><td style="text-align:center;padding:6px;">Role</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">roleId, name, permissions.</td><td style="text-align:justify;padding:6px;">grants(permission).</td></tr>
+<tr><td style="text-align:center;padding:6px;">EmailAddress</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">value.</td><td style="text-align:justify;padding:6px;">validate(), normalize().</td></tr>
+<tr><td style="text-align:center;padding:6px;">UserRepository</td><td style="text-align:center;padding:6px;">Repository Interface</td><td style="text-align:justify;padding:6px;">-</td><td style="text-align:justify;padding:6px;">save(), findById(), findByEmail().</td></tr>
+</tbody>
+</table>
 
-#### **2.6.x.5. Bounded Context Software Architecture Component Level Diagrams**
+#### **2.6.1.2. Interface Layer**
 
-#### **2.6.x.6. Bounded Context Software Architecture Code Level Diagrams**
+<p style="text-align: justify;">
+La Interface Layer incluye <b>AuthController</b> para registro, autenticación, recuperación y logout, <b>UserAccessController</b> para consulta y asignación de roles, y <b>GoogleAuthenticationConsumer</b> para la integración con autenticación externa. Esta capa traduce las solicitudes hacia comandos y consultas de Application Layer.
+</p>
 
-##### **2.6.x.6.1. Bounded Context Domain Layer Class Diagrams**
+#### **2.6.1.3. Application Layer**
 
-##### **2.6.x.6.2. Bounded Context Database Design Diagram**
+<p style="text-align: justify;">
+La Application Layer utiliza <b>RegisterUserCommandHandler</b>, <b>AuthenticateUserCommandHandler</b>, <b>AuthenticateWithGoogleCommandHandler</b>, <b>RecoverPasswordCommandHandler</b>, <b>LogoutUserCommandHandler</b> y <b>AssignUserRoleCommandHandler</b>. Estas clases coordinan el agregado UserAccount y los puertos de seguridad sin contener detalles de persistencia.
+</p>
+
+#### **2.6.1.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+La Infrastructure Layer incluye <b>UserRepositoryImpl</b>, <b>GoogleAuthenticationAdapter</b>, <b>PasswordHasher</b>, <b>TokenService</b> y el acceso al servicio de correo. La integración con Google se mantiene detrás de un Anti-Corruption Layer para que el modelo externo no determine la estructura de UserAccount.
+</p>
+
+#### **2.6.1.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram muestra Auth Controller, User Access Controller, Application Services/Handlers, Domain Model, Repository Port, Repository Adapter y External Authentication Adapter, evidenciando las dependencias entre las capas del contexto.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/01-bc-iam/component-level-diagrams/component-diagram.png" alt="Identity and Access Management Component Diagram" width="90%"></p>
+
+#### **2.6.1.6. Bounded Context Software Architecture Code Level Diagrams**
+
+<p style="text-align: justify;">
+El nivel de código muestra cómo los componentes se materializan en clases e interfaces, manteniendo la dirección de dependencias desde Interface e Infrastructure hacia Application y Domain mediante puertos.
+</p>
+
+##### **2.6.1.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram integra UserAccount, Role, EmailAddress, identificadores, enumeraciones de estado, UserRepository y sus relaciones dentro del modelo de identidad y acceso.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/01-bc-iam/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Identity and Access Management Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.1.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo relacional incluye <b>user_accounts</b>, <b>roles</b>, <b>user_roles</b>, <b>external_identities</b> y <b>password_recovery_requests</b>. Las relaciones representan las primary keys, foreign keys, la unicidad del correo y la asociación N:M entre usuarios y roles.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/01-bc-iam/code-level-diagram/database-diagram/database-diagram.png" alt="Identity and Access Management Database Design Diagram" width="90%"></p>
+
+### **2.6.2. Bounded Context: Monitoring Organization**
+
+<p style="text-align: justify;">
+Este contexto representa la estructura física y organizacional del monitoreo de SafeLab mediante sitios, áreas de almacenamiento y equipos asociados a cada ubicación.
+</p>
+
+#### **2.6.2.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">MonitoringSite</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">siteId, name, location, status.</td><td style="text-align:justify;padding:6px;">rename(), relocate(), activate().</td></tr>
+<tr><td style="text-align:center;padding:6px;">StorageArea</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">areaId, siteId, name, type.</td><td style="text-align:justify;padding:6px;">changeType(), rename().</td></tr>
+<tr><td style="text-align:center;padding:6px;">MonitoredEquipment</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">equipmentId, name, type, identifier, areaId.</td><td style="text-align:justify;padding:6px;">assignToArea(), changeIdentifier().</td></tr>
+<tr><td style="text-align:center;padding:6px;">EquipmentIdentifier</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">value.</td><td style="text-align:justify;padding:6px;">validate().</td></tr>
+</tbody>
+</table>
+
+#### **2.6.2.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>MonitoringSiteController</b>, <b>StorageAreaController</b> y <b>EquipmentController</b>, responsables de exponer operaciones para registrar, listar, buscar y asociar los elementos de la organización de monitoreo.
+</p>
+
+#### **2.6.2.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>RegisterMonitoringSiteHandler</b>, <b>CreateStorageAreaHandler</b>, <b>RegisterEquipmentHandler</b>, <b>AssignEquipmentToAreaHandler</b>, <b>SearchEquipmentHandler</b> y consultas para recuperar sitios, áreas y equipos.
+</p>
+
+#### **2.6.2.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+La Infrastructure Layer implementa los repositorios de sitios, áreas y equipos, además de los mappers entre modelos de persistencia y objetos de dominio. La integración con identificadores externos de equipos se encapsula mediante un adapter.
+</p>
+
+#### **2.6.2.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram representa la separación entre controllers, application handlers, modelo de dominio, repositorios e integración de ubicación, manteniendo como responsabilidad central la organización del entorno monitoreado.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/02-bc-monitoring/component-level-diagrams/component-diagram.png" alt="Monitoring Organization Component Diagram" width="90%"></p>
+
+#### **2.6.2.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.2.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram muestra <b>MonitoringSite</b>, <b>StorageArea</b> y <b>MonitoredEquipment</b> con las relaciones Site 1..* Area y Area 1..* Equipment, además de sus identificadores e interfaces de repositorio.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/02-bc-monitoring/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Monitoring Organization Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.2.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye las tablas <b>monitoring_sites</b>, <b>storage_areas</b> y <b>monitored_equipment</b>. <b>storage_areas</b> referencia a <b>monitoring_sites</b> y <b>monitored_equipment</b> referencia a <b>storage_areas</b>.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/02-bc-monitoring/code-level-diagram/database-diagram/database-diagram.png" alt="Monitoring Organization Database Design Diagram" width="90%"></p>
+
+### **2.6.3. Bounded Context: Sensor Monitoring**
+
+<p style="text-align: justify;">
+Este contexto contiene el núcleo de adquisición y consulta de telemetría. Su responsabilidad es mantener lecturas confiables y detectar la ausencia de datos recientes sin asumir la responsabilidad de decidir la respuesta operacional a una desviación.
+</p>
+
+#### **2.6.3.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">Sensor</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">sensorId, equipmentId, type, status, lastSeenAt.</td><td style="text-align:justify;padding:6px;">markOnline(), markOffline(), updateLastSeen().</td></tr>
+<tr><td style="text-align:center;padding:6px;">MonitoringReading</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">readingId, sensorId, timestamp, temperature, humidity.</td><td style="text-align:justify;padding:6px;">isRecent(referenceTime).</td></tr>
+<tr><td style="text-align:center;padding:6px;">Temperature</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">value, unit.</td><td style="text-align:justify;padding:6px;">convertTo(unit).</td></tr>
+<tr><td style="text-align:center;padding:6px;">Humidity</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">percentage.</td><td style="text-align:justify;padding:6px;">validateRange().</td></tr>
+</tbody>
+</table>
+
+#### **2.6.3.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>MonitoringController</b> para las consultas de datos actuales e históricos y <b>SensorDataConsumer</b> para recibir lecturas desde sensores o gateways.
+</p>
+
+#### **2.6.3.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>RecordMonitoringReadingHandler</b>, <b>GetCurrentMonitoringHandler</b>, <b>GetEquipmentMonitoringDetailsHandler</b>, <b>IdentifyEquipmentWithoutRecentDataHandler</b> y <b>GetHistoricalReadingsHandler</b>. La recolección automática se coordina en esta capa sin acoplarla al protocolo físico del sensor.
+</p>
+
+#### **2.6.3.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+Incluye <b>SensorRepositoryImpl</b>, <b>MonitoringReadingRepositoryImpl</b>, <b>IoTTelemetryAdapter</b> y, en las aplicaciones móviles, un <b>MonitoringLocalCache</b> para la información seleccionada que deba persistir localmente. El adapter de telemetría normaliza unidades y formatos externos.
+</p>
+
+#### **2.6.3.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/03-bc-sensor/component-level-diagrams/component-diagram.png" alt="Sensor Monitoring Component Diagram" width="90%"></p>
+
+#### **2.6.3.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.3.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram integra <b>Sensor</b>, <b>MonitoringReading</b>, <b>Temperature</b>, <b>Humidity</b>, estados, enumeraciones, interfaces de repositorio y su relación con <b>EquipmentId</b>.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/03-bc-sensor/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Sensor Monitoring Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.3.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye <b>sensors</b>, <b>monitoring_readings</b> y <b>sensor_status_history</b>. Las lecturas se indexan por sensor, equipo y timestamp para soportar consultas históricas y generación de reportes.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/03-bc-sensor/code-level-diagram/database-diagram/database-diagram.png" alt="Sensor Monitoring Database Design Diagram" width="90%"></p>
+
+### **2.6.4. Bounded Context: Alerts & Incident Management**
+
+<p style="text-align: justify;">
+Este contexto fusiona los antiguos Alerts & Notifications e Incident Management porque el Product Backlog móvil actual presenta un flujo continuo desde la detección de una desviación hasta su reconocimiento y revisión histórica. Mantener ambos modelos dentro de un mismo límite reduce coordinación innecesaria para un alcance académico de esta dimensión.
+</p>
+
+#### **2.6.4.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">AlertRule</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">ruleId, equipmentId, variable, min, max, severity.</td><td style="text-align:justify;padding:6px;">evaluate(reading), changeThresholds().</td></tr>
+<tr><td style="text-align:center;padding:6px;">Alert</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">alertId, equipmentId, value, severity, status, createdAt, acknowledgedAt.</td><td style="text-align:justify;padding:6px;">acknowledge(userId), isActive().</td></tr>
+<tr><td style="text-align:center;padding:6px;">Incident</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">incidentId, alertId, status, openedAt, closedAt, correctiveActions.</td><td style="text-align:justify;padding:6px;">addCorrectiveAction(), close().</td></tr>
+<tr><td style="text-align:center;padding:6px;">CorrectiveAction</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">actionId, description, performedBy, performedAt.</td><td style="text-align:justify;padding:6px;">-</td></tr>
+</tbody>
+</table>
+
+#### **2.6.4.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>AlertController</b>, <b>IncidentController</b> y endpoints para configurar límites, listar alertas, consultar detalles, reconocer alertas, revisar incidentes y registrar acciones. También recibe las confirmaciones del servicio de notificaciones.
+</p>
+
+#### **2.6.4.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>EvaluateMonitoringReadingHandler</b>, <b>CreateAlertHandler</b>, <b>AcknowledgeAlertHandler</b>, <b>NotifyAlertHandler</b>, <b>OpenIncidentHandler</b>, <b>RegisterCorrectiveActionHandler</b> y <b>GetIncidentHistoryHandler</b>.
+</p>
+
+#### **2.6.4.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+La infraestructura incluye repositorios de alertas e incidentes, <b>MobileNotificationAdapter</b>, mappers de persistencia y mecanismos para publicar eventos hacia Audit & Traceability. Las credenciales o detalles del proveedor de notificaciones no deben filtrarse al Domain Layer.
+</p>
+
+#### **2.6.4.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram muestra en un único modelo las responsabilidades internas de alertas e incidentes, desde la evaluación de lecturas y generación de alertas hasta la apertura de incidentes, el registro de acciones correctivas y la comunicación con los servicios de notificación y auditoría.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/04-bc-alerts/component-level-diagrams/component-diagram.png" alt="Alerts and Incident Management Component Diagram" width="90%"></p>
+
+#### **2.6.4.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.4.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram integra <b>AlertRule</b>, <b>Alert</b>, <b>Incident</b>, <b>CorrectiveAction</b>, <b>Severity</b>, <b>AlertStatus</b>, <b>IncidentStatus</b> y sus repositorios dentro de un único modelo coherente.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/04-bc-alerts/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Alerts and Incident Management Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.4.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye <b>alert_rules</b>, <b>alerts</b>, <b>alert_acknowledgements</b>, <b>incidents</b> y <b>corrective_actions</b>. <b>incidents</b> referencia la alerta que originó el seguimiento y <b>corrective_actions</b> conserva el actor y timestamp de cada acción.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/04-bc-alerts/code-level-diagram/database-diagram/database-diagram.png" alt="Alerts and Incident Management Database Design Diagram" width="90%"></p>
+
+### **2.6.5. Bounded Context: Equipment Condition & Maintenance**
+
+#### **2.6.5.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">EquipmentCondition</td><td style="text-align:center;padding:6px;">Entity / Snapshot</td><td style="text-align:justify;padding:6px;">equipmentId, condition, evaluatedAt, indicators.</td><td style="text-align:justify;padding:6px;">isAbnormal().</td></tr>
+<tr><td style="text-align:center;padding:6px;">MaintenanceRecord</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">maintenanceId, equipmentId, type, performedAt, notes, performedBy.</td><td style="text-align:justify;padding:6px;">complete(), addObservation().</td></tr>
+<tr><td style="text-align:center;padding:6px;">ReliabilityAssessment</td><td style="text-align:center;padding:6px;">Value Object / Domain Result</td><td style="text-align:justify;padding:6px;">score, period, failureCount.</td><td style="text-align:justify;padding:6px;">classify().</td></tr>
+</tbody>
+</table>
+
+#### **2.6.5.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>EquipmentConditionController</b> y <b>MaintenanceController</b>, con operaciones para consultar condición, anomalías, rendimiento, confiabilidad, uso e historial de mantenimiento.
+</p>
+
+#### **2.6.5.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>EvaluateEquipmentConditionHandler</b>, <b>RegisterMaintenanceHandler</b>, <b>GetMaintenanceHistoryHandler</b>, <b>GetEquipmentReliabilityHandler</b> y <b>GetEquipmentPerformanceHandler</b>.
+</p>
+
+#### **2.6.5.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+Incluye repositorios de mantenimiento y condición, además de queries/adapters para obtener históricos desde Sensor Monitoring sin copiar sus reglas internas. Cuando el cálculo requiera información de otros contextos, se utilizan DTOs o eventos publicados.
+</p>
+
+#### **2.6.5.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram organiza las responsabilidades de evaluación de condición, consulta de historial, mantenimiento y confiabilidad del equipo, manteniendo la separación entre Interface, Application, Domain e Infrastructure Layer.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/05-bc-equipment/component-level-diagrams/component-diagram.png" alt="Equipment Condition and Maintenance Component Diagram" width="90%"></p>
+
+#### **2.6.5.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.5.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/05-bc-equipment/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Equipment Condition and Maintenance Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.5.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye <b>maintenance_records</b>, <b>equipment_condition_snapshots</b> y <b>equipment_reliability_metrics</b>, que conservan el historial de mantenimiento, los estados evaluados del equipo y sus métricas de confiabilidad.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/05-bc-equipment/code-level-diagram/database-diagram/database-diagram.png" alt="Equipment Condition and Maintenance Database Design Diagram" width="90%"></p>
+
+### **2.6.6. Bounded Context: Reporting & Compliance**
+
+<p style="text-align: justify;">
+Este contexto concentra las capacidades de consulta histórica, comparación de periodos, generación de reportes, exportación de datos y preparación de evidencia para actividades de control y cumplimiento regulatorio.
+</p>
+
+#### **2.6.6.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">ReportRequest</td><td style="text-align:center;padding:6px;">Value Object / Command Model</td><td style="text-align:justify;padding:6px;">equipmentId, period, reportType, format.</td><td style="text-align:justify;padding:6px;">validate().</td></tr>
+<tr><td style="text-align:center;padding:6px;">ComplianceReport</td><td style="text-align:center;padding:6px;">Aggregate Root</td><td style="text-align:justify;padding:6px;">reportId, period, generatedAt, generatedBy, status.</td><td style="text-align:justify;padding:6px;">markGenerated(), markFailed().</td></tr>
+<tr><td style="text-align:center;padding:6px;">ReportingPeriod</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">startDate, endDate.</td><td style="text-align:justify;padding:6px;">contains(timestamp), overlaps(other).</td></tr>
+</tbody>
+</table>
+
+#### **2.6.6.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>ReportingController</b>, <b>HistoricalDataController</b> y <b>DataExportController</b> para solicitar históricos, comparaciones, reportes y archivos exportables.
+</p>
+
+#### **2.6.6.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>GetHistoricalDataHandler</b>, <b>ComparePeriodsHandler</b>, <b>GenerateComplianceReportHandler</b>, <b>DownloadReportHandler</b>, <b>ExportMonitoringDataHandler</b> y <b>GetIncidentHistoryForReportHandler</b>.
+</p>
+
+#### **2.6.6.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+Incluye <b>ReportRepositoryImpl</b>, <b>ReportFileGenerator</b>, <b>HistoricalDataQueryAdapter</b> y adaptadores de exportación. El generador de archivos debe consumir modelos ya validados y no incorporar reglas de dominio propias.
+</p>
+
+#### **2.6.6.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram integra la consulta histórica, comparación de periodos, generación de reportes, exportación de datos y acceso a información de auditoría dentro del mismo Bounded Context.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/06-bc-reporting/component-level-diagrams/component-diagram.png" alt="Reporting and Compliance Component Diagram" width="90%"></p>
+
+#### **2.6.6.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.6.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram integra <b>ComplianceReport</b>, <b>ReportRequest</b>, <b>ReportingPeriod</b>, formatos de exportación y repositorios asociados a la generación y consulta de reportes.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/06-bc-reporting/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Reporting and Compliance Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.6.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye <b>report_requests</b>, <b>generated_reports</b> y metadatos de exportación. La información fuente de lecturas, alertas, incidentes y mantenimiento permanece en sus contextos propietarios, mientras Reporting & Compliance conserva las solicitudes y artefactos generados.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/06-bc-reporting/code-level-diagram/database-diagram/database-diagram.png" alt="Reporting and Compliance Database Design Diagram" width="90%"></p>
+
+### **2.6.7. Bounded Context: Dashboard & Overview**
+
+<p style="text-align: justify;">
+Este contexto está orientado principalmente a lectura. Su función es construir una vista agregada para el usuario móvil sin convertirse en propietario de los datos transaccionales de monitoreo, alertas o mantenimiento.
+</p>
+
+#### **2.6.7.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">MonitoringSummary</td><td style="text-align:center;padding:6px;">Read Model</td><td style="text-align:justify;padding:6px;">equipmentTotal, activeAlerts, criticalAlerts, offlineEquipment.</td><td style="text-align:justify;padding:6px;">-</td></tr>
+<tr><td style="text-align:center;padding:6px;">TrendSeries</td><td style="text-align:center;padding:6px;">Read Model</td><td style="text-align:justify;padding:6px;">metric, period, points.</td><td style="text-align:justify;padding:6px;">-</td></tr>
+<tr><td style="text-align:center;padding:6px;">DashboardSnapshot</td><td style="text-align:center;padding:6px;">Read Model</td><td style="text-align:justify;padding:6px;">generatedAt, summary, criticalItems, trends.</td><td style="text-align:justify;padding:6px;">-</td></tr>
+</tbody>
+</table>
+
+#### **2.6.7.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>DashboardController</b> y <b>TrendController</b>, que exponen información agregada para las vistas móviles.
+</p>
+
+#### **2.6.7.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>GetDashboardOverviewHandler</b>, <b>GetCriticalAlertsSummaryHandler</b>, <b>GetEquipmentWithActiveAlertsHandler</b> y <b>GetMonitoringTrendsHandler</b>.
+</p>
+
+#### **2.6.7.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+La Infrastructure Layer utiliza query adapters, projections y vistas optimizadas para lectura. Las proyecciones se construyen a partir de la información publicada por los contextos fuente y se actualizan para mantener la vista general del sistema.
+</p>
+
+#### **2.6.7.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p style="text-align: justify;">
+El Component Diagram separa los controllers de consulta, los application handlers, los read models y los adapters que recuperan información de monitoreo, alertas, mantenimiento y auditoría.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/07-bc-dashboard/component-level-diagrams/component-diagram.png" alt="Dashboard and Overview Component Diagram" width="90%"></p>
+
+#### **2.6.7.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.7.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El modelo de dominio se mantiene ligero y orientado a lectura mediante <b>MonitoringSummary</b>, <b>TrendSeries</b> y <b>DashboardSnapshot</b>, que representan la información agregada necesaria para la vista general.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/07-bc-dashboard/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Dashboard and Overview Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.7.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+La persistencia utiliza <b>dashboard_projections</b>, snapshots de tendencias y vistas materializadas orientadas a lectura. Estas estructuras contienen información derivada de otros Bounded Contexts y no reemplazan a los datos transaccionales de sus contextos propietarios.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/07-bc-dashboard/code-level-diagram/database-diagram/database-diagram.png" alt="Dashboard and Overview Database Design Diagram" width="90%"></p>
+
+### **2.6.8. Bounded Context: Audit & Traceability**
+
+<p style="text-align: justify;">
+Este contexto conserva la evidencia necesaria para reconstruir qué ocurrió, cuándo ocurrió y quién realizó o recibió una acción. Se mantiene separado porque las entrevistas farmacéuticas enfatizan la necesidad de registros inalterables para auditorías y porque el Ubiquitous Language ya identifica Incident Log y Compliance Report como conceptos centrales.
+</p>
+
+#### **2.6.8.1. Domain Layer**
+
+<table border="1" style="width:100%; border-collapse:collapse;">
+<thead><tr><th style="text-align:center;padding:6px;">Elemento</th><th style="text-align:center;padding:6px;">Tipo</th><th style="text-align:center;padding:6px;">Atributos principales</th><th style="text-align:center;padding:6px;">Operaciones principales</th></tr></thead>
+<tbody>
+<tr><td style="text-align:center;padding:6px;">AuditEntry</td><td style="text-align:center;padding:6px;">Entity</td><td style="text-align:justify;padding:6px;">auditId, actorId, action, targetType, targetId, timestamp, correlationId.</td><td style="text-align:justify;padding:6px;">-</td></tr>
+<tr><td style="text-align:center;padding:6px;">TraceabilityRecord</td><td style="text-align:center;padding:6px;">Aggregate / Read Model</td><td style="text-align:justify;padding:6px;">correlationId, eventSequence, startedAt, completedAt.</td><td style="text-align:justify;padding:6px;">append(eventReference).</td></tr>
+<tr><td style="text-align:center;padding:6px;">CorrelationId</td><td style="text-align:center;padding:6px;">Value Object</td><td style="text-align:justify;padding:6px;">value.</td><td style="text-align:justify;padding:6px;">generate(), validate().</td></tr>
+</tbody>
+</table>
+
+#### **2.6.8.2. Interface Layer**
+
+<p style="text-align: justify;">
+La Interface Layer incluye <b>AuditTrailController</b> para consultas autorizadas y <b>AuditEventConsumer</b> para recibir eventos generados por otros Bounded Contexts.
+</p>
+
+#### **2.6.8.3. Application Layer**
+
+<p style="text-align: justify;">
+La Application Layer utiliza <b>AppendAuditEntryHandler</b>, <b>GetAuditTrailHandler</b>, <b>BuildTraceabilityRecordHandler</b> y <b>ExportTraceabilityEvidenceHandler</b>.
+</p>
+
+#### **2.6.8.4 Infrastructure Layer**
+
+<p style="text-align: justify;">
+La Infrastructure Layer incluye <b>AuditRepositoryImpl</b>, almacenamiento append-only, serializers de eventos y consumers para registrar eventos provenientes de los demás Bounded Contexts sin modificar su contenido original.
+</p>
+
+#### **2.6.8.5. Bounded Context Software Architecture Component Level Diagrams**
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/08-bc-audit/component-level-diagrams/component-diagram.png" alt="Audit and Traceability Component Diagram" width="90%"></p>
+
+#### **2.6.8.6. Bounded Context Software Architecture Code Level Diagrams**
+
+##### **2.6.8.6.1. Bounded Context Domain Layer Class Diagrams**
+
+<p style="text-align: justify;">
+El Class Diagram integra <b>AuditEntry</b>, <b>TraceabilityRecord</b>, <b>CorrelationId</b> y los contratos de repositorio necesarios para consultar y reconstruir la evidencia de trazabilidad.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/08-bc-audit/code-level-diagram/class-diagram/domain-class-diagram.png" alt="Audit and Traceability Domain Layer Class Diagram" width="90%"></p>
+
+##### **2.6.8.6.2. Bounded Context Database Design Diagram**
+
+<p style="text-align: justify;">
+El modelo de persistencia incluye <b>audit_entries</b> y <b>traceability_records</b>. <b>audit_entries</b> registra actor, acción, objeto, fecha/hora y correlation_id, mientras <b>traceability_records</b> agrupa la secuencia de eventos asociada a una misma trazabilidad. Los registros de auditoría se conservan como información append-only durante la operación normal del sistema.
+</p>
+
+<p align="center"><img src="../assets/07-chapter-2/tactical-level-ddd/08-bc-audit/code-level-diagram/database-diagram/database-diagram.png" alt="Audit and Traceability Database Design Diagram" width="90%"></p>
+
