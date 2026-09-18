@@ -85,7 +85,10 @@ necessary, using appropriate learning strategies.
         AV1
       </i></b>
       <br>
-        During AV1, I...
+        Durante AV1, aprendí a aplicar técnicas de Needfinding —User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping— utilizando UXPressia, una herramienta que no había usado antes. Actualicé mis conocimientos sobre cómo 
+traducir datos cualitativos obtenidos de entrevistas a usuarios en artefactos estructurados de investigación UX que representen con precisión las necesidades, tareas y puntos de dolor de cada segmento objetivo (Laboratorios de Hospitales y 
+Empresas Farmacéuticas).
+
       <br><br>
     <!-- COLUMN 3 -->
     <td style="text-align: justify; vertical-align: top;">
@@ -164,7 +167,14 @@ necessary, using appropriate learning strategies.
         AV1
       </i></b>
       <br>
-        During AV1, I...
+        Durante AV1, reconocí que dominar nuevas herramientas de investigación y diseño 
+como UXPressia es esencial para el crecimiento profesional en el desarrollo de 
+productos de software. Esta experiencia reforzó la necesidad de aprender de 
+manera continua nuevas metodologías y plataformas más allá de lo cubierto en 
+clase, ya que la investigación UX en un contexto real exige adaptarse rápidamente 
+a las herramientas específicas que mejor soportan cada etapa del proceso de 
+Needfinding.
+
       <br><br>
     <!-- COLUMN 3 -->
     <td style="text-align: justify; vertical-align: top;">
