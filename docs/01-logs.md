@@ -66,13 +66,13 @@
     1.x.x
   </td>
   <td style="text-align: center;">
-    xx/09/2026
+    17/09/2026
   </td>
   <td style="text-align: center;">
     Rojas Gomez, Valeria Alexandra
   </td>
   <td style="text-align: justify;">
-    (version log)
+    Desarrollo y actualización de las secciones Solution Profile, Background and Problem Statement, Target Segments y Requirements Specification, incluyendo User Stories, Impact Mapping y Product Backlog.
   </td>
 </tr>
   <!-- ROW 5 -->
