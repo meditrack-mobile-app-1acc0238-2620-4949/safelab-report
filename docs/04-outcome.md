@@ -73,7 +73,7 @@ necessary, using appropriate learning strategies.
         AV1
       </i></b>
       <br>
-         During AV1, I...
+         Durante la AV1, aprendí más sobre las necesidades de los laboratorios hospitalarios y las empresas farmacéuticas, especialmente en relación con el monitoreo ambiental y el control de recursos sensibles. Apliqué este conocimiento al definir el problema, los segmentos objetivo y los requerimientos de SafeLab.
       <br><br>
         ------------------------------------
       <br><br>
@@ -152,7 +152,7 @@ necessary, using appropriate learning strategies.
         AV1
       </i></b>
       <br>
-         During AV1, I...
+        Durante la AV1, comprendí que desarrollar SafeLab requería aprender sobre temas que antes no conocía a profundidad. Esto me ayudó a reconocer la importancia de seguir aprendiendo y adaptando mis conocimientos al trabajar en nuevos proyectos de software.
       <br><br>
         ------------------------------------
       <br><br>
