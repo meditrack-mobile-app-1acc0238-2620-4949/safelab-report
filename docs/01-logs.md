@@ -37,13 +37,13 @@
       1.x.x
     </td>
     <td style="text-align: center;">
-      xx/09/2026
+      18/09/2026
     </td>
     <td style="text-align: center;">
       Espino Rossi, Victor Manuel
     </td>
     <td style="text-align: justify;">
-      (desciption)
+      Desarrollo de las secciones Lean UX Process (Problem Statement, Assumptions, Hypothesis Statements y Lean UX Canvas) y Competitors (análisis competitivo frente a SmartSense, SenseAnywhere y Monnit, y estrategias ofensivas, adaptativas, defensivas y de supervivencia).
     </td>
   </tr>
   <!-- ROW 3 -->
