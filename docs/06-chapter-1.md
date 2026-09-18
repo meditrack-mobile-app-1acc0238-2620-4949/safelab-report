@@ -77,7 +77,7 @@
   <tr>
     <td style="text-align: center; width: 40%; vertical-align: center;">
       <img
-      src="../assets/06-chapter-1/startup-profile/team-member-profiles/Garcia-Braden.jpeg"
+      src="../assets/06-chapter-1/startup-profile/team-member-profiles/garcia-braden.jpeg"
       alt="Profile photo of Braden Garcia"
       width="70%"
       style="border-radius: 10px;">
@@ -179,7 +179,7 @@
 
 <p align="center">
   <img
-    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/SafeLab5WY2H.png"
+    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/safelab5wy2h.png"
     alt="SafeLab 5W's and 2H's analysis"
     width="85%">
 </p>
@@ -252,7 +252,7 @@
 
 #### **1.2.2.4. Lean UX Canvas**
 
-![Lean UX Canvas v2 - SafeLab](../assets/07-chapter-2/lean-ux-canvas/lean-ux-canvas-safelab.png)
+![Lean UX Canvas v2 - SafeLab](../assets/06-chapter-1/solution-profile/lean-ux-process/lean-ux-canvas/lean-ux-canvas-safelab.png)
 
 ## **1.3. Target Segments**
 
