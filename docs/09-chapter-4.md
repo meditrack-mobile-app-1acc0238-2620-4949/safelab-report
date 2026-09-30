@@ -5,10 +5,10 @@
 ### **4.1.3. Source Code Style Guide & Conventions**
 ### **4.1.4. Software Deployment Configuration**
 ## **4.2. Landing Page & Mobile Application Implementation**
-### **4.2.1. Sprint n**
-#### **4.2.1.1. Sprint Planning n**
+### **4.2.1. Sprint 1**
+#### **4.2.1.1. Sprint Planning 1**
 #### **4.2.1.2. Aspect Leaders and Collaborators**
-#### **4.2.1.3. Sprint Backlog n**
+#### **4.2.1.3. Sprint Backlog 1**
 #### **4.2.1.4. Development Evidence for Sprint Review**
 #### **4.2.1.5. Testing Suite Evidence for Sprint Review**
 #### **4.2.1.6. Execution Evidence for Sprint Review**
