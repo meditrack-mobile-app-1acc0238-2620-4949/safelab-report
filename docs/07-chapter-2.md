@@ -2573,97 +2573,56 @@ El Domain Message Flows Modeling representa cómo los Bounded Contexts colaboran
 #### **2.5.1.3. Bounded Context Canvases**
 
 <p style="text-align: justify;">
-Cada Candidate Bounded Context se documenta mediante un Bounded Context Canvas que reúne su Context Overview, Business Rules, Ubiquitous Language, Capabilities, Dependencies y Design Critique.
+Cada Candidate Bounded Context se documenta mediante un Bounded Context Canvas que permite visualizar sus responsabilidades, decisiones de negocio, lenguaje ubicuo, mensajes y relaciones con otros contextos de SafeLab.
 </p>
 
-##### **Identity & Access Management - Canvas Base**
+##### **Identity & Access Management**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Garantizar que únicamente usuarios identificados y autorizados accedan a SafeLab y ejecuten operaciones compatibles con su rol.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">El correo debe identificar una cuenta válida; los roles determinan permisos; una sesión inválida o expirada no puede acceder a información protegida.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registro, login con correo, login con Google, recuperación de contraseña, logout y asignación de roles.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">User Account, Role, Authentication, Authorization, Session.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Servicio externo de autenticación de Google; todos los demás contextos consumen la identidad y los permisos resueltos.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/identity-bounded.png" alt="Identity & Access Management Bounded Context Canvas" width="95%">
+</p>
 
-##### **Monitoring Organization - Canvas Base**
+##### **Monitoring Organization**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Representar la estructura física sobre la cual se realiza el monitoreo ambiental.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Un Storage Area pertenece a un Monitoring Site; un Monitored Equipment debe estar asociado a un área antes de ser monitoreado.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registrar sitios, crear áreas, registrar equipos, asignar equipos y realizar búsquedas.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Monitoring Site, Storage Area, Cold Storage Unit, Monitored Equipment.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Proporciona identificadores y ubicación a Sensor Monitoring, Equipment Condition & Maintenance, Dashboard & Overview y Reporting & Compliance.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/monitoring-bounded.png" alt="Monitoring Organization Bounded Context Canvas" width="95%">
+</p>
 
-##### **Sensor Monitoring - Canvas Base**
+##### **Sensor Monitoring**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Capturar y conservar lecturas ambientales confiables, actuales e históricas.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Cada lectura debe incluir sensor, equipo, timestamp y valor; se debe identificar ausencia de lecturas recientes; la medición no debe perder trazabilidad con su origen.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Recepción automática, consulta de temperatura/humedad, estado de equipos y detección de interrupciones.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">IoT Sensor, Temperature Reading, Humidity Reading, Cold Chain, Safe Temperature Threshold.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Recibe datos de sensores/gateways y publica lecturas para Alerts & Incident Management, Dashboard & Overview y Reporting & Compliance.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/sensor-bounded.png" alt="Sensor Monitoring Bounded Context Canvas" width="95%">
+</p>
 
-##### **Alerts & Incident Management - Canvas Base**
+##### **Alerts & Incident Management**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Transformar desviaciones ambientales en alertas accionables y registrar su atención hasta el cierre del incidente.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Una alerta se genera cuando se cumple una regla; una alerta reconocida conserva responsable y hora; un incidente crítico debe mantener acciones correctivas asociadas.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Configurar límites, generar alertas, priorizar por severidad, notificar dispositivos móviles, reconocer alertas y registrar incidentes.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Thermal Excursion, Preventive Alert, Severity, Incident, Corrective Action.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume lecturas de Sensor Monitoring; publica eventos hacia Audit & Traceability, Dashboard & Overview y Reporting & Compliance.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/alerts-bounded.png" alt="Alerts & Incident Management Bounded Context Canvas" width="95%">
+</p>
 
-##### **Equipment Condition & Maintenance - Canvas Base**
+##### **Equipment Condition & Maintenance**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Mantener evidencia sobre la condición, confiabilidad y mantenimiento de los equipos de cadena de frío.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Todo mantenimiento se asocia a un equipo; la condición puede derivarse de lecturas y fallas registradas; el historial no debe eliminarse al cambiar el estado actual.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Consultar condición, identificar valores anómalos, registrar mantenimiento, consultar historial y evaluar confiabilidad.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Equipment Condition, Maintenance Record, Reliability, Failure Indicator.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume identificación del equipo y datos históricos; aporta estado y mantenimiento a Dashboard & Overview y Reporting & Compliance.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/equipment-bounded.png" alt="Equipment Condition & Maintenance Bounded Context Canvas" width="95%">
+</p>
 
-##### **Reporting & Compliance - Canvas Base**
+##### **Reporting & Compliance**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Convertir el historial operacional de SafeLab en información útil para análisis y auditorías.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Los reportes deben conservar el periodo, equipo y criterios utilizados; la información exportada debe corresponder a registros trazables; las comparaciones utilizan periodos válidos.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Consultar históricos, seleccionar rangos, comparar periodos, generar reportes, descargar/exportar archivos y consultar historial de incidentes.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Compliance Report, Historical Data, Reporting Period, Export, Regulatory Evidence.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consulta datos de Sensor Monitoring, Alerts & Incident Management, Equipment Condition & Maintenance y Audit & Traceability.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/reporting-bounded.png" alt="Reporting & Compliance Bounded Context Canvas" width="95%">
+</p>
 
-##### **Dashboard & Overview - Canvas Base**
+##### **Dashboard & Overview**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Ofrecer una vista resumida del estado operacional para facilitar decisiones rápidas desde el dispositivo móvil.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Los indicadores deben derivarse de datos vigentes; las tendencias no modifican los registros fuente; la ausencia de datos debe mostrarse como un estado conocido.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Dashboard, totales, alertas críticas, equipos con alertas y tendencias de temperatura, humedad y alertas.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Dashboard, Monitoring Summary, Trend, Critical Alert, Current Status.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume información de los contextos operacionales mediante consultas o proyecciones de lectura.</td></tr>
-</table>
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/dashboard-bounded.png" alt="Dashboard & Overview Bounded Context Canvas" width="95%">
+</p>
 
-##### **Audit & Traceability - Canvas Base**
+##### **Audit & Traceability**
 
-<table border="1" style="width:100%; border-collapse:collapse;">
-<tr><th style="text-align:center;padding:6px;">Campo</th><th style="text-align:center;padding:6px;">Contenido propuesto</th></tr>
-<tr><td style="text-align:center;padding:6px;">Purpose</td><td style="text-align:justify;padding:6px;">Mantener evidencia inmutable de eventos relevantes, responsables, cambios y relaciones entre mediciones, alertas e incidentes.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Business Rules</td><td style="text-align:justify;padding:6px;">Una entrada de auditoría no se edita ni elimina; toda entrada identifica actor, acción, fecha/hora y objeto afectado; los eventos relacionados utilizan un Correlation ID.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Capabilities</td><td style="text-align:justify;padding:6px;">Registrar eventos de auditoría, consultar historial, reconstruir secuencias y exportar evidencia de trazabilidad.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Key Terms</td><td style="text-align:justify;padding:6px;">Incident Log, Audit Entry, Traceability Record, Actor, Correlation ID.</td></tr>
-<tr><td style="text-align:center;padding:6px;">Dependencies</td><td style="text-align:justify;padding:6px;">Consume eventos publicados por todos los contextos que realicen operaciones auditables.</td></tr>
-</table>
-
+<p align="center">
+  <img src="../assets/07-chapter-2/strategic-level-ddd/event-storming/bounded-context-canvases/audit-bounded.png" alt="Audit & Traceability Bounded Context Canvas" width="95%">
+</p>
 
 ### **2.5.2. Context Mapping**
 
