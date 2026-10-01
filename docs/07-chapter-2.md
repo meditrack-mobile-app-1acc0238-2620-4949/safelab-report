@@ -131,37 +131,84 @@
 
 ## **2.2. Interviews**
 
+<p style="text-align: justify;">
+  En esta sección se presenta el proceso de entrevistas realizado para comprender, desde la perspectiva de los usuarios, cómo se gestionan actualmente el monitoreo y el control de las condiciones ambientales en los dos segmentos objetivo de SafeLab. Se describe el diseño de las entrevistas, el registro de cada una y el análisis por segmento que sirve de base para la construcción de los User Personas de la sección 2.3.
+</p>
+
 ### **2.2.1. Interview Design**
+
+
+<p style="text-align: justify;">
+  Las entrevistas se diseñaron con un formato semiestructurado e individual, con el objetivo de recolectar las características objetivas y subjetivas necesarias para construir los arquetipos de cada segmento objetivo. Para ambos segmentos se mantuvo la misma estructura de doce preguntas, adaptando su redacción al contexto de cada uno: el laboratorio hospitalario, donde se custodian muestras, reactivos e insumos, y la empresa farmacéutica, donde se controla el almacenamiento de medicamentos con fines de trazabilidad y auditoría.
+</p>
+
+<p style="text-align: justify;">
+  Las preguntas se clasificaron en principales y complementarias. Las preguntas principales exploran directamente el problema y las necesidades del entrevistado: su proceso actual, los incidentes críticos que ha vivido, sus frustraciones, la solución que espera y las garantías que necesita para confiar en ella. Las preguntas complementarias permiten caracterizar al entrevistado, mediante sus datos demográficos, personalidad, ocupación y uso de tecnología, y profundizar en aspectos específicos de las respuestas principales, como el tiempo invertido o el nivel de automatización que aceptaría.
+</p>
+
+<p style="text-align: justify;">
+  La siguiente tabla resume la relación entre cada bloque de preguntas y las variables que se recogen para la construcción de los User Personas. La numeración de las preguntas corresponde al orden en que fueron formuladas durante la entrevista.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Bloque</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Preguntas</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Tipo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Variables recogidas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Perfil del entrevistado</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P1, P2, P3</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Complementarias</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Nombre, edad, estado civil, distrito de residencia, ocupación, años de experiencia, personalidad y actividades de tiempo libre.</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Tecnología</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P4</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Complementaria</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Dispositivos, sistemas operativos, navegadores y canales digitales utilizados.</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Proceso actual</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P5, P6</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Principal y complementaria</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Procedimiento y herramientas de monitoreo, frecuencia de registro y tiempo invertido en registrar y consolidar la información.</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Problemas e incidentes</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P7, P8</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Principales</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Incidentes críticos, sus consecuencias y las frustraciones del entrevistado.</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Solución esperada</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P9, P10</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Principal y complementaria</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Objetivos, funcionalidades esperadas y nivel de automatización aceptado.</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Confianza y cierre</td><td style="text-align: center; vertical-align: middle; padding: 6px;">P11, P12</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Principal y complementaria</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Garantías requeridas para confiar en el sistema, motivaciones e información adicional relevante.</td></tr>
+  </tbody>
+</table>
 
 #### **Segmento 1: Laboratorios de Hospitales**
 
-1. ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
-2. Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
-3. ¿Cuál es tu puesto actual en el laboratorio y cuántos años de experiencia tienes en este rol?
-4. En tu día a día, ¿qué dispositivos tecnológicos usas más, y qué sistema operativo y navegador prefieres?
-5. ¿Cómo es actualmente el proceso de monitoreo y control de muestras, reactivos e insumos en tu laboratorio, en el día a día?
-6. ¿Cuánto tiempo estimas que dedican a registrar estos datos y a consolidar la información en reportes?
-7. Cuéntame sobre la última vez que tuvieron un incidente crítico, como una desviación de temperatura, un corte de luz o pérdida de reactivos.
-8. ¿Qué es lo que más te frustra o estresa de esta parte de tu trabajo actualmente?
-9. Si existiera un sistema ideal para resolver estos problemas, ¿cómo sería?
-10. Si un sistema detectara que una refrigeradora o congeladora está fallando, ¿preferirías solo recibir una notificación, o que el sistema intente una acción de contingencia automática?
-11. Para que confíes al 100% en un sistema así, ¿qué información o garantías necesitarías que te muestre?
-12. ¿Hay algo más sobre tu trabajo con muestras e insumos sensibles que consideres importante mencionar?
+**Preguntas principales**
+
+- **P5.** ¿Cómo es actualmente el proceso de monitoreo y control de muestras, reactivos e insumos en tu laboratorio, en el día a día?
+- **P7.** Cuéntame sobre la última vez que tuvieron un incidente crítico, como una desviación de temperatura, un corte de luz o pérdida de reactivos.
+- **P8.** ¿Qué es lo que más te frustra o estresa de esta parte de tu trabajo actualmente?
+- **P9.** Si existiera un sistema ideal para resolver estos problemas, ¿cómo sería?
+- **P11.** Para que confíes al 100% en un sistema así, ¿qué información o garantías necesitarías que te muestre?
+
+**Preguntas complementarias**
+
+- **P1.** ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
+- **P2.** Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
+- **P3.** ¿Cuál es tu puesto actual en el laboratorio y cuántos años de experiencia tienes en este rol?
+- **P4.** En tu día a día, ¿qué dispositivos tecnológicos usas más, y qué sistema operativo y navegador prefieres?
+- **P6.** ¿Cuánto tiempo estimas que dedican a registrar estos datos y a consolidar la información en reportes?
+- **P10.** Si un sistema detectara que una refrigeradora o congeladora está fallando, ¿preferirías solo recibir una notificación, o que el sistema intente una acción de contingencia automática?
+- **P12.** ¿Hay algo más sobre tu trabajo con muestras e insumos sensibles que consideres importante mencionar?
 
 #### **Segmento 2: Empresas Farmacéuticas**
 
-1. ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
-2. Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
-3. ¿Cuál es tu puesto actual dentro de la empresa y cuántos años de experiencia tienes en roles de almacenamiento, calidad o logística?
-4. En tu día a día, ¿qué dispositivos tecnológicos usas más, y qué sistema operativo y navegador prefieres?
-5. ¿Cómo es actualmente el proceso de monitoreo de condiciones de almacenamiento de medicamentos, incluyendo trazabilidad y registros para auditoría?
-6. ¿Cuánto tiempo estima tu equipo que dedica a consolidar los registros ambientales y preparar documentación para auditorías regulatorias?
-7. Cuéntame sobre la última vez que tuvieron un incidente crítico, como una excursión de temperatura durante el almacenamiento o transporte que puso en riesgo un lote.
-8. ¿Qué es lo que más te frustra o estresa de mantener la trazabilidad y el cumplimiento normativo actualmente?
-9. Si existiera un sistema ideal para resolver estos problemas, ¿cómo sería?
-10. Si un sistema detectara una desviación en una sala de almacenamiento o durante el transporte, ¿preferirías solo recibir una notificación, o que el sistema también active una acción de mitigación automática?
-11. Para que confíes al 100% en un sistema así para auditorías regulatorias, ¿qué información o garantías necesitarías que te muestre?
-12. ¿Hay algo más sobre trazabilidad, cumplimiento o monitoreo de la cadena de suministro que consideres importante mencionar?
+**Preguntas principales**
+
+- **P5.** ¿Cómo es actualmente el proceso de monitoreo de condiciones de almacenamiento de medicamentos, incluyendo trazabilidad y registros para auditoría?
+- **P7.** Cuéntame sobre la última vez que tuvieron un incidente crítico, como una excursión de temperatura durante el almacenamiento o transporte que puso en riesgo un lote.
+- **P8.** ¿Qué es lo que más te frustra o estresa de mantener la trazabilidad y el cumplimiento normativo actualmente?
+- **P9.** Si existiera un sistema ideal para resolver estos problemas, ¿cómo sería?
+- **P11.** Para que confíes al 100% en un sistema así para auditorías regulatorias, ¿qué información o garantías necesitarías que te muestre?
+
+**Preguntas complementarias**
+
+- **P1.** ¿Podrías contarnos tu nombre, edad, estado civil y el distrito donde vives?
+- **P2.** Cuéntanos un poco sobre ti y qué sueles hacer en tu tiempo libre. ¿Cómo te describirías en tres palabras?
+- **P3.** ¿Cuál es tu puesto actual dentro de la empresa y cuántos años de experiencia tienes en roles de almacenamiento, calidad o logística?
+- **P4.** En tu día a día, ¿qué dispositivos tecnológicos usas más, y qué sistema operativo y navegador prefieres?
+- **P6.** ¿Cuánto tiempo estima tu equipo que dedica a consolidar los registros ambientales y preparar documentación para auditorías regulatorias?
+- **P10.** Si un sistema detectara una desviación en una sala de almacenamiento o durante el transporte, ¿preferirías solo recibir una notificación, o que el sistema también active una acción de mitigación automática?
+- **P12.** ¿Hay algo más sobre trazabilidad, cumplimiento o monitoreo de la cadena de suministro que consideres importante mencionar?
+
 
 ### **2.2.2. Interview Recording**
 
@@ -299,67 +346,252 @@
 
 ### **2.2.3. Interview Analysis**
 
-#### **Segmento 1: Laboratorios de Hospitales**
+
+<p style="text-align: justify;">
+  El análisis se realizó por segmento objetivo a partir de las respuestas registradas en la sección 2.2.2. Para cada variable se contabilizó la cantidad de entrevistados que la mencionaron y se calculó el porcentaje respecto del total de entrevistados del segmento (n). Cuando un entrevistado no brindó información sobre una variable, esta se registra como «No especificado». Al final de la sección se comparan ambos segmentos para identificar las coincidencias y diferencias que orientan la construcción de los User Personas y las decisiones de diseño de SafeLab.
+</p>
+
+#### **Segmento 1: Laboratorios de Hospitales (n = 2)**
 
 ##### **Características**
 
-- **Sexo:** Femenino (50%), Masculino (50%).
-- **Edad:** 27–34 años.
-- **Dispositivos:** Smartphone (100%), laptop/computadora (50%, equipo compartido del hospital).
-- **Sistemas operativos:** Android, Windows.
-- **Navegadores:** Chrome.
-- **Influencia de marcas:** Equipos de refrigeración (Haier Biomedical, Thermo Fisher) y comunicación (WhatsApp).
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Variable</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Sexo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Femenino: 1 (50%) / Masculino: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Edad</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Rango de 27 a 34 años; promedio de 30,5 años</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Estado civil</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Casada: 1 (50%) / No especificado: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Ciudad de residencia</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Arequipa: 2 (100%) — Cercado de Arequipa y Yanahuara</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Ocupación</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Jefa de laboratorio clínico: 1 (50%) / Técnico de laboratorio: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Experiencia</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Entre 3 y 8 años en el hospital</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Personalidad</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Responsable: 2 (100%) / Tranquilo(a): 2 (100%) / Meticulosa: 1 (50%) / Adaptado al turno de noche: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Tiempo libre</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Actividades al aire libre o deportivas (jardinería, caminatas, fútbol): 2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Dispositivo principal</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Smartphone Android: 2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Computadora</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Computadora compartida del hospital, sin equipo asignado: 2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Sistema operativo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Android: 2 (100%) / Windows: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Navegador</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Google Chrome: 1 (50%) / No especificado: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Canal digital esperado para alertas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Celular: 2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Marcas tecnológicas mencionadas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Android: 2 (100%) / Windows: 1 (50%) / Google Chrome: 1 (50%) / Microsoft Excel: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Influencias</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Entidades reguladoras de salud (DIGESA, DIRESA): 1 (50%)</td></tr>
+  </tbody>
+</table>
+
+##### **Proceso actual e incidentes**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Indicador</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registro manual en papel</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Transcripción posterior a Excel</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Frecuencia de revisión</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Tres veces por turno: 1 (50%) / Cada cuatro horas: 1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Tiempo por revisión</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Entre 10 y 15 minutos por ronda, más 20 a 30 minutos diarios de transcripción a Excel</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Reportó un incidente crítico</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Incidente detectado recién al día o turno siguiente</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Pérdida de material reportada</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+  </tbody>
+</table>
+
+##### **Expectativas sobre la solución**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Indicador</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registro automático o con una sola acción, sin papeleo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Alertas o recordatorios en el celular</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Reportes exportables para auditoría (PDF o Excel)</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Escalamiento automático a un supervisor</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Prefiere ser notificado y decidir, o escalar, antes que una acción autónoma sobre equipos críticos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Acepta que el sistema actúe de forma autónoma sobre equipos críticos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">0 (0%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registro digital que sirva como evidencia del trabajo realizado</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Calibración verificable de los sensores</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Respaldo ante cortes de energía</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Cumplimiento de la normativa de salud local</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Funcionamiento sin conexión a internet</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (50%)</td></tr>
+  </tbody>
+</table>
 
 ##### **Objetivos comunes**
 
-- Dejar de depender de procesos manuales y en papel para el monitoreo de muestras e insumos sensibles.
-- Tener visibilidad confiable y en tiempo real sobre el estado de los equipos de refrigeración.
-- Reducir el tiempo dedicado a registrar y consolidar datos.
-- Superar auditorías regulatorias sin tener que preparar registros físicos a último momento.
+- Eliminar el registro en papel y las rondas físicas mediante un registro automático o de una sola acción (100%).
+- Recibir avisos en el celular ante cualquier desviación o tarea pendiente (100%).
+- Contar con registros digitales que puedan presentarse en auditorías y sirvan como respaldo del trabajo realizado (100%).
 
 ##### **Motivaciones comunes**
 
-- Proteger la integridad de las muestras biológicas y reactivos para evitar pérdidas.
-- Evitar ser responsabilizados por incidentes prevenibles causados por vacíos en la supervisión manual.
-- Sentirse respaldados, especialmente durante turnos aislados con poco personal.
+- Proteger muestras, reactivos e insumos de pérdidas como las ocurridas en los incidentes reportados (100%).
+- Poder demostrar que los controles se realizaron correctamente, ante auditorías o ante un incidente (100%).
+- Reducir la carga manual, ya que el problema se atribuye a la falta de herramientas y de tiempo (50%).
+- Contar con respaldo durante los turnos con poco personal (50%).
 
 ##### **Frustraciones comunes**
 
-- Procesos de monitoreo manuales y propensos a errores.
-- Dificultad para correlacionar datos históricos almacenados en registros de papel.
-- Falta de apoyo o escalamiento cuando ocurren incidentes en turnos con poco personal.
+- Registros en papel que se pierden, se dañan o no permiten demostrar lo realizado (100%).
+- Desviaciones que se detectan recién horas después, al día o turno siguiente (100%).
+- Preparación manual de auditorías con papeles sueltos de varios meses (50%).
+- Falta de respaldo durante el turno de noche (50%).
 
-#### **Segmento 2: Empresas Farmacéuticas**
+#### **Segmento 2: Empresas Farmacéuticas (n = 3)**
 
 ##### **Características**
 
-- **Sexo:** Femenino (0%), Masculino (100%).
-- **Edad:** 24–31 años.
-- **Dispositivos:** Smartphone (100%), laptop/computadora (100%, corporativa en el caso de Control de Calidad y Logística).
-- **Sistemas operativos:** Windows, iOS.
-- **Navegadores:** Chrome, Brave.
-- **Influencia de marcas:** Marco regulatorio (DIGEMID), proveedores de dataloggers USB y sistemas ERP.
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Variable</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Sexo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Masculino: 3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Edad</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Rango de 24 a 31 años; promedio de 26,3 años</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Estado civil</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Soltero: 2 (67%) / Casado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Ciudad de residencia</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Lima: 3 (100%) — Los Olivos, San Borja y San Miguel</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Ocupación</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Supervisor de control de calidad: 1 (33%) / Analista de calidad: 1 (33%) / Asistente de logística: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Área de trabajo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Calidad: 2 (67%) / Logística: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Experiencia</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Alrededor de 2 años: 2 (67%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Personalidad</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Detallista: 2 (67%) / Rasgos mencionados una vez: disciplinado, proactivo, curioso, tecnológico, analítico, responsable, organizado y tranquilo (33% cada uno)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Tiempo libre</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Videojuegos: 2 (67%) / Tecnología y ciclismo: 1 (33%) / Salir con amigos y fútbol: 1 (33%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Smartphone</td><td style="text-align: justify; vertical-align: top; padding: 6px;">iPhone: 1 (33%) / Android: 1 (33%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Computadora</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Laptop o computadora de la empresa: 2 (67%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Sistema operativo</td><td style="text-align: justify; vertical-align: top; padding: 6px;">iOS: 1 (33%) / Android: 1 (33%) / Windows: 1 (33%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Navegador</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Google Chrome: 2 (67%) / No especificado: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Canal digital esperado para alertas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Notificaciones o alertas inmediatas: 3 (100%); en el celular de forma explícita: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Canal de alerta actual</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Alarma sonora local y correo electrónico: 1 (33%) / Sin alertas automáticas: 2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Marcas tecnológicas mencionadas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Microsoft Excel: 3 (100%) / Google Chrome: 2 (67%) / Windows: 1 (33%) / iPhone: 1 (33%) / Android: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Influencias</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Exigencias de auditoría regulatoria: 3 (100%) / DIGEMID y principios ALCOA+ de forma explícita: 1 (33%)</td></tr>
+  </tbody>
+</table>
+
+##### **Proceso actual e incidentes**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Indicador</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Dataloggers con descarga por USB</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Sensores con pantalla y registro manual de los valores</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Consolidación en Excel</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Uso de documentos físicos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Tiempo de consolidación</td><td style="text-align: justify; vertical-align: top; padding: 6px;">Varias horas por semana: 1 (33%) / 10 a 12 horas por semana: 1 (33%) / Varios días por cada solicitud de auditoría: 1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Reportó un incidente crítico</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Desviación detectada después de ocurrida</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Producto separado, en cuarentena o destruido</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Pérdida económica y observación regulatoria explícitas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+  </tbody>
+</table>
+
+##### **Expectativas sobre la solución**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Indicador</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Visualización centralizada y en tiempo real de todas las zonas o equipos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Notificaciones o alertas inmediatas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Alertas preventivas, antes de superar el límite o anticipando fallas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Reportes automáticos para auditoría</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Historial con búsqueda por fechas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Acepta acciones de mitigación automáticas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Acciones automáticas según el tipo de problema, con revisión humana en decisiones críticas</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registros inalterables</td><td style="text-align: justify; vertical-align: top; padding: 6px;">3 (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Registro de quién realiza cambios o acciones en el sistema</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Seguridad de los datos y de los accesos</td><td style="text-align: justify; vertical-align: top; padding: 6px;">2 (67%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Exportación de registros para entidades regulatorias</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Redundancia de infraestructura</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Certificados de los equipos almacenados en la plataforma</td><td style="text-align: justify; vertical-align: top; padding: 6px;">1 (33%)</td></tr>
+  </tbody>
+</table>
 
 ##### **Objetivos comunes**
 
-- Eliminar la dependencia de dataloggers USB y registros en papel que deben extraerse y consolidarse manualmente.
-- Tener una única fuente de verdad que unifique la información actualmente repartida entre distintos archivos, hojas de cálculo y ubicaciones.
-- Automatizar la generación de reportes de auditoría y trazabilidad conforme a la normativa de DIGEMID.
-- Contar con un sistema que avise de forma proactiva ante una desviación, antes de que el problema se agrave, y no únicamente después de superado el límite.
+- Centralizar en un solo lugar la información hoy repartida entre dataloggers, sensores, hojas de Excel y documentos físicos (100%).
+- Ver las condiciones de almacenamiento en tiempo real y recibir alertas inmediatas (100%).
+- Generar reportes y evidencias de auditoría sin consolidación manual (67%).
+- Anticiparse a las desviaciones antes de que se supere el límite permitido (67%).
 
 ##### **Motivaciones comunes**
 
-- Evitar pérdidas económicas por lotes de producto dañados, puestos en riesgo o destruidos.
-- Mantener el estatus regulatorio de la empresa y superar auditorías sin contratiempos ni documentación preparada a último momento.
-- Reducir la carga de trabajo manual y repetitiva asociada a la documentación de cumplimiento, como la extracción de dataloggers, la consolidación en Excel y los cierres de mes.
-- Evitar que el personal sea señalado individualmente por errores o incidentes originados en procesos manuales deficientes y no en su desempeño.
+- Evitar que lotes de producto tengan que separarse, ponerse en cuarentena o destruirse (100%).
+- Superar auditorías con registros confiables e inalterables (100%).
+- Reducir las horas o días dedicados a consolidar información de forma manual (100%).
 
 ##### **Frustraciones comunes**
 
-- Procesos de monitoreo manuales, como dataloggers USB y revisiones físicas, que consumen varias horas a la semana y generan trabajo repetitivo de «copiar y pegar».
-- Visibilidad nula o tardía en tiempo real: los problemas, como una desviación de temperatura o un lote en riesgo, se descubren cuando el daño ya ocurrió.
-- Información fragmentada entre distintos archivos, documentos y ubicaciones, lo que complica especialmente el cierre de mes y la preparación de auditorías.
-- Falta de consenso sobre el nivel de autonomía deseado del sistema: mientras algunos usuarios confiarían en acciones de mitigación totalmente automáticas, otros prefieren que determinadas acciones críticas pasen primero por la revisión y aprobación de una persona.
+- Consolidación manual y repetitiva de datos en Excel (100%).
+- Enterarse de los problemas cuando ya ocurrieron, por falta de visibilidad en tiempo real (100%).
+- Información fragmentada entre papel, hojas de cálculo y distintos archivos, que dificulta saber desde cuándo empezó un problema y cuánto duró (67%).
+
+#### **Comparación entre segmentos**
+
+<p style="text-align: justify;">
+  La siguiente tabla compara los indicadores más representativos de ambos segmentos objetivo.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Indicador</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Segmento 1: Laboratorios de Hospitales (n = 2)</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Segmento 2: Empresas Farmacéuticas (n = 3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Edad promedio</td><td style="text-align: center; vertical-align: middle; padding: 6px;">30,5 años</td><td style="text-align: center; vertical-align: middle; padding: 6px;">26,3 años</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Ciudad de residencia</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Arequipa (100%)</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Lima (100%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Smartphone como dispositivo de uso diario</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100% (Android)</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67% (iOS 33%, Android 33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Usa una computadora para su trabajo</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100% (compartida, sin equipo asignado)</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67% (laptop o computadora de la empresa)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Google Chrome como navegador</td><td style="text-align: center; vertical-align: middle; padding: 6px;">50%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Método de registro</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Papel (100%)</td><td style="text-align: center; vertical-align: middle; padding: 6px;">Datalogger USB (67%) y sensores con pantalla (33%)</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Consolidación en Excel</td><td style="text-align: center; vertical-align: middle; padding: 6px;">50%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Incidente crítico detectado después de ocurrido</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Espera alertas inmediatas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Espera alertas preventivas</td><td style="text-align: center; vertical-align: middle; padding: 6px;">0%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Espera reportes para auditoría</td><td style="text-align: center; vertical-align: middle; padding: 6px;">50%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Acepta acciones automáticas sobre equipos críticos</td><td style="text-align: center; vertical-align: middle; padding: 6px;">0%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">67%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Exige registros inalterables</td><td style="text-align: center; vertical-align: middle; padding: 6px;">0%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">100%</td></tr>
+    <tr><td style="text-align: justify; vertical-align: top; padding: 6px;">Requiere funcionamiento sin conexión</td><td style="text-align: center; vertical-align: middle; padding: 6px;">50%</td><td style="text-align: center; vertical-align: middle; padding: 6px;">0%</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El problema central es compartido por ambos segmentos: el 100% de los entrevistados reportó un incidente crítico que fue detectado después de ocurrido y el 100% espera recibir alertas inmediatas. Esto confirma que la necesidad principal es la visibilidad en tiempo real sobre las condiciones de los equipos y respalda la prioridad del monitoreo ambiental y de las alertas dentro de SafeLab.
+</p>
+
+<p style="text-align: justify;">
+  La principal diferencia tecnológica está en el acceso a una computadora. En el Segmento 1, el celular es el único dispositivo propio de los entrevistados y la computadora es compartida, por lo que la aplicación móvil debe ser el canal principal y funcionar con una conectividad inestable. En el Segmento 2, el 67% trabaja además con una laptop o computadora de la empresa y el 100% consolida información en Excel, lo que explica el mayor interés por los reportes y la exportación de registros.
+</p>
+
+<p style="text-align: justify;">
+  La diferencia más marcada se encuentra en el nivel de automatización aceptado. En el Segmento 1, ningún entrevistado acepta que el sistema actúe por sí solo sobre equipos críticos: prefieren ser notificados, recibir una recomendación o que la alerta se escale a un supervisor. En el Segmento 2, el 67% acepta acciones de mitigación automáticas, siempre que queden registradas, mientras que el 33% restante considera que dependen del tipo de problema. Por ello, las respuestas automáticas de SafeLab deben ser configurables y quedar siempre registradas.
+</p>
+
+<p style="text-align: justify;">
+  Finalmente, la confianza en el sistema se construye de manera distinta en cada segmento. El Segmento 1 se enfoca en la confiabilidad operativa, mediante la calibración de los sensores, el respaldo de energía y el funcionamiento sin conexión, mientras que el Segmento 2 se enfoca en la integridad y la trazabilidad de los datos: el 100% exige registros inalterables y el 67% necesita saber quién realiza cambios en el sistema.
+</p>
+
 
 ## **2.3. Needfinding**
 
