@@ -1593,7 +1593,7 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
   <b>Spike Story:</b><br>
   Como equipo de desarrollo,<br>
   queremos investigar y prototipar la integración de autenticación con una cuenta de Google en las aplicaciones móviles y los servicios RESTful de SafeLab,<br>
-  para comprender los requisitos técnicos, dependencias, riesgos y esfuerzo requeridos antes de implementar la US51 - Iniciar sesión con una cuenta de Google.
+  para comprender los requisitos técnicos, dependencias, riesgos y esfuerzo requerido antes de implementar la US51 - Iniciar sesión con una cuenta de Google.
 </p>
 
 <p style="text-align: justify;">
@@ -1601,70 +1601,89 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Se revisa la documentación oficial de autenticación</b><br>
-  <b>Given</b> que SafeLab requiere que los usuarios se autentiquen mediante una cuenta de Google<br>
-  <b>When</b> el Developer revisa la documentación oficial relacionada con la autenticación de Google<br>
-  <b>Then</b> se documentan el flujo de autenticación, las configuraciones requeridas y los principales requisitos de integración.
+  <b>Scenario 1: Revisar la documentación oficial de autenticación</b><br>
+  <b>Given</b> que SafeLab requiere autenticación mediante una cuenta de Google<br>
+  <b>When</b> el Developer revisa la documentación oficial relacionada con el proceso de autenticación<br>
+  <b>Then</b> se documentan el flujo recomendado, las configuraciones requeridas y los requisitos principales de integración para SafeLab.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
-  <b>When</b> el Developer evalúa la integración de autenticación para la implementación nativa<br>
-  <b>Then</b> se documentan la configuración requerida, las dependencias y el flujo de autenticación.
+  <b>Scenario 2: Evaluar la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa la integración de autenticación con Google para dicha aplicación<br>
+  <b>Then</b> se documentan las dependencias, configuraciones y pasos necesarios para implementar el flujo de autenticación.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
-  <b>Given</b> que SafeLab también debe incluir una aplicación móvil cross-platform<br>
-  <b>When</b> el Developer evalúa la integración de autenticación para la implementación cross-platform<br>
-  <b>Then</b> se documentan los requisitos de compatibilidad y las diferencias de integración identificadas.
+  <b>Scenario 3: Evaluar la compatibilidad con la aplicación cross-platform</b><br>
+  <b>Given</b> que SafeLab también incluye una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa la integración de autenticación para esta implementación<br>
+  <b>Then</b> se documentan los requisitos de compatibilidad, dependencias y diferencias encontradas respecto a la aplicación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Se evalúan los requisitos de autenticación del backend</b><br>
-  <b>Given</b> que SafeLab utiliza servicios RESTful desarrollados internamente<br>
-  <b>When</b> el Developer analiza cómo debe validarse en el backend la información de un usuario autenticado<br>
-  <b>Then</b> se documenta la interacción requerida entre la aplicación móvil y los servicios RESTful.
+  <b>Scenario 4: Evaluar la integración con los servicios RESTful</b><br>
+  <b>Given</b> que las aplicaciones móviles de SafeLab consumen servicios RESTful desarrollados internamente<br>
+  <b>When</b> el Developer analiza cómo debe comunicarse la información de autenticación con el backend<br>
+  <b>Then</b> se documenta el flujo requerido entre la aplicación móvil y los servicios RESTful para reconocer al usuario autenticado.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Se identifican las consideraciones de seguridad</b><br>
-  <b>Given</b> que la autenticación proporciona acceso a información y funcionalidades de los usuarios de SafeLab<br>
-  <b>When</b> el Developer analiza el flujo de autenticación<br>
-  <b>Then</b> se documentan las principales consideraciones de seguridad y los pasos de validación requeridos.
+  <b>Scenario 5: Analizar la validación de la identidad del usuario</b><br>
+  <b>Given</b> que SafeLab debe validar que la autenticación corresponda a un usuario legítimo<br>
+  <b>When</b> el Developer analiza el mecanismo utilizado para verificar la identidad proporcionada por Google<br>
+  <b>Then</b> se documentan los pasos necesarios para validar la información de autenticación antes de conceder acceso a SafeLab.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Se prototipa la integración de autenticación</b><br>
-  <b>Given</b> que se ha seleccionado un enfoque de integración para su evaluación<br>
-  <b>When</b> el Developer crea un Proof of Concept mínimo<br>
-  <b>Then</b> el prototipo verifica si una cuenta de Google puede autenticarse y ser reconocida por SafeLab.
+  <b>Scenario 6: Identificar consideraciones de seguridad</b><br>
+  <b>Given</b> que la autenticación permite acceder a información y funcionalidades de SafeLab<br>
+  <b>When</b> el Developer analiza el flujo completo de autenticación<br>
+  <b>Then</b> se documentan los principales riesgos de seguridad y las medidas necesarias para proteger la información utilizada durante el proceso.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
-  <b>Given</b> que se han identificado los requisitos y dependencias de autenticación<br>
-  <b>When</b> el equipo de desarrollo revisa el trabajo requerido para la implementación completa<br>
-  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
+  <b>Scenario 7: Identificar dependencias y configuraciones</b><br>
+  <b>Given</b> que la integración de autenticación puede requerir dependencias y configuraciones externas<br>
+  <b>When</b> el Developer revisa los requisitos de las aplicaciones móviles y del backend<br>
+  <b>Then</b> se documentan las dependencias, configuraciones y recursos necesarios para realizar la integración.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
-  <b>Given</b> que la investigación y la validación técnica han finalizado<br>
-  <b>When</b> el equipo de desarrollo revisa los hallazgos recopilados<br>
-  <b>Then</b> se documentan el enfoque seleccionado, los requisitos, las dependencias, los riesgos y las consideraciones de implementación para el refinamiento de la US51.
+  <b>Scenario 8: Prototipar el flujo de autenticación</b><br>
+  <b>Given</b> que se ha seleccionado un enfoque de integración para su validación técnica<br>
+  <b>When</b> el Developer construye un Proof of Concept mínimo de autenticación con Google<br>
+  <b>Then</b> el prototipo permite validar que una cuenta de Google puede autenticarse y ser reconocida por SafeLab.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 9: Estimar el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han identificado los requisitos, dependencias y tareas necesarias<br>
+  <b>When</b> el equipo de desarrollo analiza el trabajo requerido para implementar completamente la autenticación<br>
+  <b>Then</b> se documentan las principales tareas y una estimación aproximada del esfuerzo requerido.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 10: Documentar y compartir los hallazgos</b><br>
+  <b>Given</b> que la investigación y el Proof of Concept han finalizado<br>
+  <b>When</b> el equipo de desarrollo consolida los resultados del Spike<br>
+  <b>Then</b> se documentan el enfoque seleccionado, requisitos, dependencias, riesgos, ventajas, limitaciones y consideraciones necesarias para refinar la US51.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Se revisó la documentación oficial de autenticación.<br>
-  - Se documentaron los requisitos de integración nativa, cross-platform y de backend.<br>
-  - Se identificaron las consideraciones de seguridad y las dependencias.<br>
+  - Se revisó la documentación oficial relacionada con la autenticación con Google.<br>
+  - Se documentaron los requisitos de integración para la aplicación nativa, cross-platform y los servicios RESTful.<br>
+  - Se identificaron las dependencias y configuraciones requeridas.<br>
+  - Se documentaron las principales consideraciones de seguridad.<br>
   - Se completó un Proof of Concept mínimo de autenticación.<br>
-  - Se estimó el esfuerzo de implementación.<br>
-  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US51.
+  - El código del Proof of Concept se encuentra registrado en una rama del repositorio.<br>
+  - Se estimó el esfuerzo requerido para la implementación completa.<br>
+  - Los hallazgos se documentaron y fueron revisados por el equipo de desarrollo.<br>
+  - Los resultados obtenidos se utilizan para refinar la US51.<br>
+  - El Spike está limitado a 8-16 horas y se completa dentro del Sprint.
 </p>
+
 
 ##### **SP02 - Investigar opciones de almacenamiento local para datos de monitoreo**
 
@@ -1684,71 +1703,90 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Se investigan alternativas de almacenamiento local</b><br>
-  <b>Given</b> que SafeLab debe persistir determinada información de forma local en el dispositivo móvil<br>
-  <b>When</b> el Developer investiga alternativas de almacenamiento compatibles con la solución móvil<br>
-  <b>Then</b> se documentan las alternativas disponibles y sus principales características.
+  <b>Scenario 1: Investigar alternativas de almacenamiento local</b><br>
+  <b>Given</b> que SafeLab necesita persistir información de monitoreo en el dispositivo móvil<br>
+  <b>When</b> el Developer investiga alternativas compatibles de almacenamiento local<br>
+  <b>Then</b> se documentan las opciones disponibles, sus principales características, ventajas y limitaciones.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
-  <b>When</b> el Developer evalúa las alternativas candidatas de persistencia<br>
-  <b>Then</b> se documentan su compatibilidad y sus requisitos de integración para la implementación nativa.
+  <b>Scenario 2: Evaluar la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil nativa<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de almacenamiento<br>
+  <b>Then</b> se documentan su compatibilidad, dependencias y requisitos de integración para la implementación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
-  <b>When</b> el Developer evalúa las alternativas candidatas de persistencia<br>
-  <b>Then</b> se documentan su compatibilidad y sus requisitos de integración para la implementación cross-platform.
+  <b>Scenario 3: Evaluar la compatibilidad con la aplicación cross-platform</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil cross-platform<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas de almacenamiento<br>
+  <b>Then</b> se documentan su compatibilidad, dependencias y requisitos de integración para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Se define la información de monitoreo para el prototipo</b><br>
-  <b>Given</b> que SafeLab gestiona información de temperatura, humedad y estado de los equipos<br>
-  <b>When</b> el Developer define los datos requeridos para la prueba de persistencia<br>
-  <b>Then</b> se documenta la información de monitoreo que utilizará el Proof of Concept.
+  <b>Scenario 4: Definir la información que requiere persistencia local</b><br>
+  <b>Given</b> que SafeLab maneja información de temperatura, humedad y estado de los equipos<br>
+  <b>When</b> el Developer analiza qué información utilizará para validar la persistencia local<br>
+  <b>Then</b> se documentan los datos seleccionados y la estructura necesaria para almacenarlos y recuperarlos.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Se prototipa la persistencia local</b><br>
-  <b>Given</b> que se ha seleccionado un enfoque candidato de almacenamiento<br>
-  <b>When</b> el Developer almacena en el dispositivo información de monitoreo de ejemplo de SafeLab<br>
-  <b>Then</b> el prototipo verifica que la información seleccionada permanezca persistida localmente.
+  <b>Scenario 5: Evaluar las operaciones necesarias de almacenamiento</b><br>
+  <b>Given</b> que la aplicación necesita persistir y recuperar información localmente<br>
+  <b>When</b> el Developer analiza las operaciones requeridas por SafeLab<br>
+  <b>Then</b> se documentan las operaciones necesarias para guardar, consultar y actualizar la información almacenada.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Se recupera la información de monitoreo almacenada</b><br>
-  <b>Given</b> que la información de monitoreo de SafeLab ha sido persistida localmente<br>
-  <b>When</b> el prototipo solicita la información almacenada<br>
-  <b>Then</b> la información previamente almacenada puede recuperarse correctamente.
+  <b>Scenario 6: Identificar consideraciones de almacenamiento</b><br>
+  <b>Given</b> que la información persistida permanece dentro del dispositivo móvil<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas<br>
+  <b>Then</b> se documentan las principales consideraciones relacionadas con integridad, disponibilidad y manejo de la información local.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Se evalúa la persistencia después de reiniciar la aplicación</b><br>
+  <b>Scenario 7: Prototipar la persistencia local</b><br>
+  <b>Given</b> que se ha seleccionado una alternativa de almacenamiento para su evaluación<br>
+  <b>When</b> el Developer almacena información de monitoreo de ejemplo de SafeLab<br>
+  <b>Then</b> el Proof of Concept verifica que la información permanezca persistida localmente en el dispositivo.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 8: Recuperar la información almacenada</b><br>
+  <b>Given</b> que la información de monitoreo ha sido almacenada localmente<br>
+  <b>When</b> el Proof of Concept solicita la información almacenada<br>
+  <b>Then</b> los datos previamente persistidos pueden recuperarse correctamente.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 9: Verificar la persistencia después de reiniciar la aplicación</b><br>
   <b>Given</b> que la información de monitoreo ha sido almacenada localmente<br>
   <b>When</b> la aplicación se cierra y vuelve a iniciarse<br>
-  <b>Then</b> el prototipo verifica si la información persistida continúa disponible.
+  <b>Then</b> el Proof of Concept verifica que la información persistida continúa disponible.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Se documentan el esfuerzo de implementación y los hallazgos</b><br>
-  <b>Given</b> que se han evaluado las alternativas de almacenamiento y el Proof of Concept<br>
-  <b>When</b> el equipo de desarrollo revisa los resultados<br>
-  <b>Then</b> se documentan el enfoque seleccionado, las dependencias, las limitaciones, las tareas de implementación y una estimación aproximada del esfuerzo para el refinamiento de la US65.
+  <b>Scenario 10: Estimar el esfuerzo y documentar los hallazgos</b><br>
+  <b>Given</b> que las alternativas y el Proof of Concept han sido evaluados<br>
+  <b>When</b> el equipo de desarrollo revisa los resultados obtenidos<br>
+  <b>Then</b> se documentan el enfoque seleccionado, dependencias, limitaciones, tareas requeridas y una estimación aproximada del esfuerzo para refinar la US65.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Se revisaron alternativas compatibles de almacenamiento local.<br>
-  - Se documentaron los requisitos de integración nativa y cross-platform.<br>
-  - Se identificó la información de monitoreo utilizada para la validación técnica.<br>
-  - Un Proof of Concept mínimo almacena y recupera información de monitoreo de forma local.<br>
-  - Se validó la persistencia después de reiniciar la aplicación.<br>
-  - Se estimó el esfuerzo de implementación.<br>
-  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US65.
+  - Se investigaron alternativas de almacenamiento local compatibles con SafeLab.<br>
+  - Se documentaron los requisitos de integración para la aplicación nativa y cross-platform.<br>
+  - Se definió la información de monitoreo utilizada para la validación técnica.<br>
+  - Se identificaron las operaciones necesarias para almacenar y recuperar los datos.<br>
+  - Se documentaron las principales limitaciones y dependencias de las alternativas evaluadas.<br>
+  - Se completó un Proof of Concept mínimo que almacena y recupera información de monitoreo.<br>
+  - Se validó que la información permanezca disponible después de reiniciar la aplicación.<br>
+  - El código del Proof of Concept se encuentra registrado en una rama del repositorio.<br>
+  - Se estimó el esfuerzo requerido para la implementación completa.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US65.<br>
+  - El Spike está limitado a 8-16 horas y se completa dentro del Sprint.
 </p>
+
 
 ##### **SP03 - Investigar opciones de entrega de alertas móviles**
 
@@ -1768,71 +1806,89 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Se investigan alternativas de entrega de alertas</b><br>
+  <b>Scenario 1: Investigar alternativas de entrega de alertas</b><br>
   <b>Given</b> que SafeLab necesita comunicar las alertas generadas a los usuarios móviles<br>
-  <b>When</b> el Developer investiga alternativas técnicamente viables para la entrega de alertas móviles<br>
-  <b>Then</b> se documentan las alternativas disponibles y sus principales requisitos de integración.
+  <b>When</b> el Developer investiga alternativas técnicamente viables para la entrega de alertas<br>
+  <b>Then</b> se documentan las alternativas disponibles, sus principales características y requisitos de integración.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>Scenario 2: Evaluar la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil nativa<br>
   <b>When</b> el Developer evalúa las alternativas candidatas de entrega de alertas<br>
-  <b>Then</b> se documentan su compatibilidad y los requisitos de configuración para la aplicación móvil nativa.
+  <b>Then</b> se documentan la compatibilidad, las dependencias y los requisitos de configuración necesarios para la aplicación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
+  <b>Scenario 3: Evaluar la compatibilidad con la aplicación cross-platform</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil cross-platform<br>
   <b>When</b> el Developer evalúa las alternativas candidatas de entrega de alertas<br>
-  <b>Then</b> se documentan su compatibilidad y los requisitos de configuración para la implementación cross-platform.
+  <b>Then</b> se documentan la compatibilidad, las dependencias y los requisitos de configuración necesarios para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Se analiza la integración con las alertas de SafeLab</b><br>
-  <b>Given</b> que SafeLab genera alertas a partir de las condiciones de temperatura, humedad y de los equipos<br>
-  <b>When</b> el Developer analiza el proceso de entrega de alertas móviles<br>
-  <b>Then</b> se documenta la interacción requerida entre las alertas generadas, los servicios RESTful y las aplicaciones móviles.
+  <b>Scenario 4: Analizar la integración con las alertas generadas por SafeLab</b><br>
+  <b>Given</b> que SafeLab genera alertas a partir de condiciones de temperatura, humedad y estado de los equipos<br>
+  <b>When</b> el Developer analiza el proceso completo de entrega de una alerta móvil<br>
+  <b>Then</b> se documenta la interacción requerida entre la alerta generada, los servicios RESTful y las aplicaciones móviles.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Se identifican las dependencias y configuraciones requeridas</b><br>
-  <b>Given</b> que la entrega de alertas móviles puede requerir configuraciones o dependencias adicionales<br>
+  <b>Scenario 5: Definir la información necesaria para la notificación</b><br>
+  <b>Given</b> que una alerta debe permitir al usuario identificar el incidente relacionado<br>
+  <b>When</b> el Developer analiza la información disponible de las alertas de SafeLab<br>
+  <b>Then</b> se documentan los datos mínimos que deben utilizarse durante la entrega de la alerta móvil.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 6: Identificar dependencias, configuraciones y limitaciones</b><br>
+  <b>Given</b> que la entrega de alertas móviles puede requerir servicios, dependencias o configuraciones adicionales<br>
   <b>When</b> el Developer evalúa la alternativa seleccionada<br>
-  <b>Then</b> se documentan las dependencias requeridas, los pasos de configuración y las limitaciones identificadas.
+  <b>Then</b> se documentan las dependencias necesarias, los pasos de configuración y las limitaciones identificadas.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Se prototipa la entrega de alertas</b><br>
-  <b>Given</b> que se ha seleccionado una alternativa de entrega de alertas para su evaluación<br>
+  <b>Scenario 7: Analizar los riesgos de entrega</b><br>
+  <b>Given</b> que una alerta móvil puede no ser recibida inmediatamente por el dispositivo<br>
+  <b>When</b> el Developer evalúa el comportamiento de la alternativa seleccionada<br>
+  <b>Then</b> se documentan los principales riesgos de entrega y las consideraciones necesarias para mantener disponible la información de la alerta en SafeLab.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 8: Prototipar la entrega de una alerta móvil</b><br>
+  <b>Given</b> que se ha seleccionado una alternativa para su evaluación técnica<br>
   <b>When</b> el Developer genera y envía una alerta de prueba de SafeLab<br>
-  <b>Then</b> el Proof of Concept verifica si la alerta puede entregarse a un dispositivo móvil.
+  <b>Then</b> el Proof of Concept verifica que la alerta puede entregarse a un dispositivo móvil.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
-  <b>Given</b> que se han identificado los requisitos técnicos y las dependencias<br>
-  <b>When</b> el equipo de desarrollo revisa el trabajo requerido para la entrega de alertas móviles<br>
-  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
+  <b>Scenario 9: Estimar el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han identificado los requisitos técnicos, dependencias y configuraciones<br>
+  <b>When</b> el equipo de desarrollo revisa el trabajo necesario para implementar la entrega de alertas móviles<br>
+  <b>Then</b> se documentan las tareas principales y una estimación aproximada del esfuerzo requerido.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
-  <b>Given</b> que la evaluación técnica ha finalizado<br>
-  <b>When</b> el equipo de desarrollo revisa los resultados<br>
-  <b>Then</b> se documentan el enfoque seleccionado, los requisitos de integración, las dependencias, las limitaciones, los riesgos y las consideraciones de implementación para el refinamiento de la US24.
+  <b>Scenario 10: Documentar y compartir los hallazgos</b><br>
+  <b>Given</b> que la investigación y el Proof of Concept han finalizado<br>
+  <b>When</b> el equipo de desarrollo consolida los resultados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, requisitos de integración, dependencias, limitaciones, riesgos y consideraciones necesarias para refinar la US24.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Se evaluaron alternativas de entrega de alertas móviles.<br>
-  - Se documentó la compatibilidad nativa y cross-platform.<br>
-  - Se identificaron los requisitos de integración con las alertas de SafeLab y los servicios RESTful.<br>
+  - Se investigaron alternativas de entrega de alertas móviles.<br>
+  - Se documentó la compatibilidad con la aplicación nativa y cross-platform.<br>
+  - Se identificó la interacción necesaria con las alertas de SafeLab y los servicios RESTful.<br>
+  - Se definió la información mínima utilizada durante la entrega de una alerta.<br>
+  - Se documentaron las dependencias, configuraciones, limitaciones y riesgos identificados.<br>
   - Se completó un Proof of Concept mínimo utilizando una alerta de prueba de SafeLab.<br>
-  - Se documentaron las dependencias técnicas, las limitaciones y los riesgos.<br>
-  - Se estimó el esfuerzo de implementación.<br>
-  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US24.
+  - El código del Proof of Concept se encuentra registrado en una rama del repositorio.<br>
+  - Se estimó el esfuerzo requerido para la implementación completa.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar la US24.<br>
+  - El Spike está limitado a 8-16 horas y se completa dentro del Sprint.
 </p>
+
 
 ##### **SP04 - Investigar opciones de visualización de tendencias de monitoreo**
 
@@ -1852,70 +1908,87 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 1: Se investigan alternativas de visualización</b><br>
+  <b>Scenario 1: Investigar alternativas de visualización</b><br>
   <b>Given</b> que SafeLab necesita representar información histórica de alertas, temperatura y humedad<br>
-  <b>When</b> el Developer investiga alternativas de visualización compatibles con la solución móvil<br>
-  <b>Then</b> se documentan las alternativas disponibles y sus principales características.
+  <b>When</b> el Developer investiga alternativas de visualización compatibles con aplicaciones móviles<br>
+  <b>Then</b> se documentan las alternativas disponibles, sus principales características, ventajas y limitaciones.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 2: Se evalúa la compatibilidad con la aplicación móvil nativa</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil nativa<br>
+  <b>Scenario 2: Evaluar la compatibilidad con la aplicación móvil nativa</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil nativa<br>
   <b>When</b> el Developer evalúa las alternativas candidatas de visualización<br>
-  <b>Then</b> se documentan su compatibilidad y los requisitos de integración para la implementación nativa.
+  <b>Then</b> se documentan la compatibilidad, las dependencias y los requisitos de integración para la implementación nativa.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 3: Se evalúa la compatibilidad cross-platform</b><br>
-  <b>Given</b> que SafeLab debe incluir una aplicación móvil cross-platform<br>
+  <b>Scenario 3: Evaluar la compatibilidad con la aplicación cross-platform</b><br>
+  <b>Given</b> que SafeLab incluye una aplicación móvil cross-platform<br>
   <b>When</b> el Developer evalúa las alternativas candidatas de visualización<br>
-  <b>Then</b> se documentan su compatibilidad y los requisitos de integración para la implementación cross-platform.
+  <b>Then</b> se documentan la compatibilidad, las dependencias y los requisitos de integración para la implementación cross-platform.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 4: Se evalúan los datos históricos de SafeLab</b><br>
+  <b>Scenario 4: Analizar los datos históricos requeridos</b><br>
   <b>Given</b> que SafeLab almacena información histórica relacionada con alertas, temperatura y humedad<br>
-  <b>When</b> el Developer analiza los datos requeridos por las funcionalidades de tendencias<br>
-  <b>Then</b> se documenta la información requerida para el prototipo de visualización.
+  <b>When</b> el Developer analiza los datos necesarios para representar las tendencias<br>
+  <b>Then</b> se documentan la información requerida y la estructura necesaria para utilizarla en el prototipo.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 5: Se prototipa la visualización de tendencias de temperatura</b><br>
+  <b>Scenario 5: Evaluar la representación de datos a lo largo del tiempo</b><br>
+  <b>Given</b> que las tendencias deben permitir observar variaciones entre diferentes momentos<br>
+  <b>When</b> el Developer evalúa las alternativas candidatas<br>
+  <b>Then</b> se documenta cómo cada alternativa permite representar cambios de los datos a lo largo de un periodo.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 6: Evaluar el impacto técnico de la alternativa seleccionada</b><br>
+  <b>Given</b> que la visualización debe procesar información histórica de monitoreo<br>
+  <b>When</b> el Developer analiza la alternativa seleccionada<br>
+  <b>Then</b> se documentan sus dependencias, limitaciones y posibles consideraciones de rendimiento para la aplicación móvil.
+</p>
+
+<p style="text-align: justify;">
+  <b>Scenario 7: Prototipar la tendencia de temperatura</b><br>
   <b>Given</b> que existen datos históricos de temperatura disponibles para la validación técnica<br>
   <b>When</b> el Developer utiliza la alternativa de visualización seleccionada<br>
-  <b>Then</b> el prototipo representa la información de temperatura a lo largo del periodo evaluado.
+  <b>Then</b> el Proof of Concept representa la variación de la temperatura a lo largo del periodo evaluado.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 6: Se valida la visualización de tendencias de humedad y alertas</b><br>
-  <b>Given</b> que existen datos históricos de humedad y alertas disponibles para la validación técnica<br>
-  <b>When</b> el Developer utiliza la alternativa de visualización seleccionada<br>
-  <b>Then</b> el prototipo verifica que la información histórica requerida también pueda representarse.
+  <b>Scenario 8: Validar tendencias de humedad y alertas</b><br>
+  <b>Given</b> que existen datos históricos de humedad y alertas disponibles<br>
+  <b>When</b> el Developer utiliza la misma alternativa de visualización<br>
+  <b>Then</b> el Proof of Concept verifica que la información histórica de humedad y alertas también puede representarse.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 7: Se estima el esfuerzo de implementación</b><br>
-  <b>Given</b> que se han evaluado las alternativas candidatas de visualización<br>
-  <b>When</b> el equipo de desarrollo compara sus requisitos de implementación<br>
-  <b>Then</b> se documentan las principales tareas de implementación y una estimación aproximada del esfuerzo.
+  <b>Scenario 9: Estimar el esfuerzo de implementación</b><br>
+  <b>Given</b> que se han evaluado las alternativas candidatas y sus requisitos técnicos<br>
+  <b>When</b> el equipo de desarrollo analiza el trabajo requerido para implementar las visualizaciones<br>
+  <b>Then</b> se documentan las tareas principales y una estimación aproximada del esfuerzo necesario.
 </p>
 
 <p style="text-align: justify;">
-  <b>Scenario 8: Se documentan y revisan los hallazgos</b><br>
-  <b>Given</b> que el prototipo de visualización ha sido evaluado<br>
-  <b>When</b> el equipo de desarrollo revisa los resultados<br>
-  <b>Then</b> se documentan el enfoque seleccionado, los requisitos, las limitaciones y las consideraciones de implementación para el refinamiento de las US48, US49 y US50.
+  <b>Scenario 10: Documentar y compartir los hallazgos</b><br>
+  <b>Given</b> que el prototipo y las alternativas de visualización han sido evaluados<br>
+  <b>When</b> el equipo de desarrollo consolida los resultados<br>
+  <b>Then</b> se documentan el enfoque seleccionado, requisitos, dependencias, ventajas, limitaciones y consideraciones necesarias para refinar las US48, US49 y US50.
 </p>
 
 <p style="text-align: justify;">
   <b>Definition of Done:</b><br>
-  - Se evaluaron alternativas de visualización compatibles.<br>
-  - Se documentaron los requisitos de integración nativa y cross-platform.<br>
-  - Se identificó la información histórica requerida para el prototipo.<br>
-  - Se completó un prototipo mínimo de visualización de tendencias.<br>
-  - La información de temperatura, humedad y alertas puede representarse en la validación técnica.<br>
-  - Se estimó el esfuerzo de implementación.<br>
-  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar las US48, US49 y US50.
+  - Se investigaron alternativas de visualización compatibles con las aplicaciones móviles de SafeLab.<br>
+  - Se documentaron los requisitos de integración para la aplicación nativa y cross-platform.<br>
+  - Se identificó la información histórica requerida para representar alertas, temperatura y humedad.<br>
+  - Se documentaron las dependencias, limitaciones y consideraciones de rendimiento de las alternativas evaluadas.<br>
+  - Se completó un Proof of Concept mínimo de visualización de tendencias.<br>
+  - El prototipo permite representar información histórica de temperatura, humedad y alertas.<br>
+  - El código del Proof of Concept se encuentra registrado en una rama del repositorio.<br>
+  - Se estimó el esfuerzo requerido para la implementación completa.<br>
+  - Los hallazgos fueron revisados por el equipo de desarrollo y utilizados para refinar las US48, US49 y US50.<br>
+  - El Spike está limitado a 8-16 horas y se completa dentro del Sprint.
 </p>
 
 ### **2.4.2. Impact Mapping**
