@@ -16,6 +16,11 @@
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
 #### **4.2.1.9. Team Collaboration Insights during Sprint**
 ## **4.3. Validation Interviews**
+
+<p style="text-align: justify;">
+  En esta sección se registran y explican las entrevistas de validación, en las que usuarios de los dos segmentos objetivo interactúan con el Landing Page y la aplicación móvil de SafeLab para verificar si el producto les permite cumplir sus objetivos. La sección incluye el diseño de las sesiones, el registro de cada entrevista y la evaluación de los hallazgos según heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación indicado para el proyecto.
+</p>
+
 ### **4.3.1. Interview Design**
 ### **4.3.2. Interview Recording**
 ### **4.3.3. Evaluations Based on Heuristics**
