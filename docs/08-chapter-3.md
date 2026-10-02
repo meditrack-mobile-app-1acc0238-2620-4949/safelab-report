@@ -127,8 +127,33 @@
   <img src="../assets/08-chapter-3/wireframes/landingMobileWireframe.png" width="35%">
 </p>
 
+#### **3.1.3.2. Landing Page Mockup**
 
+<p style="text-align: justify;">
+  Los mockups muestran la versión de alta fidelidad de la Landing Page, incorporando la identidad visual de SafeLab sobre la estructura definida previamente en los wireframes. Se aplicaron los colores, tipografía, imágenes, tarjetas, botones y demás elementos visuales utilizados en la interfaz final.
+</p>
 
+<p style="text-align: justify;">
+  En Benefits se presentan las principales ventajas de SafeLab mediante tarjetas acompañadas de recursos visuales. Services muestra las soluciones orientadas a laboratorios clínicos, hospitales y farmacias clínicas, además de la plataforma de monitoreo. Plans presenta las alternativas Starter Lab, Professional y Enterprise. Las secciones posteriores complementan la presentación del producto mediante información sobre SafeLab, el equipo, testimonios, preguntas frecuentes y opciones de contacto.
+</p>
+
+<p style="text-align: justify;">
+  La versión mobile conserva el mismo contenido y jerarquía de la versión desktop, reorganizando las tarjetas y componentes en una sola columna para mantener la legibilidad y facilitar la interacción desde dispositivos móviles.
+</p>
+
+<p align="center">
+  <b>Landing Page Mockup - Desktop</b>
+</p>
+
+![Landing Page Mockup Desktop](../assets/08-chapter-3/mockups/landingDesktopMockup.png)
+
+<p align="center">
+  <b>Landing Page Mockup - Mobile</b>
+</p>
+
+<p align="center">
+  <img src="../assets/08-chapter-3/mockups/landingMobileMockup.png" width="35%">
+</p>
 
 #### **3.1.4.2. Mobile Applications Wireflow Diagrams**
 <p style="text-align: justify;">
