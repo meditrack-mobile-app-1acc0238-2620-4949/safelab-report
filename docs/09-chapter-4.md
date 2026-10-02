@@ -128,6 +128,18 @@
   </tbody>
 </table>
 
+<p style="text-align: justify;">
+  El Sprint Backlog 1 de SafeLab se gestiona mediante Jira, donde se encuentran organizadas las User Stories seleccionadas para el Sprint, sus estimaciones en Story Points, responsables y Work-items asociados. El tablero permite al equipo Meditrack realizar el seguimiento de las actividades y su estado durante el desarrollo del Sprint.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/safelab_sprint1.png" alt="Sprint Backlog 1 de SafeLab" width="100%">
+</p>
+
+<p align="center"><i>Figura: Sprint Backlog 1 de SafeLab en Jira.</i></p>
+
+**Board URL:** [SafeLab - Sprint 1](https://varojasg19.atlassian.net/jira/software/projects/SL/boards/35/backlog?atlOrigin=eyJpIjoiMzI0NTliNmQ5ZjRhNDcxMjhkNWJhYjFkM2RmZjQ3ZjYiLCJwIjoiaiJ9)
+
 #### **4.2.1.4. Development Evidence for Sprint Review**
 #### **4.2.1.5. Testing Suite Evidence for Sprint Review**
 #### **4.2.1.6. Execution Evidence for Sprint Review**
