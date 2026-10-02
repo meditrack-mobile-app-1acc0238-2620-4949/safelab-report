@@ -101,8 +101,99 @@
 #### **3.1.3.1. Landing Page Wireframe**
 #### **3.1.3.2. Landing Page Mockup**
 ### **3.1.4. Mobile Applications UX/UI Design**
+
+<p style="text-align: justify;">
+  En esta sección se presenta el diseño de experiencia e interfaz de las aplicaciones móviles de SafeLab. El diseño parte de las funcionalidades de la aplicación web y las adapta al contexto móvil: se priorizan las tareas que el personal realiza durante sus rondas en el laboratorio, como atender alertas, revisar lecturas en tiempo real, reportar incidentes y consultar el estado de un equipo. Las pantallas se diseñaron para Android siguiendo la estructura de Material Design 3 y la guía de estilos definida en la sección 3.1.1.
+</p>
+
 #### **3.1.4.1. Mobile Applications Wireframes**
+<p style="text-align: justify;">
+  Los wireframes definen la estructura y la jerarquía de contenido de cada pantalla en baja fidelidad, sin colores de marca, para validar la organización antes del diseño visual. Las tablas de la aplicación web se transformaron en listas de tarjetas, la barra lateral en una barra de navegación inferior y los modales en bottom sheets. Además, se incluyeron desde esta etapa el uso de recursos del dispositivo, como la cámara para escanear códigos QR y adjuntar evidencias, y la autenticación biométrica, así como el guardado local de reportes cuando no hay conexión.
+</p>
+
+![Mobile Applications Wireframes 1](assets/08-chapter-3/wireframes/wireframe1.png)
+
+![Mobile Applications Wireframes 2](assets/08-chapter-3/wireframes/wireframe2.png)
+
+![Mobile Applications Wireframes 3](assets/08-chapter-3/wireframes/wireframe3.png)
+
 #### **3.1.4.2. Mobile Applications Wireflow Diagrams**
+<p style="text-align: justify;">
+  Los wireflows muestran cómo cambian las pantallas a partir de las interacciones del usuario. Se elaboró un wireflow por cada user goal; en cada flecha se indica la acción que realiza el usuario para pasar a la siguiente pantalla.
+</p>
+
+<p style="text-align: justify;">
+  <b>User goal 1:</b> Como técnico de laboratorio, quiero iniciar sesión de forma rápida y segura para acceder al monitoreo del laboratorio. El usuario ingresa sus credenciales o utiliza su huella digital y, al autenticarse, llega directamente al dashboard.
+</p>
+
+![Wireflow 1](assets/08-chapter-3/wireflows/wireflow1.png)
+
+<p style="text-align: justify;">
+  <b>User goal 2:</b> Como técnico de laboratorio, quiero atender una alerta crítica y actuar sobre el equipo afectado para proteger las muestras. Desde la lista de alertas abre el detalle, compara el valor registrado con el rango permitido y pasa al control remoto, donde confirma el comando mediante un bottom sheet que muestra el resultado de la validación de seguridad.
+</p>
+
+![Wireflow 2](assets/08-chapter-3/wireflows/wireflow2.png)
+
+<p style="text-align: justify;">
+  <b>User goal 3:</b> Como técnico de laboratorio, quiero reportar un incidente con evidencia fotográfica para dejar trazabilidad de la desviación. Desde el detalle de la alerta crea el incidente, adjunta fotografías con la cámara y lo envía; el nuevo incidente aparece en la lista de incidentes abiertos.
+</p>
+
+![Wireflow 3](assets/08-chapter-3/wireflows/wireflow3.png)
+
+<p style="text-align: justify;">
+  <b>User goal 4:</b> Como técnico de laboratorio, quiero identificar un equipo escaneando su código QR para ver su estado sin buscarlo manualmente. Desde los accesos rápidos abre la cámara, el código se reconoce automáticamente y se muestra la ficha del equipo, desde donde accede a las lecturas de su sensor.
+</p>
+
+![Wireflow 4](assets/08-chapter-3/wireflows/wireflow4.png)
+
+<p style="text-align: justify;">
+  <b>User goal 5:</b> Como jefa de laboratorio, quiero revisar las lecturas en tiempo real de un sensor para verificar que se mantiene dentro del rango permitido. Desde el dashboard abre las lecturas en vivo, filtra por tipo de sensor y entra al detalle, donde revisa la tendencia y las estadísticas del periodo.
+</p>
+
+![Wireflow 5](assets/08-chapter-3/wireflows/wireflow5.png)
 #### **3.1.4.3. Mobile Applications Mock-ups**
+<p style="text-align: justify;">
+  Los mock-ups presentan el diseño en alta fidelidad de las pantallas, aplicando la guía de estilos de SafeLab: color primario #4F35E8, color de acento #14B8A6, fondos #F4F7FB y la tipografía Inter. Los estados de severidad (crítico, advertencia, normal e informativo) usan colores semánticos y siempre se acompañan de una etiqueta de texto, para no depender únicamente del color. Los textos de la interfaz están en inglés, idioma por defecto de la aplicación.
+</p>
+
+![Mobile Applications Mock-ups 1](assets/08-chapter-3/mockups/mockup1.png)
+
+![Mobile Applications Mock-ups 2](assets/08-chapter-3/mockups/mockup2.png)
+
+![Mobile Applications Mock-ups 3](assets/08-chapter-3/mockups/mockup3.png)
+
 #### **3.1.4.4. Mobile Applications User Flow Diagrams**
+<p style="text-align: justify;">
+  Los user flows representan el recorrido completo que sigue el usuario para cumplir cada user goal, utilizando los mock-ups. En cada diagrama se distingue el happy path (línea verde continua), en el que el usuario completa su objetivo sin inconvenientes, de los unhappy paths (línea roja discontinua), que muestran cómo responde la aplicación ante errores o situaciones alternativas. Los rombos representan los puntos de decisión.
+</p>
+
+<p style="text-align: justify;">
+  <b>User goal 1:</b> Como técnico de laboratorio, quiero iniciar sesión de forma rápida y segura para acceder al monitoreo del laboratorio. En el happy path, las credenciales son válidas y el usuario llega al dashboard. En el unhappy path, las credenciales son incorrectas: la aplicación muestra un mensaje de error junto al formulario, conserva el correo ingresado y el usuario vuelve a intentarlo.
+</p>
+
+![User Flow 1](assets/08-chapter-3/userflows/userflow1.png)
+
+<p style="text-align: justify;">
+  <b>User goal 2:</b> Como técnico de laboratorio, quiero atender una alerta crítica y actuar sobre el equipo afectado para proteger las muestras. En el happy path, la validación de seguridad aprueba el comando y el estado del equipo se actualiza. En el unhappy path, el comando es bloqueado (por ejemplo, porque la puerta del equipo está abierta); la aplicación muestra el motivo y el usuario registra un incidente.
+</p>
+
+![User Flow 2](assets/08-chapter-3/userflows/userflow2.png)
+
+<p style="text-align: justify;">
+  <b>User goal 3:</b> Como técnico de laboratorio, quiero reportar un incidente con evidencia fotográfica para dejar trazabilidad de la desviación. En el happy path, el formulario está completo, el dispositivo tiene conexión y el incidente queda registrado. Se contemplan dos unhappy paths: si faltan campos obligatorios, se muestran errores de validación junto a cada campo; si no hay conexión, el reporte se guarda en el dispositivo y se envía automáticamente al recuperarla.
+</p>
+
+![User Flow 3](assets/08-chapter-3/userflows/userflow3.png)
+
+<p style="text-align: justify;">
+  <b>User goal 4:</b> Como técnico de laboratorio, quiero identificar un equipo escaneando su código QR para ver su estado sin buscarlo manualmente. En el happy path, el código se reconoce y se abre la ficha del equipo. En el unhappy path, el código no es legible y el usuario ingresa manualmente el código del equipo para llegar a la misma ficha.
+</p>
+
+![User Flow 4](assets/08-chapter-3/userflows/userflow4.png)
+
+<p style="text-align: justify;">
+  <b>User goal 5:</b> Como jefa de laboratorio, quiero revisar las lecturas en tiempo real de un sensor para verificar que se mantiene dentro del rango permitido. En el happy path, el valor se encuentra dentro del rango y el monitoreo continúa. En el unhappy path, el valor está fuera del rango y la aplicación lleva al detalle de la alerta generada, desde donde continúa el flujo del user goal 2.
+</p>
+
+![User Flow 5](assets/08-chapter-3/userflows/userflow5.png)
 #### **3.1.4.5. Mobile Applications Prototyping**
