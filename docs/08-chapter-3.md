@@ -98,25 +98,36 @@
 
 
 ### **3.1.3. Landing Page UI Design**
+
+<p style="text-align: justify;">
+  La Landing Page de SafeLab fue diseñada para presentar de manera ordenada la propuesta de valor del producto y facilitar que los visitantes conozcan sus principales características. La página mantiene un recorrido vertical desde la presentación inicial de SafeLab hasta las secciones informativas y de contacto, considerando versiones desktop y mobile para adaptar correctamente la distribución del contenido según el tamaño de pantalla.
+</p>
+
 #### **3.1.3.1. Landing Page Wireframe**
-#### **3.1.3.2. Landing Page Mockup**
-### **3.1.4. Mobile Applications UX/UI Design**
 
 <p style="text-align: justify;">
-  En esta sección se presenta el diseño de experiencia e interfaz de las aplicaciones móviles de SafeLab. El diseño parte de las funcionalidades de la aplicación web y las adapta al contexto móvil: se priorizan las tareas que el personal realiza durante sus rondas en el laboratorio, como atender alertas, revisar lecturas en tiempo real, reportar incidentes y consultar el estado de un equipo. Las pantallas se diseñaron para Android siguiendo la estructura de Material Design 3 y la guía de estilos definida en la sección 3.1.1.
+  Los wireframes representan la estructura de la Landing Page antes de aplicar el diseño visual definitivo. En ellos se definieron la jerarquía de la información, la distribución de las tarjetas, la ubicación de los botones y el orden de las diferentes secciones. La estructura comienza con el Navbar y el Hero, continúa con Benefits, Services y Plans, y posteriormente presenta About Product, About Team, Testimonials, FAQ, Contact y Footer.
 </p>
 
-#### **3.1.4.1. Mobile Applications Wireframes**
 <p style="text-align: justify;">
-  Los wireframes definen la estructura y la jerarquía de contenido de cada pantalla en baja fidelidad, sin colores de marca, para validar la organización antes del diseño visual. Las tablas de la aplicación web se transformaron en listas de tarjetas, la barra lateral en una barra de navegación inferior y los modales en bottom sheets. Además, se incluyeron desde esta etapa el uso de recursos del dispositivo, como la cámara para escanear códigos QR y adjuntar evidencias, y la autenticación biométrica, así como el guardado local de reportes cuando no hay conexión.
+  En la versión desktop, los elementos aprovechan el espacio horizontal mediante columnas y grupos de tarjetas. En la versión mobile, las mismas secciones mantienen su orden, pero sus componentes se reorganizan verticalmente para facilitar la lectura y navegación desde pantallas pequeñas.
+</p>
+
+<p align="center">
+  <b>Landing Page Wireframe - Desktop</b>
+</p>
+
+![Landing Page Wireframe Desktop](../assets/08-chapter-3/wireframes/landingDesktopWireframe.png)
+
+<p align="center">
+  <b>Landing Page Wireframe - Mobile</b>
+</p>
+
+<p align="center">
+  <img src="../assets/08-chapter-3/wireframes/landingMobileWireframe.png" width="35%">
 </p>
 
 
-![Mobile Applications Wireframes 1](../assets/08-chapter-3/wireframes/wireframe1.png)
-
-![Mobile Applications Wireframes 2](../assets/08-chapter-3/wireframes/wireframe2.png)
-
-![Mobile Applications Wireframes 3](../assets/08-chapter-3/wireframes/wireframe3.png)
 
 
 #### **3.1.4.2. Mobile Applications Wireflow Diagrams**
