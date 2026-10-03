@@ -1,11 +1,29 @@
 # **Chapter III: Solution UI/UX Design**
+
 ## **3.1. Product design**
+
+<p style="text-align: justify;">
+  En este capítulo se presentan las decisiones de diseño que guían la experiencia de usuario de SafeLab en sus dos puntos de contacto: la Landing Page, orientada a presentar el producto a laboratorios hospitalarios y empresas farmacéuticas, y las aplicaciones móviles para Android e iOS, utilizadas por el personal para supervisar sus equipos, atender alertas y obtener reportes. Las decisiones se basan en los hallazgos del capítulo II —User Personas, User Journey Maps y Empathy Maps—, en el Ubiquitous Language del dominio y en las épicas del Product Backlog, de modo que la interfaz utilice el mismo lenguaje y priorice las mismas tareas que el personal identificó como críticas.
+</p>
+
 ### **3.1.1. Style Guidelines**
+
+<p style="text-align: justify;">  
+  Las guías de estilo establecen los lineamientos visuales y verbales que deben aplicarse de manera consistente en la Landing Page y en las aplicaciones móviles. Su objetivo es que el usuario reconozca SafeLab en cualquier plataforma y que la interfaz comunique con claridad el estado de los equipos monitoreados, aspecto central del producto. La guía se resume en la siguiente figura y se detalla en los apartados posteriores.
+</p>
+
+![Guía de estilos de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-style-guide.png)
+
 #### **3.1.1.1. General Style Guidelines**
+
 ### **3.1.2. Information Architecture**
+
 #### **3.1.2.1. Organization Systems**
+
 #### **3.1.2.2. Labeling Systems**
+
 #### **3.1.2.3. SEO Tags and Meta Tags**
+
 #### **3.1.2.4. Searching Systems**
 
 <p style="text-align: justify;">
@@ -96,7 +114,6 @@
 - **Inicio y cierre de sesión:** después de autenticarse, el usuario llega directamente al dashboard (US51, US52); el cierre de sesión se encuentra en el perfil (US54).
 - **Retroceso del dispositivo:** el botón de retroceso del sistema operativo respeta la misma jerarquía de navegación de la aplicación.
 
-
 ### **3.1.3. Landing Page UI Design**
 
 <p style="text-align: justify;">
@@ -156,6 +173,7 @@
 </p>
 
 #### **3.1.4.2. Mobile Applications Wireflow Diagrams**
+
 <p style="text-align: justify;">
   Los wireflows muestran cómo cambian las pantallas a partir de las interacciones del usuario. Se elaboró un wireflow por cada user goal; en cada flecha se indica la acción que realiza el usuario para pasar a la siguiente pantalla.
 </p>
@@ -191,6 +209,7 @@
 ![Wireflow 5](../assets/08-chapter-3/wireflows/wireflow5.png)
 
 #### **3.1.4.3. Mobile Applications Mock-ups**
+
 <p style="text-align: justify;">
   Los mock-ups presentan el diseño en alta fidelidad de las pantallas, aplicando la guía de estilos de SafeLab: color primario #4F35E8, color de acento #14B8A6, fondos #F4F7FB y la tipografía Inter. Los estados de severidad (crítico, advertencia, normal e informativo) usan colores semánticos y siempre se acompañan de una etiqueta de texto, para no depender únicamente del color. Los textos de la interfaz están en inglés, idioma por defecto de la aplicación.
 </p>
@@ -201,8 +220,8 @@
 
 ![Mobile Applications Mock-ups 3](../assets/08-chapter-3/mockups/mockup3.png)
 
-
 #### **3.1.4.4. Mobile Applications User Flow Diagrams**
+
 <p style="text-align: justify;">
   Los user flows representan el recorrido completo que sigue el usuario para cumplir cada user goal, utilizando los mock-ups. En cada diagrama se distingue el happy path (línea verde continua), en el que el usuario completa su objetivo sin inconvenientes, de los unhappy paths (línea roja discontinua), que muestran cómo responde la aplicación ante errores o situaciones alternativas. Los rombos representan los puntos de decisión.
 </p>
@@ -236,4 +255,5 @@
 </p>
 
 ![User Flow 5](../assets/08-chapter-3/userflows/userflow5.png)
+
 #### **3.1.4.5. Mobile Applications Prototyping**
