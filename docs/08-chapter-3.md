@@ -16,11 +16,613 @@
 
 #### **3.1.1.1. General Style Guidelines**
 
+##### **Design System de referencia y principios**
+
+<p style="text-align: justify;">
+  La guía de estilos de SafeLab toma como referencia Material Design 3 (Google, s. f.) para la aplicación Android y las Human Interface Guidelines (Apple, s. f.) para iOS, y adapta sus componentes a la identidad de la marca. Las decisiones se sustentan en cuatro principios de diseño: <b>jerarquía visual</b>, para que lo urgente —una alerta crítica o un equipo fuera de rango— sea lo primero que se percibe; <b>consistencia</b>, para que los mismos colores, etiquetas y componentes signifiquen lo mismo en la Landing Page y en las aplicaciones; <b>contraste y accesibilidad</b>, para que la información sea legible en cualquier condición de luz del laboratorio; y <b>simplicidad</b>, para que el personal resuelva cada tarea con el menor número de pasos.
+</p>
+
+##### **Branding**
+
+<p style="text-align: justify;">
+  SafeLab se presenta como un aliado confiable y preciso para el personal que protege recursos sensibles, resumido en su lema «Monitoreo inteligente, laboratorios más seguros». El logotipo cuenta con tres versiones: el isotipo, un escudo que contiene un matraz de laboratorio y ondas de señal inalámbrica, que representan la protección de los recursos y el monitoreo remoto; el logotipo, con «SAFE» en azul y «LAB» en teal; y el imagotipo, que combina ambos con el lema. El isotipo se utiliza como ícono de las aplicaciones y el logotipo e imagotipo en la Landing Page y en la pantalla de inicio de sesión. El logotipo se coloca sobre fondos claros, con un área libre mínima equivalente a la altura de la letra «S», y no se deforma, rota ni recolorea.
+</p>
+
+![Branding de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-branding.png)
+
+##### **Typography**
+
+<p style="text-align: justify;">
+  Se utiliza <b>Inter</b> como familia tipográfica única en la Landing Page y en las aplicaciones móviles. Es una fuente sans serif de código abierto (Andersson, s. f.), diseñada para pantallas, con alta legibilidad en tamaños pequeños y cifras tabulares que alinean las lecturas de temperatura y humedad para compararlas con rapidez. En Android se incorpora como fuente descargable y en iOS se empaqueta con la aplicación.
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Estilo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Tamaño / interlineado</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Peso</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Display</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">32 / 40 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Bold (700)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Títulos principales de la Landing Page y bienvenida</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Título 1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">24 / 32 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semibold (600)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Título de cada pantalla de la aplicación</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Título 2</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">20 / 28 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semibold (600)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Título de alertas, equipos y tarjetas</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cuerpo</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">16 / 24 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Regular (400)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Descripciones y mensajes</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cuerpo pequeño</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">14 / 20 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Regular (400)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Equipo, sitio y área asociados</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Etiqueta</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">12 / 16 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Medium (500)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marcas de tiempo, contadores y chips</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Lectura</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">30 / 36 px</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semibold (600), cifras tabulares</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Valores de temperatura y humedad</td>
+    </tr>
+  </tbody>
+</table>
+
+![Typography de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-typography.png)
+
+##### **Colors**
+
+<p style="text-align: justify;">
+  La paleta se organiza en dos niveles. Los <b>colores de marca</b> provienen del logotipo y se aplican en la Landing Page, donde el objetivo es comunicar la identidad de SafeLab. Los <b>colores de interfaz</b> se aplican en las aplicaciones móviles, donde el objetivo es guiar la acción del usuario: el primario índigo identifica los elementos interactivos y el acento teal mantiene el vínculo con la marca. Los colores semánticos se reservan para los estados de severidad y siempre se acompañan de una etiqueta de texto, de modo que el estado no dependa solo del color. Los colores usados para texto alcanzan una relación de contraste mínima de 4,5:1 sobre fondo blanco, conforme al nivel AA de las WCAG 2.1 (World Wide Web Consortium [W3C], 2018).
+</p>
+
+![Colors de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-colors.png)
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Nivel</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Color</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Código</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Contraste sobre blanco</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marca</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Azul SafeLab</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#0B3A78</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">11,11:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Logotipo y títulos de la Landing Page</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marca</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Teal SafeLab</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#1BA7B1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">2,91:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Logotipo, íconos y fondos de botones de la Landing Page (no se usa para texto sobre blanco)</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marca</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cian</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#22C7C8</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acentos y degradados decorativos</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Marca</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Fondo landing</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#EEF7F8</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Fondo de las secciones de la Landing Page</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Primario</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#4F35E8</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">6,98:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Botones principales, pestaña activa y encabezados</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Primario oscuro</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#211169</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">15,57:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Estado presionado de los botones</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acento</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#14B8A6 (relleno) / #0F766E (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">5,47:1 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Gráficos, indicadores de conexión y enlaces secundarios</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Superficie</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#F4F7FB / #FFFFFF</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Fondo de pantallas / tarjetas y hojas inferiores</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Texto</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#111827</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">17,74:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Texto principal</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Interfaz</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Texto secundario</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#64748B</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">4,76:1</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Metadatos y marcas de tiempo (sobre blanco)</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semántico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Critical</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#EF4444 (relleno) / #B91C1C (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">6,47:1 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Lectura fuera de rango que requiere atención inmediata</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semántico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Warning</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#F59E0B (relleno) / #92400E (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">7,09:1 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Lectura cercana al límite o anomalía del equipo</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semántico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Normal</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#10B981 (relleno) / #047857 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">5,48:1 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Equipo con lecturas dentro del rango</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Semántico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Info</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#3B82F6 (relleno) / #1D4ED8 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">6,70:1 (texto)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Eventos informativos, como la pérdida de conexión de un sensor</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Las aplicaciones incluyen un <b>modo oscuro</b>, que el usuario activa desde Profile &amp; settings y que por defecto sigue la configuración del sistema operativo. En este modo se mantienen los mismos roles de color, con valores ajustados para conservar el contraste sobre fondos oscuros:
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Rol</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Modo claro</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Modo oscuro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Primario</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#4F35E8</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#7C6CFF</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acento</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#14B8A6</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#2DD4BF</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Superficie</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#F4F7FB</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#0F172A</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Tarjeta</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#FFFFFF</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#111C31</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Texto</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#111827</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#E5EDF9</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Texto secundario</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#64748B</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#9CAEC8</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Borde</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#E3E9F4</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#24324A</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Critical / Warning / Normal / Info</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#EF4444 / #F59E0B / #10B981 / #3B82F6</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">#FB7185 / #FBBF24 / #34D399 / #60A5FA</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Spacing**
+
+<p style="text-align: justify;">
+  La interfaz se construye sobre una retícula de 4 y 8 pt, con valores de espaciado de 4, 8, 12, 16, 24 y 32 px. Los botones y campos de texto tienen un radio de 12 px, las tarjetas de 16 px y los chips de estado son completamente redondeados. El área táctil mínima es de 48 × 48 dp en Android y de 44 × 44 pt en iOS. La navegación principal se resuelve con una barra inferior de cinco destinos, cada uno con ícono y etiqueta, y los íconos son de línea de 2 px en estilo redondeado.
+</p>
+
+![Spacing y componentes de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-spacing.png)
+
+##### **Tono de comunicación**
+
+<p style="text-align: justify;">
+  El tono de SafeLab se define en cuatro dimensiones, considerando que los mensajes acompañan decisiones críticas sobre la conservación de recursos sensibles:
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Dimensión</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Posición de SafeLab</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Justificación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Divertido / Serio</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Serio</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Las alertas comunican riesgos para muestras, reactivos y medicamentos, por lo que no se usa humor.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Formal / Casual</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Mayormente formal</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Se emplea un lenguaje profesional y cercano, sin tecnicismos del sistema, adecuado para el personal de laboratorio y de calidad.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Respetuoso / Irreverente</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Respetuoso</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Los mensajes no culpan al usuario y se enfocan en la acción que debe realizar.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Entusiasta / Sereno</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sereno</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Ante un incidente, el tono transmite calma y control: se evitan las mayúsculas sostenidas y los signos de exclamación repetidos.</td>
+    </tr>
+  </tbody>
+</table>
+
+![Tono de comunicación de SafeLab](../assets/08-chapter-3/product-design/style-guidelines/safelab-tone.png)
+
+<p style="text-align: justify;">
+  Cada mensaje responde a tres preguntas: qué ocurrió, dónde ocurrió y qué debe hacer el usuario. Por ejemplo, la aplicación muestra «PCR freezer out of range (9.6 °C). Check the equipment and acknowledge the alert.» en lugar de «ERROR!!! Threshold exceeded on device #A3F9». Los textos de las aplicaciones están en inglés, idioma por defecto, y la Landing Page se presenta en inglés y español.
+</p>
+
 ### **3.1.2. Information Architecture**
+
+<p style="text-align: justify;">
+  La arquitectura de información define cómo se organiza, rotula y encuentra el contenido de SafeLab en la Landing Page y en las aplicaciones móviles. Se diseñó a partir de las tareas más frecuentes e importantes de la User Task Matrix —revisar el estado de los equipos, atender alertas, registrar incidentes y consultar lecturas históricas— y se refleja en las pantallas definidas en la sección 3.1.4, de modo que cada tarea crítica sea accesible en el menor número de pasos desde cualquier pantalla.
+</p>
 
 #### **3.1.2.1. Organization Systems**
 
+<p style="text-align: justify;">
+  SafeLab utiliza esquemas de organización distintos según el tipo de contenido y el producto. La Landing Page se organiza de forma <b>secuencial</b>, como una sola página cuyas secciones conducen al visitante desde la propuesta de valor hasta la acción final: registrarse o solicitar una demostración. Su estructura sigue el orden de los wireframes y mock-ups de la sección 3.1.3.
+</p>
+
+![Organization Systems de la Landing Page de SafeLab](../assets/08-chapter-3/product-design/information-architecture/safelab-organization-landing.png)
+
+<p style="text-align: justify;">
+  La aplicación móvil se organiza de forma <b>jerárquica</b> en cinco destinos principales, accesibles desde la barra de navegación inferior: Home, Alerts, Sensors, Incidents y Control. El perfil y la configuración se abren desde el avatar del encabezado, para no ocupar un destino de la barra con funciones de uso poco frecuente. Dentro de cada destino, el contenido se ordena con el esquema de categorización que mejor responde a la tarea del usuario, y las acciones de varios pasos se presentan como flujos <b>secuenciales</b>.
+</p>
+
+![Organization Systems de la aplicación móvil de SafeLab](../assets/08-chapter-3/product-design/information-architecture/safelab-organization-app.png)
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Grupo de información</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Organización visual</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Esquema de categorización</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Justificación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Landing Page</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Secuencial</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por tópicos</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Las secciones Home, Benefits, Services, Plans, About Product, About Team, Testimonials, FAQ y Contact llevan al visitante del problema a la acción.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Home (dashboard)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Jerárquica</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por estado y prioridad</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Los indicadores (Active alerts, Sensors online, Open incidents, Compliance) y la lista Needs your attention muestran primero lo que requiere acción.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alerts</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Jerárquica</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por severidad y cronológico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Las alertas se filtran por All, Critical, Warning y Resolved, y dentro de cada filtro se muestran de la más reciente a la más antigua.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sensors</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Jerárquica</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por tópico (variable) y alfabético</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Las lecturas se filtran por Temperature, Humidity y Door, y los sensores se listan por nombre; el detalle agrupa la tendencia por periodo (1H, 24H, 7D, 30D).</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incidents</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Secuencial</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por estado del flujo</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Los incidentes se agrupan en Open, In progress y Closed, que reflejan su ciclo de atención; cada tarjeta indica su prioridad (Low, Medium, High).</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Control</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Jerárquica</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por dispositivo</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Los actuadores (relés, compresores y deshumidificadores) se listan por equipo y ubicación, con su estado de conexión.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Profile &amp; settings</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Jerárquica</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Por audiencia y tópico</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Agrupa las preferencias del usuario (notificaciones, huella digital, modo oscuro, idioma, datos sin conexión) y la suscripción de la organización.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Flujos de varios pasos</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Secuencial</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Scan asset → Asset detail → Live readings; Alert detail → Create incident → Submit incident; y Alert detail → Remote control → Confirm command, con validación de seguridad antes de ejecutar el comando.</td>
+    </tr>
+  </tbody>
+</table>
+
 #### **3.1.2.2. Labeling Systems**
+
+<p style="text-align: justify;">
+  El sistema de rotulación traduce los términos del Ubiquitous Language a etiquetas breves, de una a tres palabras, que se usan igual en todas las pantallas y en las notificaciones. La interfaz de las aplicaciones está en inglés, su idioma por defecto, y cuenta con una versión en español que el usuario selecciona en Profile &amp; settings → Language. Cada etiqueta de navegación se acompaña de un ícono y cada estado se acompaña de un color semántico, sin depender únicamente de este.
+</p>
+
+##### **Etiquetas de navegación**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Etiqueta</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Versión en español</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Contenido que agrupa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Home</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Inicio</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Indicadores generales, alertas que requieren atención y accesos rápidos.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alerts</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alertas</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alertas generadas por lecturas fuera de rango o por anomalías del equipo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sensors</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sensores</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Lecturas en tiempo real y detalle de cada sensor.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incidents</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incidentes</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Seguimiento formal de las desviaciones y sus acciones correctivas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Control</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Control</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Control remoto de los actuadores de los equipos.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Profile</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Perfil</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Datos de la cuenta, preferencias y cierre de sesión (desde el avatar).</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Etiquetas del dominio**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Término del dominio</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Etiqueta en la interfaz</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ejemplo en las pantallas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Monitoring Site</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Lab</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Central Lab</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Storage Area</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Storage</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Storage 1, Storage 2</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Monitored Equipment</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Asset</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Reagent Freezer A · ASSET-001</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Environmental Sensor</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sensor</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Reagent Freezer Temperature · SEN-CLN-001</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Environmental Reading</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Reading / Live readings</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">3.8 °C · Last reading 5 s ago</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Environmental Threshold</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Range / max</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">range 2–8 °C · max 60 %</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Thermal Excursion</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Out of range</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">PCR freezer out of range</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alert</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alert</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">ALERT-001 · Critical</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incident</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incident</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">INC-001 · PCR freezer deviation</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Corrective Action</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Description / Evidence</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Samples moved to Freezer A for quarantine validation.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Actuator</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Relay / Compressor / Dehumidifier</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">PCR Freezer B Relay · ACT-003</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Compliance Report</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Compliance</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Compliance 78 % · Compliant</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Etiquetas de acciones**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Contexto</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Etiqueta</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acceso</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sign in / Sign in with fingerprint</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Inicia sesión con correo y contraseña o con huella digital.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acceso</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Register / Forgot password?</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Crea una cuenta o inicia la recuperación de contraseña.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Detalle de alerta</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Acknowledge alert</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Confirma que el personal atendió la alerta.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Detalle de alerta</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Create incident / Remote control</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Abre el registro de incidente o el control del equipo afectado.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Incidentes</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Report / Submit incident</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Abre y envía el formulario de incidente con su evidencia.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Accesos rápidos</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Scan asset / Enter asset code manually</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Identifica un equipo por su código QR o por su código.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Detalle de equipo</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">View live readings / Report incident</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Muestra las lecturas del equipo o registra un incidente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Control</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Start / Stop / Restart · Cancel</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Envía un comando al actuador, previa confirmación.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Perfil</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sign out</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cierra la sesión.</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Etiquetas de estado**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Grupo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Etiquetas</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Severidad de lecturas y alertas</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Critical · Warning · Normal · Info</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Estado de una lectura o alerta según los límites configurados.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Prioridad de incidentes</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Low · Medium · High · Critical</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Urgencia asignada al registrar el incidente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Estado de incidentes</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Open · In progress · Closed</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Etapa de atención del incidente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Conexión de dispositivos</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Online · Offline · Running</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Disponibilidad del sensor o actuador.</td>
+    </tr>
+    <tr>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cumplimiento del equipo</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Compliant</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">El equipo se mantiene dentro de las condiciones requeridas.</td>
+    </tr>
+  </tbody>
+</table>
+<p style="text-align: justify;">
+  Las lecturas se muestran con un decimal y su unidad (por ejemplo, 9.6 °C o 61 %), los tiempos recientes de forma relativa (2 min ago, opened 5 h ago) y las fechas en formato AAAA-MM-DD (por ejemplo, 2026-06-17), lo que evita ambigüedades entre el formato de fecha peruano y el estadounidense.
+</p>
 
 #### **3.1.2.3. SEO Tags and Meta Tags**
 
