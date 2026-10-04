@@ -1,11 +1,19 @@
 # **Chapter IV: Product Implementation & Validation**
+
 ## **4.1. Configuration Management Software**
+
 ### **4.1.1. Software Development Environment Configuration**
+
 ### **4.1.2. Source Code Management**
+
 ### **4.1.3. Source Code Style Guide & Conventions**
+
 ### **4.1.4. Software Deployment Configuration**
+
 ## **4.2. Landing Page & Mobile Application Implementation**
+
 ### **4.2.1. Sprint 1**
+
 #### **4.2.1.1. Sprint Planning 1**
 
 <p style="text-align: justify;">
@@ -69,9 +77,63 @@
   </tr>
 </table>
 
-
-
 #### **4.2.1.2. Aspect Leaders and Collaborators**
+
+<p style="text-align: justify;">
+  En el Sprint 1 se definieron tres aspectos de trabajo, que corresponden al alcance funcional del Sprint Backlog 1. El aspecto <b>Organización del monitoreo</b> agrupa el registro de sitios de monitoreo, áreas de almacenamiento y equipos, así como sus servicios RESTful (US01, US03, US05, US07 y US60). El aspecto <b>Monitoreo ambiental</b> agrupa la recolección automática de datos, la consulta de temperatura, humedad y estado operativo, y sus servicios (US09, US10, US11, US13, US15, US16 y US61). El aspecto <b>Landing Page</b> agrupa la presentación pública de SafeLab, el cambio de idioma y el acceso a los Términos y Condiciones (US56, US57 y US58).
+</p>
+<p style="text-align: justify;">
+  Para cada aspecto se designó como líder (L) al integrante con mayor carga de horas asignadas en el Sprint Backlog 1, quien coordina el avance, define los criterios de terminado y verifica la integración del aspecto; los demás integrantes con tareas en el aspecto participan como colaboradores (C). La siguiente Leadership-and-Collaboration Matrix (LACX) resume esta distribución.
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Team Member (Last Name, First Name)</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">GitHub Username</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Organización del monitoreo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Monitoreo ambiental</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Landing Page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Carlos Lavado, Ever Giusephi</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">sephi-dev05</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Espino Rossi, Victor Manuel</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Vmer140</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Garcia Cerpa, Braden Raid</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">BradenGarcia</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Rojas Gomez, Valeria Alexandra</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">ValeriaAler</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Vara Velásquez, Oscar Fernando</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">varometro159</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+    </tr>
+  </tbody>
+</table>
+
 #### **4.2.1.3. Sprint Backlog 1**
 
 <p style="text-align: justify;">
@@ -141,11 +203,17 @@
 **Board URL:** [SafeLab - Sprint 1](https://varojasg19.atlassian.net/jira/software/projects/SL/boards/35/backlog?atlOrigin=eyJpIjoiMzI0NTliNmQ5ZjRhNDcxMjhkNWJhYjFkM2RmZjQ3ZjYiLCJwIjoiaiJ9)
 
 #### **4.2.1.4. Development Evidence for Sprint Review**
+
 #### **4.2.1.5. Testing Suite Evidence for Sprint Review**
+
 #### **4.2.1.6. Execution Evidence for Sprint Review**
+
 #### **4.2.1.7. Services Documentation Evidence for Sprint Review**
+
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
+
 #### **4.2.1.9. Team Collaboration Insights during Sprint**
+
 ## **4.3. Validation Interviews**
 
 <p style="text-align: justify;">
@@ -153,5 +221,7 @@
 </p>
 
 ### **4.3.1. Interview Design**
+
 ### **4.3.2. Interview Recording**
+
 ### **4.3.3. Evaluations Based on Heuristics**
