@@ -212,6 +212,105 @@
 
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  Durante el Sprint 1 se configuraron los entornos de despliegue de los productos digitales de SafeLab. La Landing Page se publica como sitio estático en GitHub Pages desde el repositorio <i>safelab-business-website</i> de la organización del equipo, y los servicios web se despliegan en Render como un Web Service basado en Docker, conectado a una base de datos PostgreSQL administrada en la misma plataforma. Las aplicaciones móviles se ejecutan en emuladores y dispositivos de prueba durante este Sprint y no se publican en tiendas de aplicaciones.
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Producto</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Plataforma</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Configuración</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Evidencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Landing Page</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">GitHub Pages</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Rama <code>main</code>, carpeta raíz (<code>/</code>)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Configuración de Pages y página publicada</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Web Services (SafeLab Platform API)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Render · Web Service</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Runtime Docker, plan free, región Oregon, health check <code>/actuator/health</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Servicio creado, variables de entorno, despliegue exitoso y Swagger UI accesible</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Base de datos</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Render · PostgreSQL</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Misma región que el Web Service; conexión mediante la Internal Database URL</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Instancia creada y conexión verificada por el health check</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Landing Page**
+
+<p style="text-align: justify;">
+  Para desplegar la Landing Page se realizaron las siguientes actividades:
+</p>
+<ul style="text-align: justify;">
+  <li>Integración del contenido de la Landing Page en la rama <code>main</code> del repositorio <i>safelab-business-website</i>.</li>
+  <li>Configuración de GitHub Pages en <b>Settings → Pages</b>, con la opción <b>Deploy from a branch</b>, la rama <code>main</code> y la carpeta raíz.</li>
+  <li>Verificación del acceso público a la página y de la correcta carga de estilos, imágenes y logotipos.</li>
+  <li>Revisión de la visualización en navegadores de escritorio y en dispositivos móviles.</li>
+</ul>
+
+##### **Web Services**
+
+<p style="text-align: justify;">
+  Para desplegar SafeLab Platform API se realizaron las siguientes actividades:
+</p>
+<ul style="text-align: justify;">
+  <li>Creación de la base de datos <b>PostgreSQL</b> en Render, en la región Oregon.</li>
+  <li>Creación del <b>Web Service</b> a partir del repositorio del backend, con runtime Docker y el <code>Dockerfile</code> del proyecto.</li>
+  <li>Configuración del health check en <code>/actuator/health</code>, que Render utiliza para verificar que el servicio está disponible.</li>
+  <li>Configuración de las variables de entorno del servicio, detalladas en la siguiente tabla.</li>
+  <li>Verificación del despliegue mediante el health check y el acceso a Swagger UI.</li>
+</ul>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Variable de entorno</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Valor</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Propósito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>SPRING_PROFILES_ACTIVE</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>postgres</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Activa la configuración de persistencia en PostgreSQL.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>DATABASE_URL</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Internal Database URL de Render</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Conecta el servicio con la base de datos; el backend la convierte al formato JDBC.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>CORS_ALLOWED_ORIGINS</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Orígenes permitidos de los clientes</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Autoriza las solicitudes de los clientes de SafeLab.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>SEED_RESET_ON_START</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>false</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Evita reiniciar los datos de muestra en cada despliegue.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>JAVA_OPTS</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>-XX:MaxRAMPercentage=75.0</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Ajusta el uso de memoria de la JVM al plan del servicio.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Con estas configuraciones, la Landing Page y los servicios web quedan disponibles públicamente para la validación del Sprint, mientras que las aplicaciones móviles consumen los servicios desplegados durante su ejecución en emuladores y dispositivos de prueba.
+</p>
+
 #### **4.2.1.9. Team Collaboration Insights during Sprint**
 
 ## **4.3. Validation Interviews**
