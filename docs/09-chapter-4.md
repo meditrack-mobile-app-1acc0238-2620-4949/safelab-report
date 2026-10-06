@@ -205,11 +205,11 @@
 #### **4.2.1.4. Development Evidence for Sprint Review**
 
 Durante el Sprint 1 el equipo concentró el trabajo de implementación en la aplicación móvil de SafeLab, desarrollada de forma nativa para Android con Kotlin y Jetpack Compose (Material 3). El repositorio `safelab-mobile-app` se organizó siguiendo el flujo de trabajo GitFlow: la rama `main` contiene la versión estable, la rama `develop` concentra la integración y cada bounded context se desarrolla en su propia rama `feature/tb1-bc-<bounded-context>`, de modo que cada integrante trabajó de manera independiente sobre el módulo que tenía asignado.
- 
+
 En primer lugar se construyó en `develop` la estructura base del proyecto: el shell de la aplicación con el menú lateral (sidebar) y la barra superior, el tema visual con la paleta de colores de SafeLab, la navegación entre módulos y la estructura de carpetas por bounded context organizada en capas (`domain`, `data` y `presentation`). Sobre esa base, cada bounded context se implementó con un patrón común: modelos de dominio en Kotlin, datos de prueba (mock data) cargados en un repositorio en memoria, componentes de interfaz reutilizables propios del módulo y pantallas con navegación interna. En este sprint la aplicación funciona con datos locales; la integración con los Web Services se realizará en el siguiente sprint.
- 
+
 Los principales avances por bounded context fueron los siguientes:
- 
+
 - **Dashboard Overview:** dashboard operativo con los indicadores generales y pantalla de tendencias de monitoreo.
 - **Monitoring Organization:** gestión de sedes de monitoreo, áreas de almacenamiento y registro de equipos.
 - **Equipment Maintenance:** condición de los equipos, registro de mantenimientos, historial de mantenimiento y confiabilidad de los equipos.
@@ -217,54 +217,52 @@ Los principales avances por bounded context fueron los siguientes:
 - **Sensor Monitoring:** monitoreo en vivo de sensores con búsqueda y filtros, detalle del sensor con umbrales y calibraciones, historial de lecturas con gráfica y sensores fuera de línea.
 - **Alerts & Incidents:** listado y detalle de alertas, reglas de alerta, y listado y detalle de incidentes.
 - **Audit & Traceability:** registro de auditoría (audit trail) y línea de trazabilidad.
-En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded contexts. La siguiente tabla presenta los commits del repositorio de la aplicación móvil relacionados con la implementación durante el Sprint 1.
- 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | main | 8999796 | Initial commit | — | 02/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop | a00e60d | feat: add initial structure for mobile-app | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop | 9d6c0e9 | feat: add new proyect base form for mobile-app | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | d199a71 | feat(dashboard): add dashboard domain models | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 5d0cace | feat(dashboard): add mock data for dashboard overview | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | b1611ee | feat(dashboard): add reusable dashboard UI components | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 3d6437b | feat(dashboard): implement operational dashboard screen | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 298087b | feat(dashboard): implement monitoring trends screen | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 460b5de | feat(dashboard): connect dashboard overview entry screen | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | c4a745b | fix(navigation): remove identity access from sidebar | — | 03/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 6b63b5a | feat(monitoring-organization): add domain models for sites, areas and equipment | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | dcf8800 | feat(monitoring-organization): add mock data and in-memory repository | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | d7228ad | feat(monitoring-organization): add reusable UI components | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 7c321b4 | feat(monitoring-organization): implement monitoring sites screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 5f28e88 | feat(monitoring-organization): implement storage areas screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 9f43d09 | feat(monitoring-organization): implement equipment registry screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 2eff849 | feat(monitoring-organization): connect module entry navigation | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 9f35e19 | feat(equipment-maintenance): add condition, maintenance and reliability models | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 7901a54 | feat(equipment-maintenance): add mock data and in-memory repository | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | d78224a | feat(equipment-maintenance): add reusable UI components | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | cff54bc | feat(equipment-maintenance): implement equipment condition screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 51d754f | feat(equipment-maintenance): implement maintenance history screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 84cb4af | feat(equipment-maintenance): implement maintenance record screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 8d1296e | feat(equipment-maintenance): implement equipment reliability screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 692fba3 | feat(equipment-maintenance): connect module entry navigation | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | cd5babc | feat(reporting): implement reports and historical data screens | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | 2ca92ba | feat(reporting): add report generation and export screens | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | b1e3683 | feat(compliance): implement compliance monitoring screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | 23fc082 | feat(reporting): connect reporting compliance navigation | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | f9587cc | feat(sensor-monitoring): add sensor, reading, threshold and calibration models | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | fbc2c6a | feat(sensor-monitoring): add mock data and in-memory repository | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 4558685 | feat(sensor-monitoring): add reusable UI components | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | d2596ff | feat(sensor-monitoring): implement live monitoring screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | dacc8e1 | feat(sensor-monitoring): implement sensor detail screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 3d0f08d | feat(sensor-monitoring): implement historical readings screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | a544a07 | feat(sensor-monitoring): implement offline sensors screen | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 73ad49b | feat(sensor-monitoring): connect module entry navigation | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-alerts-incidents | 6bf3113 | feat: add alerts and incidents bounded context | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability | c4f8e1a | feat: add audit and traceability bounded context | — | 05/10/2026 |
-| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability | c0e347f | fix: move audit traceability files to bounded context root | — | 05/10/2026 |
- 
+  En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded contexts. La siguiente tabla presenta los commits del repositorio de la aplicación móvil relacionados con la implementación durante el Sprint 1.
+
+| Repository                                                 | Branch                                 | Commit Id | Commit Message                                                                  | Commit Message Body | Committed on (Date) |
+| ---------------------------------------------------------- | -------------------------------------- | --------- | ------------------------------------------------------------------------------- | ------------------- | ------------------- |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | main                                   | 8999796   | Initial commit                                                                  | —                   | 02/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop                                | a00e60d   | feat: add initial structure for mobile-app                                      | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop                                | 9d6c0e9   | feat: add new proyect base form for mobile-app                                  | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | d199a71   | feat(dashboard): add dashboard domain models                                    | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | 5d0cace   | feat(dashboard): add mock data for dashboard overview                           | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | b1611ee   | feat(dashboard): add reusable dashboard UI components                           | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | 3d6437b   | feat(dashboard): implement operational dashboard screen                         | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | 298087b   | feat(dashboard): implement monitoring trends screen                             | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | 460b5de   | feat(dashboard): connect dashboard overview entry screen                        | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview      | c4a745b   | fix(navigation): remove identity access from sidebar                            | —                   | 03/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 6b63b5a   | feat(monitoring-organization): add domain models for sites, areas and equipment | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | dcf8800   | feat(monitoring-organization): add mock data and in-memory repository           | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | d7228ad   | feat(monitoring-organization): add reusable UI components                       | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 7c321b4   | feat(monitoring-organization): implement monitoring sites screen                | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 5f28e88   | feat(monitoring-organization): implement storage areas screen                   | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 9f43d09   | feat(monitoring-organization): implement equipment registry screen              | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 2eff849   | feat(monitoring-organization): connect module entry navigation                  | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 9f35e19   | feat(equipment-maintenance): add condition, maintenance and reliability models  | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 7901a54   | feat(equipment-maintenance): add mock data and in-memory repository             | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | d78224a   | feat(equipment-maintenance): add reusable UI components                         | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | cff54bc   | feat(equipment-maintenance): implement equipment condition screen               | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 51d754f   | feat(equipment-maintenance): implement maintenance history screen               | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 84cb4af   | feat(equipment-maintenance): implement maintenance record screen                | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 8d1296e   | feat(equipment-maintenance): implement equipment reliability screen             | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance   | 692fba3   | feat(equipment-maintenance): connect module entry navigation                    | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance    | cd5babc   | feat(reporting): implement reports and historical data screens                  | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance    | 2ca92ba   | feat(reporting): add report generation and export screens                       | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance    | b1e3683   | feat(compliance): implement compliance monitoring screen                        | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance    | 23fc082   | feat(reporting): connect reporting compliance navigation                        | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | f9587cc   | feat(sensor-monitoring): add sensor, reading, threshold and calibration models  | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | fbc2c6a   | feat(sensor-monitoring): add mock data and in-memory repository                 | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | 4558685   | feat(sensor-monitoring): add reusable UI components                             | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | d2596ff   | feat(sensor-monitoring): implement live monitoring screen                       | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | dacc8e1   | feat(sensor-monitoring): implement sensor detail screen                         | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | 3d0f08d   | feat(sensor-monitoring): implement historical readings screen                   | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | a544a07   | feat(sensor-monitoring): implement offline sensors screen                       | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring       | 73ad49b   | feat(sensor-monitoring): connect module entry navigation                        | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-alerts-incidents        | 6bf3113   | feat: add alerts and incidents bounded context                                  | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability      | c4f8e1a   | feat: add audit and traceability bounded context                                | —                   | 05/10/2026          |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability      | c0e347f   | fix: move audit traceability files to bounded context root                      | —                   | 05/10/2026          |
 
 #### **4.2.1.5. Testing Suite Evidence for Sprint Review**
-
 
 <p style="text-align: justify;">
   En esta sección se presenta el conjunto de pruebas automatizadas elaborado para los Web Services de la <i>SafeLab Platform API</i> relacionados con las User Stories del Sprint 1: <b>US60 - Proporcionar servicios de organización del monitoreo</b>, <b>US61 - Proporcionar servicios de monitoreo ambiental</b> y <b>US16 - Recolección automática de datos</b>. El conjunto incluye Unit Tests, Integration Tests y Acceptance Tests bajo el enfoque BDD, desarrollados con JUnit 5, Mockito, AssertJ, Spring Boot Test (MockMvc) y Cucumber 7.20.1. Las pruebas de integración y aceptación se ejecutan sobre una base de datos H2 en memoria con el perfil <code>test</code>, y cada caso inicia desde los datos semilla de la API para garantizar resultados reproducibles.
@@ -279,7 +277,6 @@ En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded con
 </p>
 
 <p align="center"><i>Figura: Estructura del proyecto de testing de la SafeLab Platform API.</i></p>
-
 
 ##### **Unit Tests**
 
@@ -310,7 +307,6 @@ En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded con
 
 <p align="center"><i>Figura: Ejecución de los Unit Tests (22 tests aprobados).</i></p>
 
-
 ##### **Integration Tests**
 
 <p style="text-align: justify;">
@@ -338,7 +334,6 @@ En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded con
 </p>
 
 <p align="center"><i>Figura: Ejecución de los Integration Tests (15 tests aprobados).</i></p>
-
 
 ##### **Acceptance Tests (BDD)**
 
@@ -463,7 +458,6 @@ Feature: US16 - Automatic data collection
 
 <p align="center"><i>Figura: Reporte de Cucumber con los escenarios de US16, US60 y US61.</i></p>
 
-
 ##### **Resultados**
 
 <p style="text-align: justify;">
@@ -476,69 +470,235 @@ Feature: US16 - Automatic data collection
 
 <p align="center"><i>Figura: Resumen de la ejecución de la suite con Maven.</i></p>
 
-
 #### **4.2.1.6. Execution Evidence for Sprint Review**
 
 Al finalizar el Sprint 1, la aplicación móvil de SafeLab cuenta con su estructura de navegación completa y con las pantallas core de siete bounded contexts funcionando con datos de prueba. Al iniciar la aplicación, el usuario accede a un shell común compuesto por una barra superior y un menú lateral desde el cual navega entre los módulos de la plataforma. Cada módulo tiene su propia navegación interna: desde una vista principal el usuario puede acceder al detalle de un elemento y a sus vistas relacionadas, y regresar con el botón atrás del dispositivo. Todas las vistas comparten el mismo lenguaje visual basado en Material Design 3 y en la paleta de SafeLab, en la que los colores verde, ámbar y rojo comunican de forma consistente el estado normal, de advertencia y crítico de sensores, equipos y alertas. Además, son compatibles con el modo claro y el modo oscuro.
- 
+
 A continuación se presentan las principales vistas implementadas, agrupadas por bounded context.
- 
+
 ##### Dashboard Overview
- 
- 
+
 La aplicación presenta un menú lateral con acceso a los módulos de SafeLab y una barra superior que identifica el módulo activo. El dashboard operativo es la vista de inicio y resume el estado general de la operación mediante indicadores clave.
-  
+
 ![Figura Dashboard operativo](../assets/09-chapter-4/ExecutionEvidence/mobile-dashboard.png)
- 
+
 ##### Monitoring Organization
-  
+
 Permite consultar las sedes de monitoreo con sus áreas de almacenamiento y el registro de equipos asociados a cada sede.
- 
+
 ![Figura Sedes de monitoreo](../assets/09-chapter-4/ExecutionEvidence/mobile-monitoring-sites.png)
- 
+
 ![Figura Registro de equipos](../assets/09-chapter-4/ExecutionEvidence/mobile-equipment-registry.png)
- 
+
 ##### Equipment Maintenance
-  
+
 Permite revisar la condición de los equipos a partir de sus indicadores y consultar el historial de mantenimientos realizados.
- 
+
 ![Figura Condición de equipos](../assets/09-chapter-4/ExecutionEvidence/mobile-equipment-condition.png)
- 
+
 ![Figura Historial de mantenimiento](../assets/09-chapter-4/ExecutionEvidence/mobile-maintenance-history.png)
- 
+
 ##### Reporting & Compliance
- 
- 
+
 Permite consultar, generar y exportar reportes de la operación, y monitorear el cumplimiento de las normas aplicables.
- 
+
 ![Figura Reportes](../assets/09-chapter-4/ExecutionEvidence/mobile-reports.png)
- 
+
 ![Figura Monitoreo de cumplimiento](../assets/09-chapter-4/ExecutionEvidence/mobile-compliance.png)
- 
+
 ##### Sensor Monitoring
-  
+
 La vista de monitoreo en vivo muestra un resumen del estado de los sensores (total, normales, fuera de rango y fuera de línea) y una tarjeta por sensor con su lectura actual, rango objetivo, conexión y responsable. Además, permite buscar y filtrar por tipo y estado. Desde cada tarjeta el usuario accede al detalle del sensor, donde visualiza la lectura frente al umbral configurado, las calibraciones y los lotes de telemetría, y desde donde puede registrar lecturas y calibraciones o consultar el historial de lecturas.
- 
+
 ![Figura Monitoreo en vivo de sensores](../assets/09-chapter-4/ExecutionEvidence/mobile-live-monitoring.png)
- 
+
 ![Figura Detalle del sensor](../assets/09-chapter-4/ExecutionEvidence/mobile-sensor-detail.png)
- 
+
 ##### Alerts & Incidents
-  
+
 Muestra las alertas generadas con su severidad y estado, y el seguimiento de los incidentes asociados.
- 
+
 ![Figura Alertas](../assets/09-chapter-4/ExecutionEvidence/mobile-alerts.png)
- 
+
 ![Figura Incidentes](../assets/09-chapter-4/ExecutionEvidence/mobile-incidents.png)
- 
+
 ##### Audit & Traceability
-  
+
 Presenta el registro de auditoría con las acciones realizadas en la plataforma y la línea de trazabilidad de los eventos.
- 
+
 ![Figura Registro de auditoría](../assets/09-chapter-4/ExecutionEvidence/mobile-audit-trail.png)
- 
+
 ![Figura Trazabilidad](../assets/09-chapter-4/ExecutionEvidence/mobile-traceability.png)
+
 #### **4.2.1.7. Services Documentation Evidence for Sprint Review**
+
+<p style="text-align: justify;">
+  En el Sprint 1 se habilitaron los servicios web que soportan la organización y el monitoreo ambiental de SafeLab (US60 y US61). Para ello se reutilizó y adaptó <b>SafeLab Platform API</b>, un backend desarrollado con Java 21 y Spring Boot 3.4 que expone servicios RESTful bajo la ruta base <code>/api/v1</code>, persiste la información en PostgreSQL y documenta sus endpoints con la especificación OpenAPI mediante springdoc, publicada en Swagger UI. La siguiente tabla resume los endpoints relacionados con el alcance del Sprint, con su verbo HTTP, la sintaxis de llamada, sus parámetros y un ejemplo de respuesta obtenido con los datos de muestra del servicio.
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed; word-break: break-word;">
+  <colgroup>
+    <col style="width: 13%;">
+    <col style="width: 21%;">
+    <col style="width: 8%;">
+    <col style="width: 15%;">
+    <col style="width: 16%;">
+    <col style="width: 27%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Bounded Context</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Endpoint</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Verbo HTTP</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Acción</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Parámetros</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ejemplo y explicación del response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Identity &amp; Access Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/auth/sign-in</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Iniciar sesión</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>email</code> (o <code>username</code>), <code>password</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>{"accessToken": "demo-…", "tokenType": "Bearer", "user": {"id": "usr-admin-001", "fullName": "Dr. Maria Lopez", "role": "safeLabAdministrator"}}</code>. Devuelve el token de sesión y el usuario autenticado. Con credenciales inválidas responde <code>401 Unauthorized</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Identity &amp; Access Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/auth/me</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Consultar usuario autenticado</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: datos del usuario de la sesión actual (nombre, rol, sitio y contextos permitidos).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Monitoring Organization</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilities</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar sitios de monitoreo</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{"id": "fac-central", "name": "Central Clinical Laboratory", "type": "Clinical laboratory", "city": "Huancayo", "manager": "Carlos Mendoza"}, …]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Monitoring Organization</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilities</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar sitio de monitoreo (US01)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>name</code>, <code>type</code>, <code>city</code>, <code>manager</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sitio creado con su <code>id</code> generado.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Monitoring Organization</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilities/{id}</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Consultar un sitio</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sitio solicitado; <code>404 Not Found</code> si no existe.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Asset &amp; Inventory</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/asset-inventory/assets</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar equipos</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{"id": "asset-001", "name": "Reagent Freezer A", "category": "Cold Storage", "storageUnit": "Freezer A", "location": "Central Lab - Storage 1", "status": "compliant"}, …]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Asset &amp; Inventory</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/asset-inventory/assets</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar equipo (US05)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>name</code>, <code>category</code>, <code>facilityId</code>, <code>storageUnit</code>, <code>location</code>, <code>responsible</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el equipo creado; si no se envía <code>status</code>, se registra como <code>compliant</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Asset &amp; Inventory</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/asset-inventory/assets/{id}</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">PATCH</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Asignar equipo a un área de almacenamiento (US07)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>storageUnit</code>, <code>location</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el equipo actualizado con su nueva área de almacenamiento.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Asset &amp; Inventory</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/asset-inventory/assets/{id}</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">DELETE</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Eliminar equipo</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code> sin contenido.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensor-monitoring/sensors</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar sensores con su lectura actual (US09, US10, US13)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">—</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{"id": "sen-001", "code": "SEN-CLN-001", "name": "Reagent Freezer Temperature", "type": "temperature", "unit": "°C", "value": 3.8, "min": 2, "max": 8, "status": "normal", "connection": "online"}, …]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensor-monitoring/sensors</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar sensor de un equipo</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>code</code>, <code>name</code>, <code>assetId</code>, <code>type</code>, <code>unit</code>, <code>min</code>, <code>max</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sensor creado, con <code>connection: online</code> y <code>status: normal</code> por defecto.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensor-monitoring/sensors/{id}/reading</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">PATCH</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar una nueva lectura (US16)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>value</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sensor con el nuevo <code>value</code> y su <code>status</code> recalculado (<code>normal</code> u <code>out-of-range</code>). Si la lectura sale del rango, el servicio genera automáticamente una alerta.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensor-monitoring/sensors/{id}/disconnect</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Marcar sensor sin datos recientes (US15)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sensor con <code>connection: offline</code> y <code>status: invalid</code>; además se genera una alerta de conectividad.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Dashboard &amp; Overview</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/dashboard/overview</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Consultar resumen del monitoreo (US11)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Query: <code>facilityId</code> (opcional, por defecto <code>global</code>)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: indicadores agregados (<code>activeSensors</code>, <code>totalSensors</code>, <code>openAlerts</code>, <code>complianceScore</code>, <code>telemetryScore</code>) y las alertas prioritarias.</td>
+    </tr>
+  </tbody>
+</table>
+
+##### **Documentación desplegada**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Recurso</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Swagger UI (local)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>http://localhost:8080/swagger-ui.html</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Especificación OpenAPI (local)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>http://localhost:8080/v3/api-docs</code></td>
+    </tr>
+    
+  </tbody>
+</table
+
+##### **Interacción con la documentación**
+
+<p style="text-align: justify;">
+  A continuación se muestran capturas de la interacción con Swagger UI utilizando los datos de muestra: el inicio de sesión con <code>POST /auth/sign-in</code>, la consulta de sensores con <code>GET /sensor-monitoring/sensors</code> y el registro de una lectura fuera de rango con <code>PATCH /sensor-monitoring/sensors/{id}/reading</code>, que genera una alerta automática.
+</p>
+
+<!-- PENDIENTE: agregar 3 capturas de Swagger en assets/09-chapter-4/sprint-1/services/ (sign-in, listado de sensores y registro de lectura). -->
 
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
 
