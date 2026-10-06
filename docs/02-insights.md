@@ -126,3 +126,72 @@ Los commits asociados a Oscar respaldan la elaboración de los artefactos de inv
 
 <p style="text-align: justify; line-height: 1.55;">
 Las evidencias recopiladas muestran la participación de los cinco integrantes en la construcción del informe de la AV1. La distribución por bloques permitió cubrir los componentes de negocio, investigación de usuarios, requisitos, experiencia de usuario y arquitectura de software. Asimismo, el uso del repositorio proporcionó trazabilidad sobre los cambios realizados y facilitó contrastar cada aporte con el <em>Report Version Log</em>.
+
+<div style="page-break-before: always;"></div>
+
+## **TB1**
+
+### **Analítica general de colaboración**
+
+<!-- Reemplazar la siguiente imagen con la captura general de commits correspondiente a TB1. -->
+<div style="page-break-inside: avoid; text-align: center; margin: 18px 0 24px 0;">
+  <img src="../assets/02-insights/commits-over-time-tb1.png" width="76%" alt="Gráfico de commits a lo largo del tiempo de todos los colaboradores durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 7.</strong> Evolución de commits realizados por los integrantes del equipo durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de la analítica general de commits de TB1.
+-->
+
+### **Evidencias de commits por integrante**
+
+<!-- Carlos Lavado, Ever Giusephi -->
+<div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
+  <img src="../assets/02-insights/commits-giusephi-carlos-tb1.png" width="76%" alt="Historial de commits de Carlos Lavado, Ever Giusephi, durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 8.</strong> Historial de contribuciones de Carlos Lavado, Ever Giusephi durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de los commits de Carlos durante TB1.
+-->
+
+<!-- Espino Rossi, Victor Manuel -->
+<div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
+  <img src="../assets/02-insights/commits-victor-espino-tb1.png" width="76%" alt="Historial de commits de Espino Rossi, Victor Manuel, durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 9.</strong> Historial de contribuciones de Espino Rossi, Victor Manuel durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de los commits de Victor durante TB1.
+-->
+
+<!-- García Cerpa, Braden Raid -->
+<div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
+  <img src="../assets/02-insights/commits-branden-garcia-tb1.png" width="76%" alt="Historial de commits de García Cerpa, Braden Raid, durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 10.</strong> Historial de contribuciones de García Cerpa, Braden Raid durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de los commits de Braden durante TB1.
+-->
+
+<!-- Rojas Gomez, Valeria Alexandra -->
+<div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
+  <img src="../assets/02-insights/commits-valeria-rojas-tb1.png" width="76%" alt="Historial de commits de Rojas Gomez, Valeria Alexandra, durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 11.</strong> Historial de contribuciones de Rojas Gomez, Valeria Alexandra durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de los commits de Valeria durante TB1.
+-->
+
+<!-- Vara Velásquez, Oscar Fernando -->
+<div style="page-break-inside: avoid; text-align: center; margin: 20px 0 24px 0;">
+  <img src="../assets/02-insights/commits-oscar-vara-tb1.png" width="76%" alt="Historial de commits de Vara Velásquez, Oscar Fernando, durante la TB1">
+  <p style="margin: 7px 0 0 0; font-size: 0.9em;"><strong>Figura 12.</strong> Historial de contribuciones de Vara Velásquez, Oscar Fernando durante la TB1.</p>
+</div>
+
+<!--
+Agregar aquí, si se desea, una breve interpretación de los commits de Oscar durante TB1.
+-->
+
