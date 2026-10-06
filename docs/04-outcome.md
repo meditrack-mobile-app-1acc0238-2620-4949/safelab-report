@@ -68,7 +68,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, reforcé mis conocimientos sobre Scrum mediante la elaboración del Sprint Planning, definiendo el Sprint Goal, la capacidad del equipo y las User Stories seleccionadas para el sprint. Asimismo, apliqué conceptos de diseño UX/UI en el avance de las pantallas de la aplicación móvil y de la Landing Page, buscando mantener coherencia entre los requisitos definidos y la interfaz propuesta.
       <br><br>
       <hr>
         <b>Vara Velásquez, Oscar Fernando</b>
@@ -140,7 +140,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+       Durante la TB1, reconocí la importancia de continuar fortaleciendo mis conocimientos tanto en gestión ágil como en diseño y desarrollo de interfaces. El trabajo realizado en el Sprint Planning y en las interfaces de la aplicación y Landing Page me permitió identificar que estos elementos deben revisarse y ajustarse continuamente conforme avanza el proyecto y se validan las funcionalidades planteadas.
       <br><br>
       <hr>
         <b>Vara Velásquez, Oscar Fernando</b>
