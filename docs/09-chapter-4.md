@@ -204,6 +204,65 @@
 
 #### **4.2.1.4. Development Evidence for Sprint Review**
 
+Durante el Sprint 1 el equipo concentró el trabajo de implementación en la aplicación móvil de SafeLab, desarrollada de forma nativa para Android con Kotlin y Jetpack Compose (Material 3). El repositorio `safelab-mobile-app` se organizó siguiendo el flujo de trabajo GitFlow: la rama `main` contiene la versión estable, la rama `develop` concentra la integración y cada bounded context se desarrolla en su propia rama `feature/tb1-bc-<bounded-context>`, de modo que cada integrante trabajó de manera independiente sobre el módulo que tenía asignado.
+ 
+En primer lugar se construyó en `develop` la estructura base del proyecto: el shell de la aplicación con el menú lateral (sidebar) y la barra superior, el tema visual con la paleta de colores de SafeLab, la navegación entre módulos y la estructura de carpetas por bounded context organizada en capas (`domain`, `data` y `presentation`). Sobre esa base, cada bounded context se implementó con un patrón común: modelos de dominio en Kotlin, datos de prueba (mock data) cargados en un repositorio en memoria, componentes de interfaz reutilizables propios del módulo y pantallas con navegación interna. En este sprint la aplicación funciona con datos locales; la integración con los Web Services se realizará en el siguiente sprint.
+ 
+Los principales avances por bounded context fueron los siguientes:
+ 
+- **Dashboard Overview:** dashboard operativo con los indicadores generales y pantalla de tendencias de monitoreo.
+- **Monitoring Organization:** gestión de sedes de monitoreo, áreas de almacenamiento y registro de equipos.
+- **Equipment Maintenance:** condición de los equipos, registro de mantenimientos, historial de mantenimiento y confiabilidad de los equipos.
+- **Reporting & Compliance:** reportes, datos históricos, generación y exportación de reportes, y monitoreo de cumplimiento normativo.
+- **Sensor Monitoring:** monitoreo en vivo de sensores con búsqueda y filtros, detalle del sensor con umbrales y calibraciones, historial de lecturas con gráfica y sensores fuera de línea.
+- **Alerts & Incidents:** listado y detalle de alertas, reglas de alerta, y listado y detalle de incidentes.
+- **Audit & Traceability:** registro de auditoría (audit trail) y línea de trazabilidad.
+En total se implementaron 25 pantallas funcionales distribuidas en 7 bounded contexts. La siguiente tabla presenta los commits del repositorio de la aplicación móvil relacionados con la implementación durante el Sprint 1.
+ 
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | main | 8999796 | Initial commit | — | 02/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop | a00e60d | feat: add initial structure for mobile-app | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | develop | 9d6c0e9 | feat: add new proyect base form for mobile-app | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | d199a71 | feat(dashboard): add dashboard domain models | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 5d0cace | feat(dashboard): add mock data for dashboard overview | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | b1611ee | feat(dashboard): add reusable dashboard UI components | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 3d6437b | feat(dashboard): implement operational dashboard screen | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 298087b | feat(dashboard): implement monitoring trends screen | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | 460b5de | feat(dashboard): connect dashboard overview entry screen | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-dashboard-overview | c4a745b | fix(navigation): remove identity access from sidebar | — | 03/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 6b63b5a | feat(monitoring-organization): add domain models for sites, areas and equipment | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | dcf8800 | feat(monitoring-organization): add mock data and in-memory repository | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | d7228ad | feat(monitoring-organization): add reusable UI components | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 7c321b4 | feat(monitoring-organization): implement monitoring sites screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 5f28e88 | feat(monitoring-organization): implement storage areas screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 9f43d09 | feat(monitoring-organization): implement equipment registry screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-monitoring-organization | 2eff849 | feat(monitoring-organization): connect module entry navigation | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 9f35e19 | feat(equipment-maintenance): add condition, maintenance and reliability models | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 7901a54 | feat(equipment-maintenance): add mock data and in-memory repository | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | d78224a | feat(equipment-maintenance): add reusable UI components | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | cff54bc | feat(equipment-maintenance): implement equipment condition screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 51d754f | feat(equipment-maintenance): implement maintenance history screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 84cb4af | feat(equipment-maintenance): implement maintenance record screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 8d1296e | feat(equipment-maintenance): implement equipment reliability screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-equipment-maintenance | 692fba3 | feat(equipment-maintenance): connect module entry navigation | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | cd5babc | feat(reporting): implement reports and historical data screens | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | 2ca92ba | feat(reporting): add report generation and export screens | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | b1e3683 | feat(compliance): implement compliance monitoring screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-reporting-compliance | 23fc082 | feat(reporting): connect reporting compliance navigation | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | f9587cc | feat(sensor-monitoring): add sensor, reading, threshold and calibration models | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | fbc2c6a | feat(sensor-monitoring): add mock data and in-memory repository | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 4558685 | feat(sensor-monitoring): add reusable UI components | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | d2596ff | feat(sensor-monitoring): implement live monitoring screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | dacc8e1 | feat(sensor-monitoring): implement sensor detail screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 3d0f08d | feat(sensor-monitoring): implement historical readings screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | a544a07 | feat(sensor-monitoring): implement offline sensors screen | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-sensor-monitoring | 73ad49b | feat(sensor-monitoring): connect module entry navigation | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-alerts-incidents | 6bf3113 | feat: add alerts and incidents bounded context | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability | c4f8e1a | feat: add audit and traceability bounded context | — | 05/10/2026 |
+| meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app | feature/tb1-bc-audit-traceability | c0e347f | fix: move audit traceability files to bounded context root | — | 05/10/2026 |
+ 
+
 #### **4.2.1.5. Testing Suite Evidence for Sprint Review**
 
 
@@ -420,6 +479,65 @@ Feature: US16 - Automatic data collection
 
 #### **4.2.1.6. Execution Evidence for Sprint Review**
 
+Al finalizar el Sprint 1, la aplicación móvil de SafeLab cuenta con su estructura de navegación completa y con las pantallas core de siete bounded contexts funcionando con datos de prueba. Al iniciar la aplicación, el usuario accede a un shell común compuesto por una barra superior y un menú lateral desde el cual navega entre los módulos de la plataforma. Cada módulo tiene su propia navegación interna: desde una vista principal el usuario puede acceder al detalle de un elemento y a sus vistas relacionadas, y regresar con el botón atrás del dispositivo. Todas las vistas comparten el mismo lenguaje visual basado en Material Design 3 y en la paleta de SafeLab, en la que los colores verde, ámbar y rojo comunican de forma consistente el estado normal, de advertencia y crítico de sensores, equipos y alertas. Además, son compatibles con el modo claro y el modo oscuro.
+ 
+A continuación se presentan las principales vistas implementadas, agrupadas por bounded context.
+ 
+##### Dashboard Overview
+ 
+ 
+La aplicación presenta un menú lateral con acceso a los módulos de SafeLab y una barra superior que identifica el módulo activo. El dashboard operativo es la vista de inicio y resume el estado general de la operación mediante indicadores clave.
+  
+![Figura Dashboard operativo](../assets/09-chapter-4/ExecutionEvidence/mobile-dashboard.png)
+ 
+##### Monitoring Organization
+  
+Permite consultar las sedes de monitoreo con sus áreas de almacenamiento y el registro de equipos asociados a cada sede.
+ 
+![Figura Sedes de monitoreo](../assets/09-chapter-4/ExecutionEvidence/mobile-monitoring-sites.png)
+ 
+![Figura Registro de equipos](../assets/09-chapter-4/ExecutionEvidence/mobile-equipment-registry.png)
+ 
+##### Equipment Maintenance
+  
+Permite revisar la condición de los equipos a partir de sus indicadores y consultar el historial de mantenimientos realizados.
+ 
+![Figura Condición de equipos](../assets/09-chapter-4/ExecutionEvidence/mobile-equipment-condition.png)
+ 
+![Figura Historial de mantenimiento](../assets/09-chapter-4/ExecutionEvidence/mobile-maintenance-history.png)
+ 
+##### Reporting & Compliance
+ 
+ 
+Permite consultar, generar y exportar reportes de la operación, y monitorear el cumplimiento de las normas aplicables.
+ 
+![Figura Reportes](../assets/09-chapter-4/ExecutionEvidence/mobile-reports.png)
+ 
+![Figura Monitoreo de cumplimiento](../assets/09-chapter-4/ExecutionEvidence/mobile-compliance.png)
+ 
+##### Sensor Monitoring
+  
+La vista de monitoreo en vivo muestra un resumen del estado de los sensores (total, normales, fuera de rango y fuera de línea) y una tarjeta por sensor con su lectura actual, rango objetivo, conexión y responsable. Además, permite buscar y filtrar por tipo y estado. Desde cada tarjeta el usuario accede al detalle del sensor, donde visualiza la lectura frente al umbral configurado, las calibraciones y los lotes de telemetría, y desde donde puede registrar lecturas y calibraciones o consultar el historial de lecturas.
+ 
+![Figura Monitoreo en vivo de sensores](../assets/09-chapter-4/ExecutionEvidence/mobile-live-monitoring.png)
+ 
+![Figura Detalle del sensor](../assets/09-chapter-4/ExecutionEvidence/mobile-sensor-detail.png)
+ 
+##### Alerts & Incidents
+  
+Muestra las alertas generadas con su severidad y estado, y el seguimiento de los incidentes asociados.
+ 
+![Figura Alertas](../assets/09-chapter-4/ExecutionEvidence/mobile-alerts.png)
+ 
+![Figura Incidentes](../assets/09-chapter-4/ExecutionEvidence/mobile-incidents.png)
+ 
+##### Audit & Traceability
+  
+Presenta el registro de auditoría con las acciones realizadas en la plataforma y la línea de trazabilidad de los eventos.
+ 
+![Figura Registro de auditoría](../assets/09-chapter-4/ExecutionEvidence/mobile-audit-trail.png)
+ 
+![Figura Trazabilidad](../assets/09-chapter-4/ExecutionEvidence/mobile-traceability.png)
 #### **4.2.1.7. Services Documentation Evidence for Sprint Review**
 
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
