@@ -147,26 +147,122 @@
   <tr>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.1</td>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">30/09/2026</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Autor</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: justify;"></td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Rojas Gomez, Valeria Alexandra</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Corrección de User Stories y Acceptance Criteria de AV1, ajustando los criterios para que sean verificables, mantengan la estructura Given-When-Then y representen adecuadamente los escenarios funcionales del producto.</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.2</td>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">30/09/2026</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Autor</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: justify;"></td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Carlos Lavado, Ever Giusephi</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Revisión de los artefactos previos de Domain-Driven Design, Bounded Contexts y C4 Model para verificar su coherencia con la implementación y las decisiones técnicas consideradas para TB1.</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.3</td>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">30/09/2026</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Autor</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: justify;"></td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Carlos Lavado, Ever Giusephi</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de la introducción de Product Implementation & Validation y documentación de Software Configuration Management para establecer las decisiones y convenciones aplicadas durante la implementación.</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.4</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: center;">30/09/2026</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Autor</td>
-    <td style="border: 1px solid #777; padding: 8px; text-align: justify;"></td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">01/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Vara Velásquez, Oscar Fernando</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Corrección y actualización de los User Personas de AV1, asegurando que cada arquetipo represente de manera clara un segmento objetivo, sus necesidades, comportamientos y características obtenidas de las entrevistas.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.5</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">01/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Garcia Cerpa, Braden Raid</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Mejora del Interview Analysis de AV1 mediante la incorporación de porcentajes, comparaciones entre segmentos y análisis cuantitativo de las características objetivas y subjetivas identificadas.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.6</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">01/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Espino Rossi, Victor Manuel</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Corrección del Problem Statement y de los Lean UX Hypothesis Statements de AV1 de acuerdo con la estructura establecida para el proyecto, manteniendo coherencia con los segmentos y necesidades identificadas.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.7</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">01/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Rojas Gomez, Valeria Alexandra</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Reestructuración del Product Backlog para cuatro Sprints, priorizando las User Stories por valor para el negocio, importancia y precedencia, y revisando la Requirements Specification asociada.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.8</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">02/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Vara Velásquez, Oscar Fernando</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Revisión del User Task Matrix, User Journey Maps y Empathy Maps de AV1 para mantener consistencia entre los hallazgos de investigación, necesidades de los segmentos y artefactos de experiencia de usuario.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.9</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">02/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Espino Rossi, Victor Manuel</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de Product Design y Style Guidelines, definiendo los lineamientos visuales generales que orientan la consistencia entre el Landing Page y las aplicaciones móviles de SafeLab.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.10</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">02/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Garcia Cerpa, Braden Raid</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de Searching Systems y Navigation Systems, definiendo mecanismos de búsqueda, filtros, recorridos y criterios de navegación para facilitar el acceso a la información en la solución.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.11</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">02/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Carlos Lavado, Ever Giusephi</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Documentación de Software Development Environment Configuration y Source Code Management, incluyendo herramientas de trabajo, repositorios, GitFlow, convenciones de ramas y uso de Conventional Commits.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.12</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">03/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Rojas Gomez, Valeria Alexandra</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de Landing Page UI Design, incluyendo la documentación del Landing Page Wireframe y Landing Page Mock-up y su relación con los lineamientos de diseño establecidos para el producto.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.13</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">03/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Vara Velásquez, Oscar Fernando</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de Mobile Applications UX/UI Design mediante la elaboración y documentación de Mobile Application Wireframes y Wireflow Diagrams, manteniendo trazabilidad con los User Goals identificados.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.14</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">03/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Espino Rossi, Victor Manuel</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo de Information Architecture, Organization Systems, Labelling Systems y SEO Tags and Meta Tags para estructurar y representar adecuadamente el contenido del Landing Page y las aplicaciones.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.15</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">03/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Garcia Cerpa, Braden Raid</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Preparación de Validation Interviews mediante el diseño de las sesiones, registro de evidencias y estructuración de las evaluaciones según heurísticas de usabilidad, arquitectura de información y diseño inclusivo.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.16</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">04/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Carlos Lavado, Ever Giusephi</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Documentación de Source Code Style Guide & Conventions y Software Deployment Configuration, verificando su correspondencia con los repositorios, tecnologías, convenciones de código y proceso de despliegue reales.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.17</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">04/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Rojas Gomez, Valeria Alexandra</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Elaboración de Sprint Planning 1 y Sprint Backlog 1, estableciendo el Sprint Goal, las User Stories seleccionadas, Work-Items, estimaciones, responsables y estado de las actividades previstas para TB1.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.18</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">05/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Vara Velásquez, Oscar Fernando</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Desarrollo y documentación de Mobile Application Mock-ups, User Flow Diagrams y Prototyping, además de la organización de Development Evidence y Execution Evidence correspondientes al Sprint Review.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.19</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">05/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Garcia Cerpa, Braden Raid</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Organización de Testing Suite Evidence for Sprint Review y Team Collaboration Insights during Sprint, reuniendo evidencias de pruebas, participación y colaboración desarrolladas durante el Sprint 1.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">2.0.20</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">06/10/2026</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center;">Espino Rossi, Victor Manuel</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify;">Documentación de Aspect Leaders and Collaborators, Services Documentation Evidence y Software Deployment Evidence for Sprint Review, consolidando evidencias reales de servicios, colaboración y despliegue del Sprint 1.</td>
   </tr>
 
 </table>
