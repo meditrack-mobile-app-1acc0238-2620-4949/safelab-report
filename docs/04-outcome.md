@@ -35,7 +35,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB, actualicé mis conocimientos sobre Software Configuration Management, Git/GitHub, GitFlow, convenciones de código y procesos de despliegue. Verifiqué la correspondencia entre la documentación y los repositorios reales del proyecto, además de revisar la coherencia de los artefactos relacionados con DDD, Bounded Contexts y C4 Model.
       <br><br>
       <hr>
         <b>Espino Rossi, Victor Manuel</b>
@@ -46,7 +46,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, actualicé y apliqué mis conocimientos sobre Product Design, Style Guidelines, Information Architecture, SEO y documentación de servicios y despliegue, buscando mantener consistencia entre el Landing Page y las aplicaciones móviles.
       <br><br>
       <hr>
         <b>Garcia Cerpa, Braden Raid</b>
@@ -57,7 +57,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, profundicé mis conocimientos sobre investigación de usuarios, análisis cuantitativo de entrevistas, sistemas de búsqueda y navegación, pruebas de software y validación heurística, aplicándolos en las evidencias correspondientes al Sprint.
       <br><br>
       <hr>
         <b>Rojas Gomez, Valeria Alexandra</b>
@@ -79,7 +79,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, actualicé y apliqué mis conocimientos sobre Mobile UX/UI mediante la elaboración y revisión de wireframes, wireflows, mock-ups, User Flow Diagrams y prototipos, manteniendo trazabilidad con los User Personas y sus necesidades.
       <br><br>
     </td>
     <td style="border: 1px solid #777; padding: 10px; text-align: justify; vertical-align: top;">
@@ -89,7 +89,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1, el equipo ...
+        Durante la TB1, actualizamos y aplicamos nuestros conocimientos técnicos, metodológicos y de diseño para corregir artefactos previos y desarrollar los nuevos contenidos del proyecto. Logramos fortalecer la relación entre investigación, requisitos, UX/UI, planificación, implementación, pruebas y despliegue, aplicando directamente lo aprendido en los artefactos y evidencias desarrollados durante el Sprint.
       <br><br>
     </td>
   </tr>
@@ -107,7 +107,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, reconocí la necesidad de mantener actualizados mis conocimientos sobre gestión de configuración, versionamiento, branching y despliegue, debido a que los repositorios y la implementación evolucionan continuamente durante el proyecto.
       <br><br>
       <hr>
         <b>Espino Rossi, Victor Manuel</b>
@@ -118,7 +118,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, reconocí la importancia de continuar aprendiendo y revisando principios de diseño, arquitectura de información y documentación técnica para mantener coherencia entre las diferentes experiencias digitales de la solución.
       <br><br>
       <hr>
         <b>Garcia Cerpa, Braden Raid</b>
@@ -129,7 +129,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, reconocí que las decisiones de diseño y desarrollo deben actualizarse permanentemente a partir de nuevas entrevistas, validaciones, evaluaciones heurísticas y resultados de pruebas.
       <br><br>
       <hr>
         <b>Rojas Gomez, Valeria Alexandra</b>
@@ -151,7 +151,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1 ...
+        Durante la TB1, comprendí que el diseño UX/UI es un proceso iterativo que requiere aprendizaje continuo, debido a que los flujos, prototipos e interfaces deben ajustarse según las necesidades y resultados identificados durante el desarrollo
       <br><br>
     </td>
     <td style="border: 1px solid #777; padding: 10px; text-align: justify; vertical-align: top;">
@@ -161,7 +161,7 @@
       <br><br>
         <b><i>TB1</i></b>
       <br>
-        Durante la TB1, el equipo ...
+        Durante la TB1, reconocimos que nuestro desarrollo profesional en Ingeniería de Software requiere aprendizaje continuo y autónomo. Las correcciones realizadas a partir de AV1 y las nuevas responsabilidades de TB1 nos permitieron investigar, reforzar y aplicar conocimientos en distintas áreas, comprendiendo que debemos mantenernos actualizados para responder adecuadamente a los cambios, necesidades y desafíos que aparecen durante el ciclo de vida de una solución de software.
       <br><br>
     </td>
   </tr>
