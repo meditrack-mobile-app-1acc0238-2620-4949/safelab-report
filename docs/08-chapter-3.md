@@ -869,3 +869,5 @@ Aplicaciones móviles (App Store Optimization)
 ![User Flow 5](../assets/08-chapter-3/userflows/userflow5.png)
 
 #### **3.1.4.5. Mobile Applications Prototyping**
+![Mobile Applications Prototyping](../assets/08-chapter-3/wireframes/mobilePrototyping.png)
+Link: https://youtu.be/3eaxNpcLX8k 
