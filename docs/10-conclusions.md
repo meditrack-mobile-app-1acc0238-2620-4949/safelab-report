@@ -1,3 +1,4 @@
+
 # **Conclusions**
 
 <div style="page-break-before: always;"></div>
@@ -8,25 +9,37 @@
 
 <ol style="text-align: justify; padding-left: 24px;">
   <li style="margin-bottom: 12px;">
-    El proceso de investigación realizado durante la AV1 permitió confirmar que los <b>Laboratorios de Hospitales</b> y las <b>Empresas Farmacéuticas</b> presentan dificultades relacionadas con el monitoreo manual de las condiciones de almacenamiento, la detección tardía de desviaciones de temperatura y humedad, y la consolidación de registros para auditorías. Estos hallazgos respaldan el <i>Problem Statement</i> planteado para SafeLab.
+    El proceso de investigación realizado durante la AV1 permitió identificar que los <b>Laboratorios de Hospitales</b> y las <b>Empresas Farmacéuticas</b> presentan dificultades relacionadas con el monitoreo manual de las condiciones de almacenamiento, la detección tardía de desviaciones de temperatura y humedad, y la consolidación de registros para auditorías. Estos hallazgos respaldan el <i>Problem Statement</i> planteado para SafeLab y justifican la necesidad de una solución que centralice el monitoreo ambiental.
   </li>
   <li style="margin-bottom: 12px;">
     Las entrevistas evidenciaron que los usuarios dependen principalmente de registros en papel, hojas de cálculo y <i>dataloggers</i> que requieren extracción manual. Esta situación genera pérdida de tiempo, información fragmentada y una capacidad limitada para responder oportunamente ante incidentes que puedan afectar medicamentos, reactivos y muestras biológicas.
   </li>
   <li style="margin-bottom: 12px;">
-    Los supuestos formulados mediante <i>Lean UX</i> fueron contrastados inicialmente con el comportamiento y las necesidades de los segmentos objetivo. Se confirmó el interés por una solución que centralice la información, permita visualizar las condiciones ambientales en tiempo real, genere alertas oportunas y conserve registros confiables para los procesos de trazabilidad y auditoría.
+    Los supuestos formulados mediante <i>Lean UX</i> fueron contrastados inicialmente con las necesidades y experiencias de los segmentos objetivo. Los resultados permitieron identificar interés por una solución que centralice la información, facilite la consulta de condiciones ambientales, genere alertas oportunas y conserve registros confiables para los procesos de trazabilidad y auditoría.
   </li>
   <li style="margin-bottom: 12px;">
-    Los resultados obtenidos muestran diferencias entre ambos segmentos. Los Laboratorios de Hospitales priorizan la simplicidad de uso, el funcionamiento ante una conectividad limitada y la escalación de alertas hacia los responsables. Por su parte, las Empresas Farmacéuticas requieren principalmente reportes regulatorios, integridad de los datos, trazabilidad histórica y mecanismos de mitigación frente a desviaciones críticas.
+    La investigación permitió reconocer diferencias entre ambos segmentos. Los Laboratorios de Hospitales priorizan la simplicidad de uso, el funcionamiento ante una conectividad limitada y la escalación de alertas hacia los responsables. Por su parte, las Empresas Farmacéuticas requieren principalmente reportes regulatorios, integridad de los datos, trazabilidad histórica y mecanismos de mitigación frente a desviaciones críticas. Estas diferencias deben considerarse durante la implementación y validación de las funcionalidades de SafeLab.
   </li>
   <li style="margin-bottom: 12px;">
-    Los artefactos de <i>Needfinding</i>, entre ellos <i>User Personas</i>, <i>User Task Matrix</i>, <i>User Journey Maps</i> y <i>Empathy Maps</i>, permitieron organizar los resultados de las entrevistas y representar las necesidades, frustraciones, tareas y expectativas de los usuarios. Estos artefactos constituyen la base para mantener la coherencia entre la investigación, los requisitos y las funcionalidades propuestas.
+    Los artefactos de <i>Needfinding</i>, entre ellos <i>User Personas</i>, <i>User Task Matrix</i>, <i>User Journey Maps</i> y <i>Empathy Maps</i>, permitieron organizar los resultados de las entrevistas y representar las necesidades, frustraciones, tareas y expectativas de los usuarios. Asimismo, el <i>Impact Mapping</i> y las <i>User Stories</i> facilitaron la relación entre los objetivos del negocio y las funcionalidades propuestas, mientras que <i>Domain-Driven Design</i> permitió identificar los <i>Bounded Contexts</i> necesarios para organizar la solución.
   </li>
   <li style="margin-bottom: 12px;">
-    El <i>Impact Mapping</i>, las <i>User Stories</i> y el <i>Product Backlog</i> permitieron vincular los objetivos del negocio con los actores, impactos y entregables esperados. Asimismo, el modelado mediante <i>Domain-Driven Design</i> facilitó la identificación de los <i>Bounded Contexts</i> y la definición preliminar de la arquitectura necesaria para la solución.
+    La organización del <i>Product Backlog</i> permitió distribuir las 65 User Stories de SafeLab en cuatro Sprints, considerando sus prioridades, dependencias y estimaciones en Story Points. Esta planificación proporcionó una base para organizar el desarrollo incremental y mantener la trazabilidad entre los requisitos, las actividades y los entregables del proyecto.
   </li>
   <li style="margin-bottom: 12px;">
-    Las <i>Hypothesis Statements</i> y sus criterios de éxito todavía requieren ser comprobados mediante la implementación y validación de los productos digitales. Por lo tanto, los resultados de la AV1 deben considerarse como evidencia inicial del problema y no como una validación definitiva de la solución propuesta.
+    Durante el primer incremento se desarrolló la estructura de navegación de la aplicación móvil y se implementaron pantallas correspondientes a siete <i>Bounded Contexts</i>, utilizando Kotlin, Jetpack Compose y datos locales de prueba. Paralelamente, se trabajó en la Landing Page y en los servicios RESTful del backend. La separación de estos productos permitió avanzar en sus funcionalidades de manera independiente, aunque la integración real entre la aplicación móvil y la API permanece como un aspecto que debe verificarse.
+  </li>
+  <li style="margin-bottom: 12px;">
+    La planificación del Sprint 2 contempló 18 User Stories y 55 Story Points, con un alcance orientado a la configuración de límites ambientales, la gestión de alertas e incidentes, las notificaciones móviles y la consulta de información de sitios, áreas y equipos. La organización de estas funcionalidades permitió ampliar el alcance del monitoreo inicial y establecer las actividades necesarias para fortalecer la respuesta ante condiciones ambientales anormales.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Para la AV3, el Sprint 3 comprendió 16 User Stories y 57 Story Points, enfocándose en la visualización de datos históricos, la comparación de registros entre periodos, la generación y exportación de reportes y la consulta de indicadores y tendencias mediante el dashboard. Estas funcionalidades complementan el monitoreo ambiental al incorporar herramientas orientadas al análisis de la información y al seguimiento de las condiciones de almacenamiento a lo largo del tiempo.
+  </li>
+  <li style="margin-bottom: 12px;">
+    La utilización de Git y GitHub, junto con la organización del código por <i>Bounded Contexts</i>, permitió mantener una estructura de trabajo adecuada para el desarrollo colaborativo. Asimismo, la documentación de los Sprints y el uso de Jira facilitaron la identificación de las User Stories, sus responsables y estimaciones. Sin embargo, resulta necesario mantener actualizados los estados de las actividades y contrastarlos con las funcionalidades y evidencias realmente disponibles.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Las pruebas documentadas para los servicios del primer Sprint constituyen un avance en la verificación técnica del backend. No obstante, la existencia de pantallas, servicios y actividades planificadas no demuestra por sí sola que todos los flujos de SafeLab funcionen de manera integrada. Por ello, las <i>Hypothesis Statements</i> y sus criterios de éxito requieren validaciones adicionales con los usuarios objetivo, así como pruebas funcionales que permitan comprobar el comportamiento de la solución en escenarios representativos.
   </li>
 </ol>
 
@@ -34,21 +47,33 @@
 
 <ol style="text-align: justify; padding-left: 24px;">
   <li style="margin-bottom: 12px;">
-    Desarrollar y validar progresivamente un <i>Minimum Viable Product</i> que incluya monitoreo en tiempo real, alertas configurables, historial de mediciones y generación de reportes, priorizando las funcionalidades de mayor valor identificadas en el <i>Product Backlog</i>.
+    Continuar el desarrollo y la validación progresiva del <i>Minimum Viable Product</i> de SafeLab, priorizando la integración de las funcionalidades de monitoreo ambiental, gestión de alertas, consulta histórica y generación de reportes. Se recomienda comprobar que los flujos principales funcionen de manera conjunta antes de ampliar el alcance de la solución.
   </li>
   <li style="margin-bottom: 12px;">
-    Realizar entrevistas y pruebas adicionales con representantes de ambos segmentos para comprobar las <i>Hypothesis Statements</i> y medir los criterios de éxito definidos durante el proceso de <i>Lean UX</i>.
+    Realizar entrevistas y pruebas de usabilidad adicionales con representantes de Laboratorios de Hospitales y Empresas Farmacéuticas para evaluar las funcionalidades incorporadas durante los Sprints. Estas sesiones deben permitir comprobar las <i>Hypothesis Statements</i>, identificar dificultades de interacción y determinar si las características desarrolladas responden a las necesidades identificadas durante la investigación inicial.
   </li>
   <li style="margin-bottom: 12px;">
-    Considerar en el <i>Roadmap</i> mecanismos de funcionamiento sin conexión, respaldo energético, calibración de sensores, escalación de alertas e integridad de los datos, debido a que estos aspectos influyen directamente en la confianza y adopción de la solución.
+    Verificar la integración entre la aplicación móvil y SafeLab Platform API, reemplazando progresivamente los datos locales de prueba por información obtenida mediante servicios RESTful. Durante este proceso se recomienda validar las respuestas de los endpoints, el manejo de errores, la disponibilidad de los servicios y la consistencia de los datos mostrados en las pantallas.
   </li>
   <li style="margin-bottom: 12px;">
-    Revisar y actualizar continuamente las <i>User Stories</i>, el <i>Product Backlog</i>, los modelos de dominio y los diagramas de arquitectura conforme se obtenga nueva evidencia durante las siguientes entregas.
+    Fortalecer la validación de las funcionalidades relacionadas con alertas e incidentes, comprobando la configuración de límites de temperatura y humedad, la clasificación por severidad, la confirmación de atención y la recepción de notificaciones móviles. También se recomienda evaluar el comportamiento del sistema cuando un sensor deja de enviar información o se produce una desviación crítica.
   </li>
   <li style="margin-bottom: 12px;">
-    Evaluar los requisitos regulatorios aplicables a la trazabilidad y conservación de productos sensibles, especialmente los relacionados con DIGEMID, DIGESA, DIRESA, ISO 15189 y los principios ALCOA+, antes de implementar los módulos de reportes y auditoría.
+    Incorporar pruebas específicas para las funcionalidades de consulta histórica, comparación de periodos, generación de reportes y visualización de tendencias correspondientes al Sprint 3. Estas pruebas deben verificar que los filtros por fecha y equipo produzcan resultados correctos, que los indicadores reflejen la información disponible y que los archivos descargados o exportados conserven la integridad de los registros.
   </li>
   <li style="margin-bottom: 12px;">
-    Mantener la trazabilidad entre los hallazgos de las entrevistas, los artefactos de <i>Needfinding</i>, los requisitos funcionales y las funcionalidades desarrolladas, con el propósito de asegurar que SafeLab responda a necesidades reales de sus usuarios.
+    Mantener actualizados el <i>Product Backlog</i>, los Sprint Backlogs y los estados de las User Stories en Jira, verificando su correspondencia con las implementaciones realizadas y las evidencias documentadas. Asimismo, se recomienda conservar la planificación de los cuatro Sprints y registrar las modificaciones de alcance o estimación cuando sean acordadas por el equipo.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Revisar periódicamente la arquitectura de la solución, los <i>Bounded Contexts</i>, la documentación técnica y las convenciones de los repositorios para asegurar que continúen reflejando la implementación real. También se recomienda mantener una estrategia de integración mediante ramas de desarrollo, revisiones de código y pruebas antes de consolidar nuevas versiones.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Evaluar los requisitos regulatorios aplicables al almacenamiento y trazabilidad de medicamentos, reactivos y muestras biológicas, considerando las disposiciones pertinentes de DIGEMID, DIGESA y DIRESA, así como la norma ISO 15189 y los principios ALCOA+. Esta revisión debe orientar la validación de los módulos de reportes, auditoría, conservación e integridad de datos antes de su utilización en entornos reales.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Considerar en el <i>Roadmap</i> mecanismos de funcionamiento ante conectividad limitada, respaldo energético, calibración de sensores, escalación de alertas y recuperación de información. Estos aspectos deben evaluarse de acuerdo con las necesidades de cada segmento objetivo, debido a su importancia para la continuidad del monitoreo y la confiabilidad de los registros.
+  </li>
+  <li style="margin-bottom: 12px;">
+    Mantener la trazabilidad entre los hallazgos de las entrevistas, los artefactos de <i>Needfinding</i>, los requisitos funcionales, los criterios de aceptación y las funcionalidades implementadas. Para las próximas entregas se recomienda incorporar evidencias reales de ejecución, pruebas y validación que permitan distinguir claramente los resultados alcanzados de las actividades que continúan en desarrollo.
   </li>
 </ol>
