@@ -1148,7 +1148,71 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.2.2. Sprint 2**
 
+
+
 #### **4.2.2.1. Sprint Planning 2**
+
+<p style="text-align: justify;">
+  En esta sección se presentan los principales aspectos definidos para la planificación del Sprint 2 de SafeLab. A partir de los resultados del primer Sprint y de las User Stories priorizadas en el Product Backlog, se estableció un alcance enfocado en la gestión de alertas e incidentes, la configuración de límites ambientales, las notificaciones móviles y la consulta de información de monitoreo. El Sprint comprende 18 User Stories, con una estimación total de 55 Story Points.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <th style="text-align: left; vertical-align: middle; padding: 6px; width: 35%;">Número de Sprint</th>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">2</td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center; vertical-align: middle; padding: 6px;">Información de la planificación del Sprint</th>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Fecha</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">16/10/2026</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Hora</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">10:00 a. m.</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Lugar</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">UPC San Isidro</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Preparado por</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">Valeria Rojas</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Asistentes a la reunión de planificación</b></td>
+    <td style="text-align: left; vertical-align: top; padding: 6px;">Braden Garcia / Victor Espino / Giusephi Carlos / Oscar Vara / Valeria Rojas</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Resumen de la revisión del Sprint 1</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">El primer Sprint se enfocó en la organización del proyecto SafeLab, la revisión de los requerimientos y del Product Backlog, así como en la preparación de la Landing Page y las funcionalidades iniciales de monitoreo necesarias para el primer incremento del producto.</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Resumen de la retrospectiva del Sprint 1</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">El equipo identificó avances en la organización de los requerimientos y la documentación del proyecto, además de oportunidades de mejora en la coordinación de actividades, la distribución de responsabilidades y la consistencia entre el Product Backlog, la planificación de los Sprints y las actividades de implementación.</td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center; vertical-align: middle; padding: 6px;">Objetivo del Sprint y User Stories</th>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Objetivo del Sprint 2</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">
+      Nuestro objetivo es ampliar las capacidades de monitoreo de SafeLab mediante la configuración y gestión de alertas ambientales, el seguimiento de incidentes, las notificaciones móviles y la consulta de información relacionada con la organización del monitoreo.<br><br>
+      Consideramos que estas funcionalidades permitirán identificar y comunicar oportunamente condiciones ambientales anormales, además de facilitar que el personal de laboratorios hospitalarios y empresas farmacéuticas supervise las alertas y consulte los sitios, áreas de almacenamiento y equipos registrados.<br><br>
+      Esto se comprobará cuando los usuarios puedan configurar límites de alerta, recibir alertas de temperatura y humedad, consultar y confirmar su atención, identificar condiciones críticas, recibir notificaciones en sus dispositivos móviles, compartir alertas con otros integrantes y consultar, buscar y filtrar la información de los equipos de monitoreo.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Capacidad estimada del Sprint 2</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">60 Story Points</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Suma de Story Points seleccionados</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">55 Story Points</td>
+  </tr>
+</table>
+
 
 #### **4.2.2.2. Aspect Leaders and Collaborators**
 
