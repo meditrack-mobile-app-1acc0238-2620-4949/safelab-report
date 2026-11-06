@@ -1709,7 +1709,154 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 #### **4.2.3.2. Aspect Leaders and Collaborators**
 
+
 #### **4.2.3.3. Sprint Backlog 3**
+
+<p style="text-align: justify;">
+  El Sprint Backlog 3 de SafeLab reúne 16 User Stories, con una estimación total de 57 Story Points. El trabajo se enfoca en la consulta de datos históricos, la comparación de registros ambientales, la generación y exportación de reportes y la visualización de indicadores y tendencias en el dashboard. Para organizar el desarrollo se propone un desglose de 32 Work-items, con una estimación conjunta de 114 horas. Las actividades se distribuyen entre los cinco integrantes del equipo Meditrack y se agrupan por User Story para facilitar su seguimiento.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th colspan="5" style="text-align: left; padding: 6px;">Sprint # &nbsp;&nbsp; Sprint 3</th>
+    </tr>
+    <tr>
+      <th style="text-align: center; padding: 6px;">User Story</th>
+      <th style="text-align: center; padding: 6px;">Work-items / Descripción</th>
+      <th style="text-align: center; padding: 6px;">Horas</th>
+      <th style="text-align: center; padding: 6px;">Responsable</th>
+      <th style="text-align: center; padding: 6px;">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US17</b><br>Visualizar datos en dispositivo móvil</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT67 - Implementar consulta móvil.</b> Permitir consultar los datos de monitoreo desde la aplicación móvil.<br><br><b>UT68 - Validar visualización móvil.</b> Verificar la presentación de los datos en las pantallas del dispositivo.</td>
+      <td style="text-align: center; padding: 6px;">5 + 5</td>
+      <td style="padding: 6px;">Oscar Vara</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US27</b><br>Visualizar datos históricos</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT69 - Implementar historial de datos.</b> Mostrar las lecturas históricas registradas para los equipos.<br><br><b>UT70 - Validar registros históricos.</b> Comprobar que los registros correspondan al equipo y conserven su información temporal.</td>
+      <td style="text-align: center; padding: 6px;">5 + 5</td>
+      <td style="padding: 6px;">Giusephi Carlos</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US28</b><br>Seleccionar un rango de fechas para los datos</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT71 - Implementar selección de fechas.</b> Permitir seleccionar fechas de inicio y fin para consultar datos.<br><br><b>UT72 - Validar rango de fechas.</b> Verificar que los resultados correspondan al periodo seleccionado.</td>
+      <td style="text-align: center; padding: 6px;">2 + 2</td>
+      <td style="padding: 6px;">Oscar Vara</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US63</b><br>Proporcionar servicios de datos históricos y reportes</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT73 - Implementar servicios históricos.</b> Proporcionar servicios RESTful para consultar datos históricos y generar reportes.<br><br><b>UT74 - Validar respuestas de la API.</b> Verificar las respuestas y el manejo de solicitudes sin información disponible.</td>
+      <td style="text-align: center; padding: 6px;">5 + 5</td>
+      <td style="padding: 6px;">Victor Espino</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US30</b><br>Generar reporte por equipo y fecha</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT75 - Implementar generación de reportes.</b> Generar reportes según el equipo y el periodo seleccionado.<br><br><b>UT76 - Validar contenido del reporte.</b> Comprobar que incluya los datos del equipo y las fechas solicitadas.</td>
+      <td style="text-align: center; padding: 6px;">5 + 5</td>
+      <td style="padding: 6px;">Braden Garcia</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US31</b><br>Descargar archivo de reporte</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT77 - Implementar descarga de reportes.</b> Permitir descargar el archivo del reporte generado.<br><br><b>UT78 - Validar archivo descargado.</b> Verificar que el archivo contenga el reporte solicitado.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Oscar Vara</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US29</b><br>Comparar datos entre periodos</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT79 - Implementar comparación de periodos.</b> Permitir comparar registros ambientales de dos periodos seleccionados.<br><br><b>UT80 - Validar resultados comparativos.</b> Comprobar que los resultados utilicen los registros de cada periodo.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Giusephi Carlos</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US34</b><br>Comparar datos semanales y mensuales</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT81 - Implementar comparación temporal.</b> Mostrar comparaciones entre periodos semanales y mensuales.<br><br><b>UT82 - Validar comparación semanal y mensual.</b> Verificar que los valores correspondan al intervalo seleccionado.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Victor Espino</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US32</b><br>Visualizar historial de incidentes</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT83 - Implementar historial de incidentes.</b> Mostrar los incidentes registrados con su información y estado.<br><br><b>UT84 - Validar registros de incidentes.</b> Comprobar que el historial muestre correctamente los incidentes disponibles.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Braden Garcia</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US33</b><br>Exportar archivo de datos</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT85 - Implementar exportación de datos.</b> Permitir exportar los registros de monitoreo a un archivo.<br><br><b>UT86 - Validar archivo exportado.</b> Comprobar que el archivo contenga los datos seleccionados.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Valeria Rojas</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US43</b><br>Visualizar dashboard</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT87 - Implementar dashboard operativo.</b> Mostrar un panel general con los principales indicadores de SafeLab.<br><br><b>UT88 - Validar indicadores del dashboard.</b> Verificar que los valores correspondan a la información disponible.</td>
+      <td style="text-align: center; padding: 6px;">5 + 5</td>
+      <td style="padding: 6px;">Valeria Rojas</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US45</b><br>Visualizar resumen con totales</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT89 - Implementar resumen de indicadores.</b> Mostrar los valores totales de equipos y condiciones de monitoreo.<br><br><b>UT90 - Validar totales presentados.</b> Comprobar que los valores coincidan con los registros disponibles.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Giusephi Carlos</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US47</b><br>Visualizar distribución de equipos por estado</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT91 - Implementar distribución de equipos.</b> Mostrar los equipos agrupados según su estado operativo.<br><br><b>UT92 - Validar clasificación de equipos.</b> Verificar que la distribución refleje los estados registrados.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Victor Espino</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US48</b><br>Visualizar tendencias de alertas</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT93 - Implementar tendencias de alertas.</b> Mostrar la evolución de las alertas registradas durante un periodo.<br><br><b>UT94 - Validar tendencias de alertas.</b> Comprobar que los datos correspondan a las alertas registradas.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Braden Garcia</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US49</b><br>Visualizar tendencias de temperatura</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT95 - Implementar tendencias de temperatura.</b> Mostrar gráficamente la evolución de las lecturas de temperatura.<br><br><b>UT96 - Validar datos de temperatura.</b> Verificar que los gráficos representen las lecturas del periodo consultado.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Valeria Rojas</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; vertical-align: top;"><b>US50</b><br>Visualizar tendencias de humedad</td>
+      <td style="padding: 6px; vertical-align: top;"><b>UT97 - Implementar tendencias de humedad.</b> Mostrar gráficamente la evolución de las lecturas de humedad.<br><br><b>UT98 - Validar datos de humedad.</b> Verificar que los gráficos representen las lecturas del periodo seleccionado.</td>
+      <td style="text-align: center; padding: 6px;">3 + 3</td>
+      <td style="padding: 6px;">Oscar Vara</td>
+      <td style="text-align: center; padding: 6px;">Hecho</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El Sprint Backlog 3 se encuentra organizado en Jira mediante las User Stories asignadas al Sprint, sus responsables y sus estimaciones en Story Points. El desglose propuesto de Work-items relaciona las funcionalidades con las actividades de implementación y validación, facilitando el seguimiento del trabajo del equipo.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint3.png" alt="Sprint Backlog 3 de SafeLab en Jira" width="100%">
+</p>
+
+<p align="center"><i>Figura: Sprint Backlog 3 de SafeLab en Jira.</i></p>
+
+**Board URL:** [SafeLab - Sprint 3](https://ipoundzy.atlassian.net/jira/software/projects/SL/boards/2/backlog)
+
 
 #### **4.2.3.4. Development Evidence for Sprint Review**
 
