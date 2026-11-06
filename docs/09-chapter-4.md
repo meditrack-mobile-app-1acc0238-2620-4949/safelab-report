@@ -1216,7 +1216,417 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 #### **4.2.2.2. Aspect Leaders and Collaborators**
 
+
 #### **4.2.2.3. Sprint Backlog 2**
+
+
+#### **4.2.2.3. Sprint Backlog 2**
+
+<p style="text-align: justify;">
+  El Sprint Backlog 2 reúne las 18 User Stories seleccionadas para ampliar las funcionalidades de SafeLab, con un total de 55 Story Points. Las historias abarcan la configuración y gestión de alertas ambientales, las notificaciones móviles, los servicios de alertas e incidentes y la consulta de sitios, áreas y equipos. Cada historia se desglosa en dos Work-items de implementación y validación, manteniendo la estructura utilizada en el Sprint Backlog 1.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed; word-break: break-word;">
+  <colgroup>
+    <col style="width: 7%;">
+    <col style="width: 16%;">
+    <col style="width: 8%;">
+    <col style="width: 16%;">
+    <col style="width: 28%;">
+    <col style="width: 8%;">
+    <col style="width: 10%;">
+    <col style="width: 7%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align: left; vertical-align: middle; padding: 6px;">Sprint # &nbsp;&nbsp; Sprint 2</th>
+    </tr>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">ID de User Story</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Título</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">ID de tarea</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Tarea</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Descripción</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Horas</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Responsable</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center; padding:6px;">US25</td>
+      <td style="padding:6px;">Configurar límites de alerta por equipo</td>
+      <td style="text-align:center; padding:6px;">UT31</td>
+      <td style="padding:6px;">Implementar configuración de límites</td>
+      <td style="padding:6px;">Permitir establecer los valores mínimos y máximos de alerta para cada equipo de monitoreo.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US25</td>
+      <td style="padding:6px;">Configurar límites de alerta por equipo</td>
+      <td style="text-align:center; padding:6px;">UT32</td>
+      <td style="padding:6px;">Validar límites configurados</td>
+      <td style="padding:6px;">Verificar que los límites ingresados sean válidos y queden asociados al equipo correspondiente.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US18</td>
+      <td style="padding:6px;">Recibir alertas de temperatura</td>
+      <td style="text-align:center; padding:6px;">UT33</td>
+      <td style="padding:6px;">Implementar alertas de temperatura</td>
+      <td style="padding:6px;">Generar alertas cuando las lecturas de temperatura superen los límites establecidos para el equipo.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US18</td>
+      <td style="padding:6px;">Recibir alertas de temperatura</td>
+      <td style="text-align:center; padding:6px;">UT34</td>
+      <td style="padding:6px;">Validar generación de alertas de temperatura</td>
+      <td style="padding:6px;">Comprobar que las alertas se registren con la lectura, el equipo y la condición que provocó su generación.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US19</td>
+      <td style="padding:6px;">Recibir alertas de humedad</td>
+      <td style="text-align:center; padding:6px;">UT35</td>
+      <td style="padding:6px;">Implementar alertas de humedad</td>
+      <td style="padding:6px;">Generar alertas cuando las lecturas de humedad se encuentren fuera del rango configurado.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US19</td>
+      <td style="padding:6px;">Recibir alertas de humedad</td>
+      <td style="text-align:center; padding:6px;">UT36</td>
+      <td style="padding:6px;">Validar alertas por humedad</td>
+      <td style="padding:6px;">Verificar que las alertas correspondan a lecturas fuera del rango permitido y se relacionen con su equipo.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US62</td>
+      <td style="padding:6px;">Proporcionar servicios de alertas e incidentes</td>
+      <td style="text-align:center; padding:6px;">UT37</td>
+      <td style="padding:6px;">Implementar servicios de alertas e incidentes</td>
+      <td style="padding:6px;">Implementar las operaciones RESTful necesarias para consultar y gestionar la información de alertas e incidentes.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US62</td>
+      <td style="padding:6px;">Proporcionar servicios de alertas e incidentes</td>
+      <td style="text-align:center; padding:6px;">UT38</td>
+      <td style="padding:6px;">Validar respuestas de los servicios</td>
+      <td style="padding:6px;">Verificar las respuestas de la API y el manejo de alertas o incidentes que no se encuentren registrados.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US20</td>
+      <td style="padding:6px;">Visualizar lista de alertas</td>
+      <td style="text-align:center; padding:6px;">UT39</td>
+      <td style="padding:6px;">Implementar listado de alertas</td>
+      <td style="padding:6px;">Mostrar las alertas registradas con la información necesaria para identificarlas y consultar su estado.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US20</td>
+      <td style="padding:6px;">Visualizar lista de alertas</td>
+      <td style="text-align:center; padding:6px;">UT40</td>
+      <td style="padding:6px;">Validar visualización de alertas</td>
+      <td style="padding:6px;">Comprobar que el listado represente correctamente las alertas disponibles y los casos sin registros.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US21</td>
+      <td style="padding:6px;">Visualizar detalles de una alerta</td>
+      <td style="text-align:center; padding:6px;">UT41</td>
+      <td style="padding:6px;">Implementar detalle de alerta</td>
+      <td style="padding:6px;">Mostrar la información de una alerta seleccionada, incluyendo su tipo, severidad, estado y equipo relacionado.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US21</td>
+      <td style="padding:6px;">Visualizar detalles de una alerta</td>
+      <td style="text-align:center; padding:6px;">UT42</td>
+      <td style="padding:6px;">Validar información del detalle</td>
+      <td style="padding:6px;">Verificar que los datos mostrados correspondan a la alerta seleccionada desde el listado.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US22</td>
+      <td style="padding:6px;">Confirmar atención de una alerta</td>
+      <td style="text-align:center; padding:6px;">UT43</td>
+      <td style="padding:6px;">Implementar confirmación de atención</td>
+      <td style="padding:6px;">Permitir que el usuario confirme la atención de una alerta registrada en el sistema.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US22</td>
+      <td style="padding:6px;">Confirmar atención de una alerta</td>
+      <td style="text-align:center; padding:6px;">UT44</td>
+      <td style="padding:6px;">Validar actualización de la alerta</td>
+      <td style="padding:6px;">Comprobar que la confirmación de atención actualice correctamente el estado de la alerta.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US44</td>
+      <td style="padding:6px;">Visualizar alertas críticas</td>
+      <td style="text-align:center; padding:6px;">UT45</td>
+      <td style="padding:6px;">Implementar consulta de alertas críticas</td>
+      <td style="padding:6px;">Mostrar las alertas identificadas con severidad crítica dentro del monitoreo ambiental.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US44</td>
+      <td style="padding:6px;">Visualizar alertas críticas</td>
+      <td style="text-align:center; padding:6px;">UT46</td>
+      <td style="padding:6px;">Validar clasificación de alertas críticas</td>
+      <td style="padding:6px;">Comprobar que se muestren únicamente las alertas clasificadas con la severidad correspondiente.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US46</td>
+      <td style="padding:6px;">Visualizar equipos con alertas activas</td>
+      <td style="text-align:center; padding:6px;">UT47</td>
+      <td style="padding:6px;">Implementar consulta de equipos con alertas</td>
+      <td style="padding:6px;">Mostrar los equipos de monitoreo que tienen alertas activas asociadas.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US46</td>
+      <td style="padding:6px;">Visualizar equipos con alertas activas</td>
+      <td style="text-align:center; padding:6px;">UT48</td>
+      <td style="padding:6px;">Validar relación entre equipos y alertas</td>
+      <td style="padding:6px;">Verificar que se identifiquen los equipos con alertas activas sin incluir equipos que no cumplan esta condición.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US23</td>
+      <td style="padding:6px;">Visualizar alertas ordenadas por severidad</td>
+      <td style="text-align:center; padding:6px;">UT49</td>
+      <td style="padding:6px;">Implementar ordenamiento por severidad</td>
+      <td style="padding:6px;">Organizar las alertas del listado según su nivel de severidad.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US23</td>
+      <td style="padding:6px;">Visualizar alertas ordenadas por severidad</td>
+      <td style="text-align:center; padding:6px;">UT50</td>
+      <td style="padding:6px;">Validar orden de las alertas</td>
+      <td style="padding:6px;">Comprobar que el listado presente las alertas respetando la prioridad de severidad establecida.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US24</td>
+      <td style="padding:6px;">Recibir alertas en un dispositivo móvil</td>
+      <td style="text-align:center; padding:6px;">UT51</td>
+      <td style="padding:6px;">Implementar notificaciones móviles</td>
+      <td style="padding:6px;">Incorporar el mecanismo de notificación que informe al usuario sobre las alertas ambientales generadas.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US24</td>
+      <td style="padding:6px;">Recibir alertas en un dispositivo móvil</td>
+      <td style="text-align:center; padding:6px;">UT52</td>
+      <td style="padding:6px;">Validar recepción de notificaciones</td>
+      <td style="padding:6px;">Verificar que el dispositivo muestre la notificación correspondiente cuando se genere una alerta.</td>
+      <td style="text-align:center; padding:6px;">5</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US26</td>
+      <td style="padding:6px;">Compartir alertas con el equipo de trabajo</td>
+      <td style="text-align:center; padding:6px;">UT53</td>
+      <td style="padding:6px;">Implementar opción para compartir alertas</td>
+      <td style="padding:6px;">Permitir que el usuario comparta información de una alerta con otros integrantes de su equipo de trabajo.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US26</td>
+      <td style="padding:6px;">Compartir alertas con el equipo de trabajo</td>
+      <td style="text-align:center; padding:6px;">UT54</td>
+      <td style="padding:6px;">Validar información compartida</td>
+      <td style="padding:6px;">Verificar que la información compartida permita identificar correctamente la alerta correspondiente.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US02</td>
+      <td style="padding:6px;">Visualizar sitios de monitoreo</td>
+      <td style="text-align:center; padding:6px;">UT55</td>
+      <td style="padding:6px;">Implementar listado de sitios</td>
+      <td style="padding:6px;">Mostrar los sitios de monitoreo registrados con su información principal.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US02</td>
+      <td style="padding:6px;">Visualizar sitios de monitoreo</td>
+      <td style="text-align:center; padding:6px;">UT56</td>
+      <td style="padding:6px;">Validar consulta de sitios</td>
+      <td style="padding:6px;">Verificar que el listado muestre los sitios registrados y gestione correctamente la ausencia de información.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Oscar Vara</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US04</td>
+      <td style="padding:6px;">Visualizar áreas de almacenamiento</td>
+      <td style="text-align:center; padding:6px;">UT57</td>
+      <td style="padding:6px;">Implementar listado de áreas</td>
+      <td style="padding:6px;">Mostrar las áreas de almacenamiento registradas y su información principal.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US04</td>
+      <td style="padding:6px;">Visualizar áreas de almacenamiento</td>
+      <td style="text-align:center; padding:6px;">UT58</td>
+      <td style="padding:6px;">Validar relación entre áreas y sitios</td>
+      <td style="padding:6px;">Comprobar que las áreas consultadas se encuentren relacionadas con los sitios de monitoreo correspondientes.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US06</td>
+      <td style="padding:6px;">Visualizar lista de equipos</td>
+      <td style="text-align:center; padding:6px;">UT59</td>
+      <td style="padding:6px;">Implementar listado de equipos</td>
+      <td style="padding:6px;">Mostrar los equipos registrados con sus datos principales de identificación y organización.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US06</td>
+      <td style="padding:6px;">Visualizar lista de equipos</td>
+      <td style="text-align:center; padding:6px;">UT60</td>
+      <td style="padding:6px;">Validar información del listado de equipos</td>
+      <td style="padding:6px;">Comprobar que la lista muestre los equipos disponibles y permita identificar cuando no existen registros.</td>
+      <td style="text-align:center; padding:6px;">3</td>
+      <td style="padding:6px;">Giusephi Carlos</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US12</td>
+      <td style="padding:6px;">Visualizar detalles del equipo</td>
+      <td style="text-align:center; padding:6px;">UT61</td>
+      <td style="padding:6px;">Implementar detalle de equipo</td>
+      <td style="padding:6px;">Mostrar la información del equipo seleccionado y sus datos de ubicación y monitoreo.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US12</td>
+      <td style="padding:6px;">Visualizar detalles del equipo</td>
+      <td style="text-align:center; padding:6px;">UT62</td>
+      <td style="padding:6px;">Validar consulta del detalle de equipo</td>
+      <td style="padding:6px;">Verificar que se muestre la información del equipo solicitado y se gestione la consulta de equipos inexistentes.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Valeria Rojas</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US08</td>
+      <td style="padding:6px;">Buscar equipo por nombre</td>
+      <td style="text-align:center; padding:6px;">UT63</td>
+      <td style="padding:6px;">Implementar búsqueda de equipos</td>
+      <td style="padding:6px;">Permitir localizar equipos registrados mediante la búsqueda por nombre.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US08</td>
+      <td style="padding:6px;">Buscar equipo por nombre</td>
+      <td style="text-align:center; padding:6px;">UT64</td>
+      <td style="padding:6px;">Validar resultados de búsqueda</td>
+      <td style="padding:6px;">Verificar que los resultados correspondan al nombre ingresado y se informe cuando no existan coincidencias.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Victor Espino</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US14</td>
+      <td style="padding:6px;">Filtrar equipos por área de almacenamiento</td>
+      <td style="text-align:center; padding:6px;">UT65</td>
+      <td style="padding:6px;">Implementar filtro de equipos por área</td>
+      <td style="padding:6px;">Permitir consultar únicamente los equipos asociados al área de almacenamiento seleccionada.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+    <tr>
+      <td style="text-align:center; padding:6px;">US14</td>
+      <td style="padding:6px;">Filtrar equipos por área de almacenamiento</td>
+      <td style="text-align:center; padding:6px;">UT66</td>
+      <td style="padding:6px;">Validar filtro por área</td>
+      <td style="padding:6px;">Verificar que el filtro presente los equipos correspondientes y gestione correctamente las áreas sin equipos registrados.</td>
+      <td style="text-align:center; padding:6px;">2</td>
+      <td style="padding:6px;">Braden Garcia</td>
+      <td style="text-align:center; padding:6px;">Hecho</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El Sprint Backlog 2 se gestiona en Jira, donde se encuentran registradas las 18 User Stories con sus responsables, estimaciones y estados. El desglose de 36 Work-items permite relacionar cada funcionalidad con sus actividades de implementación y validación, responsables y estimaciones en horas.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2.png" alt="Sprint Backlog 2 de SafeLab en Jira" width="100%">
+</p>
+
+<p align="center"><i>Figura: Sprint Backlog 2 de SafeLab en Jira.</i></p>
+
+**Board URL:** [SafeLab - Sprint 2](https://ipoundzy.atlassian.net/jira/software/projects/SL/boards/2/backlog)
 
 #### **4.2.2.4. Development Evidence for Sprint Review**
 
@@ -1233,7 +1643,69 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.2.3. Sprint 3**
 
+
 #### **4.2.3.1. Sprint Planning 3**
+
+<p style="text-align: justify;">
+  En esta sección se presenta la planificación del Sprint 3 de SafeLab, tomando como referencia las User Stories priorizadas en el Product Backlog y los avances documentados en los Sprints anteriores. El alcance se enfoca en la consulta y comparación de datos históricos, la generación y exportación de reportes, la visualización del dashboard operativo y el análisis de tendencias ambientales. Para este Sprint se seleccionaron 16 User Stories, con una estimación total de 57 Story Points.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <th style="text-align: left; vertical-align: middle; padding: 6px; width: 35%;">Número de Sprint</th>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">3</td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center; vertical-align: middle; padding: 6px;">Información de la planificación del Sprint</th>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Fecha</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">30/10/2026</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Hora</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">10:00 a. m.</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Lugar</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">UPC San Isidro</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Preparado por</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">Valeria Rojas</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Asistentes a la reunión de planificación</b></td>
+    <td style="text-align: left; vertical-align: top; padding: 6px;">Braden Garcia / Victor Espino / Giusephi Carlos / Oscar Vara / Valeria Rojas</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Resumen de la revisión del Sprint 2</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">La planificación del segundo Sprint estuvo orientada a ampliar las funcionalidades de SafeLab mediante la gestión de alertas ambientales, la configuración de límites de temperatura y humedad, las notificaciones móviles y la consulta de sitios, áreas y equipos. Este alcance constituye la base funcional sobre la que se plantea incorporar las herramientas de consulta histórica, análisis y generación de reportes del Sprint 3.</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Resumen de la retrospectiva del Sprint 2</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">Como parte de la planificación del siguiente incremento, se retoman las oportunidades de mejora documentadas previamente, especialmente la coordinación entre los integrantes, la trazabilidad de las actividades y la consistencia entre los requerimientos y sus implementaciones. Para el Sprint 3 se considera importante mantener la organización por Bounded Contexts y verificar la correspondencia de los datos utilizados en los módulos de monitoreo, dashboard y reportes.</td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center; vertical-align: middle; padding: 6px;">Objetivo del Sprint y User Stories</th>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Objetivo del Sprint 3</b></td>
+    <td style="text-align: justify; vertical-align: top; padding: 6px;">
+      Nuestro objetivo es ampliar las capacidades de consulta y análisis de SafeLab mediante la visualización de datos históricos, la comparación de información entre periodos, la generación y descarga de reportes y la incorporación de indicadores y tendencias en el dashboard.<br><br>
+      Consideramos que estas funcionalidades permitirán al personal de laboratorios hospitalarios y empresas farmacéuticas consultar el comportamiento de sus condiciones ambientales a lo largo del tiempo, identificar variaciones relevantes y disponer de información organizada para el seguimiento de sus equipos y procesos de monitoreo.<br><br>
+      Esto se comprobará cuando los usuarios puedan visualizar datos desde un dispositivo móvil, consultar registros históricos, seleccionar rangos de fechas, comparar periodos, generar y descargar reportes, revisar el historial de incidentes, exportar información y visualizar indicadores generales, distribución de equipos y tendencias de alertas, temperatura y humedad.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Capacidad estimada del Sprint 3</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">60 Story Points</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;"><b>Suma de Story Points seleccionados</b></td>
+    <td style="text-align: left; vertical-align: middle; padding: 6px;">57 Story Points</td>
+  </tr>
+</table>
 
 #### **4.2.3.2. Aspect Leaders and Collaborators**
 
