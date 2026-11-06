@@ -2099,6 +2099,17 @@ El Ubiquitous Language de SafeLab reúne los términos del dominio utilizados de
   </tbody>
 </table>
 
+
+<p style="text-align: justify;">
+  El Product Backlog de SafeLab se gestiona mediante Jira, donde las 65 User Stories se encuentran organizadas en cuatro Sprints de acuerdo con su prioridad y estimación en Story Points. Las siguientes capturas presentan la distribución de las historias correspondientes a los Sprints 1, 2 y 3, permitiendo visualizar su organización, responsables y estimaciones. El Sprint 4 permanece contemplado dentro de la planificación general del proyecto.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint1.png" alt="Product Backlog de SafeLab correspondiente al Sprint 1 en Jira" width="100%">
+</p>
+
+<p align="center"><i>Figura:Product Backlog de SafeLab en Jira.</i></p>
+
 ## **2.5. Strategic-Level Domain-Driven Design**
 
 <p style="text-align: justify;">
