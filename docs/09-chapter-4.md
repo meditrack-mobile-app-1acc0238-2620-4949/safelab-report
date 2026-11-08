@@ -1879,6 +1879,112 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.3.1. Interview Design**
 
+<p style="text-align: justify;">
+  Para validar la experiencia de usuario de SafeLab, se diseñaron entrevistas dirigidas a los dos segmentos objetivo del proyecto: Laboratorios Hospitalarios y Empresas Farmacéuticas. Estas sesiones tienen como propósito evaluar la facilidad de uso, comprensión y utilidad de la Landing Page y la aplicación móvil, identificando dificultades de navegación, problemas de interpretación y oportunidades de mejora. Las entrevistas se desarrollarán mediante tareas prácticas y preguntas abiertas, permitiendo observar el comportamiento de los participantes y recoger sus opiniones sobre las funcionalidades de la solución.
+</p>
+
+<p style="text-align: justify;">
+  Durante cada sesión se solicitará al participante que explore ambas interfaces y explique lo que comprende mientras realiza las tareas asignadas. El entrevistador observará las acciones, dudas y dificultades sin intervenir directamente en la navegación, salvo cuando sea necesario continuar con la actividad. Los resultados permitirán identificar hallazgos que posteriormente serán analizados mediante las evaluaciones heurísticas correspondientes.
+</p>
+
+#### **Segmento 1: Laboratorios Hospitalarios**
+
+<p style="text-align: justify;">
+  La entrevista está dirigida a profesionales y personal de laboratorios hospitalarios responsables del almacenamiento, supervisión y control de muestras, reactivos e insumos sensibles. Se busca evaluar si SafeLab permite comprender y consultar fácilmente las condiciones ambientales, identificar anomalías y acceder a información relevante para sus actividades diarias.
+</p>
+
+**Tareas asignadas (User Flows evaluados):**
+
+1. Explorar la Landing Page e identificar el propósito de SafeLab, sus principales beneficios y las funcionalidades que ofrece.
+2. Revisar las secciones de servicios y planes de la Landing Page para identificar qué opciones podrían ser útiles para un laboratorio hospitalario.
+3. Ingresar a la aplicación móvil y explorar el dashboard para interpretar el estado general del monitoreo.
+4. Acceder al módulo de sensores y revisar las lecturas de temperatura, humedad y estado de conexión.
+5. Seleccionar un sensor para consultar sus detalles, límites ambientales e historial de lecturas.
+6. Utilizar las opciones de búsqueda y filtrado para localizar un sensor o identificar aquellos que presentan condiciones fuera de rango.
+7. Revisar el listado de alertas e identificar cuáles requieren mayor atención según su severidad y estado.
+8. Consultar los sitios, áreas de almacenamiento y equipos registrados para comprender cómo se organiza la información de monitoreo.
+9. Explorar los reportes disponibles e identificar qué información podría utilizarse para revisar las condiciones ambientales de periodos anteriores.
+
+**Preguntas:**
+
+**Contexto del participante**
+
+1. ¿Cuántos años tienes y cuál es tu función dentro del laboratorio?
+2. ¿Cuánto tiempo llevas trabajando en actividades relacionadas con el laboratorio?
+3. ¿Cómo supervisan actualmente la temperatura y la humedad de los espacios donde almacenan muestras o reactivos?
+4. ¿Qué procedimiento siguen cuando detectan una temperatura o humedad fuera del rango permitido?
+
+**Durante las tareas**
+
+1. Al explorar la Landing Page, ¿comprendiste para qué sirve SafeLab y cómo podría utilizarse en tu laboratorio?
+2. ¿La información sobre los servicios y planes te pareció clara? ¿Qué información adicional necesitarías?
+3. Al ingresar al dashboard, ¿qué información identificaste primero? ¿Hubo algún indicador que no entendieras?
+4. Al revisar los sensores, ¿te resultó sencillo distinguir cuáles estaban funcionando correctamente y cuáles presentaban problemas?
+5. Al consultar el detalle de un sensor, ¿encontraste la información que esperabas? ¿Qué datos adicionales necesitarías?
+6. ¿Fue fácil utilizar la búsqueda y los filtros para encontrar la información que necesitabas?
+7. Al revisar las alertas, ¿pudiste identificar cuál requería atención más urgente? ¿Qué harías al recibir una alerta similar en tu trabajo?
+8. ¿Te pareció clara la organización de los sitios, áreas de almacenamiento y equipos?
+9. ¿Consideras útil consultar el historial de mediciones y los reportes? ¿En qué situaciones los utilizarías?
+
+**Cierre**
+
+1. ¿Qué parte de la aplicación te resultó más sencilla y cuál fue la más complicada?
+2. ¿Encontraste algún botón, símbolo, color o mensaje que te generara confusión?
+3. ¿Qué funcionalidad consideras más útil para tus actividades diarias?
+4. ¿Qué cambiarías o agregarías para facilitar el uso de SafeLab?
+5. ¿Confiarías en utilizar SafeLab como herramienta de apoyo para el monitoreo de tu laboratorio? ¿Por qué?
+
+#### **Segmento 2: Empresas Farmacéuticas**
+
+<p style="text-align: justify;">
+  La entrevista está dirigida a personal de empresas farmacéuticas que participa en actividades de almacenamiento, logística, supervisión o control de productos sensibles. Se busca evaluar si SafeLab facilita la consulta de condiciones ambientales, la identificación de desviaciones, el seguimiento de incidentes y el acceso a registros históricos, reportes e información de trazabilidad.
+</p>
+
+**Tareas asignadas (User Flows evaluados):**
+
+1. Explorar la Landing Page e identificar qué ofrece SafeLab a una empresa farmacéutica y cuáles son sus beneficios principales.
+2. Revisar las funcionalidades, servicios y planes presentados para determinar cuáles podrían adaptarse a las necesidades de su organización.
+3. Ingresar a la aplicación móvil y consultar el dashboard para identificar el estado general de los equipos y las condiciones de monitoreo.
+4. Explorar los sitios de monitoreo, áreas de almacenamiento y equipos registrados para comprender cómo se organiza la información.
+5. Acceder al monitoreo de sensores y revisar las lecturas de temperatura y humedad, identificando posibles desviaciones de los rangos establecidos.
+6. Revisar las alertas e incidentes registrados, identificar su severidad y consultar los detalles de una situación crítica.
+7. Consultar el historial de lecturas de un sensor para interpretar la evolución de sus condiciones ambientales.
+8. Explorar las pantallas de reportes e identificar la información disponible para actividades de control y seguimiento.
+9. Revisar el módulo de auditoría y trazabilidad para identificar los registros y actividades que pueden consultarse dentro del sistema.
+
+**Preguntas:**
+
+**Contexto del participante**
+
+1. ¿Cuántos años tienes y cuál es tu cargo o función dentro de la empresa?
+2. ¿Cuánto tiempo llevas trabajando en actividades de almacenamiento, logística o supervisión?
+3. ¿Qué herramientas utilizan actualmente para monitorear las condiciones ambientales de los productos almacenados?
+4. ¿Cómo registran y consultan la información cuando necesitan revisar una desviación o preparar una auditoría?
+
+**Durante las tareas**
+
+1. Al explorar la Landing Page, ¿comprendiste qué ofrece SafeLab y cómo podría beneficiar a una empresa farmacéutica?
+2. ¿La información de los servicios y planes te pareció suficiente para evaluar su utilidad? ¿Qué información adicional necesitarías?
+3. Al ingresar al dashboard, ¿pudiste identificar fácilmente el estado general de los equipos? ¿Qué información te gustaría visualizar primero?
+4. ¿Te pareció clara la organización de los sitios, áreas de almacenamiento y equipos registrados?
+5. Al revisar las lecturas de temperatura y humedad, ¿pudiste reconocer cuándo existía una condición fuera del rango permitido?
+6. ¿La información presentada en las alertas e incidentes te pareció suficiente para comprender la gravedad de una situación?
+7. Al consultar el historial de lecturas, ¿te resultó sencillo interpretar cómo cambiaron las condiciones ambientales?
+8. Al explorar los reportes, ¿encontraste información que normalmente necesitarías para actividades de control o auditoría?
+9. Al revisar la trazabilidad, ¿comprendiste qué información registra el sistema? ¿Qué datos adicionales considerarías importantes?
+
+**Cierre**
+
+1. ¿Qué parte de SafeLab consideras más útil para las actividades de tu empresa?
+2. ¿Qué fue lo más difícil o confuso durante la navegación?
+3. ¿Qué información consideras indispensable para confiar en los reportes y registros de monitoreo?
+4. ¿Qué funcionalidades cambiarías o agregarías para facilitar el trabajo del personal?
+5. ¿Consideras que SafeLab podría ayudar a mejorar la supervisión de las condiciones de almacenamiento? ¿Por qué?
+
+<p style="text-align: justify;">
+  Antes de iniciar cada entrevista se solicitará el consentimiento del participante para registrar la sesión. Durante las actividades se observará si logra completar las tareas, las dificultades que encuentra, los elementos que le generan confusión y las sugerencias que proporciona. Las observaciones y respuestas serán documentadas en Interview Recording y posteriormente utilizadas para identificar problemas de usabilidad en Evaluations Based on Heuristics, aplicando el formato de evaluación establecido para el proyecto.
+</p>
+
 ### **4.3.2. Interview Recording**
 
 ### **4.3.3. Evaluations Based on Heuristics**
