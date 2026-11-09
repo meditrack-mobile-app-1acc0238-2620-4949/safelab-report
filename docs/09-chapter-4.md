@@ -1987,4 +1987,22 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.3.2. Interview Recording**
 
+#### **Segmento 2: Empresas Farmacéuticas**
+
+##### **Entrevista 1: Pablo Caceres**
+
+<p style="text-align: justify;">
+  <b>Fecha:</b> 8 de Noviembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://www.youtube.com/watch?v=8nF0AHzJdWY">00:10</a><br>
+  <b>Duración:</b> 14:14
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/entrevistaPablo.png" alt= "Evidencia de la entrevista 1 - Pablo Caceres" width="80%">
+</p>
+
+<p style="text-align: justify;">
+  Pablo Cáceres tiene 50 años, vive en San Isidro y es un administrador de farmaceutica. Sus principales funciones son supervisar el estado de los medicamentos y gestionar su almacenamiento. Considera que la landing tine un diseño limpio e intuitivo. Además en cuanto al dashboard y las lecturas de los sensores, la informacion presentada es lo suficientemente completa como para realizar auditorias. Además, considera principalmente util la funcion de exportar un reporte de sensor. Finalmente la seccion de notificaciones presento para el entrevistado una opcion excelente para identificar rapidamente el estado de su local farmaceutico.
+</p>
+
 ### **4.3.3. Evaluations Based on Heuristics**
