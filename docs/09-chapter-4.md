@@ -443,7 +443,6 @@
   El Sprint Backlog 1 de SafeLab se gestiona mediante Jira, donde se encuentran organizadas las User Stories seleccionadas para el Sprint, sus estimaciones en Story Points, responsables y Work-items asociados. El tablero permite al equipo Meditrack realizar el seguimiento de las actividades y su estado durante el desarrollo del Sprint.
 </p>
 
-
 <p align="center">
   <img src="../assets/09-chapter-4/sprint1.png" alt="Sprint Backlog 1 de SafeLab en Jira" width="100%">
 </p>
@@ -451,7 +450,6 @@
 <p align="center"><i>Figura: Sprint Backlog 1 de SafeLab en Jira.</i></p>
 
 **Board URL:** [SafeLab - Sprint 1](https://ipoundzy.atlassian.net/jira/software/projects/SL/boards/2/backlog)
-
 
 #### **4.2.1.4. Development Evidence for Sprint Review**
 
@@ -1145,10 +1143,7 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 <p align="center"><i>Figura: Evidencia de colaboración e integración de ramas durante el Sprint 1.</i></p>
 
-
 ### **4.2.2. Sprint 2**
-
-
 
 #### **4.2.2.1. Sprint Planning 2**
 
@@ -1213,12 +1208,123 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
   </tr>
 </table>
 
-
 #### **4.2.2.2. Aspect Leaders and Collaborators**
 
+<p style="text-align: justify;">
+  En el Sprint 2 se definieron tres aspectos de trabajo, que corresponden al alcance del Sprint Backlog 2 (sección 4.2.2.3). El aspecto <b>Gestión de alertas</b> agrupa la configuración de límites de alerta por equipo, la generación de alertas de temperatura y humedad, su listado, detalle, confirmación de atención y orden por severidad, la visualización de alertas críticas y de equipos con alertas activas, las notificaciones en el dispositivo móvil y el envío de alertas al equipo de trabajo (US18, US19, US20, US21, US22, US23, US24, US25, US26, US44 y US46). El aspecto <b>Consulta de la organización del monitoreo</b> agrupa la visualización de sitios de monitoreo, áreas de almacenamiento, lista y detalle de equipos, la búsqueda de equipos por nombre y su filtro por área (US02, US04, US06, US08, US12 y US14). El aspecto <b>Servicios de alertas e incidentes</b> agrupa los servicios RESTful que soportan las funcionalidades anteriores (US62).
+</p>
+
+<p style="text-align: justify;">
+  Al igual que en el Sprint 1, para cada aspecto se designó como líder (L) al integrante con mayor carga de horas asignadas en el Sprint Backlog 2; en caso de empate, lidera el integrante a cargo del Bounded Context correspondiente en la implementación. Los demás integrantes con tareas en el aspecto participan como colaboradores (C). La siguiente tabla muestra las horas de cada integrante por aspecto y la Leadership-and-Collaboration Matrix (LACX) resultante.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Team Member (Last Name, First Name)</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Gestión de alertas</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Consulta de la organización del monitoreo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Servicios de alertas e incidentes</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Carlos Lavado, Ever Giusephi</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">10 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">10 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">20 h</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Espino Rossi, Victor Manuel</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">20 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">4 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">24 h</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Garcia Cerpa, Braden Raid</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">20 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">4 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">24 h</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Rojas Gomez, Valeria Alexandra</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">18 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">4 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">22 h</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Vara Velásquez, Oscar Fernando</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">16 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">4 h</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">20 h</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  A partir de esta distribución, la Leadership-and-Collaboration Matrix (LACX) del Sprint 2 es la siguiente:
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Team Member (Last Name, First Name)</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">GitHub Username</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Gestión de alertas</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Consulta de la organización del monitoreo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Servicios de alertas e incidentes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Carlos Lavado, Ever Giusephi</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">sephi-dev05</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Espino Rossi, Victor Manuel</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">Vmer140</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Garcia Cerpa, Braden Raid</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">BradenGarcia</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">L</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Rojas Gomez, Valeria Alexandra</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">ValeriaAler</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Vara Velásquez, Oscar Fernando</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">varometro159</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">C</td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  En el aspecto Gestión de alertas, Victor Espino y Braden Garcia tienen la misma carga (20 horas); por el criterio de desempate, lidera Braden Garcia, responsable del Bounded Context Alert &amp; Incident Management. Carlos Lavado lidera los aspectos Consulta de la organización del monitoreo y Servicios de alertas e incidentes, al concentrar la mayor carga de horas en ambos.
+</p>
 
 #### **4.2.2.3. Sprint Backlog 2**
-
 
 #### **4.2.2.3. Sprint Backlog 2**
 
@@ -1640,9 +1746,7 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 #### **4.2.2.9. Team Collaboration Insights during Sprint**
 
-
 ### **4.2.3. Sprint 3**
-
 
 #### **4.2.3.1. Sprint Planning 3**
 
@@ -1708,7 +1812,6 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 </table>
 
 #### **4.2.3.2. Aspect Leaders and Collaborators**
-
 
 #### **4.2.3.3. Sprint Backlog 3**
 
@@ -1857,7 +1960,6 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 **Board URL:** [SafeLab - Sprint 3](https://ipoundzy.atlassian.net/jira/software/projects/SL/boards/2/backlog)
 
-
 #### **4.2.3.4. Development Evidence for Sprint Review**
 
 #### **4.2.3.5. Testing Suite Evidence for Sprint Review**
@@ -1869,7 +1971,6 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 #### **4.2.3.8. Software Deployment Evidence for Sprint Review**
 
 #### **4.2.3.9. Team Collaboration Insights during Sprint**
-
 
 ## **4.3. Validation Interviews**
 
