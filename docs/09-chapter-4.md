@@ -1739,6 +1739,7 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 #### **4.2.2.5. Testing Suite Evidence for Sprint Review**
 
 #### **4.2.2.6. Execution Evidence for Sprint Review**
+
 <p style="text-align: justify;">
   Al finalizar el Sprint 2, la aplicación móvil de SafeLab incorpora la gestión de alertas ambientales, la configuración de límites por equipo y la consulta de los equipos con alertas activas, integradas con el RESTful API de la plataforma. La navegación se realiza mediante una barra inferior con las secciones Inicio, Sensores, Alertas, Equipos y Más. Las vistas aplican Material Design 3 y la paleta de SafeLab. A continuación se presentan las principales vistas implementadas, relacionadas con las User Stories del Sprint Backlog 2.
 </p>
@@ -1805,9 +1806,244 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 <p align="center"><i>Figura: Equipos con alertas activas.</i></p>
 
-
-
 #### **4.2.2.7. Services Documentation Evidence for Sprint Review**
+
+<p style="text-align: justify;">
+  En el Sprint 2 se documentaron los servicios web que soportan la gestión de alertas e incidentes y la consulta de la organización del monitoreo (US62). En este Sprint, SafeLab Platform API evolucionó a la versión 2.5.0: el backend, desarrollado con Java 21 y Spring Boot 3.4.5, persiste la información en PostgreSQL con migraciones de Flyway y protege todos los endpoints con autenticación por token y control de acceso por roles y permisos (RBAC), de modo que cada usuario solo consulta y modifica los registros de su empresa y de los recursos que tiene asignados. La documentación se genera con la especificación OpenAPI mediante springdoc y se publica en Swagger UI en dos versiones, español e inglés, que traducen la descripción de los endpoints sin cambiar sus rutas.
+</p>
+
+<p style="text-align: justify;">
+  La siguiente tabla resume los endpoints relacionados con el alcance del Sprint, con su verbo HTTP, su sintaxis de llamada, sus parámetros y permisos requeridos, y un ejemplo de respuesta basado en los datos de demostración del proyecto.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed; word-break: break-word;">
+  <colgroup>
+    <col style="width: 13%;">
+    <col style="width: 21%;">
+    <col style="width: 8%;">
+    <col style="width: 14%;">
+    <col style="width: 17%;">
+    <col style="width: 27%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Bounded Context</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Endpoint</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Verbo HTTP</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Acción</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Parámetros y permiso</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ejemplo y explicación del response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Identity &amp; Access</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/auth/login</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Iniciar sesión y obtener el token</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>identifier</code>, <code>password</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>accessToken</code>, <code>tokenType: Bearer</code> y <code>expiresAt</code>. El token se envía en <code>Authorization: Bearer</code> en las demás solicitudes (botón <i>Authorize</i> de Swagger). Credenciales inválidas: <code>401</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/alerts</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar alertas (US20, US23, US44, US46)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Permiso: <code>incidents.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{&quot;id&quot;: &quot;alert-001&quot;, &quot;type&quot;: &quot;Temperature&quot;, &quot;title&quot;: &quot;PCR freezer out of range&quot;, &quot;sensorId&quot;: &quot;sen-003&quot;, &quot;assetId&quot;: &quot;asset-002&quot;, &quot;facilityId&quot;: &quot;fac-central&quot;, &quot;severity&quot;: &quot;critical&quot;, &quot;status&quot;: &quot;active&quot;}, …]</code>. Solo devuelve las alertas de la empresa y de los recursos asignados al usuario; la aplicación las ordena por severidad y filtra las críticas y los equipos con alertas activas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/alerts/{id}/acknowledge</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Confirmar atención de una alerta (US22)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>notes</code> (5 a 500 caracteres). Permiso: <code>alerts.acknowledge</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: la alerta con <code>status: acknowledged</code>, <code>notes</code> y <code>updatedAt</code>. <code>400 VALIDATION_ERROR</code> si falta la nota y <code>404 NOT_FOUND</code> si la alerta no existe.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/alerts/{id}/resolve</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Resolver una alerta</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>notes</code>. Permiso: <code>incidents.resolve</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: la alerta con <code>status: resolved</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/alerts/{id}/escalate</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Escalar una alerta y abrir un incidente</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>notes</code>. Permiso: <code>incidents.create</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el incidente creado (<code>title: Escalation: …</code>, <code>relatedAlertId</code>, <code>relatedSensorId</code>, severidad heredada y <code>status: open</code>). La alerta queda con <code>status: escalated</code> en la misma transacción.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/notifications</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar notificaciones (US24)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Permiso: <code>incidents.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{&quot;id&quot;: &quot;not-001&quot;, &quot;title&quot;: &quot;Critical freezer alert&quot;, &quot;context&quot;: &quot;alerts&quot;, &quot;severity&quot;: &quot;critical&quot;, &quot;unread&quot;: true}, …]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/notifications/{id}/mark-read</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Marcar notificación como leída</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Permiso: <code>incidents.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: la notificación con <code>unread: false</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/incidents</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar incidentes</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Permiso: <code>incidents.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{&quot;id&quot;: &quot;inc-001&quot;, &quot;code&quot;: &quot;INC-001&quot;, &quot;title&quot;: &quot;PCR freezer deviation&quot;, &quot;relatedAlertId&quot;: &quot;alert-001&quot;, &quot;severity&quot;: &quot;critical&quot;, &quot;status&quot;: &quot;open&quot;}, …]</code>. <code>GET /incidents/{id}</code> devuelve el detalle de un incidente.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/incidents</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar incidente</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Body: <code>title</code>, <code>description</code>, <code>facilityId</code>, <code>severity</code>, <code>relatedSensorId</code> (opcional). Permiso: <code>incidents.create</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>201 Created</code>: el incidente registrado con <code>status: open</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Alert &amp; Incident Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/alertsincidents/incidents/{id}/investigate</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">POST</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Avanzar el ciclo del incidente</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>notes</code>. Permiso: <code>incidents.resolve</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el incidente con <code>status: investigating</code>. <code>/resolve</code> y <code>/close</code> siguen el mismo formato; cerrar un incidente que no está resuelto responde <code>409 INCIDENT_NOT_RESOLVED</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensormonitoring/sensors/{id}</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">PATCH</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Configurar límites de alerta del sensor (US25)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>min</code>, <code>max</code>. Permiso: <code>sensors.configure</code>, que el gerente puede otorgar al coordinador del laboratorio</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sensor con sus nuevos límites, que se aplican a las siguientes lecturas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sensor Monitoring</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/sensormonitoring/sensors/{id}/reading</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">PATCH</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Registrar lectura y generar alerta (US18, US19)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Body: <code>value</code>. Permiso: <code>sensors.configure</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: el sensor con <code>value</code>, <code>lastReading</code> y <code>status</code> recalculado. Si el valor sale del rango <code>min</code>–<code>max</code>, el estado pasa a <code>out-of-range</code> y el servicio registra automáticamente una alerta <code>active</code> con severidad <code>warning</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Facility &amp; Asset Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilityassets/facilities</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar sedes de monitoreo (US02)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Permiso: <code>assets.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>[{&quot;id&quot;: &quot;fac-central&quot;, &quot;name&quot;: &quot;Andinos Central Laboratory&quot;, &quot;city&quot;: &quot;Huancayo&quot;, &quot;healthScore&quot;: 72, &quot;organizationId&quot;: &quot;org-andes&quot;}, …]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Facility &amp; Asset Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilityassets/assets</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Listar equipos (US04, US06, US08, US14)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Permiso: <code>assets.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: equipos con <code>name</code>, <code>facilityId</code>, <code>storageUnit</code>, <code>location</code> y <code>status</code>. La búsqueda por nombre y el filtro por área se aplican en la aplicación sobre esta respuesta; las áreas de almacenamiento corresponden al campo <code>storageUnit</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Facility &amp; Asset Management</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/facilityassets/assets/{id}</code></td>
+      <td style="text-align: center; vertical-align: middle; padding: 6px;">GET</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Consultar detalle de un equipo (US12)</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Path: <code>id</code>. Permiso: <code>assets.view</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>200 OK</code>: <code>{&quot;id&quot;: &quot;asset-001&quot;, &quot;name&quot;: &quot;Reagent Freezer A&quot;, &quot;category&quot;: &quot;Cold Storage&quot;, &quot;storageUnit&quot;: &quot;Freezer A&quot;, &quot;responsible&quot;: &quot;Andrea Torres&quot;, &quot;status&quot;: &quot;compliant&quot;}</code>. <code>403 ACCESS_DENIED</code> si el equipo no está asignado al usuario y <code>404 NOT_FOUND</code> si no existe.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Los servicios responden con un formato de error común (<code>ApiError</code>) que incluye un código y un mensaje en el idioma indicado en la cabecera <code>Accept-Language</code>: <code>400 VALIDATION_ERROR</code> cuando el cuerpo no cumple las validaciones, <code>401 AUTH_REQUIRED</code> cuando no se envía un token válido, <code>403 ACCESS_DENIED</code> cuando el rol del usuario no tiene el permiso requerido y <code>404 NOT_FOUND</code> cuando el registro no existe. Además, los servicios se relacionan mediante eventos de negocio: una lectura fuera de rango genera una alerta, y escalar una alerta crea un incidente vinculado a ella mediante <code>relatedAlertId</code>, de modo que el personal puede seguir una desviación desde la lectura que la originó hasta el cierre del incidente.
+</p>
+
+##### **Acceso a la documentación**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Recurso</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Swagger UI</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>http://localhost:8080/swagger-ui.html</code> (perfil <i>postgres</i>) y <code>http://localhost:8081/swagger-ui.html</code> (perfil <i>jsonserver</i>), con los documentos <i>es</i> y <i>en</i></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Especificación OpenAPI</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/v3/api-docs/es</code> y <code>/v3/api-docs/en</code> en el mismo puerto</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Health check</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>/api/v1/health</code> en el mismo puerto</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Repositorio</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api">safelab-platform-api</a> (tag <i>backend-v2.5.0</i>)</td>
+    </tr>
+  </tbody>
+</table>
+<p style="text-align: justify;">
+  En este Sprint, SafeLab Platform API se ejecuta en el entorno local de desarrollo con dos perfiles: <code>postgres</code>, que persiste los datos en PostgreSQL y que la aplicación móvil consume desde el emulador de Android mediante <code>http://10.0.2.2:8080/api/v1</code>, y <code>jsonserver</code>, que expone la misma API sobre los datos de demostración en el puerto 8081. Las capturas de esta sección se tomaron con el perfil <code>jsonserver</code>. El despliegue del servicio en un entorno público se describe en la sección de despliegue correspondiente.
+</p>
+
+<!-- PENDIENTE: si Carlos despliega el backend en Render antes de la entrega, reemplazar localhost:8080 por la URL pública en esta tabla y en el párrafo anterior. -->
+
+##### **Interacción con la documentación**
+
+<p style="text-align: justify;">
+  A continuación se presentan las capturas de la interacción con Swagger UI utilizando la cuenta de demostración del gerente de Laboratorios Andinos: el inicio de sesión y la autorización con el token, la consulta de alertas, la confirmación de atención de una alerta, su escalamiento a incidente, la consulta de incidentes —donde aparece el incidente creado y vinculado a la alerta mediante <code>relatedAlertId</code>— y la consulta de los equipos.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Swagger UI de SafeLab Platform API con los endpoints agrupados por Bounded Context." width="100%">
+</p>
+
+<p align="center"><i>Figura: Swagger UI de SafeLab Platform API con los endpoints agrupados por Bounded Context.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-login-authorize.png" alt="Inicio de sesión con POST /auth/login y autorización con el token en Swagger UI." width="100%">
+</p>
+
+<p align="center"><i>Figura: Inicio de sesión y autorización con el token.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-get-alerts.png" alt="Respuesta de GET /alertsincidents/alerts en Swagger UI." width="100%">
+</p>
+
+<p align="center"><i>Figura: Consulta de alertas autorizadas.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-acknowledge-alert.png" alt="Confirmación de atención con POST /alertsincidents/alerts/{id}/acknowledge." width="100%">
+</p>
+
+<p align="center"><i>Figura: Confirmación de atención de una alerta.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-escalate-alert.png" alt="Escalamiento de una alerta a incidente con POST /alertsincidents/alerts/{id}/escalate." width="100%">
+</p>
+
+<p align="center"><i>Figura: Escalamiento de una alerta a incidente.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-get-incidents.png" alt="Respuesta de GET /alertsincidents/incidents con el incidente creado al escalar la alerta." width="100%">
+</p>
+
+<p align="center"><i>Figura: Consulta de incidentes con el incidente vinculado a la alerta escalada.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-get-assets.png" alt="Respuesta de GET /facilityassets/assets en Swagger UI." width="100%">
+</p>
+
+<p align="center"><i>Figura: Consulta de equipos de la empresa.</i></p>
 
 #### **4.2.2.8. Software Deployment Evidence for Sprint Review**
 
