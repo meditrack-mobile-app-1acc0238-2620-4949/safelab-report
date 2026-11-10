@@ -1739,6 +1739,73 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 #### **4.2.2.5. Testing Suite Evidence for Sprint Review**
 
 #### **4.2.2.6. Execution Evidence for Sprint Review**
+<p style="text-align: justify;">
+  Al finalizar el Sprint 2, la aplicación móvil de SafeLab incorpora la gestión de alertas ambientales, la configuración de límites por equipo y la consulta de los equipos con alertas activas, integradas con el RESTful API de la plataforma. La navegación se realiza mediante una barra inferior con las secciones Inicio, Sensores, Alertas, Equipos y Más. Las vistas aplican Material Design 3 y la paleta de SafeLab. A continuación se presentan las principales vistas implementadas, relacionadas con las User Stories del Sprint Backlog 2.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-navigation.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Navegación principal de la aplicación móvil en el Sprint 2.</i></p>
+
+##### Alerts & Incidents
+
+<p style="text-align: justify;">
+  La sección Alertas muestra las alertas de temperatura y humedad registradas por los sensores, con su severidad y estado (US18, US19, US20). El usuario puede ordenarlas por severidad (US23) y consultar únicamente las alertas críticas (US44).
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-list.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Lista de alertas.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-severity.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Alertas ordenadas por severidad.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-critical.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Alertas críticas.</i></p>
+
+<p style="text-align: justify;">
+  Desde cada alerta, el usuario accede al detalle con la información de la lectura y del equipo afectado (US21), y puede confirmar su atención (US22).
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alert-detail.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Detalle de una alerta.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alert-ack.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Confirmación de atención de una alerta.</i></p>
+
+<p style="text-align: justify;">
+  La vista de reglas permite configurar los límites de alerta por equipo (US25). Además, se pueden consultar los equipos que tienen alertas activas (US46).
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alert-rules.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Límites de alerta por equipo.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-equipment-alerts.png" width="35%">
+</p>
+
+<p align="center"><i>Figura: Equipos con alertas activas.</i></p>
+
+
 
 #### **4.2.2.7. Services Documentation Evidence for Sprint Review**
 
