@@ -1738,6 +1738,150 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 #### **4.2.2.5. Testing Suite Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  En esta sección se presenta el conjunto de pruebas automatizadas elaborado para los Web Services de la <i>SafeLab Platform API</i> relacionados con la User Story del Sprint 2 orientada a servicios: <b>US62 - Proporcionar servicios de alertas e incidentes</b>. El conjunto incluye Unit Tests, Integration Tests y Acceptance Tests bajo el enfoque BDD, desarrollados con JUnit 5, Mockito, AssertJ, Spring Boot Test (MockMvc) y Cucumber 7.20.1. Las pruebas de integración y aceptación levantan el contexto completo de Spring Boot e inician sesión con las cuentas de prueba de la API, y cada caso parte de los datos semilla (<code>data/db.seed.json</code>) cargados en memoria, lo que garantiza resultados reproducibles.
+</p>
+
+<p style="text-align: justify;">
+  Las pruebas se organizan dentro del proyecto del backend <b>safelab-platform-api</b>, en las rutas <code>src/test/java/com/safelab/platform</code> (clases de prueba y Steps) y <code>src/test/resources/features</code> (archivo <code>.feature</code>).
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-project-structure.png" alt="Estructura del proyecto de testing de US62." width="100%">
+</p>
+
+<p align="center"><i>Figura: Estructura del proyecto de testing de US62 en la SafeLab Platform API.</i></p>
+
+##### **Unit Tests**
+
+<p style="text-align: justify;">
+  Los Unit Tests verifican de forma aislada el comportamiento del controlador del bounded context <i>Alert &amp; Incident Management</i>. Sus dependencias (<code>RecordsService</code> y <code>DataGateway</code>) se reemplazan con <i>mocks</i> de Mockito, por lo que estas pruebas no levantan el servidor ni acceden a la base de datos.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Test Class</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Clase evaluada</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Tests y comportamientos verificados</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">User Story</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:center; vertical-align: top; padding:6px;">AlertsIncidentsControllerTest</td><td style="text-align: justify; vertical-align: top; padding:6px;"><code>AlertsIncidentsController</code></td><td style="text-align: justify; vertical-align: top; padding:6px;"><code>alertsReturnsTheAlertsAuthorizedToView</code>: retorna las alertas autorizadas.<br><code>acknowledgeChangesTheAlertStatusToAcknowledged</code>: cambia la alerta a <i>acknowledged</i> con sus notas y fecha de actualización.<br><code>acknowledgePropagatesNotFoundWhenTheAlertDoesNotExist</code>: responde 404 y no modifica datos si la alerta no existe.<br><code>resolveAlertChangesTheAlertStatusToResolved</code>: cambia la alerta a <i>resolved</i>.<br><code>escalateOpensALinkedIncidentAndMarksTheAlertAsEscalated</code>: abre un incidente vinculado a la alerta y al sensor, y marca la alerta como <i>escalated</i>.<br><code>createRegistersAnOpenIncident</code>: registra un incidente con estado <i>open</i> (201).<br><code>investigateChangesTheIncidentStatusToInvestigating</code>: inicia la investigación del incidente.<br><code>closeRejectsAnIncidentThatIsNotResolved</code>: impide cerrar un incidente no resuelto.<br><code>closeClosesAResolvedIncident</code>: cierra un incidente resuelto.</td><td style="text-align:center; vertical-align: top; padding:6px;">US62</td></tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-unit-tests-results.png" alt="Ejecución de los Unit Tests de US62 (9 tests aprobados)." width="100%">
+</p>
+
+<p align="center"><i>Figura: Ejecución de los Unit Tests de US62 (9 tests aprobados).</i></p>
+
+##### **Integration Tests**
+
+<p style="text-align: justify;">
+  Los Integration Tests levantan el contexto completo de Spring Boot y consumen los endpoints de la RESTful API mediante MockMvc con un token de sesión real, verificando la interacción entre el filtro de sesión, las reglas de acceso por rol y empresa, el controlador, los servicios y los datos.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Test Class</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Endpoints evaluados</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Comportamientos verificados</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">User Story</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:center; vertical-align: top; padding:6px;">AlertsIncidentsIntegrationTest</td><td style="text-align: justify; vertical-align: top; padding:6px;"><code>POST /api/v1/auth/login</code><br><code>GET /api/v1/alertsincidents/alerts</code><br><code>POST /api/v1/alertsincidents/alerts/{id}/acknowledge</code><br><code>POST /api/v1/alertsincidents/alerts/{id}/escalate</code><br><code>POST /api/v1/alertsincidents/incidents/{id}/investigate</code><br><code>POST /api/v1/alertsincidents/incidents/{id}/resolve</code><br><code>POST /api/v1/alertsincidents/incidents/{id}/close</code><br><code>GET /api/v1/alertsincidents/incidents/{id}</code></td><td style="text-align: justify; vertical-align: top; padding:6px;">Lista solo las alertas de la empresa del usuario; actualiza el estado de una alerta; responde 404 si la alerta no existe; responde 403 ante una alerta de otra empresa; escala una alerta y crea el incidente vinculado; completa el flujo investigar, resolver y cerrar un incidente; responde 409 al cerrar un incidente no resuelto; responde 400 ante notas inválidas; responde 401 sin token de sesión.</td><td style="text-align:center; vertical-align: top; padding:6px;">US62</td></tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-integration-tests-results.png" alt="Ejecución de los Integration Tests de US62 (9 tests aprobados)." width="100%">
+</p>
+
+<p align="center"><i>Figura: Ejecución de los Integration Tests de US62 (9 tests aprobados).</i></p>
+
+##### **Acceptance Tests (BDD)**
+
+<p style="text-align: justify;">
+  Los Acceptance Tests se elaboraron bajo el enfoque BDD con Cucumber. El archivo <code>.feature</code> está escrito en lenguaje Gherkin a partir de los criterios de aceptación de US62, y sus pasos se implementan en la clase de Steps <code>AlertsIncidentsSteps</code>, que inicia sesión y ejecuta las solicitudes contra la RESTful API. La clase <code>CucumberAcceptanceTest</code> ejecuta los escenarios y <code>CucumberSpringConfiguration</code> inicia el contexto de Spring Boot para las pruebas.
+</p>
+
+<p style="text-align: justify;">
+  <b>US62 - Proporcionar servicios de alertas e incidentes.</b> Verifica que la API proporcione la información de una alerta, que devuelva la alerta junto con su estado registrado, que responda que la alerta no fue encontrada cuando no está disponible y que permita escalar una alerta a un incidente. Archivo: <code>us62-alerts-incidents-services.feature</code>.
+</p>
+
+```gherkin
+@US62
+Feature: US62 - Provide alert and incident services
+  As a Developer
+  I want the RESTful API to provide alert and incident information
+  So that the SafeLab applications can use the generated alerts and their status
+
+  Scenario: Provide alert information
+    Given the user "gerente.andes@safelab.test" is signed in
+    And the alert "alert-001" exists
+    When the client requests the alerts
+    Then the service responds with status 200
+    And the alert "alert-001" has the field "title" with value "PCR freezer out of range"
+    And the alert "alert-001" has the field "severity" with value "critical"
+
+  Scenario Outline: Provide the status of an alert
+    Given the user "<user>" is signed in
+    And the alert "<alert>" exists
+    When the client requests the alerts
+    Then the service responds with status 200
+    And the alert "<alert>" has the field "status" with value "<status>"
+
+    Examples:
+      | user                         | alert     | status       |
+      | gerente.andes@safelab.test   | alert-001 | active       |
+      | gerente.gabriel@safelab.test | alert-003 | acknowledged |
+      | gerente.gabriel@safelab.test | alert-005 | resolved     |
+
+  Scenario: Non-existent alert
+    Given the user "gerente.andes@safelab.test" is signed in
+    And the alert "alert-999" does not exist
+    When the client acknowledges the alert "alert-999"
+    Then the service responds with status 404
+    And the error code is "NOT_FOUND"
+
+  Scenario: Escalate an alert into an incident
+    Given the user "gerente.andes@safelab.test" is signed in
+    And the alert "alert-001" exists
+    When the client escalates the alert "alert-001"
+    Then the service responds with status 200
+    And the response field "relatedAlertId" is "alert-001"
+    And the response field "status" is "open"
+```
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-acceptance-tests-results.png" alt="Ejecución de los Acceptance Tests BDD de US62 (6 escenarios aprobados)." width="100%">
+</p>
+
+<p align="center"><i>Figura: Ejecución de los Acceptance Tests BDD de US62 (6 escenarios aprobados).</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-cucumber-report.png" alt="Reporte de Cucumber con los escenarios de US62." width="100%">
+</p>
+
+<p align="center"><i>Figura: Reporte de Cucumber con los escenarios de US62.</i></p>
+
+##### **Resultados**
+
+<p style="text-align: justify;">
+  La ejecución de la suite mediante Maven finalizó con éxito: los 9 Unit Tests y los 9 Integration Tests se aprobaron sin fallos ni errores, y los 6 escenarios BDD de Cucumber se ejecutaron satisfactoriamente, según se muestra en el reporte de Cucumber. Con ello se valida el comportamiento de los Web Services de alertas e incidentes asociados a la User Story US62 del Sprint 2.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-mvn-test-summary.png" alt="Resumen de la ejecución de la suite con Maven." width="100%">
+</p>
+
+<p align="center"><i>Figura: Resumen de la ejecución de la suite con Maven.</i></p>
+
 #### **4.2.2.6. Execution Evidence for Sprint Review**
 
 <p style="text-align: justify;">
