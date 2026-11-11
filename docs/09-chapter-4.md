@@ -8,6 +8,10 @@
   Para la TB1, la aplicación móvil se desarrolló como un frontend funcional con navegación, componentes reutilizables y datos locales de prueba, mientras que el backend se mantuvo como un producto separado, preparado y validado para una integración posterior. Esta separación permitió avanzar de forma paralela en la experiencia móvil, la Landing Page y los Web Services sin generar dependencia directa entre los entregables durante el Sprint 1.
 </p>
 
+<p style="text-align: justify;">
+  Durante el AV2 continuamos la evolución de los mismos cuatro artefactos sin perder la separación entre repositorios. Pasamos de la demostración móvil con datos locales del Sprint 1 a una integración de desarrollo en la que la aplicación Android puede consultar SafeLab Platform API por HTTP y la API administra la persistencia en PostgreSQL. Registramos este avance como una versión candidata a validación, porque la integración local, la publicación de un servicio y la aprobación de una versión estable son actividades distintas que necesitan evidencias propias.
+</p>
+
 ## **4.1. Software Configuration Management**
 
 <p style="text-align: justify;">
@@ -77,6 +81,14 @@
 
 <p align="center"><i>Figura: Entorno de desarrollo de la Landing Page de SafeLab.</i></p>
 
+<p style="text-align: justify;">
+  Para mantener la gestión de configuración actualizada, revisamos los componentes que evolucionaron después de TB1. En el repositorio <code>safelab-platform-api</code> conservamos Java 21, Spring Boot, Maven y los contratos RESTful; la candidata <code>v2.5.0 RC3</code> incorpora persistencia local en PostgreSQL 18, migraciones Flyway V1–V4 y un endpoint autenticado de sincronización <code>GET /api/v1/integration/bootstrap</code>. En <code>safelab-mobile-app</code> mantenemos Kotlin, Jetpack Compose y Gradle, y utilizamos el emulador Android para la integración con el servicio local. La Landing Page conserva su implementación independiente y el reporte continúa organizado en Markdown e imágenes con rutas relativas.
+</p>
+
+<p style="text-align: justify;">
+  Organizamos la validación técnica por entorno. Primero verificamos los contratos y permisos de la API; después comprobamos las operaciones de lectura y escritura que sí están implementadas y, finalmente, contrastamos la información presentada en Android con los registros autorizados de PostgreSQL. No equiparamos la presencia de una pantalla o de un endpoint con una operación aprobada de extremo a extremo: para la RC3 todavía debemos completar las pruebas cruzadas, la compilación móvil y la comprobación de la base de datos del equipo antes de liberar un tag estable.
+</p>
+
 ### **4.1.2. Source Code Management**
 
 <p style="text-align: justify;">
@@ -140,6 +152,14 @@
 
 <p align="center"><i>Figura: Evidencia de integración y trazabilidad del código fuente.</i></p>
 
+<p style="text-align: justify;">
+  Para la documentación del AV2 creamos en <code>safelab-report</code> las ramas <code>feature/av2-front-matter</code>, <code>feature/av2-chapter-1</code>, <code>feature/av2-chapter-2</code>, <code>feature/av2-chapter-3</code>, <code>feature/av2-chapter-4</code> y <code>feature/av2-back-matter</code>, además de mantener <code>main</code> y <code>develop</code>. Concentramos la revisión de Software Configuration Management, las evidencias técnicas y el despliegue del Sprint 2 en <code>feature/av2-chapter-4</code>, mientras que el registro de versiones se administra en <code>feature/av2-front-matter</code>. Con esta distribución conservamos la correspondencia entre los archivos editados, el responsable de cada modificación y la rama que luego se integrará al informe.
+</p>
+
+<p style="text-align: justify;">
+  También diferenciamos el estado de las ramas del estado de los productos. El historial del repositorio del reporte acredita los cambios documentales, pero no demuestra por sí mismo que una versión del backend haya sido publicada. Para las funcionalidades verificamos el código y los contratos en sus repositorios y, para el despliegue, utilizamos el registro de ejecución del entorno y las comprobaciones de disponibilidad. Esta distinción evita confundir una integración en Git con una liberación operativa.
+</p>
+
 ### **4.1.3. Source Code Style Guide & Conventions**
 
 <p style="text-align: justify;">
@@ -196,6 +216,10 @@
   Los merges entre ramas se registran como cambios de integración utilizando el tipo <code>chore</code>, mientras que las funcionalidades nuevas utilizan <code>feat</code> y las correcciones posteriores a una integración utilizan <code>fix</code>. Esta diferenciación permite interpretar el historial de cada repositorio sin necesidad de revisar individualmente todos los archivos modificados.
 </p>
 
+<p style="text-align: justify;">
+  Extendimos estas convenciones al control de cambios del Sprint 2. Utilizamos nombres descriptivos en las ramas y mensajes con estructura Conventional Commits para distinguir las nuevas funcionalidades, las correcciones, la documentación y las integraciones. En el código conservamos los términos de los Bounded Contexts —<i>Alerts &amp; Incidents</i>, <i>Facility &amp; Asset Management</i> e <i>Identity &amp; Access Management</i>— para relacionar los archivos Java y Kotlin con las historias de usuario y los diagramas DDD y C4. No incorporamos credenciales ni cadenas privadas de conexión al informe; documentamos los nombres de los parámetros y su finalidad sin publicar sus valores sensibles.
+</p>
+
 ### **4.1.4. Software Deployment Configuration**
 
 <p style="text-align: justify;">
@@ -246,6 +270,53 @@
 </p>
 
 <p align="center"><i>Figura: Configuración de despliegue de los productos digitales de SafeLab.</i></p>
+
+##### **Configuración de ejecución e integración del Sprint 2**
+
+<p style="text-align: justify;">
+  Durante el Sprint 2 diferenciamos el despliegue público configurado en TB1 de la nueva integración local documentada para <code>v2.5.0 RC3</code>. La configuración actual del backend incluye perfiles <code>postgres</code> y <code>jsonserver</code>; ambos exponen contratos HTTP equivalentes, pero utilizan fuentes de datos diferentes. La integración de Android se prueba con el perfil PostgreSQL mediante <code>http://10.0.2.2:8080/api/v1</code>, que permite al emulador acceder al puerto 8080 de la computadora de desarrollo. En cambio, <code>localhost:8080</code> corresponde al proceso local de Spring Boot y no es una dirección pública.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Artefacto</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Entorno y acceso</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ejecución y dependencia</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Alcance documentado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">SafeLab Platform API</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Spring Boot, <code>localhost:8080</code>, perfil <code>postgres</code></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">API autenticada, PostgreSQL 18 y migraciones Flyway V1–V4; documentación OpenAPI en Swagger UI</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Integración local RC3 para contrastar contratos, permisos y persistencia real</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Perfil de datos alternativo</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>localhost:8081</code>, perfil <code>jsonserver</code></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">API Spring Boot que sirve información de demostración</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Reproducción controlada de los contratos sin equivaler a una prueba de persistencia PostgreSQL</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">SafeLab Mobile App</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Android Studio y Android Emulator</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cliente HTTP configurado con <code>10.0.2.2:8080/api/v1</code> durante la ejecución local</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Consulta de recursos autorizados y operaciones implementadas; sin publicación en tiendas</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Landing Page</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">GitHub Pages</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Contenido HTML, CSS y JavaScript del repositorio <code>safelab-business-website</code></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sitio público independiente de la API transaccional y de la aplicación Android</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El despliegue de Render descrito para TB1 conserva valor como antecedente de configuración del servicio y de PostgreSQL. Para la RC3 no afirmamos que el servidor público esté actualizado con el código local, porque su documentación de entrega exige todavía validar Maven, la compilación Android, la construcción del frontend web y las operaciones sobre PostgreSQL antes del etiquetado y la publicación definitiva. En la sección 4.2.2.8 separamos estos resultados del entorno de pruebas de la evidencia de despliegue que ya habíamos documentado.
+</p>
 
 ## **4.2. Landing Page & Mobile Application Implementation**
 
@@ -1145,6 +1216,18 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.2.2. Sprint 2**
 
+<p style="text-align: justify;">
+  En el segundo Sprint concentramos el desarrollo de SafeLab en las alertas ambientales y en la consulta de la organización del monitoreo. Partimos de los sitios, áreas y equipos registrados durante el Sprint 1 y avanzamos hacia la configuración de umbrales, la visualización de condiciones críticas, la consulta de incidentes y el acceso a información filtrada por los permisos del usuario. Para este incremento seleccionamos 18 User Stories que suman 55 Story Points, con una capacidad estimada de 60 Story Points.
+</p>
+
+<p style="text-align: justify;">
+  Organizamos el trabajo en tres aspectos: gestión de alertas, consulta de sitios y equipos, y servicios de alertas e incidentes. Desarrollamos las pantallas Android con Kotlin y Jetpack Compose y mantuvimos la API RESTful en Java y Spring Boot, respetando los límites de los Bounded Contexts. En la versión de desarrollo <code>v2.5.0 RC3</code> utilizamos autenticación y permisos servidos por el backend y la sincronización mediante <code>/api/v1/integration/bootstrap</code>; así, las vistas consultan los recursos que corresponden a cada sesión en lugar de depender únicamente de los datos de demostración del primer incremento.
+</p>
+
+<p style="text-align: justify;">
+  Reunimos en este Sprint las evidencias de implementación, pruebas, ejecución móvil y documentación de servicios. Diferenciamos las pantallas y los contratos ya presentes en el código de las comprobaciones que todavía debemos cerrar para aprobar la candidata RC3. Esta separación nos permite sustentar el avance funcional sin atribuir al despliegue público resultados obtenidos únicamente en el equipo de desarrollo.
+</p>
+
 #### **4.2.2.1. Sprint Planning 2**
 
 <p style="text-align: justify;">
@@ -1736,6 +1819,95 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 #### **4.2.2.4. Development Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  Durante el Sprint 2 trabajamos sobre el código de la aplicación Android y de SafeLab Platform API para relacionar las historias seleccionadas con componentes y servicios concretos. En Android mantuvimos la separación <code>data</code>, <code>domain</code> y <code>presentation</code> dentro de cada Bounded Context. En el backend conservamos las clases de dominio, los controladores HTTP y los contratos de autorización. Con esta organización podemos seguir una operación desde la interacción de la pantalla hasta el recurso RESTful y comprobar si requiere persistencia o si corresponde únicamente a una consulta.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed; word-break: break-word;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Aspecto y User Stories</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Implementación Android</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Servicio y contrato relacionados</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado que revisamos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Alertas e incidentes</b><br>US18–US26, US44 y US46</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>AlertsScreen.kt</code>, <code>AlertDetailScreen.kt</code>, <code>AlertRulesScreen.kt</code> y <code>AlertsIncidentsRepository.kt</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>AlertsIncidentsController</code>; consulta, reconocimiento, escalamiento y reglas de alerta sujetos a permisos</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Distinguimos el listado por severidad, el detalle, los equipos con alertas activas y las acciones permitidas por la sesión.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Organización del monitoreo</b><br>US02, US04, US06, US08, US12 y US14</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>MonitoringSitesScreen.kt</code>, <code>StorageAreasScreen.kt</code>, <code>EquipmentRegistryScreen.kt</code> y <code>MonitoringOrganizationRepository.kt</code></td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>FacilityAssetsController</code>; consulta de sitios, áreas y equipos con filtrado de acceso</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Relacionamos la búsqueda y la selección de equipos con los registros de la organización y con el alcance autorizado del usuario.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><b>Integración y servicios RESTful</b><br>US62</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Repositorios Android que consumen los contratos HTTP; actualización de datos sin reiniciar la sesión</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>IntegrationBootstrapController</code> y endpoints <code>/api/v1/alertsincidents/**</code>, con autenticación y RBAC</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Contrastamos los datos devueltos por la API con el contenido mostrado en el móvil y diferenciamos las respuestas exitosas de los errores de autorización.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El cambio principal respecto del primer incremento consiste en la fuente de información de las pantallas. Los repositorios locales siguen formando parte de la estructura del proyecto, pero la candidata RC3 incorpora el endpoint autenticado <code>GET /api/v1/integration/bootstrap</code> para obtener un conjunto de datos filtrado en el servidor. Al ingresar a otro módulo, recuperar el primer plano o utilizar la acción de actualización, el cliente vuelve a consultar la información. No interpretamos este mecanismo como una sincronización instantánea: no implementamos WebSockets ni notificaciones push de actualización entre clientes.
+</p>
+
+<p style="text-align: justify;">
+  También revisamos la correspondencia entre las operaciones visibles y las operaciones que realmente acepta el backend. Las acciones de reconocer, resolver o escalar alertas, así como las de consultar y modificar recursos, están condicionadas por los permisos efectivos de cada sesión. Cuando una pantalla no cuenta con un endpoint equivalente, la mantenemos como consulta o demostración; no presentamos un guardado simulado como si hubiese modificado PostgreSQL. En la API, la eliminación de activos o sensores vinculados a registros clínicos devuelve un conflicto HTTP 409, con lo cual conservamos la integridad referencial y evitamos ocultar errores de negocio.
+</p>
+
+<p style="text-align: justify;">
+  Mantuvimos la documentación de las interfaces en OpenAPI y Swagger UI con descripciones en español e inglés. La sección 4.2.2.7 contiene los contratos y las respuestas HTTP; la sección 4.2.2.5 reúne los Unit Tests, Integration Tests y Acceptance Tests asociados a US62. Para verificar la correspondencia con el código de desarrollo, conservamos los siguientes repositorios y recursos técnicos utilizados durante este Sprint.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Recurso técnico</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Ubicación verificable</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Relación con el Sprint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Implementación móvil</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app/tree/develop/app/src/main/java/pe/edu/upc/safelab/boundedcontext/alertsincidents">Alerts &amp; Incidents en Android</a></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Pantallas, modelos y repositorio del Bounded Context de alertas e incidentes.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Organización de equipos</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app/tree/develop/app/src/main/java/pe/edu/upc/safelab/boundedcontext/facilityassets">Facility &amp; Assets en Android</a></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Vistas de sitios, áreas de almacenamiento y registro de equipos.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Servicios de la plataforma</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/tree/main/src/main/java/com/safelab/platform/alertsincidents">Módulo Alerts &amp; Incidents de la API</a></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Controlador, objetos del dominio y contratos RESTful vinculados a US62.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Plan de integración y matriz de compatibilidad</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/blob/main/docs/INTEGRATION_TEST_PLAN.md">Integration Test Plan</a> y <a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/blob/main/docs/COMPATIBILITY_MATRIX_RC3.md">Compatibility Matrix RC3</a></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Comprobaciones requeridas antes de considerar aprobada la integración de desarrollo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-list.png" alt="SafeLab Mobile App mostrando el listado de alertas ambientales implementado para el Sprint 2." width="35%">
+</p>
+<p align="center"><i>Figura: Listado de alertas ambientales desarrollado en el Sprint 2.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Swagger UI de SafeLab Platform API con los recursos RESTful organizados por Bounded Context durante el Sprint 2." width="100%">
+</p>
+<p align="center"><i>Figura: Contratos RESTful de SafeLab organizados por Bounded Context.</i></p>
+
 #### **4.2.2.5. Testing Suite Evidence for Sprint Review**
 
 <p style="text-align: justify;">
@@ -2139,7 +2311,9 @@ Feature: US62 - Provide alert and incident services
   En este Sprint, SafeLab Platform API se ejecuta en el entorno local de desarrollo con dos perfiles: <code>postgres</code>, que persiste los datos en PostgreSQL y que la aplicación móvil consume desde el emulador de Android mediante <code>http://10.0.2.2:8080/api/v1</code>, y <code>jsonserver</code>, que expone la misma API sobre los datos de demostración en el puerto 8081. Las capturas de esta sección se tomaron con el perfil <code>jsonserver</code>. El despliegue del servicio en un entorno público se describe en la sección de despliegue correspondiente.
 </p>
 
-<!-- PENDIENTE: si Carlos despliega el backend en Render antes de la entrega, reemplazar localhost:8080 por la URL pública en esta tabla y en el párrafo anterior. -->
+<p style="text-align: justify;">
+  Las direcciones anteriores corresponden a los perfiles locales utilizados para documentar y verificar los contratos del Sprint 2. La actualización del servicio desplegado en Render se considera por separado en la evidencia de publicación, porque la candidata RC3 todavía no se ha acreditado como release pública estable.
+</p>
 
 ##### **Interacción con la documentación**
 
@@ -2190,6 +2364,63 @@ Feature: US62 - Provide alert and incident services
 <p align="center"><i>Figura: Consulta de equipos de la empresa.</i></p>
 
 #### **4.2.2.8. Software Deployment Evidence for Sprint Review**
+
+<p style="text-align: justify;">
+  Para el Sprint 2 distinguimos dos evidencias de despliegue que corresponden a momentos distintos del proyecto. En el primer incremento configuramos la Landing Page en GitHub Pages y el servicio de SafeLab Platform API en Render con PostgreSQL. En el segundo incremento incorporamos la integración local <code>v2.5.0 RC3</code> entre Android y la API, pero conservamos esta versión como candidata de desarrollo. Por ello, no damos por demostrado que el despliegue de Render ejecute la misma revisión de código que probamos localmente.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Componente</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Entorno documentado</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Evidencia técnica disponible</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Estado para la revisión</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Landing Page</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">GitHub Pages desde <code>main</code></td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Configuración y publicación documentadas en el despliegue del Sprint 1.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Mantenemos su publicación como entregable independiente; no depende del backend para presentar el producto.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">SafeLab Platform API en Render</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Web Service Docker y PostgreSQL</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Configuración de variables, health check <code>/actuator/health</code> y Swagger descritos en 4.2.1.8.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Antecedente del Sprint 1; la actualización del servicio público a RC3 no está acreditada con un nuevo despliegue.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">SafeLab Platform API RC3</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><code>localhost:8080</code> (<code>postgres</code>) y <code>localhost:8081</code> (<code>jsonserver</code>)</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Contratos OpenAPI ES/EN, endpoints de alertas e incidentes, pruebas automatizadas y Flyway V1–V4.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Integración de desarrollo que requiere completar la batería de validación para considerarla una liberación estable.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Aplicación Android</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Android Emulator y dispositivo de prueba</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cliente RESTful configurado para la API local mediante <code>10.0.2.2:8080/api/v1</code>; pantallas del Sprint 2.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Compilación y ejecución local; no se distribuyó mediante tiendas de aplicaciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  La ruta de integración local que documentamos sigue la secuencia Android → API Spring Boot → PostgreSQL. Las credenciales de PostgreSQL permanecen en el servicio y no se copian al cliente móvil. Cuando el usuario inicia sesión, el backend entrega los permisos efectivos y filtra los registros de la organización; al actualizar la pantalla, Android consulta nuevamente el endpoint de integración. Así comprobamos la arquitectura de cliente y servidor sin conectar la aplicación directamente a la base de datos.
+</p>
+
+<p style="text-align: justify;">
+  Para revisar la API desde el equipo de desarrollo utilizamos <code>http://localhost:8080/swagger-ui.html</code>, los documentos OpenAPI <code>/v3/api-docs/es</code> y <code>/v3/api-docs/en</code> y el health check <code>/api/v1/health</code>. En la configuración histórica de Render se estableció además <code>/actuator/health</code> como ruta de supervisión del servicio. Son rutas con finalidades diferentes: la documentación describe los contratos, el health check permite evaluar la disponibilidad y la prueba funcional comprueba el comportamiento con autenticación y datos persistidos.
+</p>
+
+<p style="text-align: justify;">
+  Revisamos la candidata RC3 con la misma precaución aplicada a las migraciones. Las versiones Flyway V1–V4 forman parte de la estructura actual y la migración <code>V4__asset_responsible_user_assignment.sql</code> no debe ejecutarse mediante reinicializaciones de la base ni alterarse después de su aplicación. La verificación de relaciones se apoya en <code>database/diagnostics/verify_rc3_relations.sql</code> y en las pruebas de PostgreSQL. Conservamos las cuentas de demostración y el perfil <code>jsonserver</code> para desarrollo, no como evidencia de un ambiente productivo seguro.
+</p>
+
+<p style="text-align: justify;">
+  Antes de aprobar una publicación actualizada del backend necesitamos asociar el commit utilizado en el despliegue con el resultado de <code>mvn test</code>, la compilación de Android, la construcción del frontend web y las pruebas cruzadas descritas en el <a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/blob/main/docs/INTEGRATION_TEST_PLAN.md">Integration Test Plan</a>. Esta verificación forma parte de nuestro control de calidad porque una aplicación que responde localmente no demuestra por sí sola que la misma versión esté funcionando en el servidor público. La documentación del repositorio mantiene expresamente RC3 como candidata local y no como release estable.
+</p>
 
 #### **4.2.2.9. Team Collaboration Insights during Sprint**
 
