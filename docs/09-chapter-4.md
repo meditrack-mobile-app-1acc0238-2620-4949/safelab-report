@@ -2424,6 +2424,121 @@ Feature: US62 - Provide alert and incident services
 
 #### **4.2.2.9. Team Collaboration Insights during Sprint**
 
+<p style="text-align: justify;">
+  Durante el Sprint 2, el equipo Meditrack mantuvo la estrategia de ramas por entrega: cada repositorio trabajó con ramas <code>feature/av2-*</code> que se integraron en <code>develop</code> y, una vez revisadas, en <code>main</code> con su respectivo tag de versión. A diferencia del Sprint 1, el trabajo se dividió en dos frentes: la implementación técnica de la aplicación móvil, la aplicación web y la SafeLab Platform API, y la documentación de las evidencias del Sprint en el reporte, donde cada integrante se encargó de las secciones de su aspecto en la rama <code>feature/av2-chapter-4</code>.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Integrante</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Contribución principal en el Sprint 2</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Resultado colaborativo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Carlos Lavado, Ever Giusephi</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Refactorización nativa, multitenencia con RBAC e integración con la API en Mobile; refactorización e integración de la aplicación web; JSON Server, persistencia en PostgreSQL con Flyway e integración Web/Mobile en la SafeLab Platform API; Development Evidence y Software Deployment Evidence en el reporte.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Integración de los tres productos técnicos en las versiones <code>av2-v2.5.0</code> (Mobile y Web) y <code>backend-v2.5.0</code> (API), que sirvieron de base para las evidencias del Sprint.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Espino Rossi, Victor Manuel</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Aspect Leaders and Collaborators del Sprint 2; Services Documentation Evidence con capturas de Swagger; corrección de contraste y arquitectura de información en el capítulo 3.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Correspondencia entre los contratos documentados en Swagger, los responsables de cada aspecto y las guías de diseño de la aplicación.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Garcia Cerpa, Braden Raid</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Testing Suite Evidence del Sprint 2: Unit Tests, Integration Tests y Acceptance Tests BDD de US62 sobre la SafeLab Platform API.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Validación de los servicios de alertas e incidentes que consumen las aplicaciones móvil y web.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Rojas Gomez, Valeria Alexandra</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Sprint Planning 2 y Sprint Backlog 2; estructura de los Sprints 2 y 3; Product Backlog con evidencia y URL de Jira; diseño de las entrevistas de validación; Student Outcome y conclusiones.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Alineación entre el Product Backlog, la planificación del Sprint y las User Stories implementadas y documentadas por el equipo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Vara Velásquez, Oscar Fernando</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Execution Evidence del Sprint 2 con las pantallas de la aplicación móvil.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Evidencia visual de las funcionalidades del Sprint 2 ejecutadas en la aplicación.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  En el repositorio del reporte, la rama <code>feature/av2-chapter-4</code> reunió 18 commits de los cinco integrantes entre el 6 y el 11 de noviembre de 2026, a los que se suman dos commits de la rama <code>feature/av2-chapter-3</code>. Cada integrante trabajó sobre una sección distinta del capítulo 4, por lo que los commits se integraron de forma secuencial y sin conflictos. Los mensajes con el prefijo <code>docs(chapter-4)</code> permiten identificar qué sección agregó cada integrante.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-report-commits.png" alt="Commits de los integrantes en la rama feature/av2-chapter-4 del repositorio safelab-report durante el Sprint 2." width="100%">
+</p>
+
+<p align="center"><i>Figura: Commits de los integrantes en la rama feature/av2-chapter-4 del reporte durante el Sprint 2.</i></p>
+
+<p style="text-align: justify;">
+  En los repositorios de código, GitHub Insights muestra que el incremento del Sprint 2 se concentró en la semana del 2 de noviembre. En <code>safelab-mobile-app</code> se registraron 9 commits de desarrollo y 11 merge commits, y en <code>safelab-platform-api</code> y <code>safelab-frontend</code> se registraron 3 commits de desarrollo y 6 merge commits en cada uno, todos realizados por Carlos Lavado, Ever Giusephi. En cambio, el gráfico de contribuidores de Mobile muestra que los aportes de Victor, Oscar, Valeria y Braden corresponden a la semana del 5 de octubre, cuando cada integrante implementó sus Bounded Contexts en el Sprint 1.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-mobile-commits-over-time.png" alt="Commits over time del repositorio safelab-mobile-app en GitHub Insights." width="100%">
+</p>
+
+<p align="center"><i>Figura: Commits over time del repositorio safelab-mobile-app.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-mobile-contributors.png" alt="Contribuidores del repositorio safelab-mobile-app en GitHub Insights." width="100%">
+</p>
+
+<p align="center"><i>Figura: Contribuidores del repositorio safelab-mobile-app.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-api-contributors.png" alt="Contribuidores y commits over time del repositorio safelab-platform-api en GitHub Insights." width="100%">
+</p>
+
+<p align="center"><i>Figura: Contribuidores y commits over time del repositorio safelab-platform-api.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-frontend-contributors.png" alt="Contribuidores y commits over time del repositorio safelab-frontend en GitHub Insights." width="100%">
+</p>
+
+<p align="center"><i>Figura: Contribuidores y commits over time del repositorio safelab-frontend.</i></p>
+
+<p style="text-align: justify;">
+  Concentrar la integración técnica en un solo integrante permitió cambiar de forma coherente la arquitectura de los tres productos (multitenencia, RBAC, PostgreSQL y consumo de la API) sin que varias ramas modificaran a la vez los mismos archivos. Sin embargo, también generó una dependencia: las secciones de testing, ejecución, documentación de servicios y despliegue solo pudieron completarse cuando las versiones <code>v2.5.0</code> estuvieron integradas en <code>main</code>. Como aprendizaje del Sprint, el equipo identificó la necesidad de repartir nuevamente la implementación por Bounded Context, como en el Sprint 1, y de publicar antes las versiones integradas para que la documentación avance en paralelo.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Insight</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Evidencia observada</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Acción para el siguiente Sprint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Separar el reporte por secciones evita conflictos.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Los cinco integrantes registraron commits en <code>feature/av2-chapter-4</code> sin conflictos al modificar secciones distintas.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Mantener una sección por responsable y el prefijo <code>docs(chapter-4)</code> en los commits.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">La implementación técnica se concentró en un integrante.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">GitHub Insights muestra que todos los commits de Mobile, Web y API del Sprint 2 pertenecen a Carlos Lavado, Ever Giusephi.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Asignar los Bounded Contexts del Sprint 3 entre los cinco integrantes, con una rama por BC en cada repositorio.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">La documentación depende de las versiones integradas.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Las secciones 4.2.2.4 a 4.2.2.8 se registraron después de integrar las versiones <code>v2.5.0</code> en <code>main</code>.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Integrar y etiquetar las versiones al inicio del cierre del Sprint para que la documentación se realice en paralelo.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Los tags de versión mejoran la trazabilidad.</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Cada repositorio registró tags por versión (<code>av2-v1.0.0</code>, <code>av2-v1.1.0</code>, <code>av2-v2.5.0</code> y <code>backend-v1.0.0</code> a <code>backend-v2.5.0</code>).</td>
+      <td style="text-align: justify; vertical-align: top; padding: 6px;">Mantener Conventional Commits, merges hacia <code>develop</code> y <code>main</code>, y tags por entrega.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### **4.2.3. Sprint 3**
 
 #### **4.2.3.1. Sprint Planning 3**
