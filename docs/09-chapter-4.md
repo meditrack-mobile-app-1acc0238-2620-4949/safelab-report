@@ -1010,15 +1010,13 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
     </tr>
     
   </tbody>
-</table
+</table>
 
 ##### **Interacción con la documentación**
 
 <p style="text-align: justify;">
   A continuación se muestran capturas de la interacción con Swagger UI utilizando los datos de muestra: el inicio de sesión con <code>POST /auth/sign-in</code>, la consulta de sensores con <code>GET /sensor-monitoring/sensors</code> y el registro de una lectura fuera de rango con <code>PATCH /sensor-monitoring/sensors/{id}/reading</code>, que genera una alerta automática.
 </p>
-
-<!-- PENDIENTE: agregar 3 capturas de Swagger en assets/09-chapter-4/sprint-1/services/ (sign-in, listado de sensores y registro de lectura). -->
 
 #### **4.2.1.8. Software Deployment Evidence for Sprint Review**
 

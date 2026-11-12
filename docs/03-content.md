@@ -162,6 +162,7 @@
     - [4.3.1. Interview Design](09-chapter-4.md#431-interview-design)
     - [4.3.2. Interview Recording](09-chapter-4.md#432-interview-recording)
     - [4.3.3. Evaluations Based on Heuristics](09-chapter-4.md#433-evaluations-based-on-heuristics)
+  - [**4.4. Video About-the-Product**](09-chapter-4.md#44-video-about-the-product)
 - [**Conclusions**](10-conclusions.md#conclusions)
   - [**Conclusions and recommendations**](10-conclusions.md#conclusions-and-recommendations)
 - [**Bibliography**](12-bibliography.md#bibliography)
