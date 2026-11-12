@@ -2604,6 +2604,25 @@ Feature: US62 - Provide alert and incident services
 
 #### **4.2.3.2. Aspect Leaders and Collaborators**
 
+<p style="text-align: justify;">
+  Para el Sprint 3, la distribución de responsabilidades se organizó a partir de las 16 User Stories y los 32 Work-items registrados en el Sprint Backlog. El alcance se concentra en la consulta histórica, los reportes, el dashboard y el análisis de tendencias, por lo que se relacionó cada aspecto con los integrantes responsables de sus historias. Esta tabla refleja la asignación del backlog, no una medición de commits individuales.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead><tr><th style="padding: 6px;">Aspecto</th><th style="padding: 6px;">Responsable principal según el backlog</th><th style="padding: 6px;">Colaboradores y User Stories relacionadas</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Consulta de datos históricos y comparación temporal</td><td style="padding: 6px;">Giusephi Carlos</td><td style="padding: 6px;">Oscar Vara (US17, US28), Giusephi Carlos (US27, US29) y Victor Espino (US34).</td></tr>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics y servicios RESTful</td><td style="padding: 6px;">Victor Espino (US63)</td><td style="padding: 6px;">Braden Garcia (US30), Oscar Vara (US31) y Valeria Rojas (US33). Se relacionan generación, consulta, descarga y exportación de reportes.</td></tr>
+    <tr><td style="padding: 6px;">Dashboard &amp; Insights</td><td style="padding: 6px;">Valeria Rojas (US43)</td><td style="padding: 6px;">Giusephi Carlos (US45), Victor Espino (US47), Braden Garcia (US48), Valeria Rojas (US49) y Oscar Vara (US50).</td></tr>
+    <tr><td style="padding: 6px;">Historial de incidentes</td><td style="padding: 6px;">Braden Garcia</td><td style="padding: 6px;">US32, relacionada con los registros del módulo Alerts &amp; Incidents desarrollado en el incremento anterior.</td></tr>
+    <tr><td style="padding: 6px;">Planificación, seguimiento y reporte del Sprint</td><td style="padding: 6px;">Valeria Rojas</td><td style="padding: 6px;">Coordinación con los cinco integrantes para mantener la correspondencia entre las historias, el backlog de Jira y las evidencias de implementación.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  La asignación busca mantener la separación por Bounded Contexts utilizada en SafeLab y facilitar que las secciones de desarrollo, pruebas y ejecución puedan relacionarse con sus User Stories. Los resultados de testing y los datos de contribución en GitHub se registran por separado, únicamente cuando cuentan con evidencia verificable.
+</p>
+
 #### **4.2.3.3. Sprint Backlog 3**
 
 <p style="text-align: justify;">
@@ -2753,15 +2772,393 @@ Feature: US62 - Provide alert and incident services
 
 #### **4.2.3.4. Development Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  Durante la revisión del alcance del Sprint 3 se relacionaron las User Stories de datos históricos, reportes y dashboard con los módulos existentes de la aplicación Android y de SafeLab Platform API. Se mantuvo la organización por Bounded Contexts y la separación entre las capas de presentación, dominio y datos de la aplicación móvil. Asimismo, se distinguieron las funcionalidades implementadas como vistas de demostración de los recursos que cuentan con un contrato RESTful en el backend.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead><tr><th style="padding: 6px;">Aspecto y User Stories</th><th style="padding: 6px;">Implementación Android</th><th style="padding: 6px;">Servicio o fuente de información relacionada</th><th style="padding: 6px;">Alcance revisado</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;"><b>Datos históricos</b><br>US17, US27, US28, US29 y US34</td><td style="padding: 6px;"><code>HistoricalReadingsScreen.kt</code>, <code>HistoricalDataScreen.kt</code> y <code>SensorMonitoringRepository.kt</code></td><td style="padding: 6px;">Repositorio de lecturas del módulo Sensor Monitoring; datos de demostración en Reporting &amp; Analytics</td><td style="padding: 6px;">Consulta de registros, presentación temporal y opciones de filtrado. La comparación completa entre períodos y el filtrado histórico desde la API deben validarse por separado.</td></tr>
+    <tr><td style="padding: 6px;"><b>Reportes y exportación</b><br>US30, US31, US33 y US63</td><td style="padding: 6px;"><code>ReportsScreen.kt</code>, <code>GenerateReportScreen.kt</code>, <code>ExportDataScreen.kt</code> y <code>ReportingComplianceEntryScreen.kt</code></td><td style="padding: 6px;"><code>ReportingAnalyticsController</code>; recursos <code>/reports</code> y <code>/summary</code></td><td style="padding: 6px;">Pantallas para consulta, búsqueda, configuración de reportes y opciones de exportación. El backend puede registrar un reporte simulado, pero no genera un PDF descargable.</td></tr>
+    <tr><td style="padding: 6px;"><b>Dashboard operativo e indicadores</b><br>US43, US45 y US47</td><td style="padding: 6px;"><code>DashboardScreen.kt</code>, <code>DashboardComponents.kt</code> y <code>DashboardOverviewEntryScreen.kt</code></td><td style="padding: 6px;"><code>DashboardInsightsController</code>; <code>GET /api/v1/dashboardinsights/overview</code></td><td style="padding: 6px;">Presentación de métricas, alertas priorizadas y estado de los recursos. El servicio ofrece totales según los permisos y la empresa; algunas tarjetas de Android todavía usan <code>DashboardMockData</code>.</td></tr>
+    <tr><td style="padding: 6px;"><b>Tendencias ambientales</b><br>US48, US49 y US50</td><td style="padding: 6px;"><code>MonitoringTrendsScreen.kt</code> y componentes gráficos del módulo Dashboard &amp; Insights</td><td style="padding: 6px;"><code>DashboardMockData</code> para los gráficos de demostración; servicios de sensores y alertas disponibles para consultas</td><td style="padding: 6px;">Visualización de tendencias y resúmenes. No se considera acreditado un cálculo histórico de temperatura, humedad o alertas desde la API sin una prueba específica.</td></tr>
+    <tr><td style="padding: 6px;"><b>Historial de incidentes</b><br>US32</td><td style="padding: 6px;">Pantallas y repositorio del módulo Alerts &amp; Incidents</td><td style="padding: 6px;"><code>AlertsIncidentsController</code>; <code>GET /api/v1/alertsincidents/incidents</code></td><td style="padding: 6px;">Consulta de incidentes registrados y sus estados, respetando el alcance autorizado de la sesión.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  La continuidad respecto del Sprint 2 se encuentra en el consumo de información mediante la arquitectura Android → API RESTful → PostgreSQL y en las restricciones de acceso por organización. La API dispone de recursos para consultar reportes, obtener un resumen de actividad y calcular totales del dashboard. En cambio, las vistas de generación y exportación de archivos y parte de los gráficos conservan datos o interacciones de demostración. Por ello, la presencia de una pantalla no se considera prueba suficiente de persistencia ni de generación física de archivos.
+</p>
+
+<p style="text-align: justify;">
+  Para revisar la implementación se conservan como referencia los repositorios oficiales del proyecto. Las rutas siguientes corresponden al código disponible y permiten identificar los componentes relacionados con el alcance del Sprint.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead><tr><th style="padding: 6px;">Recurso técnico</th><th style="padding: 6px;">Ubicación</th><th style="padding: 6px;">Relación con el Sprint 3</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics en Android</td><td style="padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app/tree/develop/app/src/main/java/pe/edu/upc/safelab/boundedcontext/reportinganalytics">Módulo reportinganalytics</a></td><td style="padding: 6px;">Pantallas de consulta histórica, reportes y exportación.</td></tr>
+    <tr><td style="padding: 6px;">Dashboard &amp; Insights en Android</td><td style="padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-mobile-app/tree/develop/app/src/main/java/pe/edu/upc/safelab/boundedcontext/dashboardinsights">Módulo dashboardinsights</a></td><td style="padding: 6px;">Indicadores y visualización de tendencias.</td></tr>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics en la API</td><td style="padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/tree/main/src/main/java/com/safelab/platform/reportinganalytics">Módulo reportinganalytics</a></td><td style="padding: 6px;">Consulta, resumen y registro de reportes.</td></tr>
+    <tr><td style="padding: 6px;">Dashboard &amp; Insights en la API</td><td style="padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api/tree/main/src/main/java/com/safelab/platform/dashboardinsights">Módulo dashboardinsights</a></td><td style="padding: 6px;">Resumen de indicadores según autorización.</td></tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-navigation.png" alt="Navegación principal de SafeLab utilizada como punto de acceso a los módulos de consulta." width="35%">
+</p>
+
+<p align="center"><i>Figura: Navegación principal de SafeLab utilizada como punto de acceso a los módulos de consulta.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Organización de los contratos RESTful en Swagger UI." width="100%">
+</p>
+
+<p align="center"><i>Figura: Organización de los contratos RESTful en Swagger UI.</i></p>
+
 #### **4.2.3.5. Testing Suite Evidence for Sprint Review**
+
+<p style="text-align: justify;">
+  Para el Sprint 3 se definieron las verificaciones correspondientes a <b>US63 - Proporcionar servicios de datos históricos y reportes</b>, manteniendo la clasificación del Sprint 2 en Unit Tests, Integration Tests y Acceptance Tests (BDD). El backend dispone de infraestructura de pruebas con JUnit y Spring Boot Test, pero en la revisión del código aportado no se identificó una suite específica de US63 ni un reporte de ejecución comparable al de US62. Por ello, los casos siguientes constituyen una matriz de validación del Sprint 3 y no se presentan como resultados aprobados.
+</p>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-project-structure.png" alt="Organización de la estructura de pruebas del backend, utilizada como referencia para la suite de US63." width="100%">
+</p>
+
+<p align="center"><i>Figura: Organización de la estructura de pruebas del backend, utilizada como referencia para la suite de US63.</i></p>
+
+##### **Unit Tests**
+
+<p style="text-align: justify;">
+  Las pruebas unitarias deben aislar la lógica de consulta y registro de reportes del controlador <code>ReportingAnalyticsController</code>. Al igual que en el Sprint 2, es posible reemplazar los servicios y el acceso a datos por mocks, comprobando tanto el contenido de las respuestas como los permisos requeridos.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead><tr><th style="padding: 6px;">Componente</th><th style="padding: 6px;">Comportamiento por verificar</th><th style="padding: 6px;">User Story</th><th style="padding: 6px;">Evidencia</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;"><code>ReportingAnalyticsController</code></td><td style="padding: 6px;">Devolver los reportes visibles para la sesión autenticada.</td><td style="padding: 6px;">US63</td><td style="padding: 6px;">Pendiente de ejecución específica</td></tr>
+    <tr><td style="padding: 6px;"><code>ReportingAnalyticsController</code></td><td style="padding: 6px;">Calcular el resumen de reportes, sensores y alertas respetando los permisos.</td><td style="padding: 6px;">US63</td><td style="padding: 6px;">Pendiente de ejecución específica</td></tr>
+    <tr><td style="padding: 6px;"><code>ReportingAnalyticsController</code></td><td style="padding: 6px;">Registrar los metadatos de un reporte válido e identificar solicitudes inválidas.</td><td style="padding: 6px;">US63</td><td style="padding: 6px;">Pendiente de ejecución específica</td></tr>
+  </tbody>
+</table>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-unit-tests-results.png" alt="Formato de visualización de los resultados unitarios utilizado en la suite del Sprint 2." width="100%">
+</p>
+
+<p align="center"><i>Figura: Formato de visualización de los resultados unitarios utilizado en la suite del Sprint 2.</i></p>
+
+##### **Integration Tests**
+
+<p style="text-align: justify;">
+  Las pruebas de integración deben consumir los endpoints del módulo con una sesión autenticada, incluyendo el filtro de seguridad, el control de acceso por empresa y la capa de persistencia. También se debe comprobar que las respuestas de la API coincidan con la información que presenta el cliente móvil en los escenarios efectivamente integrados.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead><tr><th style="padding: 6px;">Endpoint</th><th style="padding: 6px;">Caso por verificar</th><th style="padding: 6px;">Resultado esperado</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;"><code>GET /api/v1/reportinganalytics/reports</code></td><td style="padding: 6px;">Consultar reportes con usuario autorizado.</td><td style="padding: 6px;">200 OK y únicamente los reportes visibles para su organización.</td></tr>
+    <tr><td style="padding: 6px;"><code>GET /api/v1/reportinganalytics/summary</code></td><td style="padding: 6px;">Consultar el resumen de actividad.</td><td style="padding: 6px;">200 OK con totales de reportes, sensores y alertas autorizados.</td></tr>
+    <tr><td style="padding: 6px;"><code>POST /api/v1/reportinganalytics/reports</code></td><td style="padding: 6px;">Enviar un reporte válido con permisos de exportación.</td><td style="padding: 6px;">201 Created con registro de metadatos; no implica descarga de archivo físico.</td></tr>
+    <tr><td style="padding: 6px;">Endpoints de Reporting &amp; Analytics</td><td style="padding: 6px;">Solicitudes sin token o con permisos insuficientes.</td><td style="padding: 6px;">Respuesta 401 o 403, según corresponda.</td></tr>
+  </tbody>
+</table>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-integration-tests-results.png" alt="Formato de ejecución de las pruebas de integración utilizado como referencia." width="100%">
+</p>
+
+<p align="center"><i>Figura: Formato de ejecución de las pruebas de integración utilizado como referencia.</i></p>
+
+##### **Acceptance Tests (BDD)**
+
+<p style="text-align: justify;">
+  Los escenarios BDD propuestos para US63 siguen la estructura Given–When–Then utilizada en los Acceptance Tests del Sprint 2. Se enfocan en la consulta de reportes, la respuesta ante falta de autorización y la creación de un registro de reporte. Los escenarios deberán incorporarse a un archivo <code>.feature</code> y ejecutarse antes de registrar resultados aprobados.
+</p>
+
+```gherkin
+@US63
+Feature: US63 - Provide historical data and report services
+  As an authorized SafeLab user
+  I want to access reporting information
+  So that I can review the monitoring activity of my organization
+
+  Scenario: Consult authorized reports
+    Given the user is signed in with permission to view reports
+    When the client requests the report list
+    Then the service responds with status 200
+    And the response contains only authorized reports
+
+  Scenario: Request reports without authentication
+    Given the client has no valid session token
+    When the client requests the report list
+    Then the service responds with status 401
+
+  Scenario: Register a report
+    Given the user is signed in with permission to export reports
+    When the client submits a valid report request
+    Then the service responds with status 201
+    And the response contains the report metadata
+```
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-cucumber-report.png" alt="Estructura del reporte Cucumber empleado para documentar escenarios BDD." width="100%">
+</p>
+
+<p align="center"><i>Figura: Estructura del reporte Cucumber empleado para documentar escenarios BDD.</i></p>
+
+##### **Resultados**
+
+<p style="text-align: justify;">
+  La revisión del código permite identificar los controladores y contratos que deben evaluarse, pero todavía no permite registrar una cantidad de pruebas aprobadas de US63. Para completar esta evidencia se requiere ejecutar la suite correspondiente, conservar la salida de Maven y adjuntar capturas del resumen de Unit Tests, Integration Tests y Cucumber. Los resultados de US62 del Sprint 2 no se reutilizan como si correspondieran al Sprint 3.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/testing-mvn-test-summary.png" alt="Ejemplo del resumen de Maven empleado como formato de control de las pruebas." width="100%">
+</p>
+
+<p align="center"><i>Figura: Ejemplo del resumen de Maven empleado como formato de control de las pruebas.</i></p>
 
 #### **4.2.3.6. Execution Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  La revisión de ejecución del Sprint 3 se organiza alrededor de la consulta de datos históricos, los reportes y el dashboard de SafeLab. Las pantallas mantienen los componentes de navegación y los lineamientos visuales de la aplicación Android. Para cada vista se relaciona la funcionalidad observada con su User Story y se diferencia la información de demostración de los datos obtenidos mediante servicios RESTful.
+</p>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-navigation.png" alt="Menú de navegación de SafeLab y acceso a los módulos principales." width="35%">
+</p>
+
+<p align="center"><i>Figura: Menú de navegación de SafeLab y acceso a los módulos principales.</i></p>
+
+##### **Historical Data**
+
+<p style="text-align: justify;">
+  La pantalla de lecturas históricas permite consultar registros asociados a un sensor y aplicar filtros por estado. Por su parte, el módulo Reporting &amp; Analytics presenta una vista de datos históricos con registros de demostración y búsqueda. Estas pantallas sirven como referencia visual para US17 y US27. La selección de rangos y la comparación efectiva entre períodos de US28, US29 y US34 requieren una comprobación adicional con registros fechados.
+</p>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-equipment-alerts.png" alt="Vista de equipos con alertas activas, utilizada como referencia del origen de datos de los reportes." width="35%">
+</p>
+
+<p align="center"><i>Figura: Vista de equipos con alertas activas, utilizada como referencia del origen de datos de los reportes.</i></p>
+
+##### **Reporting &amp; Analytics**
+
+<p style="text-align: justify;">
+  La sección de reportes dispone de un listado con búsqueda y filtros por tipo, así como de pantallas para configurar la generación de un reporte y seleccionar opciones de exportación (US30, US31 y US33). Las interfaces permiten mostrar el flujo esperado al usuario, aunque en la versión revisada las acciones de generación y descarga no constituyen evidencia de creación o descarga de un archivo real. La API permite crear un registro de reporte simulado y consultar los reportes autorizados (US63).
+</p>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-list.png" alt="Listado de alertas que alimenta los indicadores y reportes operativos." width="35%">
+</p>
+
+<p align="center"><i>Figura: Listado de alertas que alimenta los indicadores y reportes operativos.</i></p>
+
+##### **Dashboard &amp; Insights**
+
+<p style="text-align: justify;">
+  El dashboard presenta tarjetas de indicadores, alertas priorizadas y secciones de seguimiento operacional (US43 y US45). También se encuentra disponible una pantalla de tendencias con gráficos y resúmenes visuales (US48–US50). La API proporciona totales de sensores, equipos, alertas, incidentes y reportes para la organización autorizada, mientras que las vistas Android revisadas conservan parte de su contenido en <code>DashboardMockData</code>. La correspondencia entre ambas fuentes debe validarse antes de afirmar que todas las gráficas representan mediciones persistidas.
+</p>
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-severity.png" alt="Clasificación visual de alertas por severidad para el seguimiento operativo." width="35%">
+</p>
+
+<p align="center"><i>Figura: Clasificación visual de alertas por severidad para el seguimiento operativo.</i></p>
+
+##### **Historial de incidentes**
+
+<p style="text-align: justify;">
+  La consulta de incidentes del incremento anterior sirve de base para US32. Los registros incluyen información relacionada con el estado del incidente y pueden consultarse mediante los servicios protegidos del Bounded Context Alerts &amp; Incidents.
+</p>
+
+<p style="text-align: justify;">
+  Las imágenes incorporadas muestran los componentes de navegación, consulta de equipos y gestión de alertas que sirven de referencia para los flujos de reportes, historial y dashboard. La descripción de las pantallas de históricos, generación y exportación se sustenta en los componentes del proyecto Android; las capturas reutilizadas representan sus módulos relacionados, sin atribuirles acciones que no muestran.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alert-detail.png" alt="Detalle de una alerta y sus datos asociados, relacionados con el seguimiento histórico." width="35%">
+</p>
+
+<p align="center"><i>Figura: Detalle de una alerta y sus datos asociados, relacionados con el seguimiento histórico.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-critical.png" alt="Priorización de alertas críticas para el análisis del estado del monitoreo." width="35%">
+</p>
+
+<p align="center"><i>Figura: Priorización de alertas críticas para el análisis del estado del monitoreo.</i></p>
+
 #### **4.2.3.7. Services Documentation Evidence for Sprint Review**
+
+<p style="text-align: justify;">
+  El Sprint 3 se relaciona principalmente con los servicios del Bounded Context Reporting &amp; Analytics y con los indicadores del módulo Dashboard &amp; Insights. SafeLab Platform API mantiene los contratos RESTful documentados mediante OpenAPI y Swagger UI, la autenticación mediante token y las restricciones de acceso por rol y organización. En esta revisión se documentan los endpoints presentes en el backend, sin incorporar rutas de comparación histórica o descarga de archivos que todavía no han sido verificadas en el código.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed; word-break: break-word;">
+  <thead><tr><th style="padding: 6px;">Bounded Context</th><th style="padding: 6px;">Endpoint</th><th style="padding: 6px;">Verbo HTTP</th><th style="padding: 6px;">Acción</th><th style="padding: 6px;">Permiso y respuesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Identity &amp; Access</td><td style="padding: 6px;"><code>/api/v1/auth/login</code></td><td style="padding: 6px;">POST</td><td style="padding: 6px;">Iniciar sesión para acceder a los recursos protegidos.</td><td style="padding: 6px;">Recibe identificador y contraseña; entrega un token de acceso cuando las credenciales son válidas.</td></tr>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics</td><td style="padding: 6px;"><code>/api/v1/reportinganalytics/reports</code></td><td style="padding: 6px;">GET</td><td style="padding: 6px;">Consultar los reportes disponibles (US63).</td><td style="padding: 6px;">Permiso <code>reports.view</code>. Respuesta 200 OK con una lista de reportes permitidos.</td></tr>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics</td><td style="padding: 6px;"><code>/api/v1/reportinganalytics/summary</code></td><td style="padding: 6px;">GET</td><td style="padding: 6px;">Obtener el resumen de actividad y cobertura (US63).</td><td style="padding: 6px;">Devuelve los campos <code>reports</code>, <code>sensors</code> y <code>alerts</code>, calculados a partir de las listas autorizadas.</td></tr>
+    <tr><td style="padding: 6px;">Reporting &amp; Analytics</td><td style="padding: 6px;"><code>/api/v1/reportinganalytics/reports</code></td><td style="padding: 6px;">POST</td><td style="padding: 6px;">Crear un registro de reporte (US30, US63).</td><td style="padding: 6px;">Permiso <code>reports.export</code>. Body con <code>title</code> y <code>type</code>. Respuesta 201 Created con <code>format: CSV</code>, <code>status: ready</code> y fecha de generación. No produce un archivo PDF o CSV descargable.</td></tr>
+    <tr><td style="padding: 6px;">Dashboard &amp; Insights</td><td style="padding: 6px;"><code>/api/v1/dashboardinsights/overview</code></td><td style="padding: 6px;">GET</td><td style="padding: 6px;">Consultar los indicadores generales (US43, US45 y US47).</td><td style="padding: 6px;">Permiso <code>dashboard.view</code>. Devuelve totales de organizaciones, sensores, equipos, alertas, incidentes y reportes, según el alcance del usuario.</td></tr>
+    <tr><td style="padding: 6px;">Sensor Monitoring</td><td style="padding: 6px;"><code>/api/v1/sensormonitoring/sensors</code></td><td style="padding: 6px;">GET</td><td style="padding: 6px;">Consultar sensores y datos disponibles (US17 y US27).</td><td style="padding: 6px;">Permiso <code>sensors.view</code>. Devuelve los sensores de los recursos asignados. No constituye por sí solo un servicio de series históricas por intervalo.</td></tr>
+    <tr><td style="padding: 6px;">Alerts &amp; Incidents</td><td style="padding: 6px;"><code>/api/v1/alertsincidents/incidents</code></td><td style="padding: 6px;">GET</td><td style="padding: 6px;">Consultar incidentes de la organización (US32).</td><td style="padding: 6px;">Permiso <code>incidents.view</code>. Respuesta 200 OK con incidentes autorizados y sus estados.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Las respuestas de la API utilizan los códigos HTTP definidos en la plataforma: <code>200 OK</code> para consultas válidas, <code>201 Created</code> para recursos creados y errores como <code>400</code>, <code>401</code>, <code>403</code> o <code>404</code> cuando corresponda. El control de acceso impide que un usuario consulte registros de otra organización o ejecute operaciones para las que no tenga permisos. La generación efectiva de archivos, las comparaciones históricas por período y las tendencias calculadas sobre series temporales se mantienen como puntos por validar respecto del alcance de las User Stories.
+</p>
+
+##### **Acceso a la documentación**
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead><tr><th style="padding: 6px;">Recurso</th><th style="padding: 6px;">URL o ubicación</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Swagger UI local</td><td style="padding: 6px;"><code>http://localhost:8080/swagger-ui.html</code></td></tr>
+    <tr><td style="padding: 6px;">OpenAPI en español</td><td style="padding: 6px;"><code>http://localhost:8080/v3/api-docs/es</code></td></tr>
+    <tr><td style="padding: 6px;">OpenAPI en inglés</td><td style="padding: 6px;"><code>http://localhost:8080/v3/api-docs/en</code></td></tr>
+    <tr><td style="padding: 6px;">Health check</td><td style="padding: 6px;"><code>http://localhost:8080/api/v1/health</code></td></tr>
+    <tr><td style="padding: 6px;">Código fuente de los servicios</td><td style="padding: 6px;"><a href="https://github.com/meditrack-mobile-app-1acc0238-2620-4949/safelab-platform-api">Repositorio safelab-platform-api</a></td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Para ilustrar el uso de Swagger se incluyen las capturas de navegación, autenticación y consumo de servicios registradas en el incremento anterior. Los contratos de Reporting &amp; Analytics y Dashboard &amp; Insights se detallan en la tabla anterior, mientras que las capturas permiten reconocer la estructura común de autenticación, parámetros y respuestas de la API.
+</p>
+##### **Interacción con la documentación**
+
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Vista general de Swagger UI y agrupación de recursos RESTful." width="100%">
+</p>
+
+<p align="center"><i>Figura: Vista general de Swagger UI y agrupación de recursos RESTful.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-login-authorize.png" alt="Inicio de sesión y autorización Bearer en la documentación interactiva." width="100%">
+</p>
+
+<p align="center"><i>Figura: Inicio de sesión y autorización Bearer en la documentación interactiva.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-get-alerts.png" alt="Ejemplo de respuesta autorizada en la documentación de servicios." width="100%">
+</p>
+
+<p align="center"><i>Figura: Ejemplo de respuesta autorizada en la documentación de servicios.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-get-assets.png" alt="Consulta de equipos que aportan información al monitoreo operativo." width="100%">
+</p>
+
+<p align="center"><i>Figura: Consulta de equipos que aportan información al monitoreo operativo.</i></p>
 
 #### **4.2.3.8. Software Deployment Evidence for Sprint Review**
 
+<p style="text-align: justify;">
+  Para el Sprint 3 se mantiene la distinción entre la publicación de la Landing Page, el servicio desplegado previamente y la integración local utilizada para revisar el incremento Android/API. La existencia de endpoints de reportes y dashboard en el código no demuestra, por sí misma, que esos cambios hayan sido publicados en Render. Por este motivo, la documentación del despliegue conserva como antecedente los entornos del Sprint 2 y especifica qué comprobaciones son necesarias para acreditar una nueva versión.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead><tr><th style="padding: 6px;">Componente</th><th style="padding: 6px;">Entorno</th><th style="padding: 6px;">Evidencia disponible</th><th style="padding: 6px;">Estado en el Sprint 3</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Landing Page</td><td style="padding: 6px;">GitHub Pages</td><td style="padding: 6px;">Publicación previamente documentada en los primeros incrementos.</td><td style="padding: 6px;">Se mantiene como presentación independiente del producto.</td></tr>
+    <tr><td style="padding: 6px;">SafeLab Platform API pública</td><td style="padding: 6px;">Render y PostgreSQL</td><td style="padding: 6px;">Configuración histórica descrita en los Sprints anteriores.</td><td style="padding: 6px;">No se atribuye una nueva versión pública al Sprint 3 sin evidencia de despliegue y commit.</td></tr>
+    <tr><td style="padding: 6px;">SafeLab Platform API local</td><td style="padding: 6px;"><code>localhost:8080</code> con PostgreSQL</td><td style="padding: 6px;">Código de Reporting &amp; Analytics, Dashboard &amp; Insights, Swagger UI y migraciones de Flyway.</td><td style="padding: 6px;">Entorno de revisión de servicios y pruebas del Sprint.</td></tr>
+    <tr><td style="padding: 6px;">Aplicación Android</td><td style="padding: 6px;">Android Emulator</td><td style="padding: 6px;">Pantallas de datos históricos, reportes, dashboard y tendencias disponibles en el proyecto.</td><td style="padding: 6px;">Ejecución local; no equivale a distribución en una tienda de aplicaciones.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  La secuencia de integración mantiene el flujo Android → SafeLab Platform API → PostgreSQL. En el emulador Android, el host de desarrollo se accede mediante <code>http://10.0.2.2:8080/api/v1</code>. Las credenciales de base de datos se configuran exclusivamente en el backend y no deben incorporarse al cliente móvil ni a los repositorios públicos. El uso de datos de demostración y las restricciones de seguridad de la plataforma se revisan como parte del entorno de desarrollo.
+</p>
+
+<p style="text-align: justify;">
+  Antes de acreditar el cierre de despliegue del Sprint 3, corresponde asociar una revisión concreta del código con el resultado de las pruebas, la compilación de Android, la verificación de endpoints y, si se actualiza el servicio público, el registro de despliegue de Render. Mientras no se disponga de estas evidencias, no se declara una nueva release pública de SafeLab.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Swagger UI en el entorno local de la plataforma." width="100%">
+</p>
+
+<p align="center"><i>Figura: Swagger UI en el entorno local de la plataforma.</i></p>
+
 #### **4.2.3.9. Team Collaboration Insights during Sprint**
+
+<p style="text-align: justify;">
+  El Sprint 3 retoma la organización del equipo MediTrack por Bounded Contexts y la distribución de tareas de implementación y validación. A diferencia de un registro basado en actividad inferida, esta sección describe las responsabilidades reflejadas en el Sprint Backlog 3 y las oportunidades de mejora heredadas del Sprint 2. Los indicadores de commits, merges y contribuciones se incorporarán únicamente después de consultar los registros reales de GitHub correspondientes a este incremento.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead><tr><th style="padding: 6px;">Integrante</th><th style="padding: 6px;">Responsabilidades asignadas en el Sprint 3</th><th style="padding: 6px;">Resultado esperado de la colaboración</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">Carlos Lavado, Ever Giusephi</td><td style="padding: 6px;">Datos históricos (US27), comparación de periodos (US29) y totales del dashboard (US45).</td><td style="padding: 6px;">Relacionar registros históricos e indicadores con las fuentes de información de SafeLab.</td></tr>
+    <tr><td style="padding: 6px;">Espino Rossi, Victor Manuel</td><td style="padding: 6px;">Servicios de datos históricos y reportes (US63), comparaciones semanales y mensuales (US34) y distribución de equipos por estado (US47).</td><td style="padding: 6px;">Mantener la correspondencia entre contratos RESTful y consultas del dashboard.</td></tr>
+    <tr><td style="padding: 6px;">Garcia Cerpa, Braden Raid</td><td style="padding: 6px;">Generación de reportes (US30), historial de incidentes (US32) y tendencias de alertas (US48).</td><td style="padding: 6px;">Conectar la información de reportes e incidentes con los componentes de análisis.</td></tr>
+    <tr><td style="padding: 6px;">Rojas Gomez, Valeria Alexandra</td><td style="padding: 6px;">Exportación de datos (US33), dashboard operativo (US43) y tendencias de temperatura (US49). Planificación y documentación del Sprint 3.</td><td style="padding: 6px;">Mantener la trazabilidad del Sprint Backlog y la organización de las evidencias documentales.</td></tr>
+    <tr><td style="padding: 6px;">Vara Velásquez, Oscar Fernando</td><td style="padding: 6px;">Visualización móvil (US17), selección de rango de fechas (US28), descarga de reportes (US31) y tendencias de humedad (US50).</td><td style="padding: 6px;">Apoyar la consulta de información y la navegación de las pantallas Android relacionadas con el Sprint.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  La distribución del Sprint contempla 16 User Stories y 32 Work-items entre cinco integrantes. La organización por historias permite identificar responsables y vincular cada aspecto con los apartados de desarrollo, ejecución y documentación de servicios. Para evaluar la colaboración de manera objetiva se debe complementar esta asignación con el historial real de ramas, commits y revisiones; no corresponde inferir cantidades ni atribuciones a partir de las tareas del backlog.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead><tr><th style="padding: 6px;">Insight</th><th style="padding: 6px;">Antecedente o evidencia</th><th style="padding: 6px;">Acción de mejora en el Sprint 3</th></tr></thead>
+  <tbody>
+    <tr><td style="padding: 6px;">La distribución por Bounded Context favorece la trazabilidad.</td><td style="padding: 6px;">Las 16 historias del Sprint 3 se relacionan con datos históricos, reportes, dashboard y tendencias.</td><td style="padding: 6px;">Mantener la correspondencia entre cada User Story, sus Work-items y los componentes implementados.</td></tr>
+    <tr><td style="padding: 6px;">La documentación no debe adelantarse a la integración.</td><td style="padding: 6px;">En el Sprint 2, las evidencias finales dependieron de las versiones integradas y de los contratos RESTful disponibles.</td><td style="padding: 6px;">Verificar las funciones reales antes de redactar afirmaciones sobre persistencia, exportación o tendencias.</td></tr>
+    <tr><td style="padding: 6px;">Las pruebas deben corresponder a las User Stories del incremento.</td><td style="padding: 6px;">El Sprint 2 documentó pruebas de US62; el Sprint 3 incorpora US63.</td><td style="padding: 6px;">Preparar y ejecutar casos específicos de servicios de reportes y conservar su salida verificable.</td></tr>
+    <tr><td style="padding: 6px;">Los registros de GitHub respaldan el análisis de colaboración.</td><td style="padding: 6px;">El Sprint 2 incluyó capturas de commits y contribuciones por repositorio.</td><td style="padding: 6px;">Adjuntar capturas nuevas de GitHub Insights y vincular cada cambio con su commit real, sin reutilizar cifras anteriores.</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Como cierre de colaboración, el equipo mantiene el objetivo de integrar las funcionalidades por incremento, documentar los cambios con mensajes claros y reunir las evidencias después de comprobar que correspondan a la misma revisión del código. La evaluación de resultados del Sprint 3 quedará sustentada en la combinación de backlog, pruebas, capturas de ejecución y actividad verificable de los repositorios.
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-report-commits.png" alt="Referencia de historial documental para el seguimiento de la colaboración." width="100%">
+</p>
+
+<p align="center"><i>Figura: Referencia de historial documental para el seguimiento de la colaboración.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-mobile-commits-over-time.png" alt="Vista de actividad histórica del repositorio móvil." width="100%">
+</p>
+
+<p align="center"><i>Figura: Vista de actividad histórica del repositorio móvil.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-mobile-contributors.png" alt="Contribuidores del repositorio móvil registrados en el incremento anterior." width="100%">
+</p>
+
+<p align="center"><i>Figura: Contribuidores del repositorio móvil registrados en el incremento anterior.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-api-contributors.png" alt="Vista histórica de actividad del repositorio de la API." width="100%">
+</p>
+
+<p align="center"><i>Figura: Vista histórica de actividad del repositorio de la API.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/insights-frontend-contributors.png" alt="Vista histórica de actividad del repositorio frontend." width="100%">
+</p>
+
+<p align="center"><i>Figura: Vista histórica de actividad del repositorio frontend.</i></p>
 
 ## **4.3. Validation Interviews**
 
