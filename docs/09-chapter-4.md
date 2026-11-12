@@ -2900,3 +2900,114 @@ Feature: US62 - Provide alert and incident services
 </p>
 
 ### **4.3.3. Evaluations Based on Heuristics**
+
+## **4.4. Video About-the-Product**
+
+<p style="text-align: justify;">
+  En esta sección se presenta el video About-the-Product de SafeLab, cuyo objetivo es explicar en menos de dos minutos qué problema resuelve el producto, a quién está dirigido y cuáles son sus funcionalidades principales. Siguiendo el formato de los videos de presentación de producto, cada funcionalidad se presenta con un título, una frase breve y la pantalla correspondiente de la aplicación móvil dentro de un dispositivo, con animaciones que señalan los elementos más importantes. Las pantallas se elaboraron a partir de la versión 2.5.0 de la aplicación, con sus colores, textos, íconos y datos de demostración.
+</p>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Campo</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Detalle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Versión</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Primera versión (AV2)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Duración</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">1:37</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Formato</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">MP4, 1920 × 1080 (1080p)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Idioma</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Español, con textos en pantalla y música de fondo</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Enlace</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;"><a href="https://youtu.be/quI9qKaDnN4">https://youtu.be/quI9qKaDnN4</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Nombre del archivo</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">upc-pre-202620-1acc0238-4949-safelab-about-the-product-av2.mp4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  El contenido del video se organiza en las siguientes partes:
+</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Parte</th>
+      <th style="text-align: center; vertical-align: middle; padding: 6px;">Contenido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">1. Introducción</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Logotipo de SafeLab y el mensaje «Monitoreo de la cadena de frío clínica».</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">2. Propuesta de valor</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">El lema «Protege cada muestra, reactivo y vacuna» junto a la pantalla de inicio de sesión.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">3. Panel principal</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Los indicadores de sensores, equipos, alertas e incidentes, destacando las alertas activas.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">4. Sensores</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">La lectura del congelador PCR a 9.1 °C, fuera de su rango de 2 a 8 °C.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">5. Alertas</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">El usuario abre las acciones de una alerta, la reconoce y su estado cambia a «Reconocido», con el aviso «Alerta reconocida».</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">6. Incidentes</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">El detalle del incidente «PCR freezer deviation», generado a partir de la alerta, con su gravedad, responsable y fecha de vencimiento.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">7. Equipos y mantenimiento</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">La lista de equipos y su historial de mantenimiento.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">8. Otros módulos</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">Sedes y activos, cumplimiento ambiental, control remoto, reportes y auditoría.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">9. Idiomas y temas</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">La aplicación en español e inglés, y en modo claro y oscuro.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">10. Cierre</td>
+      <td style="text-align: left; vertical-align: top; padding: 6px;">El lema de SafeLab y los nombres de los integrantes del equipo MediTrack.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;">
+  Las siguientes capturas corresponden a dos momentos del video:
+</p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/about-the-product-01.png" alt="Propuesta de valor en el video About-the-Product de SafeLab." width="100%">
+</p>
+
+<p align="center"><i>Figura: Propuesta de valor en el video About-the-Product.</i></p>
+
+<p align="center">
+  <img src="../assets/09-chapter-4/sprint2/about-the-product-02.png" alt="Reconocimiento de una alerta en el video About-the-Product de SafeLab." width="100%">
+</p>
+
+<p align="center"><i>Figura: Reconocimiento de una alerta en el video About-the-Product.</i></p>
