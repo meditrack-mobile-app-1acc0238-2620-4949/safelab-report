@@ -4,110 +4,110 @@
 
 ### **1.1.1. Startup Description**
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  SafeLab es una startup tecnológica dedicada a la transformación digital y a la seguridad operativa de los sectores bioclínico y farmacéutico. Nuestra organización surgió de la necesidad de abordar una vulnerabilidad crítica en el sector sanitario: la incertidumbre y las ineficiencias asociadas al almacenamiento de materiales biológicos altamente sensibles. Como startup, concentramos todos nuestros esfuerzos técnicos y estratégicos en nuestro primer gran despliegue en el mercado: el desarrollo de un ecosistema digital innovador que garantiza la preservación absoluta de la cadena de frío clínica. En SafeLab no solo desarrollamos software; construimos infraestructuras de confianza que salvaguardan la calidad del diagnóstico y la sostenibilidad de los recursos médicos.
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">
+  SafeLab es una startup tecnológica enfocada en la supervisión de condiciones ambientales para la conservación de muestras clínicas, reactivos, vacunas y otros productos sensibles a variaciones de temperatura o humedad. Su propuesta responde a una dificultad frecuente en laboratorios hospitalarios y organizaciones farmacéuticas: disponer de lecturas verificables, detectar desviaciones oportunamente y reconstruir los hechos cuando se presenta un incidente de almacenamiento.
 </p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  El núcleo de nuestra propuesta de valor es una plataforma integral y automatizada de monitoreo ambiental, diseñada específicamente para satisfacer las rigurosas exigencias de laboratorios, hospitales y redes de farmacias. Mediante la integración de dispositivos de hardware con un panel de control centralizado, el producto de SafeLab sustituye la supervisión humana —vulnerable e intermitente— por un monitoreo continuo y predictivo. Nuestra solución permite a los profesionales de la salud configurar reglas precisas de alerta y mitigación automática, previniendo así activamente la degradación química de reactivos y vacunas. Nuestra misión es empoderar al personal clínico eliminando la carga que suponen las tareas repetitivas de documentación, lo que les permite dedicar su tiempo y experiencia exclusivamente a la gestión analítica y a la atención del paciente.
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">
+  La solución reúne una aplicación web, una aplicación nativa para Android y servicios REST que permiten consultar activos, sensores, lecturas, reglas de alerta, incidentes, mantenimiento y registros de seguimiento. La información operativa se consolida mediante un backend y una base de datos relacional, con acceso diferenciado según las funciones del personal. La organización del software aplica Domain-Driven Design (DDD) y delimita doce <i>Bounded Contexts</i> para separar responsabilidades de negocio y facilitar su evolución.
 </p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Desde una perspectiva operativa y comercial, SafeLab estructura sus servicios bajo un modelo B2B (<i>Business-to-Business</i>) respaldado por una arquitectura SaaS (<i>Software as a Service</i>). Este enfoque nos permite ofrecer a las instituciones sanitarias una solución altamente escalable y de rápida implementación, en la que una suscripción corporativa garantiza el acceso ininterrumpido a herramientas de auditoría en tiempo real, informes automatizados para el cumplimiento normativo y una inmutabilidad total en la conservación de datos históricos. La visión a largo plazo de SafeLab es convertirse en el estándar regional para la gestión inteligente de inventarios biológicos, impulsando a las instituciones sanitarias hacia un modelo operativo guiado por la innovación pragmática y un compromiso inquebrantable con una cultura de «cero residuos».
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El modelo comercial se dirige a organizaciones bajo un esquema B2B (<i>Business-to-Business</i>) y de suscripción SaaS (<i>Software as a Service</i>). El plan SafeLab Business contempla una cuota base de <strong>S/ 118 mensuales</strong>, que incluye diez cuentas de empleados y una cuenta de gerente general que no consume esos cupos. Cada empleado adicional representa <strong>S/ 17 mensuales</strong>. Esta estructura vincula el costo del servicio con la cantidad de personal autorizado, sin ofrecer planes ficticios o condiciones comerciales ajenas a la propuesta vigente.</p>
+
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">SafeLab busca facilitar el seguimiento de materiales sensibles, disminuir la dependencia de registros dispersos y aportar información útil para la respuesta a incidentes y la revisión de antecedentes. Su propósito es apoyar las decisiones del personal responsable; la plataforma no sustituye los procedimientos clínicos, el mantenimiento de los equipos físicos ni la verificación de las condiciones de conservación exigidas por cada fabricante. La disponibilidad del servicio y la continuidad de las lecturas dependen también de la conectividad, de la infraestructura desplegada y de la fuente de datos utilizada.</p>
 
 <div style="page-break-after: always;"></div>
 
 ### **1.1.2. Team Member Profiles**
 
-<table style="width: 94%; margin: 0 auto; border-collapse: collapse;">
+<table style="width: 96%; margin: 0 auto; border-collapse: collapse;">
   <!-- MEMBER 1 -->
   <tr style="page-break-inside: avoid; break-inside: avoid;">
-    <td style="text-align: center; width: 35%; vertical-align: middle; padding: 16px 12px; border-bottom: 1px solid #d9d9d9;">
+    <td style="text-align: center; width: 31%; vertical-align: middle; padding: 12px 10px; border-bottom: 1px solid #d9d9d9;">
       <img
         src="../assets/06-chapter-1/startup-profile/team-member-profiles/giusephi-carlos.png"
         alt="Foto de perfil de Giusephi Carlos"
-        width="68%"
+        width="74%"
         style="display: block; margin: auto; border-radius: 10px;">
     </td>
-    <td style="text-align: justify; width: 65%; vertical-align: top; padding: 16px 14px; border-bottom: 1px solid #d9d9d9;">
-      <h3 style="text-align: left; margin: 0 0 10px 0;">Carlos Lavado, Ever Giusephi</h3>
+    <td style="text-align: justify; width: 69%; vertical-align: top; padding: 12px 12px; border-bottom: 1px solid #d9d9d9;">
+      <h3 style="text-align: justify; margin: 0 0 10px 0;">Carlos Lavado, Ever Giusephi</h3>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Código de estudiante:</b> U202224867</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Edad:</b> 21</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Carrera:</b> Ingeniería de Software</p>
-      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Estudio Ingeniería de Software en la UPC. Siempre me ha fascinado la evolución de la tecnología y su impacto en la vida cotidiana, lo cual me motivó a elegir esta carrera. A lo largo de mis estudios, he desarrollado competencias técnicas en desarrollo web e ingeniería de software, trabajando con tecnologías como HTML, CSS, JavaScript, Vue.js, Vite, C#, ASP.NET Core, Git y GitHub. También cuento con experiencia en la aplicación de prácticas de control de versiones, el trabajo con API RESTful y la creación de documentación técnica mediante Markdown. Además de mis conocimientos técnicos, me considero una persona responsable, adaptable y colaborativa, con una gran capacidad para la resolución de problemas y el aprendizaje continuo. En mi tiempo libre disfruto de los videojuegos, actividad que también me ayuda a desarrollar el pensamiento estratégico y la creatividad. Mi objetivo principal es seguir perfeccionando mi pensamiento analítico, así como mis habilidades de diseño y programación de software, para crear soluciones eficientes y bien estructuradas.</p>
+      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Estudio Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). He desarrollado competencias en HTML, CSS, JavaScript, Vue, Vite, C#, ASP.NET Core, Git y GitHub, así como en consumo de servicios REST, control de versiones y documentación con Markdown. Me interesa diseñar soluciones mantenibles, analizar problemas técnicos y colaborar en equipos de desarrollo; SafeLab me permite fortalecer esas capacidades al trabajar en una solución que integra experiencias web y móviles.</p>
     </td>
   </tr>
 
   <!-- MEMBER 2 -->
   <tr style="page-break-inside: avoid; break-inside: avoid;">
-    <td style="text-align: center; width: 35%; vertical-align: middle; padding: 16px 12px; border-bottom: 1px solid #d9d9d9;">
+    <td style="text-align: center; width: 31%; vertical-align: middle; padding: 12px 10px; border-bottom: 1px solid #d9d9d9;">
       <img
         src="../assets/06-chapter-1/startup-profile/team-member-profiles/victor-espino.png"
-        alt="Foto de perfil de Victor Espino"
-        width="68%"
+        alt="Foto de perfil de Víctor Espino"
+        width="74%"
         style="display: block; margin: auto; border-radius: 10px;">
     </td>
-    <td style="text-align: justify; width: 65%; vertical-align: top; padding: 16px 14px; border-bottom: 1px solid #d9d9d9;">
-      <h3 style="text-align: left; margin: 0 0 10px 0;">Espino Rossi, Victor Manuel</h3>
+    <td style="text-align: justify; width: 69%; vertical-align: top; padding: 12px 12px; border-bottom: 1px solid #d9d9d9;">
+      <h3 style="text-align: justify; margin: 0 0 10px 0;">Espino Rossi, Víctor Manuel</h3>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Código de estudiante:</b> U202411567</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Edad:</b> 19</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Carrera:</b> Ingeniería de Software</p>
-      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy un estudiante de Ingeniería de Software proactivo en la UPC, siempre dispuesto a tomar la iniciativa y poner las cosas en marcha. Me interesa especialmente la ciberseguridad y disfruto explorando cómo proteger los sistemas frente a amenazas.</p>
+      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy estudiante de Ingeniería de Software en la UPC, con interés en ciberseguridad y protección de sistemas. Valoro la iniciativa, el análisis de riesgos y la aplicación de prácticas de desarrollo que contribuyan a construir aplicaciones confiables.</p>
     </td>
   </tr>
 
   <!-- MEMBER 3 -->
   <tr style="page-break-inside: avoid; break-inside: avoid;">
-    <td style="text-align: center; width: 35%; vertical-align: middle; padding: 16px 12px; border-bottom: 1px solid #d9d9d9;">
+    <td style="text-align: center; width: 31%; vertical-align: middle; padding: 12px 10px; border-bottom: 1px solid #d9d9d9;">
       <img
         src="../assets/06-chapter-1/startup-profile/team-member-profiles/garcia-braden.jpeg"
-        alt="Foto de perfil de Braden Garcia"
-        width="68%"
+        alt="Foto de perfil de Braden García"
+        width="74%"
         style="display: block; margin: auto; border-radius: 10px;">
     </td>
-    <td style="text-align: justify; width: 65%; vertical-align: top; padding: 16px 14px; border-bottom: 1px solid #d9d9d9;">
-      <h3 style="text-align: left; margin: 0 0 10px 0;">Garcia Cerpa, Braden Raid</h3>
+    <td style="text-align: justify; width: 69%; vertical-align: top; padding: 12px 12px; border-bottom: 1px solid #d9d9d9;">
+      <h3 style="text-align: justify; margin: 0 0 10px 0;">García Cerpa, Braden Raid</h3>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Código de estudiante:</b> U202415618</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Edad:</b> 21</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Carrera:</b> Ingeniería de Software</p>
-      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy estudiante de Ingeniería de Software interesado en desarrollar soluciones tecnológicas. Me centro en aplicar buenas prácticas de programación y el trabajo en equipo para resolver problemas reales. En este proyecto, busco aportar ideas innovadoras para lograr resultados de alta calidad.</p>
+      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy estudiante de Ingeniería de Software interesado en el desarrollo de soluciones tecnológicas y en la aplicación de buenas prácticas de programación. Priorizo el trabajo colaborativo, la organización del código y la mejora progresiva de las funcionalidades para responder a necesidades reales.</p>
     </td>
   </tr>
 
   <!-- MEMBER 4 -->
   <tr style="page-break-inside: avoid; break-inside: avoid;">
-    <td style="text-align: center; width: 35%; vertical-align: middle; padding: 16px 12px; border-bottom: 1px solid #d9d9d9;">
+    <td style="text-align: center; width: 31%; vertical-align: middle; padding: 12px 10px; border-bottom: 1px solid #d9d9d9;">
       <img
         src="../assets/06-chapter-1/startup-profile/team-member-profiles/valeria-rojas.jpeg"
         alt="Foto de perfil de Valeria Rojas"
-        width="68%"
+        width="74%"
         style="display: block; margin: auto; border-radius: 10px;">
     </td>
-    <td style="text-align: justify; width: 65%; vertical-align: top; padding: 16px 14px; border-bottom: 1px solid #d9d9d9;">
-      <h3 style="text-align: left; margin: 0 0 10px 0;">Rojas Gómez, Valeria Alexandra</h3>
+    <td style="text-align: justify; width: 69%; vertical-align: top; padding: 12px 12px; border-bottom: 1px solid #d9d9d9;">
+      <h3 style="text-align: justify; margin: 0 0 10px 0;">Rojas Gómez, Valeria Alexandra</h3>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Código de estudiante:</b> U202411373</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Edad:</b> 19</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Carrera:</b> Ingeniería de Software</p>
-      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Poseo conocimientos en tecnologías de desarrollo frontend y backend, tales como Angular, Java, Spring Boot y API REST, así como experiencia trabajando con bases de datos SQL y NoSQL. En cuanto a mis habilidades, me esfuerzo por mantenerme organizado, escuchar las opiniones de los demás y contribuir al trabajo en equipo, cumpliendo al mismo tiempo con los plazos acordados por el grupo.</p>
+      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Poseo conocimientos en desarrollo frontend y backend con Angular, Java, Spring Boot y servicios REST, además de bases de datos SQL y NoSQL. En cuanto a mis habilidades, me esfuerzo por mantenerme organizado, escuchar las opiniones de los demás y contribuir al trabajo en equipo, cumpliendo al mismo tiempo con los plazos acordados por el grupo.</p>
     </td>
   </tr>
 
   <!-- MEMBER 5 -->
   <tr style="page-break-inside: avoid; break-inside: avoid;">
-    <td style="text-align: center; width: 35%; vertical-align: middle; padding: 16px 12px; border-bottom: 1px solid #d9d9d9;">
+    <td style="text-align: center; width: 31%; vertical-align: middle; padding: 12px 10px; border-bottom: 1px solid #d9d9d9;">
       <img
         src="../assets/06-chapter-1/startup-profile/team-member-profiles/oscar-vara.jpeg"
-        alt="Foto de perfil de Oscar Vara"
-        width="68%"
+        alt="Foto de perfil de Óscar Vara"
+        width="74%"
         style="display: block; margin: auto; border-radius: 10px;">
     </td>
-    <td style="text-align: justify; width: 65%; vertical-align: top; padding: 16px 14px; border-bottom: 1px solid #d9d9d9;">
-      <h3 style="text-align: left; margin: 0 0 10px 0;">Vara Velásquez, Oscar Fernando</h3>
+    <td style="text-align: justify; width: 69%; vertical-align: top; padding: 12px 12px; border-bottom: 1px solid #d9d9d9;">
+      <h3 style="text-align: justify; margin: 0 0 10px 0;">Vara Velásquez, Óscar Fernando</h3>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Código de estudiante:</b> U202411622</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Edad:</b> 21</p>
       <p style="margin: 4px 0; line-height: 1.4;"><b>Carrera:</b> Ingeniería de Software</p>
-      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy estudiante de Ingeniería de Software y me centro en crear soluciones tecnológicas adaptadas a las necesidades de los usuarios. Poseo facilidad para adquirir nuevos conocimientos rápidamente y destaco en el trabajo en equipo.</p>
+      <p style="text-align: justify; margin: 8px 0 0 0; line-height: 1.5;"><b>Acerca de mí:</b> Soy estudiante de Ingeniería de Software, orientado a crear soluciones ajustadas a las necesidades de los usuarios. Me interesa adquirir conocimientos técnicos, participar en equipos de desarrollo y contribuir a la calidad de los productos mediante el aprendizaje y la colaboración.</p>
     </td>
   </tr>
 </table>
@@ -118,163 +118,122 @@
 
 ### **1.2.1. Background and Problem Statement**
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Los laboratorios hospitalarios y las empresas farmacéuticas gestionan muestras, reactivos, medicamentos, insumos y otros recursos sensibles que requieren condiciones ambientales específicas durante su almacenamiento. Variables como la temperatura y la humedad pueden afectar directamente a la estabilidad, la calidad y la utilidad de estos materiales cuando permanecen fuera de los rangos requeridos durante periodos prolongados. Dado que estos recursos intervienen en las operaciones de laboratorio, el almacenamiento farmacéutico, el control de calidad y los procesos de distribución, mantener unas condiciones ambientales adecuadas es un aspecto fundamental de su correcta gestión.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Los laboratorios hospitalarios y las empresas farmacéuticas administran recursos cuyo desempeño o estabilidad dependen de condiciones de almacenamiento específicas. En estos entornos se conservan muestras, reactivos, medicamentos, vacunas y otros insumos; por ello, las lecturas de temperatura y humedad, los límites permitidos y el estado de los equipos deben controlarse de acuerdo con las características de cada producto. No existe un único rango térmico aplicable a todos los materiales sensibles.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  En muchos casos, la supervisión de estas condiciones sigue dependiendo de inspecciones periódicas, registros manuales, dispositivos de monitoreo aislados o información que solo se revisa una vez ocurrido un incidente. Esto genera periodos en los que el personal carece de visibilidad continua sobre lo que sucede en las áreas de almacenamiento o en los equipos, especialmente fuera del horario laboral habitual o cuando se producen variaciones ambientales imprevistas o fallos en los equipos.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Cuando la supervisión se apoya en controles manuales, planillas o registradores independientes, pueden existir intervalos sin información fácilmente consultable. Esta discontinuidad dificulta identificar una desviación fuera del horario de atención, determinar su duración y reconocer qué materiales estuvieron expuestos. La demora en comunicar una anomalía también puede incrementar el esfuerzo necesario para evaluar los efectos y registrar las medidas correctivas.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  En los laboratorios hospitalarios, una supervisión inadecuada puede afectar a la conservación de muestras, reactivos y suministros de laboratorio necesarios para las operaciones diarias. En las empresas farmacéuticas, situaciones similares pueden comprometer medicamentos, productos farmacéuticos y otros materiales sensibles durante su almacenamiento. En ambos casos, detectar una desviación ambiental con retraso puede derivar en pérdidas de material, carga de trabajo operativa adicional, interrupciones en las actividades habituales y dificultades al revisar información histórica para procesos de control de calidad o auditoría.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">La fragmentación de registros constituye una dificultad adicional: las lecturas ambientales, las incidencias, las asignaciones de responsables y las intervenciones de mantenimiento pueden encontrarse en sistemas o documentos distintos. Para el personal de laboratorio, los responsables de calidad y los operadores farmacéuticos, esta situación complica reconstruir la secuencia de un evento y disponer de evidencia organizada para una revisión interna o una auditoría.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Otro aspecto relevante es la fragmentación de la información. Las lecturas ambientales, los incidentes, el estado de los equipos y las acciones correctivas pueden registrarse mediante diferentes herramientas o documentos. Como resultado, al personal puede resultarle difícil determinar qué sucedió, cuándo ocurrió el incidente, cuánto tiempo persistió una condición anómala, qué recursos pudieron verse afectados y qué medidas se adoptaron en respuesta.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">SafeLab responde a estas necesidades mediante la centralización de datos operativos, la consulta de activos y sensores, la definición de umbrales, la gestión de alertas e incidentes y el acceso a registros históricos. El personal autorizado puede operar desde la aplicación web y consultar funciones relevantes desde Android, mientras que los servicios REST comparten información con PostgreSQL. El alcance de la solución es el apoyo informático al monitoreo y la trazabilidad: no implica, por sí solo, que se hayan instalado sensores físicos en los establecimientos o que exista una garantía de vigilancia ininterrumpida.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Para comprender mejor el problema, se aplicó la técnica de las 5W y 2H. La siguiente figura resume los elementos principales identificados en relación con los actores involucrados, la naturaleza del problema, los entornos en los que se manifiesta, las circunstancias en las que se torna crítico, sus causas, el proceso de monitoreo actual y su impacto potencial.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Para delimitar el problema se aplicó la técnica <strong>5W y 2H</strong>, considerando quiénes realizan el seguimiento, qué dificultades afrontan, cuándo y dónde se manifiestan, por qué se producen, cómo se ejecuta la supervisión y cuáles podrían ser sus consecuencias operativas y económicas. La Figura 1 sintetiza este análisis.</p>
 
-<p style="text-align: center; margin: 16px auto 8px auto;">
-  <img
-    src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/safelab-5wy2h.png"
-    alt="Análisis 5W y 2H de SafeLab"
-    width="85%"
-    style="display: block; margin: auto;">
-</p>
-
-<p style="text-align: center; margin: 0 0 16px 0;">
-  <em>Figura 1. Análisis 5W y 2H de SafeLab.</em>
-</p>
+<figure style="margin: 14px auto 16px auto; text-align: center; page-break-inside: avoid; break-inside: avoid;">
+  <img src="../assets/06-chapter-1/solution-profile/background-and-problem-statement/safelab-5wy2h.png" alt="Diagrama 5W y 2H sobre la supervisión ambiental y la conservación de materiales sensibles en SafeLab" width="85%" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <figcaption style="font-size: 0.9em; line-height: 1.4; margin-top: 6px; text-align: center;"><em>Figura 1. Análisis 5W y 2H de SafeLab.</em></figcaption>
+</figure>
 
 ### **1.2.2. Lean UX Process**
 
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">La definición del producto parte de las dificultades de ambos segmentos objetivo y organiza las decisiones mediante un único enunciado del problema, supuestos de negocio y de usuario, hipótesis contrastables y un Lean UX Canvas. Los supuestos e hipótesis representan planteamientos sujetos a validación; no constituyen resultados observados ni garantías del servicio.</p>
+
 #### **1.2.2.1. Lean UX Problem Statements**
 
-<p style="text-align: justify; margin: 0 2% 10px 2%; line-height: 1.5;">
-  <b>Contexto:</b> Las instituciones de salud, como laboratorios clínicos y farmacias hospitalarias, dependen de la integridad de inventarios biológicos —reactivos, vacunas y muestras— que requieren un control estricto de temperatura, generalmente entre 2 °C y 8 °C. La precisión de los diagnósticos médicos y la rentabilidad institucional están directamente ligadas a la estabilidad de estos suministros.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El estado actual de la supervisión ambiental de materiales sensibles en laboratorios hospitalarios y empresas farmacéuticas se ha centrado principalmente en controles periódicos, registros manuales, dispositivos aislados y revisión posterior de incidentes. Estos procedimientos pueden dificultar el acceso oportuno a las lecturas y la coordinación entre responsables.</p>
 
-<p style="text-align: justify; margin: 0 2% 10px 2%; line-height: 1.5;">
-  <b>Observación del problema:</b> El proceso actual de control de la cadena de frío es, en gran parte, manual y reactivo, y suele depender de lecturas físicas o registradores de datos (<i>data loggers</i>) locales, como dispositivos USB, que no reportan información en tiempo real. Profesionales altamente especializados dedican hasta el 25 % de su jornada laboral a la transcripción de datos térmicos. Este método crea «puntos ciegos» críticos durante la madrugada y los fines de semana debido a la <b>falta de inmediatez y portabilidad de la información</b>, dejándolos sin capacidad de respuesta remota ante fallas de infraestructura o cortes de energía.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Lo que las soluciones y procedimientos existentes no siempre resuelven es la <strong>integración de lecturas, activos, alertas, incidentes y antecedentes operativos</strong> en un entorno accesible para el personal autorizado, tanto desde una aplicación web como desde un dispositivo móvil.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  <b>Impacto:</b> Esta deficiencia operativa y la falta de alertas móviles inmediatas representan un alto riesgo clínico por el uso potencial de insumos degradados, generando pérdidas económicas que pueden alcanzar miles de dólares por incidente. Además, la falta de trazabilidad digital inmutable expone a las instituciones a sanciones de entidades como DIGEMID o la FDA, poniendo en riesgo certificaciones de calidad como ISO 15189 (Kumru et al., 2014; OMS, 2020).
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">SafeLab aborda esta brecha mediante una plataforma de monitoreo y gestión que utiliza servicios REST y persistencia centralizada. La solución permite visualizar equipos y sensores, gestionar umbrales y alertas, registrar incidentes, consultar datos históricos y aplicar permisos según las responsabilidades de cada usuario.</p>
+
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El enfoque inicial considera dos segmentos: <strong>personal de laboratorios hospitalarios</strong> que supervisa muestras y reactivos, y <strong>personal operativo o responsable de empresas farmacéuticas</strong> que controla las condiciones de almacenamiento de productos sensibles.</p>
+
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Se considerará que la propuesta genera valor cuando las pruebas con representantes de ambos segmentos evidencien que pueden localizar un activo, interpretar sus lecturas, identificar una alerta, registrar o consultar una incidencia y recuperar antecedentes de forma comprensible y con menor esfuerzo que en su procedimiento previo. Los tiempos, errores de ejecución y apreciaciones de los participantes se documentarán en las actividades de validación correspondientes.</p>
 
 #### **1.2.2.2. Lean UX Assumptions**
 
-<p style="margin: 8px 2% 6px 2%;"><b>Supuestos sobre los usuarios</b></p>
-
-<ul style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 18px; line-height: 1.5;">
-  <li>Creemos que nuestros usuarios son biólogos y coordinadores de laboratorio con cargas de trabajo excesivas y altos niveles de estrés.</li>
-  <li>Creemos que estos profesionales valoran la inmediatez y precisión de los datos sobre las tareas administrativas.</li>
-  <li>Creemos que el personal tiene una desconfianza profunda hacia las bitácoras manuales por su margen de error inherente.</li>
-  <li>Creemos que los usuarios tienen alta familiaridad con el uso de aplicaciones móviles en su día a día, lo que reducirá la fricción al adoptar una herramienta de monitoreo en sus teléfonos inteligentes.</li>
-  <li>Creemos que los laboratorios e instalaciones cuentan con redes Wi-Fi o conectividad móvil estable para soportar la telemetría continua hacia los dispositivos móviles.</li>
-  <li>Creemos que las auditorías externas y el cumplimiento regulatorio representan la principal fuente de preocupación laboral del personal.</li>
+<p style="text-align: justify; margin: 12px 0 6px 0;"><strong>Business Assumptions</strong></p>
+<ul style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 6px;"><strong>BA-01.</strong> Creemos que las organizaciones que conservan materiales sensibles consideran relevante contar con registros ambientales centralizados y accesibles.</li>
+  <li style="margin-bottom: 6px;"><strong>BA-02.</strong> Creemos que una suscripción corporativa con cupos de empleados y administración por gerente facilita evaluar el costo del servicio.</li>
+  <li style="margin-bottom: 6px;"><strong>BA-03.</strong> Creemos que la posibilidad de consultar activos, alertas e incidentes desde web y Android es un elemento diferenciador para organizaciones con personal distribuido entre sedes.</li>
+  <li style="margin-bottom: 6px;"><strong>BA-04.</strong> Creemos que la confianza en el manejo de permisos y en la trazabilidad de acciones influye en la disposición a adoptar SafeLab.</li>
 </ul>
 
-<p style="margin: 8px 2% 6px 2%;"><b>Supuestos sobre los resultados para los usuarios</b></p>
-
-<ul style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 18px; line-height: 1.5;">
-  <li>Creemos que los usuarios obtendrán tranquilidad al recibir alertas críticas inmediatas en sus dispositivos móviles, logrando visibilidad de sus equipos de refrigeración 24/7 sin importar dónde se encuentren.</li>
-  <li>Creemos que el éxito del sistema para el usuario depende de la eliminación total de bitácoras en papel y errores de transcripción.</li>
-  <li>Creemos que el personal podrá actuar preventivamente antes de que un reactivo sufra una degradación irreversible gracias a las notificaciones tempranas.</li>
-  <li>Creemos que los usuarios lograrán una adopción técnica inmediata sin depender de manuales complejos o del departamento de TI.</li>
-  <li>Creemos que la automatización liberará tiempo valioso del personal para enfocarse en tareas analíticas clínicas.</li>
+<p style="text-align: justify; margin: 12px 0 6px 0;"><strong>Business Outcome Assumptions</strong></p>
+<ul style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 6px;"><strong>BO-01.</strong> Creemos que una demostración comprensible de monitoreo y gestión de incidentes aumentará la proporción de instituciones interesadas en evaluar el servicio.</li>
+  <li style="margin-bottom: 6px;"><strong>BO-02.</strong> Creemos que un modelo de suscripción con precio y capacidad explícitos reducirá las dudas sobre la contratación por parte de los responsables administrativos.</li>
+  <li style="margin-bottom: 6px;"><strong>BO-03.</strong> Creemos que el uso recurrente de consultas de sensores y registros históricos favorecerá la continuidad de utilización del producto.</li>
+  <li style="margin-bottom: 6px;"><strong>BO-04.</strong> Creemos que reducir el esfuerzo de consolidación de información ambiental fortalecerá la percepción de utilidad del servicio.</li>
 </ul>
 
-<p style="margin: 8px 2% 6px 2%;"><b>Supuestos de negocio</b></p>
-
-<ul style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 18px; line-height: 1.5;">
-  <li>Creemos que las pérdidas económicas por desperdicio de reactivos son significativamente mayores que el costo de suscripción de nuestro software.</li>
-  <li>Creemos que los laboratorios medianos optarán por un modelo B2B SaaS si el ROI es demostrable de manera tangible en los primeros 3 a 6 meses de uso.</li>
-  <li>Creemos que la usabilidad y la inmediatez de una solución móvil son vitales para evitar la resistencia operativa en entornos clínicos tradicionales.</li>
-  <li>Creemos que el creciente rigor de los organismos reguladores de salud actuará como el principal motor de ventas.</li>
-  <li>Creemos que la reputación de SafeLab se fortalecerá mediante la reducción comprobada de pérdidas entre los primeros clientes o usuarios pioneros (<i>early adopters</i>).</li>
+<p style="text-align: justify; margin: 12px 0 6px 0;"><strong>User Assumptions</strong></p>
+<ul style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 6px;"><strong>UA-01.</strong> Creemos que el personal técnico de laboratorios hospitalarios necesita consultar las condiciones de conservación durante sus actividades de supervisión.</li>
+  <li style="margin-bottom: 6px;"><strong>UA-02.</strong> Creemos que quienes administran almacenes o equipos farmacéuticos requieren identificar desviaciones y coordinar acciones con otros responsables.</li>
+  <li style="margin-bottom: 6px;"><strong>UA-03.</strong> Creemos que gerentes y responsables de calidad necesitan una vista consolidada de recursos, permisos, incidentes y antecedentes.</li>
+  <li style="margin-bottom: 6px;"><strong>UA-04.</strong> Creemos que los usuarios presentan distintos niveles de familiaridad digital y que la claridad de las pantallas influirá en la facilidad de uso.</li>
 </ul>
 
-<p style="margin: 8px 2% 6px 2%;"><b>Supuestos sobre los resultados de negocio</b></p>
-
-<ul style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 18px; line-height: 1.5;">
-  <li>Creemos que la plataforma reducirá el desperdicio de material biológico en un 95 % durante el primer año de implementación.</li>
-  <li>Creemos que lograremos una tasa de retención de clientes superior al 90 % anual gracias al valor crítico que ofrece el sistema.</li>
-  <li>Creemos que los costos operativos de gestión de calidad en clínicas disminuirán un 60 % al automatizar la recolección de datos.</li>
-  <li>Creemos que la experiencia de usuario nativa reducirá el tiempo de capacitación a menos de 2 horas por laboratorio.</li>
-  <li>Creemos que la acumulación de datos históricos nos permitirá ofrecer servicios de analítica predictiva a futuro.</li>
+<p style="text-align: justify; margin: 12px 0 6px 0;"><strong>User Outcome and Benefit Assumptions</strong></p>
+<ul style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 6px;"><strong>UOB-01.</strong> Creemos que consultar activos y lecturas desde un mismo entorno reducirá las búsquedas en diferentes registros.</li>
+  <li style="margin-bottom: 6px;"><strong>UOB-02.</strong> Creemos que las alertas asociadas a umbrales ayudarán a reconocer desviaciones que requieren revisión.</li>
+  <li style="margin-bottom: 6px;"><strong>UOB-03.</strong> Creemos que el seguimiento de incidencias y responsables permitirá documentar con mayor claridad las acciones realizadas.</li>
+  <li style="margin-bottom: 6px;"><strong>UOB-04.</strong> Creemos que disponer de registros históricos y reportes facilitará la preparación de revisiones internas y auditorías.</li>
+  <li style="margin-bottom: 6px;"><strong>UOB-05.</strong> Creemos que los permisos según el rol reducirán la confusión sobre qué funciones puede ejecutar cada integrante.</li>
 </ul>
 
-<p style="margin: 8px 2% 6px 2%;"><b>Supuestos sobre las funcionalidades</b></p>
-
-<ul style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 18px; line-height: 1.5;">
-  <li>Creemos que una aplicación móvil es la interfaz más eficiente para asegurar el acceso ubicuo y la respuesta rápida a incidentes, superando las limitaciones físicas de un software de escritorio.</li>
-  <li>Creemos que la integración de notificaciones <i>push</i> reducirá el tiempo de respuesta del personal ante desviaciones térmicas a menos de 1 minuto.</li>
-  <li>Creemos que la función de escanear códigos QR con la cámara del celular en los equipos de refrigeración acelerará la visualización del historial térmico <i>in situ</i>.</li>
-  <li>Creemos que un motor de alertas con umbrales configurables permitirá adaptar la aplicación a la sensibilidad de cada reactivo.</li>
-  <li>Creemos que un módulo móvil para la exportación y distribución de reportes PDF garantizará el cumplimiento fluido de estándares de auditoría.</li>
-  <li>Creemos que una base de datos inmutable es esencial para garantizar la exactitud legal de la trazabilidad.</li>
+<p style="text-align: justify; margin: 12px 0 6px 0;"><strong>Feature Assumptions</strong></p>
+<ul style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 6px;"><strong>FA-01.</strong> Creemos que un panel de consulta de activos, sensores y lecturas en la web y Android permitirá comprender el estado de los recursos supervisados.</li>
+  <li style="margin-bottom: 6px;"><strong>FA-02.</strong> Creemos que la configuración de umbrales y la visualización de alertas ayudarán a priorizar la revisión de condiciones anómalas.</li>
+  <li style="margin-bottom: 6px;"><strong>FA-03.</strong> Creemos que un registro de incidentes con estados y acciones de seguimiento facilitará la coordinación entre responsables.</li>
+  <li style="margin-bottom: 6px;"><strong>FA-04.</strong> Creemos que la consulta de históricos y la generación de reportes reducirá la reconstrucción manual de antecedentes.</li>
+  <li style="margin-bottom: 6px;"><strong>FA-05.</strong> Creemos que el control de acceso por roles, organizaciones y recursos permitirá trabajar con información pertinente para cada usuario.</li>
+  <li style="margin-bottom: 6px;"><strong>FA-06.</strong> Creemos que la actualización de perfiles y la sincronización de datos entre la aplicación web y Android disminuirán los registros administrativos contradictorios.</li>
 </ul>
 
 #### **1.2.2.3. Lean UX Hypothesis Statements**
 
-<ol style="text-align: justify; margin: 0 3% 14px 4%; padding-left: 20px; line-height: 1.5;">
-  <li style="margin-bottom: 8px;"><b>Creemos que</b> reduciremos el desperdicio de material biológico en un 95 % — <b>si</b> biólogos y coordinadores de laboratorio <b>obtienen</b> la capacidad de anticiparse a fallas térmicas críticas estén donde estén, <b>con</b> un sistema de notificaciones <i>push</i> y alertas móviles en tiempo real configurables por umbrales.</li>
-  <li style="margin-bottom: 8px;"><b>Creemos que</b> reduciremos los costos operativos administrativos en un 60 % — <b>si</b> los coordinadores de operaciones clínicas <b>obtienen</b> la eliminación total del registro manual y la transcripción física, <b>con</b> el módulo móvil automatizado de generación y compartición de reportes normativos en PDF.</li>
-  <li style="margin-bottom: 8px;"><b>Creemos que</b> lograremos reducir el tiempo de capacitación y adopción a menos de 2 horas por laboratorio — <b>si</b> el personal de salud <b>obtiene</b> una curva de aprendizaje fluida, similar a la de las aplicaciones de consumo diario, <b>con</b> un flujo de configuración guiada (<i>onboarding</i> nativo móvil) integrado en la aplicación.</li>
-  <li style="margin-bottom: 8px;"><b>Creemos que</b> lograremos una retención de clientes superior al 90 % anual — <b>si</b> los responsables de laboratorio y biólogos <b>obtienen</b> tranquilidad operativa y visibilidad absoluta de su infraestructura 24/7, <b>con</b> una aplicación móvil que centraliza toda la telemetría directamente en sus dispositivos personales.</li>
-  <li><b>Creemos que</b> reduciremos a cero las no conformidades documentales por falta de trazabilidad térmica durante auditorías — <b>si</b> los gerentes de calidad y entes reguladores <b>obtienen</b> acceso a registros históricos de temperatura inalterables, <b>con</b> la implementación de una base de datos persistente e inmutable accesible desde el ecosistema SafeLab.</li>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Cada hipótesis corresponde a uno de los seis supuestos de funcionalidades anteriores. Su evaluación requiere observar tareas y registrar resultados con participantes de los segmentos objetivo, sin anticipar porcentajes de mejora no medidos.</p>
+
+<ol style="text-align: justify; line-height: 1.5; margin: 4px 0 14px 0; padding-left: 25px;">
+  <li style="margin-bottom: 10px;"><strong>H-01 / FA-01.</strong> Creemos que aumentará la utilización de la plataforma para revisar el estado de almacenamiento <strong>si</strong> el personal de laboratorio y de empresas farmacéuticas <strong>obtiene</strong> una consulta clara de activos y lecturas <strong>con</strong> un panel de monitoreo disponible en web y Android.</li>
+  <li style="margin-bottom: 10px;"><strong>H-02 / FA-02.</strong> Creemos que disminuirá el tiempo necesario para identificar una condición fuera del umbral <strong>si</strong> los responsables de supervisión <strong>obtienen</strong> una señal comprensible de la anomalía <strong>con</strong> reglas configurables y una vista de alertas.</li>
+  <li style="margin-bottom: 10px;"><strong>H-03 / FA-03.</strong> Creemos que mejorará la documentación de medidas ante eventos ambientales <strong>si</strong> el personal autorizado <strong>obtiene</strong> un seguimiento organizado de los hechos y sus estados <strong>con</strong> el módulo de gestión de incidentes.</li>
+  <li style="margin-bottom: 10px;"><strong>H-04 / FA-04.</strong> Creemos que se reducirá el esfuerzo dedicado a reconstruir antecedentes <strong>si</strong> el personal técnico y los responsables de calidad <strong>obtienen</strong> acceso ordenado a lecturas e información histórica <strong>con</strong> las funciones de consulta y generación de reportes.</li>
+  <li style="margin-bottom: 10px;"><strong>H-05 / FA-05.</strong> Creemos que disminuirán las consultas y operaciones realizadas fuera del alcance asignado <strong>si</strong> gerentes y empleados <strong>obtienen</strong> acceso coherente con sus responsabilidades <strong>con</strong> permisos definidos por rol, organización y recursos.</li>
+  <li style="margin-bottom: 10px;"><strong>H-06 / FA-06.</strong> Creemos que se reducirá la duplicación de cambios administrativos <strong>si</strong> los usuarios con acceso a web y Android <strong>obtienen</strong> un perfil compartido y persistente <strong>con</strong> actualizaciones gestionadas mediante el mismo servicio REST.</li>
 </ol>
 
 #### **1.2.2.4. Lean UX Canvas**
 
-<p style="text-align: center; margin: 14px auto 8px auto;">
-  <img
-    src="../assets/06-chapter-1/solution-profile/lean-ux-process/lean-ux-canvas/lean-ux-canvas-safelab.png"
-    alt="Lean UX Canvas de SafeLab"
-    width="90%"
-    style="display: block; margin: auto;">
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El Lean UX Canvas integra el problema del negocio, los segmentos de usuarios, los resultados esperados, las hipótesis y las alternativas de solución consideradas durante la definición del producto. La Figura 2 conserva el artefacto visual elaborado por el equipo, que sirve como referencia de las decisiones iniciales de diseño y experimentación.</p>
 
-<p style="text-align: center; margin: 0 0 16px 0;">
-  <em>Figura 2. Lean UX Canvas de SafeLab.</em>
-</p>
+<figure style="margin: 14px auto 16px auto; text-align: center; page-break-inside: avoid; break-inside: avoid;">
+  <img src="../assets/06-chapter-1/solution-profile/lean-ux-process/lean-ux-canvas/lean-ux-canvas-safelab.png" alt="Lean UX Canvas de SafeLab con problema, usuarios, hipótesis y soluciones propuestas" width="90%" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <figcaption style="font-size: 0.9em; line-height: 1.4; margin-top: 6px; text-align: center;"><em>Figura 2. Lean UX Canvas de SafeLab.</em></figcaption>
+</figure>
 
 ## **1.3. Target Segments**
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  SafeLab se centra en dos segmentos objetivo relacionados con el almacenamiento y la supervisión de recursos sensibles que requieren condiciones ambientales específicas. El primer segmento está compuesto por personal que trabaja en laboratorios hospitalarios, mientras que el segundo corresponde a empresas farmacéuticas que necesitan monitorear las condiciones de almacenamiento de medicamentos, productos farmacéuticos y otros materiales sensibles. Ambos segmentos operan en entornos donde la preservación de estos recursos depende de mantener condiciones de almacenamiento adecuadas y de llevar registros fiables de su monitoreo.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">SafeLab contempla dos segmentos objetivo vinculados con la conservación de materiales que requieren supervisión ambiental: el personal de laboratorios hospitalarios y el personal de empresas farmacéuticas. La segmentación identifica a quienes ejecutan o supervisan las tareas y diferencia a estos usuarios de las organizaciones que contratan y administran el servicio.</p>
 
-### **Segmento 1: Laboratorios Hospitalarios**
+### **Segment 1: Hospital Laboratories**
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Este segmento está integrado por el personal responsable de almacenar, supervisar y controlar muestras, reactivos, insumos y otros recursos sensibles en los laboratorios hospitalarios. Estos materiales requieren condiciones ambientales específicas para su correcta conservación, por lo que el monitoreo de variables como la temperatura y la humedad constituye una actividad importante en su labor diaria.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El primer segmento comprende al personal técnico, profesionales de laboratorio, coordinadores y responsables de calidad de laboratorios hospitalarios. Entre sus actividades se encuentran la revisión de condiciones de almacenamiento, la identificación de cambios relevantes en temperatura o humedad, el seguimiento del estado de equipos y la consulta de antecedentes cuando se detecta una desviación.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  En cuanto a las características demográficas, las entrevistas realizadas para SafeLab incluirán a profesionales de laboratorios hospitalarios de entre 20 y 70 años que trabajan en laboratorios y cuentan con distintos niveles de experiencia profesional.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Se consideran usuarios adultos con experiencia y responsabilidades distintas, desde tareas operativas de supervisión hasta funciones de coordinación. Para estudiar sus necesidades es relevante registrar el cargo, el tipo de establecimiento, la frecuencia de supervisión, el uso de dispositivos móviles y las dificultades encontradas en el procedimiento vigente. Los rangos de edad empleados para planificar entrevistas no deben interpretarse como una distribución estadística de toda la población del segmento.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  La magnitud de la infraestructura sanitaria en el Perú también respalda la relevancia de este segmento. Según el Instituto Nacional de Estadística e Informática (INEI, 2025), el Perú registró 23.217 establecimientos de salud en 2024, incluidos 637 hospitales distribuidos por todo el país. Si bien esta cifra no representa específicamente el número de laboratorios hospitalarios, ofrece una referencia cuantitativa del entorno institucional en el que opera este segmento objetivo.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Como referencia del contexto institucional, el Instituto Nacional de Estadística e Informática registró <strong>23 217 establecimientos de salud en el Perú durante 2024</strong>, de los cuales <strong>637 eran hospitales</strong> (INEI, 2025). Estas cifras describen la infraestructura sanitaria nacional y no equivalen al número de laboratorios hospitalarios ni al mercado potencial contratado por SafeLab. Fuente: <a href="https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/CompDptal2025/Moquegua2025.pdf">Compendio Estadístico Moquegua 2025, cuadro 6.1</a>.</p>
 
-### **Segmento 2: Empresas Farmacéuticas**
+### **Segment 2: Pharmaceutical Companies**
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Este segmento está compuesto por empresas farmacéuticas que necesitan supervisar las condiciones de almacenamiento de medicamentos, productos farmacéuticos y otros materiales sensibles. Estas organizaciones requieren trazabilidad de las condiciones ambientales, alertas ante desviaciones significativas y registros que puedan consultarse posteriormente para actividades de control y auditoría.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">El segundo segmento comprende al personal de operaciones, almacén, logística, supervisión y calidad de organizaciones farmacéuticas que conservan o distribuyen productos sensibles. Sus necesidades incluyen revisar condiciones ambientales, relacionar lecturas con equipos y ubicaciones, identificar incidentes y disponer de registros consultables durante controles de calidad o revisiones de cumplimiento.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  Dado que este segmento es de carácter organizacional, sus características demográficas se representan a través del personal que participa en las actividades de almacenamiento y supervisión. Las entrevistas que se llevarán a cabo para el proyecto incluirán a personal en puestos relacionados con la logística, con edades comprendidas entre los 18 y los 50 años, abarcando tanto funciones operativas como de supervisión.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">La caracterización de los usuarios considera el cargo desempeñado, el tipo de organización, la frecuencia de seguimiento ambiental, la experiencia con herramientas digitales y la responsabilidad sobre materiales o equipos. La contratación se plantea a escala organizacional: un gerente general administra la suscripción y las cuentas de empleados autorizados, mientras las operaciones deben limitarse según los permisos asignados.</p>
 
-<p style="text-align: justify; margin: 0 2% 12px 2%; line-height: 1.5;">
-  La información estadística de la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID, 2025) también evidencia la presencia de este sector en el Perú. Al 30 de junio de 2025, existían 35.726 establecimientos farmacéuticos privados activos y autorizados por la DIGEMID. De este total, 5.166 eran droguerías y 191 eran laboratorios farmacéuticos, lo que representa el 14,5 % y el 0,5 % del total, respectivamente. Estas categorías abarcan 5.357 establecimientos y son las más afines al perfil de empresa farmacéutica considerado por SafeLab, debido a su participación en actividades como el almacenamiento, la distribución y la producción de productos farmacéuticos.
-</p>
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Según la Dirección General de Medicamentos, Insumos y Drogas, al <strong>30 de junio de 2025</strong> se registraban <strong>35 726 establecimientos farmacéuticos privados, autorizados y activos</strong> en el Perú, de los cuales <strong>5 166 eran droguerías</strong> (14,5 %) y <strong>191 laboratorios</strong> (0,5 %). Las dos últimas categorías suman <strong>5 357 establecimientos</strong> y ofrecen una referencia sectorial pertinente; no implican que todos requieran el servicio o pertenezcan al mercado accesible de SafeLab (DIGEMID, 2025). Fuente: <a href="https://api-repositorio-digemid.minsa.gob.pe/server/api/core/bitstreams/cb5f2246-1d9b-4f7b-a68d-0816457a2e7a/content">Boletín de establecimientos farmacéuticos, junio de 2025, p. 3</a>.</p>
 
+<p style="text-align: justify; text-indent: 0.5in; line-height: 1.5; margin: 0 0 12px 0; orphans: 2; widows: 2;">Ambos segmentos comparten la necesidad de consultar información ambiental confiable; sin embargo, difieren en el tipo de materiales conservados, los procedimientos operativos y las responsabilidades asociadas a cada puesto. Esta distinción orienta la elaboración de perfiles de usuario, historias de usuario, flujos de interacción y pruebas de validación.</p>
