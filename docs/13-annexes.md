@@ -9,7 +9,7 @@
 ## **Anexo A. Videos de Exposiciones**
 
 <p style="text-align: justify;">
-  En este anexo se registra el enlace privado del video de exposición correspondiente a la entrega AV1. El material incluye la presentación de los integrantes del equipo y la explicación de los principales artefactos desarrollados.
+  En este anexo se registran los enlaces de los videos de exposición y de presentación del equipo correspondientes a las entregas del proyecto. El material incluye la presentación de los integrantes del equipo y la explicación de los principales artefactos desarrollados.
 </p>
 
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; margin: auto;">
@@ -31,8 +31,14 @@
     <td style="border: 1px solid #777; padding: 8px; text-align: justify; vertical-align: top;">Exposición grabada de la entrega AV1, que incluye la presentación de cada integrante ante cámara y la explicación en pantalla de los artefactos elaborados para los capítulos I y II.</td>
     <td style="border: 1px solid #777; padding: 8px; text-align: center; vertical-align: top;"><a href="https://youtu.be/5nNHZnFrHPo">Link</a></td>
   </tr>
-</table>
-
+  <tr>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center; vertical-align: top;">AV2</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: left; vertical-align: top;">Video About the Team</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: justify; vertical-align: top;">Presentación de los integrantes del equipo MediTrack, en la que cada uno explica su perfil y sus principales aportes al desarrollo de SafeLab.</td>
+    <td style="border: 1px solid #777; padding: 8px; text-align: center; vertical-align: top;"><a href="https://youtu.be/hP9a5WlMhLk">Link</a></td>
+  </tr>
+  </table>
+  
 <div style="page-break-before: always;"></div>
 
 ## **Anexo B. Registro de Entrevistas de Needfinding**
