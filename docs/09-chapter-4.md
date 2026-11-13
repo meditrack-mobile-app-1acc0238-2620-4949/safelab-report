@@ -3267,6 +3267,15 @@ Feature: US63 - Provide historical data and report services
 
 ### **4.3.2. Interview Recording**
 
+
+<p style="text-align: justify;">
+  Las entrevistas de validación realizadas a ambos segmentos objetivo fueron consolidadas en el video mostrado a continuación.
+</p>
+
+<p style="text-align: justify;">
+  <b>Enlace:</b> <a href="https://youtu.be/mDeXDb51usI">https://youtu.be/mDeXDb51usI</a>
+</p>
+
 #### **Segmento 1: Laboratorios de Hospitales**
 
 ##### **Entrevista 1: Muriel Cárdenas**
