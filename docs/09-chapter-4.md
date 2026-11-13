@@ -2823,7 +2823,6 @@ Feature: US62 - Provide alert and incident services
   Para el Sprint 3 se definieron las verificaciones correspondientes a <b>US63 - Proporcionar servicios de datos históricos y reportes</b>, manteniendo la clasificación del Sprint 2 en Unit Tests, Integration Tests y Acceptance Tests (BDD). El backend dispone de infraestructura de pruebas con JUnit y Spring Boot Test, pero en la revisión del código aportado no se identificó una suite específica de US63 ni un reporte de ejecución comparable al de US62. Por ello, los casos siguientes constituyen una matriz de validación del Sprint 3 y no se presentan como resultados aprobados.
 </p>
 
-
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/testing-project-structure.png" alt="Organización de la estructura de pruebas del backend, utilizada como referencia para la suite de US63." width="100%">
 </p>
@@ -2844,7 +2843,6 @@ Feature: US62 - Provide alert and incident services
     <tr><td style="padding: 6px;"><code>ReportingAnalyticsController</code></td><td style="padding: 6px;">Registrar los metadatos de un reporte válido e identificar solicitudes inválidas.</td><td style="padding: 6px;">US63</td><td style="padding: 6px;">Pendiente de ejecución específica</td></tr>
   </tbody>
 </table>
-
 
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/testing-unit-tests-results.png" alt="Formato de visualización de los resultados unitarios utilizado en la suite del Sprint 2." width="100%">
@@ -2867,7 +2865,6 @@ Feature: US62 - Provide alert and incident services
     <tr><td style="padding: 6px;">Endpoints de Reporting &amp; Analytics</td><td style="padding: 6px;">Solicitudes sin token o con permisos insuficientes.</td><td style="padding: 6px;">Respuesta 401 o 403, según corresponda.</td></tr>
   </tbody>
 </table>
-
 
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/testing-integration-tests-results.png" alt="Formato de ejecución de las pruebas de integración utilizado como referencia." width="100%">
@@ -2906,7 +2903,6 @@ Feature: US63 - Provide historical data and report services
     And the response contains the report metadata
 ```
 
-
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/testing-cucumber-report.png" alt="Estructura del reporte Cucumber empleado para documentar escenarios BDD." width="100%">
 </p>
@@ -2931,7 +2927,6 @@ Feature: US63 - Provide historical data and report services
   La revisión de ejecución del Sprint 3 se organiza alrededor de la consulta de datos históricos, los reportes y el dashboard de SafeLab. Las pantallas mantienen los componentes de navegación y los lineamientos visuales de la aplicación Android. Para cada vista se relaciona la funcionalidad observada con su User Story y se diferencia la información de demostración de los datos obtenidos mediante servicios RESTful.
 </p>
 
-
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/mobile-s2-navigation.png" alt="Menú de navegación de SafeLab y acceso a los módulos principales." width="35%">
 </p>
@@ -2943,7 +2938,6 @@ Feature: US63 - Provide historical data and report services
 <p style="text-align: justify;">
   La pantalla de lecturas históricas permite consultar registros asociados a un sensor y aplicar filtros por estado. Por su parte, el módulo Reporting &amp; Analytics presenta una vista de datos históricos con registros de demostración y búsqueda. Estas pantallas sirven como referencia visual para US17 y US27. La selección de rangos y la comparación efectiva entre períodos de US28, US29 y US34 requieren una comprobación adicional con registros fechados.
 </p>
-
 
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/mobile-s2-equipment-alerts.png" alt="Vista de equipos con alertas activas, utilizada como referencia del origen de datos de los reportes." width="35%">
@@ -2957,7 +2951,6 @@ Feature: US63 - Provide historical data and report services
   La sección de reportes dispone de un listado con búsqueda y filtros por tipo, así como de pantallas para configurar la generación de un reporte y seleccionar opciones de exportación (US30, US31 y US33). Las interfaces permiten mostrar el flujo esperado al usuario, aunque en la versión revisada las acciones de generación y descarga no constituyen evidencia de creación o descarga de un archivo real. La API permite crear un registro de reporte simulado y consultar los reportes autorizados (US63).
 </p>
 
-
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-list.png" alt="Listado de alertas que alimenta los indicadores y reportes operativos." width="35%">
 </p>
@@ -2969,7 +2962,6 @@ Feature: US63 - Provide historical data and report services
 <p style="text-align: justify;">
   El dashboard presenta tarjetas de indicadores, alertas priorizadas y secciones de seguimiento operacional (US43 y US45). También se encuentra disponible una pantalla de tendencias con gráficos y resúmenes visuales (US48–US50). La API proporciona totales de sensores, equipos, alertas, incidentes y reportes para la organización autorizada, mientras que las vistas Android revisadas conservan parte de su contenido en <code>DashboardMockData</code>. La correspondencia entre ambas fuentes debe validarse antes de afirmar que todas las gráficas representan mediciones persistidas.
 </p>
-
 
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/mobile-s2-alerts-severity.png" alt="Clasificación visual de alertas por severidad para el seguimiento operativo." width="35%">
@@ -3039,7 +3031,6 @@ Feature: US63 - Provide historical data and report services
   Para ilustrar el uso de Swagger se incluyen las capturas de navegación, autenticación y consumo de servicios registradas en el incremento anterior. Los contratos de Reporting &amp; Analytics y Dashboard &amp; Insights se detallan en la tabla anterior, mientras que las capturas permiten reconocer la estructura común de autenticación, parámetros y respuestas de la API.
 </p>
 ##### **Interacción con la documentación**
-
 
 <p align="center">
   <img src="../assets/09-chapter-4/sprint2/swagger-overview.png" alt="Vista general de Swagger UI y agrupación de recursos RESTful." width="100%">
@@ -3275,6 +3266,22 @@ Feature: US63 - Provide historical data and report services
 </p>
 
 ### **4.3.2. Interview Recording**
+
+#### **Segmento 1: Laboratorios de Hospitales**
+
+##### **Entrevista 1: Muriel Cárdenas**
+
+<p style="text-align: justify;">
+  <b>Fecha:</b> 12 de Noviembre de 2026<br>
+  <b>Inicia en:</b> <a href="https://www.youtube.com/watch?v=Cqfwp6EW_PE">00:00</a><br>
+  <b>Duración:</b> 05:31
+</p>
+<p align="center">
+  <img src="../assets/09-chapter-4/entrevistaMuriel.png" alt= "Evidencia de la entrevista 1 - Muriel Cárdenas" width="80%">
+</p>
+<p style="text-align: justify;">
+  Muriel Cárdenas tiene 25 años, y es técnica de laboratorio, con un año de experiencia laboral y dos años previos de prácticas. Actualmente, la supervisión de la temperatura y la humedad en su laboratorio es manual: el personal se turna para revisar los equipos y, cuando una condición sale del rango permitido, avisa al supervisor y registra lo ocurrido. Tras explorar la landing, comprendió que SafeLab sirve para monitorear las condiciones de almacenamiento de muestras, reactivos y otros materiales sensibles, aunque indicó que los planes deberían explicar con más claridad qué incluye cada uno y qué dispositivos se requieren. En la aplicación, señaló que lo más fácil fue identificar rápidamente qué equipos necesitaban atención y lo más difícil, encontrar la información detallada; además, recomendó que los estados de los sensores y de las alertas se acompañen de etiquetas claras, como «Normal» o «Fuera de rango», ya que el color por sí solo puede generar confusión. Considera que la función más útil son las alertas, porque permiten enterarse y actuar a tiempo cuando un equipo sale de rango, y le gustaría contar con un historial de lecturas fácil de consultar y una opción para registrar las acciones tomadas al atender una alerta. Finalmente, afirmó que usaría SafeLab como apoyo para monitorear su laboratorio, siempre que las lecturas sean confiables y las alertas lleguen a tiempo.
+</p>
 
 #### **Segmento 2: Empresas Farmacéuticas**
 
