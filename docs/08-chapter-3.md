@@ -621,38 +621,53 @@
 #### **3.1.4.4. Mobile Applications User Flow Diagrams**
 
 <p style="text-align: justify;">
-  Los user flows representan el recorrido completo que sigue el usuario para cumplir cada user goal, utilizando los mock-ups. En cada diagrama se distingue el happy path (línea verde continua), en el que el usuario completa su objetivo sin inconvenientes, de los unhappy paths (línea roja discontinua), que muestran cómo responde la aplicación ante errores o situaciones alternativas. Los rombos representan los puntos de decisión.
+  Los user flows representan el recorrido completo que sigue el usuario para cumplir cada user goal en la interfaz real de SafeLab (versión 2.5.0). Parten del user goal, pasan por el task flow y el wireflow, y llegan al nivel de interacción: cada diagrama indica qué acción dispara el cambio de pantalla, qué decisión interviene y cómo responde la aplicación cuando algo falla. Se elaboraron con la herramienta LucidChart y usan capturas de la aplicación en ejecución, de modo que son coherentes con el prototipo y con los mock-ups.
 </p>
-
 <p style="text-align: justify;">
-  <b>User goal 1:</b> Como técnico de laboratorio, quiero iniciar sesión de forma rápida y segura para acceder al monitoreo del laboratorio. En el happy path, las credenciales son válidas y el usuario llega al dashboard. En el unhappy path, las credenciales son incorrectas: la aplicación muestra un mensaje de error junto al formulario, conserva el correo ingresado y el usuario vuelve a intentarlo.
+  En cada diagrama se distingue el happy path (línea verde continua), en el que el usuario completa su objetivo sin inconvenientes, de los unhappy paths (línea roja discontinua), que muestran la respuesta de la aplicación ante errores, falta de permisos o situaciones alternativas. Los rombos amarillos representan los puntos de decisión, el óvalo negro el punto de inicio, el óvalo morado el objetivo cumplido y el óvalo rojo claro el estado final de cada unhappy path. Los diagramas están disponibles en LucidChart: <a href="https://lucid.app/lucidchart/bc6db41e-c842-4668-9278-6e60496b90fc/view">SafeLab – Mobile Applications User Flow Diagrams (AV2)</a>.
 </p>
-
-![User Flow 1](../assets/08-chapter-3/userflows/userflow1.png)
-
 <p style="text-align: justify;">
-  <b>User goal 2:</b> Como técnico de laboratorio, quiero atender una alerta crítica y actuar sobre el equipo afectado para proteger las muestras. En el happy path, la validación de seguridad aprueba el comando y el estado del equipo se actualiza. En el unhappy path, el comando es bloqueado (por ejemplo, porque la puerta del equipo está abierta); la aplicación muestra el motivo y el usuario registra un incidente.
+  <b>User flow 1 – Iniciar sesión.</b> Como usuario de laboratorio, quiero iniciar sesión de forma segura para acceder al monitoreo de mi laboratorio. El usuario abre la aplicación, escribe su correo y su contraseña y pulsa Sign in. En el happy path, el servidor responde, las credenciales son válidas y el usuario llega al dashboard con los indicadores de su laboratorio. Se contemplan dos unhappy paths: si el servidor no está disponible, la aplicación muestra un mensaje de error de conexión y el usuario debe reintentar cuando haya red; si las credenciales son inválidas, se muestra un mensaje de error junto al formulario, se conserva el correo ingresado y el usuario corrige los datos y vuelve a intentarlo.
 </p>
-
-![User Flow 2](../assets/08-chapter-3/userflows/userflow2.png)
-
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-01-sign-in.png" alt="User Flow 1" width="100%">
+</p>
 <p style="text-align: justify;">
-  <b>User goal 3:</b> Como técnico de laboratorio, quiero reportar un incidente con evidencia fotográfica para dejar trazabilidad de la desviación. En el happy path, el formulario está completo, el dispositivo tiene conexión y el incidente queda registrado. Se contemplan dos unhappy paths: si faltan campos obligatorios, se muestran errores de validación junto a cada campo; si no hay conexión, el reporte se guarda en el dispositivo y se envía automáticamente al recuperarla.
+  <b>User flow 2 – Atender una alerta.</b> Como jefe de laboratorio, quiero confirmar la atención de una alerta activa para dejar constancia de que fue atendida. Desde la lista de alertas, el usuario filtra por las activas, abre el detalle y despliega el menú de acciones. En el happy path, su rol le permite reconocer la alerta: al hacerlo, el estado cambia a atendida y el cambio queda reflejado en la lista. En el unhappy path, el usuario es técnico y su rol no incluye reconocer alertas; el menú solo le ofrece escalarla, por lo que la alerta pasa a quien tiene la autoridad para atenderla.
 </p>
-
-![User Flow 3](../assets/08-chapter-3/userflows/userflow3.png)
-
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-02-attend-alert.png" alt="User Flow 2" width="100%">
+</p>
 <p style="text-align: justify;">
-  <b>User goal 4:</b> Como técnico de laboratorio, quiero identificar un equipo escaneando su código QR para ver su estado sin buscarlo manualmente. En el happy path, el código se reconoce y se abre la ficha del equipo. En el unhappy path, el código no es legible y el usuario ingresa manualmente el código del equipo para llegar a la misma ficha.
+  <b>User flow 3 – Gestionar un incidente.</b> Como jefe de laboratorio, quiero gestionar un incidente abierto para dar seguimiento a su resolución. El usuario abre la lista de incidentes, selecciona uno y consulta su detalle; desde el menú de acciones marca el incidente como en investigación. En el happy path, el rol tiene permiso para gestionar incidentes y el estado se actualiza a Investigating. En el unhappy path, el usuario es técnico y solo puede consultar el incidente: el menú de acciones no aparece y el estado permanece sin cambios.
 </p>
-
-![User Flow 4](../assets/08-chapter-3/userflows/userflow4.png)
-
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-03-manage-incident.png" alt="User Flow 3" width="100%">
+</p>
 <p style="text-align: justify;">
-  <b>User goal 5:</b> Como jefa de laboratorio, quiero revisar las lecturas en tiempo real de un sensor para verificar que se mantiene dentro del rango permitido. En el happy path, el valor se encuentra dentro del rango y el monitoreo continúa. En el unhappy path, el valor está fuera del rango y la aplicación lleva al detalle de la alerta generada, desde donde continúa el flujo del user goal 2.
+  <b>User flow 4 – Configurar los límites de un sensor.</b> Como coordinador de laboratorio, quiero configurar los límites de un sensor para recibir alertas cuando una lectura salga de rango. Esta acción requiere el permiso <code>sensors.configure</code>, que no se asigna por defecto. El usuario abre la lista de sensores, elige Actions en el sensor y edita el valor mínimo y el máximo. En el happy path, el permiso está concedido, el mínimo es menor que el máximo y los nuevos límites se guardan y se muestran en la lista. Se contemplan dos unhappy paths: si el usuario es técnico, el menú de acciones no aparece y debe solicitar el permiso a un responsable; si el mínimo es mayor o igual que el máximo, la aplicación muestra un mensaje de validación y el usuario corrige el rango antes de guardar.
 </p>
-
-![User Flow 5](../assets/08-chapter-3/userflows/userflow5.png)
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-04-configure-sensor-limits.png" alt="User Flow 4" width="100%">
+</p>
+<p style="text-align: justify;">
+  <b>User flow 5 – Monitorear sensores.</b> Como jefe de laboratorio, quiero revisar el estado de los sensores para verificar que se mantienen dentro del rango permitido. El usuario abre la sección Sensors, actualiza los datos y entra al detalle de un sensor. En el happy path, la actualización tiene éxito, el sensor está conectado y la lectura está dentro del rango, por lo que el estado es Normal. Se contemplan tres unhappy paths: si la actualización falla por un error de red, la aplicación conserva los datos ya cargados y permite reintentar; si el sensor figura como desconectado, el usuario debe revisar el dispositivo; si la lectura está fuera de rango, el estado se marca como Out-of-range y el flujo continúa en el user flow 2 para atender la alerta.
+</p>
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-05-monitor-sensors.png" alt="User Flow 5" width="100%">
+</p>
+<p style="text-align: justify;">
+  <b>User flow 6 – Buscar un equipo.</b> Como usuario de laboratorio, quiero buscar un equipo por su nombre para consultar su información sin recorrer toda la lista. El usuario abre la lista de equipos y escribe un término en el buscador. En el happy path, existen coincidencias, la lista se filtra y el usuario abre el detalle del equipo. En el unhappy path, no hay coincidencias: la aplicación muestra que no hay registros y el usuario modifica el término de búsqueda.
+</p>
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-06-find-equipment.png" alt="User Flow 6" width="100%">
+</p>
+<p style="text-align: justify;">
+  <b>User flow 7 – Registrar un equipo.</b> Como gerente de laboratorio, quiero registrar un equipo nuevo para incluirlo en el monitoreo de mi organización. El usuario abre la sección de equipos, pulsa Add equipment, completa el nombre, la descripción y el responsable, y guarda. En el happy path, el rol permite registrar equipos, los campos obligatorios están completos y el nuevo equipo aparece en la lista con el mensaje Record saved. Se contemplan dos unhappy paths: si el usuario es técnico, el botón de registro no se muestra y debe pedir a un gerente que lo registre; si faltan campos obligatorios, la aplicación muestra un mensaje de validación y el usuario completa el formulario antes de guardar de nuevo.
+</p>
+<p align="center">
+  <img src="../assets/08-chapter-3/userflows/userflow-07-register-equipment.png" alt="User Flow 7" width="100%">
+</p>
 
 #### **3.1.4.5. Mobile Applications Prototyping**
 
