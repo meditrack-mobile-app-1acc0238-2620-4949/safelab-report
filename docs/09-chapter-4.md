@@ -1153,4 +1153,12 @@ Presenta el registro de auditoría con las acciones realizadas en la plataforma 
 
 ### **4.3.2. Interview Recording**
 
+<p style="text-align: justify;">
+  Las entrevistas de validación realizadas a ambos segmentos objetivo fueron consolidadas en el video mostrado a continuación.
+</p>
+
+<p style="text-align: justify;">
+  <b>Enlace:</b> <a href="https://youtu.be/mDeXDb51usI">https://youtu.be/mDeXDb51usI</a>
+</p>
+
 ### **4.3.3. Evaluations Based on Heuristics**
